@@ -19,12 +19,19 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run test
+      - run: npm run test:page-opportunity
       - run: npx tsx scripts/verify-routes.ts
-      - run: npm run build
+      - run: npm run recovery:prepare
+      - run: npm run migrate:validate -- --manifest data/migration/migration-manifest.json
+      - run: npm run content:build
+      - run: npm run build:server
       - run: npm run verify:canonicals
       - run: npm run verify:comparisons
       - run: npm run verify:internal-links
       - run: npm run verify:soft404
       - run: npm run verify:sitemap
       - run: npm run verify:review-schema
+      - run: npm run verify:protected
+      - run: npm run test:redirects
       - run: npm run test:ssr
+      - run: npm run verify:production
