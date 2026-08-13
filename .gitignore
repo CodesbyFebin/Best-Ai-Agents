@@ -7,3 +7,6 @@ dist/
 coverage/
 *.log
 .DS_Store
+packages/database/generated/sitemaps/
+packages/database/generated/publish-report.json
+packages/database/generated/views/*/

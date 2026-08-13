@@ -57,6 +57,10 @@ function recordDescription(record: MigrationRecord, text: string): string {
   return compact.length > 220 ? `${compact.slice(0, 217)}...` : compact;
 }
 
+function safeName(urlPath: string): string {
+  return normalizePath(urlPath).replace(/^\//, "").replace(/[^a-z0-9._-]+/gi, "__") || "home";
+}
+
 function publicationFailure(record: MigrationRecord, text: string): string | null {
   if (!record.publicationEligible) return "NOT_PUBLICATION_ELIGIBLE";
   if (record.opportunity.verdict !== "CREATE") return "NON_CREATE_VERDICT";
@@ -73,17 +77,32 @@ function makePublishedPage(record: MigrationRecord, allCandidatePaths: string[])
   const title = recordTitle(record);
   const description = recordDescription(record, text);
   return {
-    path: url, canonicalPath: url, title, description, text, type: record.type, indexable: true,
-    evidenceCount: record.evidenceCount, protected: record.protected,
+    path: url,
+    canonicalPath: url,
+    title,
+    description,
+    text,
+    type: record.type,
+    indexable: true,
+    evidenceCount: record.evidenceCount,
+    protected: record.protected,
     internalLinks: allCandidatePaths.filter((candidate) => candidate !== url).slice(0, 12),
-    sitemapGroup: inferSitemapGroup(url, record.type), sourceId: record.sourceId,
+    sitemapGroup: inferSitemapGroup(url, record.type),
+    sourceId: record.sourceId,
     schema: {
-      "@context": "https://schema.org", "@type": "WebPage", name: title, description, url: `${ORIGIN}${url}`,
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: title,
+      description,
+      url: `${ORIGIN}${url}`,
       isPartOf: { "@type": "WebSite", name: "BestAIAgent.in", url: `${ORIGIN}/` },
-      breadcrumb: { "@type": "BreadcrumbList", itemListElement: [
-        { "@type": "ListItem", position: 1, name: "BestAIAgent.in", item: `${ORIGIN}/` },
-        { "@type": "ListItem", position: 2, name: title, item: `${ORIGIN}${url}` }
-      ] }
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "BestAIAgent.in", item: `${ORIGIN}/` },
+          { "@type": "ListItem", position: 2, name: title, item: `${ORIGIN}${url}` }
+        ]
+      }
     }
   };
 }
@@ -93,6 +112,13 @@ function writeOutputs(pages: PublishedPage[], sourceManifest: string | null, ski
   fs.mkdirSync(SITEMAP_ROOT, { recursive: true });
   const registry: PublishedRegistry = { generatedAt: new Date().toISOString(), sourceManifest, pages };
   fs.writeFileSync(path.join(VIEWS_ROOT, "index.json"), `${JSON.stringify(registry, null, 2)}\n`);
+
+  for (const page of pages) {
+    const directory = path.join(VIEWS_ROOT, page.sitemapGroup);
+    fs.mkdirSync(directory, { recursive: true });
+    fs.writeFileSync(path.join(directory, `${safeName(page.path)}.json`), `${JSON.stringify(page, null, 2)}\n`);
+  }
+
   const runtimePages = [...corePages, ...pages].filter((page) => page.indexable);
   fs.writeFileSync(path.join(SITEMAP_ROOT, "sitemap.xml"), buildSitemapIndex(ORIGIN));
   for (const group of SITEMAP_GROUPS) {
@@ -109,7 +135,9 @@ export function generateFromManifest(manifest: MigrationManifest): { pages: Publ
   const eligible = prelim.filter(({ record, text }) => publicationFailure(record, text) === null);
   const candidatePaths = [...new Set([...corePages.filter((page) => page.indexable).map((page) => page.path), ...eligible.map(({ record }) => normalizePath(record.url))])];
   const pages = eligible.map(({ record }) => makePublishedPage(record, candidatePaths));
-  const skipped = prelim.map(({ record, text }) => ({ url: normalizePath(record.url), reason: publicationFailure(record, text) })).filter((entry): entry is { url: string; reason: string } => Boolean(entry.reason));
+  const skipped = prelim
+    .map(({ record, text }) => ({ url: normalizePath(record.url), reason: publicationFailure(record, text) }))
+    .filter((entry): entry is { url: string; reason: string } => Boolean(entry.reason));
   return { pages, skipped };
 }
 
