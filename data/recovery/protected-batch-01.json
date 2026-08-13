@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "batch": 1,
+  "pages": [
+    {
+      "id": "recovered:/cursor-pricing",
+      "slug": "cursor-pricing",
+      "entityType": "pricing",
+      "type": "pricing",
+      "url": "/cursor-pricing",
+      "canonical": "/cursor-pricing",
+      "title": "Cursor Pricing in India: Current Plans, Costs and Buying Guide",
+      "description": "Current Cursor pricing for Indian developers, including the India-specific Start plan and a verification-first approach to plan comparisons.",
+      "content": "# Cursor Pricing in India: Current Plans, Costs and Buying Guide\n\nCurrent Cursor pricing for Indian developers, including the India-specific Start plan and a verification-first approach to plan comparisons.\n\n## Direct answer\n\nCursor now has an India-specific Start plan. Cursor's official July 28, 2026 announcement says Start costs ₹649 per month, is tax inclusive, is billed in INR, and supports UPI or card payments. Cursor describes Start as sitting between Free and its higher individual plan, with more agent requests, cloud agents, iOS access, plugins, MCP servers, hooks and skills. Because plan limits and model access can change, the official pricing page is the source of truth at purchase time.\n\n## When this page is useful\n\nUse this page to build a shortlist or implementation plan, not as a substitute for a vendor contract, security review or hands-on pilot. Compare the same workflow across candidates, keep the evidence date visible, and prefer reversible tests before production access is granted.\n\n## Verification approach\n\nThis recovery page preserves a URL that previously earned Google Search visibility, but historical traffic is not treated as factual evidence. Product and legal claims are supported by the primary sources listed below and should be rechecked when those sources change. BestAIAgent.in does not invent ratings, customer counts, security certifications, compliance status, benchmark wins or pricing that the cited source does not establish.\n\n## Practical decision checklist\n\n1. Define the exact job the agent must complete and the human owner of the workflow.\n2. Verify current plan limits, usage billing and availability directly with the vendor.\n3. Grant the smallest repository, API, account and data permissions needed for the pilot.\n4. Test failure handling, retries, logging, escalation and rollback before allowing consequential actions.\n5. Record the evidence date and re-verify material claims when pricing, models or product capabilities change.\n6. For personal or regulated data, evaluate the applicable legal and contractual requirements for the actual deployment; this page is not legal advice.\n\n## Evidence sources\n- https://cursor.com/pricing\n- https://cursor.com/blog/cursor-start\n- https://docs.cursor.com/account/pricing\n\n## Recovery note\n\nRecovered under P10A.1 on 2026-08-13. The canonical URL is intentionally unchanged. Unsupported legacy claims were not carried forward merely because they appeared in an older page.\n",
+      "evidenceRefs": [
+        "https://cursor.com/pricing",
+        "https://cursor.com/blog/cursor-start",
+        "https://docs.cursor.com/account/pricing"
+      ],
+      "updatedAt": "2026-08-13",
+      "status": "recovered",
+      "metadata": {
+        "quality": {
+          "passed": true
+        },
+        "recovery": {
+          "phase": "P10A.1",
+          "mode": "evidence-backed-reauthor",
+          "legacyPreservedUrl": true,
+          "claimLevelReview": "required-for-material-changing-claims"
+        }
+      }
+    },
+    {
+      "id": "recovered:/best-ai-agents-for-automation",
+      "slug": "best-ai-agents-for-automation",
+      "entityType": "tool",
+      "type": "tool",
+      "url": "/best-ai-agents-for-automation",
+      "canonical": "/best-ai-agents-for-automation",
+      "title": "Best AI Agents for Automation: Evidence-Backed Selection Guide",
+      "description": "Compare automation-oriented agent platforms by workflow fit, integrations, human controls and evidence rather than unsupported rankings.",
+      "content": "# Best AI Agents for Automation: Evidence-Backed Selection Guide\n\nCompare automation-oriented agent platforms by workflow fit, integrations, human controls and evidence rather than unsupported rankings.\n\n## Direct answer\n\nAutomation-agent choices depend on where actions run and what they can change. Flowise documents visual agent/workflow builders with human-in-the-loop and evaluation features. Yellow.ai documents enterprise agents across customer-service channels and business integrations. Vapi documents voice agents that can use tools, APIs and telephony. Compare these systems by workflow scope, permission boundaries, auditability, failure handling and escalation rather than treating all “agents” as interchangeable.\n\n## When this page is useful\n\nUse this page to build a shortlist or implementation plan, not as a substitute for a vendor contract, security review or hands-on pilot. Compare the same workflow across candidates, keep the evidence date visible, and prefer reversible tests before production access is granted.\n\n## Verification approach\n\nThis recovery page preserves a URL that previously earned Google Search visibility, but historical traffic is not treated as factual evidence. Product and legal claims are supported by the primary sources listed below and should be rechecked when those sources change. BestAIAgent.in does not invent ratings, customer counts, security certifications, compliance status, benchmark wins or pricing that the cited source does not establish.\n\n## Practical decision checklist\n\n1. Define the exact job the agent must complete and the human owner of the workflow.\n2. Verify current plan limits, usage billing and availability directly with the vendor.\n3. Grant the smallest repository, API, account and data permissions needed for the pilot.\n4. Test failure handling, retries, logging, escalation and rollback before allowing consequential actions.\n5. Record the evidence date and re-verify material claims when pricing, models or product capabilities change.\n6. For personal or regulated data, evaluate the applicable legal and contractual requirements for the actual deployment; this page is not legal advice.\n\n## Evidence sources\n- https://docs.flowiseai.com/\n- https://docs.yellow.ai/\n- https://docs.vapi.ai/quickstart/introduction\n\n## Recovery note\n\nRecovered under P10A.1 on 2026-08-13. The canonical URL is intentionally unchanged. Unsupported legacy claims were not carried forward merely because they appeared in an older page.\n",
+      "evidenceRefs": [
+        "https://docs.flowiseai.com/",
+        "https://docs.yellow.ai/",
+        "https://docs.vapi.ai/quickstart/introduction"
+      ],
+      "updatedAt": "2026-08-13",
+      "status": "recovered",
+      "metadata": {
+        "quality": {
+          "passed": true
+        },
+        "recovery": {
+          "phase": "P10A.1",
+          "mode": "evidence-backed-reauthor",
+          "legacyPreservedUrl": true,
+          "claimLevelReview": "required-for-material-changing-claims"
+        }
+      }
+    },
+    {
+      "id": "recovered:/best-mcp-servers",
+      "slug": "best-mcp-servers",
+      "entityType": "mcp",
+      "type": "mcp",
+      "url": "/best-mcp-servers",
+      "canonical": "/best-mcp-servers",
+      "title": "Best MCP Servers: Security-First Directory and Selection Guide",
+      "description": "A security-first guide to choosing Model Context Protocol servers, with emphasis on provenance, permissions, authorization and deployment boundaries.",
+      "content": "# Best MCP Servers: Security-First Directory and Selection Guide\n\nA security-first guide to choosing Model Context Protocol servers, with emphasis on provenance, permissions, authorization and deployment boundaries.\n\n## Direct answer\n\nMCP servers connect AI clients to tools and data through the Model Context Protocol. Selection should start with provenance: prefer official or well-maintained implementations, inspect the requested capabilities, and avoid granting broad credentials by default. For HTTP-based protected servers, the current MCP authorization specification defines an OAuth-based flow with protected-resource metadata, resource indicators, PKCE and secure token handling. STDIO deployments use a different credential model and should not blindly copy HTTP authorization patterns.\n\n## When this page is useful\n\nUse this page to build a shortlist or implementation plan, not as a substitute for a vendor contract, security review or hands-on pilot. Compare the same workflow across candidates, keep the evidence date visible, and prefer reversible tests before production access is granted.\n\n## Verification approach\n\nThis recovery page preserves a URL that previously earned Google Search visibility, but historical traffic is not treated as factual evidence. Product and legal claims are supported by the primary sources listed below and should be rechecked when those sources change. BestAIAgent.in does not invent ratings, customer counts, security certifications, compliance status, benchmark wins or pricing that the cited source does not establish.\n\n## Practical decision checklist\n\n1. Define the exact job the agent must complete and the human owner of the workflow.\n2. Verify current plan limits, usage billing and availability directly with the vendor.\n3. Grant the smallest repository, API, account and data permissions needed for the pilot.\n4. Test failure handling, retries, logging, escalation and rollback before allowing consequential actions.\n5. Record the evidence date and re-verify material claims when pricing, models or product capabilities change.\n6. For personal or regulated data, evaluate the applicable legal and contractual requirements for the actual deployment; this page is not legal advice.\n\n## Evidence sources\n- https://github.com/modelcontextprotocol/servers\n- https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization\n- https://modelcontextprotocol.io/docs/tutorials/security/authorization\n\n## Recovery note\n\nRecovered under P10A.1 on 2026-08-13. The canonical URL is intentionally unchanged. Unsupported legacy claims were not carried forward merely because they appeared in an older page.\n",
+      "evidenceRefs": [
+        "https://github.com/modelcontextprotocol/servers",
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization",
+        "https://modelcontextprotocol.io/docs/tutorials/security/authorization"
+      ],
+      "updatedAt": "2026-08-13",
+      "status": "recovered",
+      "metadata": {
+        "quality": {
+          "passed": true
+        },
+        "recovery": {
+          "phase": "P10A.1",
+          "mode": "evidence-backed-reauthor",
+          "legacyPreservedUrl": true,
+          "claimLevelReview": "required-for-material-changing-claims"
+        }
+      }
+    },
+    {
+      "id": "recovered:/claude-code-pricing",
+      "slug": "claude-code-pricing",
+      "entityType": "pricing",
+      "type": "pricing",
+      "url": "/claude-code-pricing",
+      "canonical": "/claude-code-pricing",
+      "title": "Claude Code Pricing: Plans, Access Paths and Cost Considerations",
+      "description": "A current guide to Claude Code access through Claude subscriptions or Anthropic Console billing, with India budgeting considerations.",
+      "content": "# Claude Code Pricing: Plans, Access Paths and Cost Considerations\n\nA current guide to Claude Code access through Claude subscriptions or Anthropic Console billing, with India budgeting considerations.\n\n## Direct answer\n\nAnthropic currently includes Claude Code access in Claude Pro and Max subscriptions, while Anthropic Console provides a usage-billed route. Anthropic's pricing page lists Pro at $20 when billed monthly (or a lower effective monthly price with annual billing) and Max from $100 per person per month. Team and Enterprise access rules differ, and Anthropic notes Claude Code can be pay-as-you-go for some organizational plans. Verify the official page before budgeting because usage limits and tax treatment can change.\n\n## When this page is useful\n\nUse this page to build a shortlist or implementation plan, not as a substitute for a vendor contract, security review or hands-on pilot. Compare the same workflow across candidates, keep the evidence date visible, and prefer reversible tests before production access is granted.\n\n## Verification approach\n\nThis recovery page preserves a URL that previously earned Google Search visibility, but historical traffic is not treated as factual evidence. Product and legal claims are supported by the primary sources listed below and should be rechecked when those sources change. BestAIAgent.in does not invent ratings, customer counts, security certifications, compliance status, benchmark wins or pricing that the cited source does not establish.\n\n## Practical decision checklist\n\n1. Define the exact job the agent must complete and the human owner of the workflow.\n2. Verify current plan limits, usage billing and availability directly with the vendor.\n3. Grant the smallest repository, API, account and data permissions needed for the pilot.\n4. Test failure handling, retries, logging, escalation and rollback before allowing consequential actions.\n5. Record the evidence date and re-verify material claims when pricing, models or product capabilities change.\n6. For personal or regulated data, evaluate the applicable legal and contractual requirements for the actual deployment; this page is not legal advice.\n\n## Evidence sources\n- https://www.anthropic.com/pricing\n- https://docs.anthropic.com/en/docs/claude-code/getting-started\n- https://docs.anthropic.com/en/docs/about-claude/pricing\n\n## Recovery note\n\nRecovered under P10A.1 on 2026-08-13. The canonical URL is intentionally unchanged. Unsupported legacy claims were not carried forward merely because they appeared in an older page.\n",
+      "evidenceRefs": [
+        "https://www.anthropic.com/pricing",
+        "https://docs.anthropic.com/en/docs/claude-code/getting-started",
+        "https://docs.anthropic.com/en/docs/about-claude/pricing"
+      ],
+      "updatedAt": "2026-08-13",
+      "status": "recovered",
+      "metadata": {
+        "quality": {
+          "passed": true
+        },
+        "recovery": {
+          "phase": "P10A.1",
+          "mode": "evidence-backed-reauthor",
+          "legacyPreservedUrl": true,
+          "claimLevelReview": "required-for-material-changing-claims"
+        }
+      }
+    },
+    {
+      "id": "recovered:/tools/cursor-ai",
+      "slug": "cursor-ai",
+      "entityType": "review",
+      "type": "review",
+      "url": "/tools/cursor-ai",
+      "canonical": "/tools/cursor-ai",
+      "title": "Cursor AI Review: Agentic Coding, India Pricing and Workflow Fit",
+      "description": "An evidence-backed review of Cursor for coding workflows, including its India-specific Start plan, cloud agents and MCP extensibility.",
+      "content": "# Cursor AI Review: Agentic Coding, India Pricing and Workflow Fit\n\nAn evidence-backed review of Cursor for coding workflows, including its India-specific Start plan, cloud agents and MCP extensibility.\n\n## Direct answer\n\nCursor is an agentic coding environment with desktop, web, CLI and cloud-agent workflows. Cursor's India-specific Start plan adds local INR billing and UPI, while official Cursor materials describe cloud agents and extensions through plugins, MCP servers, hooks and skills. The useful evaluation question is not whether Cursor is universally “best,” but whether its repository workflow, model access, review controls and cost fit the team.\n\n## When this page is useful\n\nUse this page to build a shortlist or implementation plan, not as a substitute for a vendor contract, security review or hands-on pilot. Compare the same workflow across candidates, keep the evidence date visible, and prefer reversible tests before production access is granted.\n\n## Verification approach\n\nThis recovery page preserves a URL that previously earned Google Search visibility, but historical traffic is not treated as factual evidence. Product and legal claims are supported by the primary sources listed below and should be rechecked when those sources change. BestAIAgent.in does not invent ratings, customer counts, security certifications, compliance status, benchmark wins or pricing that the cited source does not establish.\n\n## Practical decision checklist\n\n1. Define the exact job the agent must complete and the human owner of the workflow.\n2. Verify current plan limits, usage billing and availability directly with the vendor.\n3. Grant the smallest repository, API, account and data permissions needed for the pilot.\n4. Test failure handling, retries, logging, escalation and rollback before allowing consequential actions.\n5. Record the evidence date and re-verify material claims when pricing, models or product capabilities change.\n6. For personal or regulated data, evaluate the applicable legal and contractual requirements for the actual deployment; this page is not legal advice.\n\n## Evidence sources\n- https://cursor.com/pricing\n- https://cursor.com/blog/cursor-start\n- https://docs.cursor.com/account/pricing\n\n## Recovery note\n\nRecovered under P10A.1 on 2026-08-13. The canonical URL is intentionally unchanged. Unsupported legacy claims were not carried forward merely because they appeared in an older page.\n",
+      "evidenceRefs": [
+        "https://cursor.com/pricing",
+        "https://cursor.com/blog/cursor-start",
+        "https://docs.cursor.com/account/pricing"
+      ],
+      "updatedAt": "2026-08-13",
+      "status": "recovered",
+      "metadata": {
+        "quality": {
+          "passed": true
+        },
+        "recovery": {
+          "phase": "P10A.1",
+          "mode": "evidence-backed-reauthor",
+          "legacyPreservedUrl": true,
+          "claimLevelReview": "required-for-material-changing-claims"
+        }
+      }
+    }
+  ]
+}
