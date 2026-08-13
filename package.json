@@ -1,0 +1,20 @@
+{
+  "name": "best-ai-agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-backed AI agent directory and research platform for BestAIAgent.in",
+  "repository": {"type": "git", "url": "https://github.com/CodesbyFebin/Best-Ai-Agents.git"},
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "dev": "tsx server/start.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:page-opportunity": "vitest run packages/page-opportunity/engine.test.ts",
+    "verify": "npm run typecheck && npm run test",
+    "build": "npm run verify && esbuild server/start.ts --bundle --platform=node --format=cjs --outfile=dist/server.cjs",
+    "start": "node dist/server.cjs"
+  },
+  "dependencies": {"bcryptjs": "^2.4.3", "express": "^4.21.2", "jsonwebtoken": "^9.0.2", "react": "^19.0.0", "react-dom": "^19.0.0"},
+  "devDependencies": {"@types/express": "^5.0.0", "@types/jsonwebtoken": "^9.0.7", "@types/node": "^22.0.0", "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0", "esbuild": "^0.25.0", "tsx": "^4.20.0", "typescript": "^5.8.0", "vitest": "^3.0.0"}
+}
