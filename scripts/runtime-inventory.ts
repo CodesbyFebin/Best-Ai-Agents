@@ -1,15 +1,16 @@
 import generatedRegistryJson from "../packages/database/generated/views/index.json";
 import preservedUrlData from "../data/migration/protected-urls.json";
 import { corePages } from "../src/runtime/core-pages.js";
+import { mergeRuntimePages, runtimePageMap } from "../src/runtime/registry.js";
 import { normalizePath } from "../src/routing/path-normalization.js";
 import { resolveRedirect } from "../src/routing/redirect-resolver.js";
-import type { PublishedPage, PublishedRegistry } from "../src/runtime/types.js";
+import type { PublishedRegistry } from "../src/runtime/types.js";
 
 export const generatedRegistry = generatedRegistryJson as PublishedRegistry;
 export const generatedPages = generatedRegistry.pages ?? [];
-export const runtimePages: PublishedPage[] = [...corePages, ...generatedPages];
+export const runtimePages = mergeRuntimePages(corePages, generatedPages);
 export const indexablePages = runtimePages.filter((page) => page.indexable);
-export const directPageMap = new Map(indexablePages.map((page) => [normalizePath(page.path), page]));
+export const directPageMap = runtimePageMap(indexablePages);
 export const preservedUrls = (preservedUrlData as string[]).map(normalizePath);
 
 export function isPlaceholderText(text: string): boolean {

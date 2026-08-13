@@ -1,7 +1,8 @@
 import express from "express";
 import generatedRegistryJson from "../packages/database/generated/views/index.json";
 import { buildSitemapIndex, buildUrlSet, SITEMAP_GROUPS, type SitemapGroup } from "../packages/sitemap/index.js";
-import { corePageMap, corePages } from "../src/runtime/core-pages.js";
+import { corePages } from "../src/runtime/core-pages.js";
+import { mergeRuntimePages, runtimePageMap } from "../src/runtime/registry.js";
 import type { PublishedPage, PublishedRegistry } from "../src/runtime/types.js";
 import { normalizePath } from "../src/routing/path-normalization.js";
 import { resolveRedirect } from "../src/routing/redirect-resolver.js";
@@ -9,8 +10,8 @@ import { resolveRedirect } from "../src/routing/redirect-resolver.js";
 const ORIGIN = "https://bestaiagent.in";
 const generatedRegistry = generatedRegistryJson as PublishedRegistry;
 const generatedPages = generatedRegistry.pages ?? [];
-const generatedPageMap = new Map(generatedPages.map((page) => [normalizePath(page.path), page]));
-const runtimePages = [...corePages, ...generatedPages].filter((page) => page.indexable);
+const runtimePages = mergeRuntimePages(corePages, generatedPages).filter((page) => page.indexable);
+const pageMap = runtimePageMap(runtimePages);
 
 const app = express();
 app.disable("x-powered-by");
@@ -43,34 +44,7 @@ function renderPage(page: PublishedPage): string {
   const canonical = `${ORIGIN}${page.canonicalPath === "/" ? "/" : page.canonicalPath}`;
   const paragraphs = page.text.split(/\n{2,}/).map((item) => item.trim()).filter(Boolean).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
   const links = page.internalLinks.map((href) => `<a href="${escapeHtml(href)}">${escapeHtml(href === "/" ? "Home" : href.replace(/^\//, "").replace(/[-/]+/g, " "))}</a>`).join(" · ");
-  return `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${escapeHtml(page.title)}</title>
-  <meta name="description" content="${escapeHtml(page.description)}" />
-  <link rel="canonical" href="${escapeHtml(canonical)}" />
-  <meta property="og:title" content="${escapeHtml(page.title)}" />
-  <meta property="og:description" content="${escapeHtml(page.description)}" />
-  <meta property="og:url" content="${escapeHtml(canonical)}" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <script type="application/ld+json">${safeJsonLd(page.schema)}</script>
-</head>
-<body>
-  <header><a href="/">BestAIAgent.in</a> · <a href="/agents">Agents</a> · <a href="/categories">Categories</a> · <a href="/compare">Compare</a> · <a href="/methodology">Methodology</a></header>
-  <main>
-    <article>
-      <h1>${escapeHtml(page.title)}</h1>
-      <p data-testid="direct-answer">${escapeHtml(page.description)}</p>
-      ${paragraphs}
-      ${links ? `<nav aria-label="Related pages">${links}</nav>` : ""}
-    </article>
-  </main>
-  <footer><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/sitemap">Sitemap</a></footer>
-</body>
-</html>`;
+  return `<!doctype html>\n<html lang="en">\n<head>\n  <meta charset="utf-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1" />\n  <title>${escapeHtml(page.title)}</title>\n  <meta name="description" content="${escapeHtml(page.description)}" />\n  <link rel="canonical" href="${escapeHtml(canonical)}" />\n  <meta property="og:title" content="${escapeHtml(page.title)}" />\n  <meta property="og:description" content="${escapeHtml(page.description)}" />\n  <meta property="og:url" content="${escapeHtml(canonical)}" />\n  <meta property="og:type" content="website" />\n  <meta name="twitter:card" content="summary" />\n  <script type="application/ld+json">${safeJsonLd(page.schema)}</script>\n</head>\n<body>\n  <header><a href="/">BestAIAgent.in</a> · <a href="/agents">Agents</a> · <a href="/categories">Categories</a> · <a href="/compare">Compare</a> · <a href="/methodology">Methodology</a></header>\n  <main>\n    <article>\n      <h1>${escapeHtml(page.title)}</h1>\n      <p data-testid="direct-answer">${escapeHtml(page.description)}</p>\n      ${paragraphs}\n      ${links ? `<nav aria-label="Related pages">${links}</nav>` : ""}\n    </article>\n  </main>\n  <footer><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/sitemap">Sitemap</a></footer>\n</body>\n</html>`;
 }
 
 function pagePaths(group: SitemapGroup): string[] {
@@ -106,7 +80,7 @@ app.get("/admin", (_req, res) => {
 
 app.get("*", (req, res) => {
   const path = normalizePath(req.path);
-  const page = corePageMap.get(path) ?? generatedPageMap.get(path);
+  const page = pageMap.get(path);
   if (page) {
     if (!page.indexable) res.setHeader("X-Robots-Tag", "noindex");
     return res.status(200).type("html").send(renderPage(page));
