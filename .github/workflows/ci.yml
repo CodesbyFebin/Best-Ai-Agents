@@ -21,3 +21,10 @@ jobs:
       - run: npm run test
       - run: npx tsx scripts/verify-routes.ts
       - run: npm run build
+      - run: npm run verify:canonicals
+      - run: npm run verify:comparisons
+      - run: npm run verify:internal-links
+      - run: npm run verify:soft404
+      - run: npm run verify:sitemap
+      - run: npm run verify:review-schema
+      - run: npm run test:ssr
