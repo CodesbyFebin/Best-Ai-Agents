@@ -6,8 +6,9 @@ describe("redirect resolver", () => {
     expect(resolveRedirect("/tools/cursor-ai")).toBeNull();
     expect(resolveRedirect("/tools/flowise/")).toBeNull();
   });
-  it("applies a legacy redirect", () => {
-    expect(resolveRedirect("/tools/chatgpt")).toMatchObject({ destination: "/agents/chatgpt", status: 301 });
+  it("applies a legacy redirect only when its destination is live", () => {
+    expect(resolveRedirect("/pricing-hub")).toMatchObject({ destination: "/pricing", status: 301 });
+    expect(resolveRedirect("/tools/chatgpt")).toBeNull();
   });
   it("keeps the preserved comparison orientation", () => {
     expect(canonicalComparisonPath("/codex-vs-cursor")).toBe("/cursor-vs-codex");
