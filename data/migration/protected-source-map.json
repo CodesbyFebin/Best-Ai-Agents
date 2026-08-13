@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedFrom": {
+    "routeManifest": "best-ai-agent-main(3).zip:best-ai-agent-main/public/route-manifest.json",
+    "gscExport": "bestaiagent.in-Performance-on-Search-2026-08-13(1).zip:Pages.csv"
+  },
+  "counts": {
+    "protected": 23,
+    "fileBacked": 15,
+    "generated": 8,
+    "fileSourcesRecovered": 15
+  },
+  "routes": [
+    {
+      "path": "/cursor-pricing",
+      "canonicalPath": "/cursor-pricing",
+      "title": "Cursor Pricing 2026 Plans, Costs & India-Specific Pricing Breakdown",
+      "description": "Cursor AI pricing explained: Free vs Pro vs Business plans, costs in INR, student discounts, team pricing, and whether Cursor is worth it for Indian developers.",
+      "type": "pricing",
+      "sourceDataKey": "content/pricing/cursor-pricing.md",
+      "schemaTypes": ["Article", "BreadcrumbList", "ItemList", "FAQPage", "Offer", "PriceSpecification"],
+      "internalLinkCount": 12,
+      "gsc": {"clicks": 11, "impressions": 1532, "ctrPercent": 0.72, "position": 7.19},
+      "sourceKind": "file",
+      "sourceRecovered": true,
+      "archivePath": "best-ai-agent-main/content/pricing/cursor-pricing.md",
+      "sourceBytes": 32751,
+      "sourceSha256": "c2af61265eeeffb98c505864767b02b497d6ad797f4c37ef9b77aaae4e670b59"
+    },
+    {"path":"/best-ai-agents-for-automation","canonicalPath":"/best-ai-agents-for-automation","title":"Best AI Agents for Automation: Cross-App Orchestration | BestAIAgent.in","description":"Connect agent executors into Make.com, Zapier, and trigger pipelines. Best workflows evaluated by efficiency.","type":"tool","sourceDataKey":"generated-app-silo","schemaTypes":["Article","BreadcrumbList","SoftwareApplication","FAQPage","Review"],"internalLinkCount":7,"gsc":{"clicks":3,"impressions":38,"ctrPercent":7.89,"position":71.13},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/best-mcp-servers","canonicalPath":"/best-mcp-servers","title":"Best MCP Servers 2026 – Top Model Context Protocol Servers for Indian Developers","description":"Directory of the best MCP servers in 2026. Find MCP servers for files, databases, APIs, and Indian services. Complete guide for Indian developers.","type":"mcp","sourceDataKey":"content/mcp/best-mcp-servers.md","schemaTypes":["Article","BreadcrumbList","FAQPage"],"internalLinkCount":13,"gsc":{"clicks":3,"impressions":28,"ctrPercent":10.71,"position":32.04},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/mcp/best-mcp-servers.md"},
+    {"path":"/claude-code-pricing","canonicalPath":"/claude-code-pricing","title":"Claude Code Pricing 2026: Plans, API Costs & India INR Breakdown","description":"Claude Code pricing explained with plan costs, API usage, INR estimates, and developer budget considerations.","type":"pricing","sourceDataKey":"content/pricing/claude-code-pricing.md","internalLinkCount":12,"gsc":{"clicks":2,"impressions":126,"ctrPercent":1.59,"position":10.2},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/pricing/claude-code-pricing.md"},
+    {"path":"/tools/cursor-ai","canonicalPath":"/tools/cursor-ai","type":"review","sourceDataKey":"content/tools/cursor-ai.md","gsc":{"clicks":2,"impressions":102,"ctrPercent":1.96,"position":17.45},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/tools/cursor-ai.md"},
+    {"path":"/ai-agents-for-finance","canonicalPath":"/ai-agents-for-finance","type":"pillar","sourceDataKey":"generated-topical-authority","gsc":{"clicks":2,"impressions":41,"ctrPercent":4.88,"position":34.1},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/best-free-ai-coding-agents","canonicalPath":"/best-free-ai-coding-agents","type":"free","sourceDataKey":"content/free/best-free-ai-coding-agents.md","gsc":{"clicks":2,"impressions":16,"ctrPercent":12.5,"position":5.69},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/free/best-free-ai-coding-agents.md"},
+    {"path":"/github-copilot-pricing","canonicalPath":"/github-copilot-pricing","type":"pricing","sourceDataKey":"content/pricing/github-copilot-pricing.md","gsc":{"clicks":1,"impressions":364,"ctrPercent":0.27,"position":9.26},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/pricing/github-copilot-pricing.md"},
+    {"path":"/tools/flowise","canonicalPath":"/tools/flowise","type":"review","sourceDataKey":"content/reviews/flowise-review.md","gsc":{"clicks":1,"impressions":170,"ctrPercent":0.59,"position":22.13},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/reviews/flowise-review.md"},
+    {"path":"/tools/yellow-ai","canonicalPath":"/tools/yellow-ai","type":"review","sourceDataKey":"content/reviews/yellow-ai-review.md","gsc":{"clicks":1,"impressions":102,"ctrPercent":0.98,"position":21.42},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/reviews/yellow-ai-review.md"},
+    {"path":"/best-ai-voice-agent","canonicalPath":"/best-ai-voice-agent","type":"pillar","sourceDataKey":"content/pillars/best-ai-voice-agent.md","gsc":{"clicks":1,"impressions":46,"ctrPercent":2.17,"position":32.63},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/pillars/best-ai-voice-agent.md"},
+    {"path":"/cursor-vs-codex","canonicalPath":"/cursor-vs-codex","type":"comparison","sourceDataKey":"generated-comparison-data","gsc":{"clicks":1,"impressions":29,"ctrPercent":3.45,"position":19.28},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/glossary-hub","canonicalPath":"/glossary-hub","type":"hub","sourceDataKey":"generated-hub","gsc":{"clicks":1,"impressions":27,"ctrPercent":3.7,"position":7.11},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/claude-code-alternatives","canonicalPath":"/claude-code-alternatives","type":"alternative","sourceDataKey":"content/alternatives/claude-code-alternatives.md","gsc":{"clicks":1,"impressions":26,"ctrPercent":3.85,"position":10.54},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/alternatives/claude-code-alternatives.md"},
+    {"path":"/how-to-use-cursor-ai","canonicalPath":"/how-to-use-cursor-ai","type":"tutorial","sourceDataKey":"content/tutorials/how-to-use-cursor-ai.md","gsc":{"clicks":1,"impressions":20,"ctrPercent":5.0,"position":7.5},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/tutorials/how-to-use-cursor-ai.md"},
+    {"path":"/flowise-alternatives","canonicalPath":"/flowise-alternatives","type":"alternative","sourceDataKey":"content/alternatives/flowise-alternatives.md","gsc":{"clicks":1,"impressions":16,"ctrPercent":6.25,"position":33.06},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/alternatives/flowise-alternatives.md"},
+    {"path":"/mcp-directory","canonicalPath":"/mcp-directory","type":"hub","sourceDataKey":"generated-editorial","gsc":{"clicks":1,"impressions":15,"ctrPercent":6.67,"position":17.47},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/ai-agent-rankings","canonicalPath":"/ai-agent-rankings","type":"pillar","sourceDataKey":"generated-editorial","gsc":{"clicks":1,"impressions":11,"ctrPercent":9.09,"position":19.73},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/best-ai-agents","canonicalPath":"/best-ai-agents","type":"pillar","sourceDataKey":"content/core/best-ai-agents.md","gsc":{"clicks":1,"impressions":8,"ctrPercent":12.5,"position":20.88},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/core/best-ai-agents.md"},
+    {"path":"/best-ai-agent-for-coding","canonicalPath":"/best-ai-agent-for-coding","type":"pillar","sourceDataKey":"content/pillars/topic/ai-coding-agents/best-ai-agent-for-coding.md","gsc":{"clicks":1,"impressions":5,"ctrPercent":20.0,"position":41.4},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/pillars/topic/ai-coding-agents/best-ai-agent-for-coding.md"},
+    {"path":"/best-ai-agent-india","canonicalPath":"/best-ai-agent-india","type":"pillar","sourceDataKey":"generated-topical-authority","gsc":{"clicks":1,"impressions":3,"ctrPercent":33.33,"position":3.33},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true},
+    {"path":"/best-ai-agent","canonicalPath":"/best-ai-agent","type":"pillar","sourceDataKey":"content/pillars/best-ai-agent.md","gsc":{"clicks":1,"impressions":3,"ctrPercent":33.33,"position":50.67},"sourceKind":"file","sourceRecovered":true,"archivePath":"best-ai-agent-main/content/pillars/best-ai-agent.md"},
+    {"path":"/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now","canonicalPath":"/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now","type":"blog","sourceDataKey":"generated-blog-editorial","gsc":{"clicks":1,"impressions":1,"ctrPercent":100.0,"position":5.0},"sourceKind":"generated","sourceRecovered":false,"requiresSourceRecovery":true}
+  ]
+}
