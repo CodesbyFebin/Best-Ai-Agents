@@ -2,13 +2,40 @@
 import { indexablePages } from "./runtime-inventory.js";
 
 const errors: string[] = [];
-function scan(value: unknown, pagePath: string): void {
-  if (Array.isArray(value)) { value.forEach((item) => scan(item, pagePath)); return; }
+
+function scan(value: unknown, pagePath: string, parentType = "", parentKey = ""): void {
+  if (Array.isArray(value)) {
+    for (const item of value) scan(item, pagePath, parentType, parentKey);
+    return;
+  }
   if (!value || typeof value !== "object") return;
   const object = value as Record<string, unknown>;
-  if (object["@type"] === "Review" && !object.author) errors.push(`${pagePath}: Review schema missing author.`);
-  Object.values(object).forEach((item) => scan(item, pagePath));
+  const type = typeof object["@type"] === "string" ? String(object["@type"]) : "";
+
+  if (type === "Review") {
+    const author = object.author;
+    const authorName = typeof author === "string"
+      ? author.trim()
+      : author && typeof author === "object"
+        ? String((author as Record<string, unknown>).name ?? "").trim()
+        : "";
+    if (!authorName) errors.push(`${pagePath}: Review schema is missing author.`);
+
+    const nestedInSoftwareApplication = parentType === "SoftwareApplication" && (parentKey === "review" || parentKey === "reviews");
+    if (nestedInSoftwareApplication && object.itemReviewed !== undefined) {
+      errors.push(`${pagePath}: nested SoftwareApplication Review must omit itemReviewed.`);
+    }
+    if (!nestedInSoftwareApplication && object.itemReviewed === undefined) {
+      errors.push(`${pagePath}: standalone Review must provide itemReviewed.`);
+    }
+  }
+
+  for (const [key, child] of Object.entries(object)) scan(child, pagePath, type, key);
 }
-indexablePages.forEach((page) => scan(page.schema, page.path));
-if (errors.length) { errors.forEach((error) => console.error(`ERROR: ${error}`)); process.exit(1); }
-console.log(`Structured-data review check passed across ${indexablePages.length} pages.`);
+
+for (const page of indexablePages) scan(page.schema, page.path);
+if (errors.length) {
+  for (const error of errors) console.error(`ERROR: ${error}`);
+  process.exit(1);
+}
+console.log(`Review-schema verification passed across ${indexablePages.length} indexable pages.`);
