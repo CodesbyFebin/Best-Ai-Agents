@@ -11,6 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:page-opportunity": "vitest run packages/page-opportunity/engine.test.ts",
+    "migrate": "tsx scripts/migrate-from-old.ts",
+    "migrate:validate": "tsx scripts/validate-migration.ts",
     "verify": "npm run typecheck && npm run test",
     "build": "npm run verify && esbuild server/start.ts --bundle --platform=node --format=cjs --outfile=dist/server.cjs",
     "start": "node dist/server.cjs"
