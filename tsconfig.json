@@ -11,5 +11,5 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["node"]
   },
-  "include": ["api", "server", "src", "packages", "scripts"]
+  "include": ["api", "apps", "server", "src", "packages", "scripts"]
 }

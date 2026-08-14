@@ -1,4 +1,17 @@
 import express from "express";
+import generatedRegistryJson from "../packages/database/generated/views/index.json";
+import { buildSitemapIndex, buildUrlSet, SITEMAP_GROUPS, type SitemapGroup } from "../packages/sitemap/index.js";
+import { corePages } from "../src/runtime/core-pages.js";
+import { mergeRuntimePages, runtimePageMap } from "../src/runtime/registry.js";
+import type { PublishedPage, PublishedRegistry } from "../src/runtime/types.js";
+import { normalizePath } from "../src/routing/path-normalization.js";
+import { resolveRedirect } from "../src/routing/redirect-resolver.js";
+
+const ORIGIN = "https://bestaiagent.in";
+const generatedRegistry = generatedRegistryJson as PublishedRegistry;
+const generatedPages = generatedRegistry.pages ?? [];
+const runtimePages = mergeRuntimePages(corePages, generatedPages).filter((page) => page.indexable);
+const pageMap = runtimePageMap(runtimePages);
 
 const app = express();
 app.disable("x-powered-by");
@@ -8,26 +21,72 @@ app.use((_req, res, next) => {
   res.setHeader("X-Content-Type-Options", "nosniff");
   res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
   res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  res.setHeader("Content-Security-Policy", "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
   next();
 });
 
-function page(title: string, description: string, path: string, body: string) {
-  const canonical = `https://www.bestaiagent.in${path}`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="description" content="${description}"><link rel="canonical" href="${canonical}"></head><body><header><a href="/">BestAIAgent.in</a> · <a href="/agents">Agents</a> · <a href="/methodology">Methodology</a></header><main><h1>${title}</h1><p data-direct-answer="true">${description}</p>${body}</main><footer><a href="/about">About</a> · <a href="/contact">Contact</a></footer></body></html>`;
+app.use((req, res, next) => {
+  const resolution = resolveRedirect(req.path);
+  if (!resolution) return next();
+  return res.redirect(resolution.status, resolution.destination);
+});
+
+function escapeHtml(value: string): string {
+  return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
-app.get("/", (_req, res) => res.send(page("Find and compare AI agents", "Evidence-backed AI agent discovery without fabricated rankings or thin programmatic pages.", "/", "<p>This clean repository starts with the publishing and verification architecture before scaling content.</p>")));
-app.get("/agents", (_req, res) => res.send(page("AI Agents Directory", "The canonical directory for evidence-gated AI agent entities.", "/agents", "<p>Entity imports are added only after evidence and page-opportunity validation.</p>")));
-app.get("/about", (_req, res) => res.send(page("About", "BestAIAgent.in is an evidence-backed AI agent research and discovery platform.", "/about", "<p>No pay-to-rank listings and no fabricated reviews.</p>")));
-app.get("/methodology", (_req, res) => res.send(page("Methodology", "Publication requires entity, evidence, canonical, uniqueness, and quality checks.", "/methodology", "<p>CREATE allows a candidate to continue through quality and editorial gates; HOLD never means publish.</p>")));
-app.get("/team", (_req, res) => res.send(page("Team", "Real author and reviewer profiles are published only when verified.", "/team", "")));
-app.get("/blog", (_req, res) => res.send(page("Blog", "Editorial articles appear only after review.", "/blog", "")));
-app.get("/press", (_req, res) => res.send(page("Press", "Verified press resources and coverage appear here when available.", "/press", "")));
-app.get("/contact", (_req, res) => res.send(page("Contact", "Contact details are published only when a verified public channel is configured.", "/contact", "")));
-app.get("/robots.txt", (_req, res) => res.type("text/plain").send("User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/admin\n\nSitemap: https://www.bestaiagent.in/sitemap.xml\n"));
-app.get("/llms.txt", (_req, res) => res.type("text/plain").send("# BestAIAgent.in\n\nEvidence-backed AI agent research and discovery.\n\n- https://www.bestaiagent.in/agents\n- https://www.bestaiagent.in/methodology\n- https://www.bestaiagent.in/about\n"));
-app.get("/sitemap.xml", (_req, res) => res.type("application/xml").send("<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>https://www.bestaiagent.in/</loc></url><url><loc>https://www.bestaiagent.in/agents</loc></url><url><loc>https://www.bestaiagent.in/about</loc></url><url><loc>https://www.bestaiagent.in/methodology</loc></url></urlset>"));
-app.get("/admin", (_req, res) => { res.setHeader("X-Robots-Tag", "noindex, nofollow"); res.status(404).send("Not found"); });
-app.use((_req, res) => { res.setHeader("X-Robots-Tag", "noindex"); res.status(404).send("Not found"); });
+function safeJsonLd(schema: Record<string, unknown>): string {
+  return JSON.stringify(schema).replace(/</g, "\\u003c");
+}
+
+function renderPage(page: PublishedPage): string {
+  const canonical = `${ORIGIN}${page.canonicalPath === "/" ? "/" : page.canonicalPath}`;
+  const paragraphs = page.text.split(/\n{2,}/).map((item) => item.trim()).filter(Boolean).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
+  const links = page.internalLinks.map((href) => `<a href="${escapeHtml(href)}">${escapeHtml(href === "/" ? "Home" : href.replace(/^\//, "").replace(/[-/]+/g, " "))}</a>`).join(" · ");
+  return `<!doctype html>\n<html lang="en">\n<head>\n  <meta charset="utf-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1" />\n  <title>${escapeHtml(page.title)}</title>\n  <meta name="description" content="${escapeHtml(page.description)}" />\n  <link rel="canonical" href="${escapeHtml(canonical)}" />\n  <meta property="og:title" content="${escapeHtml(page.title)}" />\n  <meta property="og:description" content="${escapeHtml(page.description)}" />\n  <meta property="og:url" content="${escapeHtml(canonical)}" />\n  <meta property="og:type" content="website" />\n  <meta name="twitter:card" content="summary" />\n  <script type="application/ld+json">${safeJsonLd(page.schema)}</script>\n</head>\n<body>\n  <header><a href="/">BestAIAgent.in</a> · <a href="/agents">Agents</a> · <a href="/categories">Categories</a> · <a href="/compare">Compare</a> · <a href="/methodology">Methodology</a></header>\n  <main>\n    <article>\n      <h1>${escapeHtml(page.title)}</h1>\n      <p data-testid="direct-answer">${escapeHtml(page.description)}</p>\n      ${paragraphs}\n      ${links ? `<nav aria-label="Related pages">${links}</nav>` : ""}\n    </article>\n  </main>\n  <footer><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/sitemap">Sitemap</a></footer>\n</body>\n</html>`;
+}
+
+function pagePaths(group: SitemapGroup): string[] {
+  return runtimePages.filter((page) => page.sitemapGroup === group && page.indexable && normalizePath(page.canonicalPath) === normalizePath(page.path)).map((page) => page.path);
+}
+
+app.get("/robots.txt", (_req, res) => {
+  res.type("text/plain").send(`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/admin\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
+});
+
+app.get("/llms.txt", (_req, res) => {
+  const keyPages = ["/agents", "/categories", "/compare", "/research", "/mcp-directory", "/methodology", "/about"];
+  res.type("text/plain").send(`# BestAIAgent.in\n\nEvidence-backed AI agent research and discovery.\n\n${keyPages.map((path) => `- ${ORIGIN}${path}`).join("\n")}\n`);
+});
+
+app.get("/sitemap.xml", (_req, res) => {
+  res.type("application/xml").send(buildSitemapIndex(ORIGIN));
+});
+
+app.get("/sitemaps/:name.xml", (req, res) => {
+  const name = req.params.name as SitemapGroup;
+  if (!SITEMAP_GROUPS.includes(name)) {
+    res.setHeader("X-Robots-Tag", "noindex");
+    return res.status(404).type("text/plain").send("Not found");
+  }
+  return res.type("application/xml").send(buildUrlSet(pagePaths(name), ORIGIN));
+});
+
+app.get("/admin", (_req, res) => {
+  res.setHeader("X-Robots-Tag", "noindex, nofollow");
+  return res.status(404).type("text/plain").send("Not found");
+});
+
+app.get("*", (req, res) => {
+  const path = normalizePath(req.path);
+  const page = pageMap.get(path);
+  if (page) {
+    if (!page.indexable) res.setHeader("X-Robots-Tag", "noindex");
+    return res.status(200).type("html").send(renderPage(page));
+  }
+  res.setHeader("X-Robots-Tag", "noindex");
+  return res.status(404).type("text/plain").send("Not found");
+});
 
 export default app;
