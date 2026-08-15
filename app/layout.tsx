@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./authority.css";
 
 const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BestAIAgent.in — Evidence-led AI Agent Discovery",
     description:
-      "Find the right AI agent with transparent scores, evidence, and India-specific context.",
+      "Find the right AI agent with transparent evidence and India-specific context.",
     type: "website",
     locale: "en_IN",
     url: "https://bestaiagent.in/",
