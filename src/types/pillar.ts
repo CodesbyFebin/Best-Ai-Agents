@@ -15,6 +15,11 @@ export interface PillarAgent {
   officialUrl: string;
 }
 
+export interface PillarFaq {
+  question: string;
+  answer: string;
+}
+
 export interface PillarManifest {
   slug: string;
   eyebrow: string;
@@ -26,6 +31,7 @@ export interface PillarManifest {
   lastReviewed: string;
   evidence: AgentEvidence[];
   agents: PillarAgent[];
+  faqs: PillarFaq[];
   internalLinks: Array<{
     label: string;
     href: string;
