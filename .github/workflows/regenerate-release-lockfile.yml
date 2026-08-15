@@ -1,0 +1,50 @@
+name: Regenerate release lockfile
+
+on:
+  push:
+    branches:
+      - feat/pillar-server-data
+    paths:
+      - package.json
+      - package-lock.json
+      - scripts/verify-no-legacy-server.mjs
+      - .github/workflows/regenerate-release-lockfile.yml
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate-lockfile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out exact branch head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Regenerate package-lock.json
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+
+      - name: Verify legacy server removal
+        run: node scripts/verify-no-legacy-server.mjs
+
+      - name: Commit generated lockfile
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if git diff --quiet -- package-lock.json; then
+            echo "package-lock.json already matches package.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git commit -m "chore: regenerate lockfile without Express"
+          git push origin HEAD:feat/pillar-server-data
