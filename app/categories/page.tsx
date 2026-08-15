@@ -20,10 +20,10 @@ const categories = [
 export default function CategoriesPage() {
   return (
     <main className="authorityPage">
-      <header className="authorityNav"><a className="brand" href="/">BestAI<span>Agent</span><b>.in</b></a><nav><a href="/">Discover</a><a href="/compare">Compare</a><a href="/built-in-india">India Fit</a><a href="/methodology">Methodology</a><a href="/resources">Learn</a></nav></header>
+      <header className="authorityNav"><a className="brand" href="/">BestAI<span>Agent</span><b>.in</b></a><nav><a href="/">Discover</a><a href="/#compare">Compare</a><a href="/built-in-india">India Fit</a><a href="/#methodology">Methodology</a><a href="/resources">Learn</a></nav></header>
       <section className="authorityHero"><span className="kicker">Explore the ecosystem</span><h1>Find AI agents by the job you need done.</h1><p>Categories are organised around user intent rather than vendor marketing. Start with a task, then inspect products, evidence, pricing context, and deployment trade-offs.</p></section>
-      <section className="authorityGrid">{categories.map(([name, copy]) => <article className="authorityCard" key={name}><span className="cardEyebrow">Category</span><h2>{name}</h2><p>{copy}</p><a href={`/?category=${encodeURIComponent(name)}`}>Explore {name} agents →</a></article>)}</section>
-      <section className="authorityCallout"><span className="kicker">Evidence first</span><h2>Category membership is not a ranking.</h2><p>Products are grouped by observable use case. Any editorial assessment should be accompanied by methodology and evidence rather than implied endorsement.</p><a className="primary" href="/methodology">Read the methodology →</a></section>
+      <section className="authorityGrid">{categories.map(([name, copy]) => <article className="authorityCard" key={name}><span className="cardEyebrow">Category</span><h2>{name}</h2><p>{copy}</p><a href={`/?category=${encodeURIComponent(name)}#discover`}>Explore {name} agents →</a></article>)}</section>
+      <section className="authorityCallout"><span className="kicker">Evidence first</span><h2>Category membership is not a ranking.</h2><p>Products are grouped by observable use case. Any editorial assessment should be accompanied by methodology and evidence rather than implied endorsement.</p><a className="primary" href="/#methodology">Read the methodology →</a></section>
       <footer className="authorityFooter"><a href="/">BestAIAgent.in</a><span>Independent AI-agent discovery and India-first evaluation.</span></footer>
     </main>
   );
