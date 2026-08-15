@@ -1,8 +1,28 @@
 import type { PillarManifest } from "@/src/types/pillar";
+import { DirectAnswer } from "@/src/components/seo/DirectAnswer";
 
 interface PillarPageProps {
   manifest: PillarManifest;
 }
+
+const methodologySteps = [
+  {
+    name: "Match intent",
+    text: "Compare products that solve the same user job before crossing categories.",
+  },
+  {
+    name: "Verify claims",
+    text: "Prefer official product, documentation, and pricing sources with retrieval dates.",
+  },
+  {
+    name: "Expose uncertainty",
+    text: "Do not convert incomplete evidence into a universal score, badge, or winner.",
+  },
+  {
+    name: "Refresh material facts",
+    text: "Recheck pricing, availability, integrations, and product capabilities when they can change.",
+  },
+];
 
 export function PillarPage({ manifest }: PillarPageProps) {
   const canonical = `https://bestaiagent.in/${manifest.slug}`;
@@ -20,8 +40,18 @@ export function PillarPage({ manifest }: PillarPageProps) {
         url: canonical,
         name: manifest.title,
         description: manifest.description,
+        datePublished: "2026-08-15",
         dateModified: manifest.lastReviewed,
         isPartOf: { "@id": "https://bestaiagent.in/#website" },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".aeoDirectAnswer", ".pillarFaqs"],
+        },
+        about: manifest.agents.map((agent) => ({
+          "@type": "Thing",
+          name: agent.name,
+          sameAs: agent.officialUrl,
+        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -66,6 +96,18 @@ export function PillarPage({ manifest }: PillarPageProps) {
           },
         })),
       },
+      {
+        "@type": "HowTo",
+        name: `How to evaluate products for ${manifest.primaryKeyword}`,
+        description:
+          "A four-step evidence-first process for matching intent, verifying claims, exposing uncertainty, and refreshing material facts.",
+        step: methodologySteps.map((step, index) => ({
+          "@type": "HowToStep",
+          position: index + 1,
+          name: step.name,
+          text: step.text,
+        })),
+      },
     ],
   };
 
@@ -73,7 +115,9 @@ export function PillarPage({ manifest }: PillarPageProps) {
     <main className="pillarPage authorityPage">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+        }}
       />
 
       <header className="authorityNav pillarNav">
@@ -88,6 +132,17 @@ export function PillarPage({ manifest }: PillarPageProps) {
         </nav>
       </header>
 
+      <div style={{ maxWidth: 1192, margin: "0 auto", padding: "24px 24px 0" }}>
+        <DirectAnswer
+          question={manifest.primaryKeyword}
+          answer={manifest.directAnswer}
+          sources={manifest.evidence.map((item) => ({
+            label: item.label,
+            url: item.url,
+          }))}
+        />
+      </div>
+
       <section className="pillarHero">
         <div className="pillarHeroCopy">
           <span className="kicker">{manifest.eyebrow}</span>
@@ -96,11 +151,8 @@ export function PillarPage({ manifest }: PillarPageProps) {
             {manifest.accentTitle ? <em>{manifest.accentTitle}</em> : null}
           </h1>
           <p className="pillarDescription">{manifest.description}</p>
-          <div className="directAnswer" data-direct-answer="true">
-            <span>Direct answer</span>
-            <p>{manifest.directAnswer}</p>
-          </div>
           <div className="pillarMeta" aria-label="Review metadata">
+            <span>Published 2026-08-15</span>
             <span>Reviewed {manifest.lastReviewed}</span>
             <span>{evidenceCount} linked evidence items</span>
             <span>No universal score</span>
@@ -138,7 +190,16 @@ export function PillarPage({ manifest }: PillarPageProps) {
                 <span className="pillarCategory">{agent.category}</span>
               </div>
               <h3>{agent.name}</h3>
-              <p>{agent.description}</p>
+              <p>
+                {agent.description}
+                <sup aria-label={`${agent.name} citations`}>
+                  {agent.evidence.map((item, index) => (
+                    <a href={item.url} key={item.url} rel="noreferrer" title={item.label}>
+                      [{index + 1}]
+                    </a>
+                  ))}
+                </sup>
+              </p>
               <div className="pillarTags">
                 {agent.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
@@ -167,26 +228,13 @@ export function PillarPage({ manifest }: PillarPageProps) {
           <h2>Evidence first. Ranking claims last.</h2>
         </div>
         <div className="pillarMethodGrid">
-          <article>
-            <span>01</span>
-            <strong>Match intent</strong>
-            <p>Compare products that solve the same user job before crossing categories.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <strong>Verify claims</strong>
-            <p>Prefer official product, documentation, and pricing sources with retrieval dates.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <strong>Expose uncertainty</strong>
-            <p>Do not convert incomplete evidence into a universal score, badge, or winner.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <strong>Refresh material facts</strong>
-            <p>Pricing, availability, integrations, and product capabilities can change.</p>
-          </article>
+          {methodologySteps.map((step, index) => (
+            <article key={step.name}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{step.name}</strong>
+              <p>{step.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 

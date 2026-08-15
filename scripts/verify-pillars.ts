@@ -34,6 +34,12 @@ const emitsAggregateRating =
 
 assert(!emitsAggregateRating, "Pillar structured data must not emit AggregateRating.");
 assert(!/\b(score|rating)\s*:/i.test(dataSource), "Pillar data must not define unsupported score/rating fields.");
+assert(pillarSource.includes('"@type": "FAQPage"'), "Pillars must emit FAQPage when visible FAQs exist.");
+assert(pillarSource.includes('"@type": "HowTo"'), "Pillars must emit HowTo for the visible evaluation process.");
+assert(pillarSource.includes("SpeakableSpecification"), "Pillars must expose speakable direct-answer content.");
+assert(pillarSource.includes("datePublished"), "Pillars must expose datePublished.");
+assert(pillarSource.includes("dateModified"), "Pillars must expose dateModified.");
+assert(pillarSource.includes("<DirectAnswer"), "Pillars must render structured direct-answer microdata.");
 
 for (const slug of requiredSlugs) {
   const manifest = pillarManifests[slug];
@@ -42,8 +48,8 @@ for (const slug of requiredSlugs) {
 
   const directAnswerWords = wordCount(manifest.directAnswer);
   assert(
-    directAnswerWords >= 40 && directAnswerWords <= 120,
-    `${slug} direct answer must be 40-120 words; got ${directAnswerWords}.`,
+    directAnswerWords >= 40 && directAnswerWords <= 60,
+    `${slug} direct answer must be 40-60 words; got ${directAnswerWords}.`,
   );
 
   assert(manifest.agents.length >= 3, `${slug} must have at least three evidence-backed candidates.`);

@@ -1,32 +1,261 @@
-"use client";
-import { useMemo, useState } from "react";
+import type { Metadata } from "next";
+import Image from "next/image";
+import heroImage from "../public/bestaiagent-business-solutions.webp";
+import { AgentExplorer } from "@/src/components/home/AgentExplorer";
+import { DirectAnswer } from "@/src/components/seo/DirectAnswer";
+import { PageJsonLd } from "@/src/components/seo/PageJsonLd";
+import { pillarManifests } from "@/src/data/pillars";
 
-const agents = [
-  { name:"Claude Code", company:"Anthropic", category:"Coding", score:9.2, india:8.4, price:"Usage-based", badge:"Editor pick", tone:"violet", desc:"Terminal-first coding agent for repository-scale implementation and debugging.", evidence:18 },
-  { name:"Cursor", company:"Anysphere", category:"Coding", score:9.0, india:8.8, price:"Free + paid", badge:"India popular", tone:"cyan", desc:"AI-native code editor with agent mode, codebase context, and model choice.", evidence:21 },
-  { name:"Lindy", company:"Lindy.ai", category:"Automation", score:8.6, india:7.8, price:"Free + paid", badge:"No-code", tone:"pink", desc:"Build workflow agents for inbox, meetings, support, and business operations.", evidence:14 },
-  { name:"CrewAI", company:"CrewAI", category:"Frameworks", score:8.7, india:9.1, price:"Open source", badge:"Self-hostable", tone:"amber", desc:"Python framework for role-based multi-agent teams and enterprise workflows.", evidence:17 },
-  { name:"n8n", company:"n8n GmbH", category:"Automation", score:8.9, india:9.0, price:"Open source", badge:"Best value", tone:"green", desc:"Visual workflow automation with AI nodes, integrations, and self-hosting.", evidence:23 },
-  { name:"Vapi", company:"Vapi", category:"Voice", score:8.5, india:8.2, price:"Usage-based", badge:"Voice stack", tone:"blue", desc:"Developer platform for low-latency, programmable voice AI agents.", evidence:15 },
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "BestAIAgent.in — Evidence-Led AI Agent Discovery",
+  description:
+    "Compare AI agents by workflow fit, first-party evidence, deployment constraints, and India-specific buying context.",
+  alternates: { canonical: "https://bestaiagent.in/" },
+};
+
+const reviewedOn = "2026-08-15";
+const homepageManifest = pillarManifests["best-ai-agent"];
+const agents = homepageManifest.agents;
+const evidence = homepageManifest.evidence;
+const uniqueEvidenceCount = new Set(evidence.map((item) => item.url)).size;
+
+const directAnswer =
+  "BestAIAgent.in helps you compare AI agents by the job you need done, the evidence vendors publish, deployment and integration constraints, and India-specific buying context. Start with coding, business delegation, or automation, then verify capabilities and commercial terms using the source links shown beside each product.";
+
+const categories = [
+  ["Coding", "Repository, editor, terminal, and pull-request workflows"],
+  ["Automation", "Connected workflows with explicit controls and integrations"],
+  ["Business", "Inbox, meetings, delegation, and operational workflows"],
+  ["Research", "Search, synthesis, provenance, and evidence workflows"],
+  ["Voice", "Conversational phone and speech agent experiences"],
+  ["Frameworks", "Custom orchestration, tools, memory, and multi-agent systems"],
 ];
-const categories = [["Coding","34","Code, test, review, ship"],["Automation","28","Connect work across tools"],["Research","19","Search, synthesise, cite"],["Voice","16","Build phone and speech agents"],["Frameworks","23","Orchestrate custom agents"],["Sales & support","31","Qualify, assist, retain"]];
-const nav = ["Discover","Compare","India Fit","Methodology","Learn"];
 
-export default function Home(){
-  const [query,setQuery]=useState(""); const [active,setActive]=useState("All"); const [compare,setCompare]=useState<string[]>([]);
-  const filtered=useMemo(()=>agents.filter(a=>(active==="All"||a.category===active)&&`${a.name} ${a.company} ${a.category} ${a.desc}`.toLowerCase().includes(query.toLowerCase())),[active,query]);
-  const jump=(id:string)=>document.getElementById(id)?.scrollIntoView({behavior:"smooth"});
-  const toggle=(name:string)=>setCompare(c=>c.includes(name)?c.filter(x=>x!==name):c.length<3?[...c,name]:c);
-  return <main>
-    <header className="topbar"><a className="brand" href="#top"><span className="brandMark">B</span><span>BestAI<span>Agent</span><b>.in</b></span></a><nav>{nav.map(x=><button key={x} onClick={()=>jump(x.toLowerCase().replace(" ","-"))}>{x}</button>)}</nav><div className="headerActions"><button className="ghost" onClick={()=>jump("methodology")}>How we score</button><button className="primary small" onClick={()=>jump("discover")}>Find an agent</button></div></header>
-    <section className="hero" id="top"><div className="aurora one"/><div className="aurora two"/><div className="eyebrow"><span/> Independent AI agent intelligence for India</div><h1>Find the right AI agent.<br/><em>Evidence, not hype.</em></h1><p className="heroCopy">Discover, compare, and evaluate AI agents with transparent scoring, source-backed claims, INR context, deployment options, and India Fit analysis.</p><div className="searchShell"><span className="searchIcon">⌕</span><input value={query} onChange={e=>setQuery(e.target.value)} onFocus={()=>jump("discover")} placeholder="Search agents by task, product, or category…" aria-label="Search AI agents"/><button onClick={()=>jump("discover")}>Explore agents →</button></div><div className="heroNotes"><span>✓ No pay-to-rank</span><span>✓ Sources shown</span><span>✓ India-specific context</span></div><div className="heroShowcase"><img src="/bestaiagent-business-solutions.webp" alt="BestAIAgent.in business AI solutions for automation, productivity, customer experience, insights, innovation, and growth" width="1400" height="699" fetchPriority="high"/><div className="showcaseGlow"/><span className="showcaseLabel">Explore AI solutions across every industry</span></div><div className="heroStats"><div><strong>150+</strong><span>Curated agents</span></div><div><strong>30+</strong><span>Evaluation fields</span></div><div><strong>₹ + $</strong><span>Pricing context</span></div><div><strong>100%</strong><span>Methodology visible</span></div></div></section>
-    <section className="section categories" id="categories"><div className="sectionHead"><div><span className="kicker">Explore the ecosystem</span><h2>Start with what you need to accomplish</h2></div><button className="textButton" onClick={()=>{setActive("All");jump("discover")}}>View all categories →</button></div><div className="categoryGrid">{categories.map(([name,count,desc],i)=><button key={name} className="categoryCard" onClick={()=>{setActive(["Coding","Automation","Voice","Frameworks"].includes(name)?name:"All");jump("discover")}}><span className="catIcon">{["⌘","↗","◎","◉","◇","✦"][i]}</span><strong>{name}</strong><p>{desc}</p><small>{count} evaluated tools <b>→</b></small></button>)}</div></section>
-    <section className="section directory" id="discover"><div className="sectionHead"><div><span className="kicker">Evidence-led directory</span><h2>Leading AI agents, clearly compared</h2><p>Scores are editorial assessments—not vendor claims. Inspect evidence, limitations, and update dates.</p></div><div className="updated"><i/> Research updated Aug 2026</div></div><div className="filters">{["All","Coding","Automation","Frameworks","Voice"].map(x=><button key={x} className={active===x?"active":""} onClick={()=>setActive(x)}>{x}</button>)}</div><div className="agentGrid">{filtered.map((a,i)=><article className="agentCard" key={a.name}><div className="cardTop"><span className={`agentLogo ${a.tone}`}>{a.name.slice(0,2)}</span><span className="rank">#{i+1}</span><button aria-label={`Compare ${a.name}`} className={compare.includes(a.name)?"compare active":"compare"} onClick={()=>toggle(a.name)}>⇄</button></div><span className="badge">{a.badge}</span><h3>{a.name}</h3><small>{a.company} · {a.category}</small><p>{a.desc}</p><div className="scores"><div><span>Editorial score</span><strong>{a.score}<small>/10</small></strong></div><div><span>India Fit</span><strong>{a.india}<small>/10</small></strong></div></div><div className="cardMeta"><span>{a.price}</span><span>{a.evidence} evidence items</span></div><button className="profile" onClick={()=>jump("methodology")}>View evidence profile <span>→</span></button></article>)}</div>{!filtered.length&&<div className="empty">No matching agents yet. Try a broader task or category.</div>}</section>
-    <section className="compareBand" id="compare"><div><span className="kicker">Decision workspace</span><h2>Compare agents without opening twelve tabs.</h2><p>Build a side-by-side matrix for capabilities, pricing, privacy, deployment, integrations, evidence quality, and India Fit.</p><button className="primary" onClick={()=>jump("discover")}>{compare.length?`Compare ${compare.join(" vs ")}`:"Choose agents to compare"} →</button></div><div className="matrix"><div className="matrixHead"><span>Evaluation signal</span><b>Cursor</b><b>Claude Code</b></div>{[["Repository context","Strong","Strong"],["Editor experience","Native","Terminal"],["Self-host option","No","No"],["India Fit","8.8","8.4"],["Evidence status","Verified","Verified"]].map(r=><div key={r[0]}><span>{r[0]}</span><strong>{r[1]}</strong><strong>{r[2]}</strong></div>)}</div></section>
-    <section className="section india" id="india-fit"><div className="indiaVisual"><div className="mapOrb">₹<span>INDIA<br/>FIT</span></div><div className="orbit o1"/><div className="orbit o2"/></div><div className="indiaCopy"><span className="kicker">Built for Indian decisions</span><h2>Global tools. Local buying reality.</h2><p>BestAIAgent.in separates global marketing from practical India readiness. Every India Fit score is built from observable signals—not a flag icon.</p><div className="indiaGrid">{[["₹","Pricing","INR context, taxes, payment support"],["अ","Language","Indic language and speech capability"],["⌂","Deployment","Cloud, regional, or self-hosted options"],["◈","Compliance","Privacy terms and DPDP-relevant signals"]].map(([ic,t,c])=><div key={t}><span>{ic}</span><div><strong>{t}</strong><p>{c}</p></div></div>)}</div><button className="secondary" onClick={()=>jump("methodology")}>See India Fit methodology →</button></div></section>
-    <section className="method" id="methodology"><div className="methodIntro"><span className="kicker">Trust layer</span><h2>Every score should be explainable.</h2><p>We show what was tested, what came from a primary source, what remains uncertain, and when each claim was last checked.</p></div><div className="methodSteps">{[["01","Collect","Official documentation, releases, policies, pricing, and hands-on observations."],["02","Verify","Claims receive a source, retrieval date, region, confidence, and review status."],["03","Evaluate","Products are assessed against a published rubric with known limitations."],["04","Refresh","Material changes trigger review; stale commercial claims are clearly marked."]].map(([n,t,c])=><div key={n}><span>{n}</span><strong>{t}</strong><p>{c}</p></div>)}</div></section>
-    <section className="section learn" id="learn"><div className="sectionHead"><div><span className="kicker">Learn before you buy</span><h2>Practical AI agent field guides</h2></div><button className="textButton">Explore the knowledge hub →</button></div><div className="learnGrid">{[["Primer","GenAI 101 for India","Models, tokens, context, privacy, cost, and safe adoption."],["Reasoning","CoT, ToT & tool use","Reasoning patterns without confusing fluency for proof."],["Retrieval","Vector search & RAG","Semantic search with provenance, permissions, and evaluation."],["Ecosystem","India AI landscape","IndiaAI, BHASHINI, DPDP, and multilingual reality."]].map(([tag,title,copy],i)=><article key={title}><div className="learnArt"><span>{["AI","∴","↗","IN"][i]}</span></div><small>{tag}</small><h3>{title}</h3><p>{copy}</p><button>Read field guide →</button></article>)}</div></section>
-    <section className="cta"><span className="kicker">Make a confident choice</span><h2>Your next AI agent should earn its place.</h2><p>Search the directory, inspect the evidence, and compare the trade-offs that matter to your team.</p><div><button className="primary" onClick={()=>jump("discover")}>Find my AI agent →</button><button className="secondary" onClick={()=>jump("compare")}>Open comparison</button></div></section>
-    <footer><div className="brand"><span className="brandMark">B</span><span>BestAI<span>Agent</span><b>.in</b></span></div><p>Independent AI-agent discovery, comparisons, and India-first evaluation.</p><div className="footerLinks"><a href="#discover">Directory</a><a href="#compare">Compare</a><a href="#india-fit">India Fit</a><a href="#methodology">Methodology</a><a href="#learn">Learn</a></div><small>© 2026 BestAIAgent.in · Scores reflect published methodology and available evidence, not guarantees.</small></footer>
-  </main>
+const methodology = [
+  ["01", "Match intent", "Compare products that solve the same user job before crossing categories."],
+  ["02", "Verify claims", "Prefer official product, documentation, and pricing sources with review dates."],
+  ["03", "Expose uncertainty", "Do not turn incomplete evidence into a universal winner or fabricated score."],
+  ["04", "Refresh", "Recheck material product, pricing, availability, and integration facts as they change."],
+];
+
+export default function Home() {
+  return (
+    <main>
+      <PageJsonLd
+        url="https://bestaiagent.in/"
+        title="BestAIAgent.in — Evidence-Led AI Agent Discovery"
+        description="Compare AI agents by workflow fit, first-party evidence, deployment constraints, and India-specific buying context."
+        datePublished={reviewedOn}
+        dateModified={reviewedOn}
+        about={["AI agents", "AI coding agents", "Agentic automation", "India AI adoption"]}
+      />
+
+      <header className="topbar">
+        <a className="brand" href="#top">
+          <span className="brandMark">B</span>
+          <span>
+            BestAI<span>Agent</span><b>.in</b>
+          </span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#discover">Discover</a>
+          <a href="#compare">Compare</a>
+          <a href="#india-fit">India Fit</a>
+          <a href="#methodology">Methodology</a>
+          <a href="/resources">Learn</a>
+        </nav>
+        <div className="headerActions">
+          <a className="ghost" href="#methodology">How we verify</a>
+          <a className="primary small" href="#discover">Find an agent</a>
+        </div>
+      </header>
+
+      <div style={{ maxWidth: 1180, margin: "0 auto", padding: "24px 20px 0" }}>
+        <DirectAnswer
+          question="How do I choose the best AI agent?"
+          answer={directAnswer}
+          sources={evidence.map((item) => ({ label: item.label, url: item.url }))}
+        />
+      </div>
+
+      <section className="hero" id="top">
+        <div className="aurora one" />
+        <div className="aurora two" />
+        <div className="eyebrow"><span /> Independent AI agent intelligence for India</div>
+        <h1>
+          Find the right AI agent.<br />
+          <em>Evidence, not hype.</em>
+        </h1>
+        <p className="heroCopy">
+          Discover and compare AI agents with visible source evidence, deployment context,
+          practical workflow fit, and India-specific considerations.
+        </p>
+        <div style={{ marginTop: 32 }}>
+          <a className="primary" href="#discover">Explore evidence-backed agents →</a>
+        </div>
+        <div className="heroNotes">
+          <span>✓ No pay-to-rank claim</span>
+          <span>✓ Sources shown beside products</span>
+          <span>✓ Review dates exposed</span>
+        </div>
+        <div className="heroShowcase">
+          <Image
+            src={heroImage}
+            alt="BestAIAgent.in visual guide to business AI solutions across automation, productivity, customer experience, insights, innovation, and growth"
+            sizes="(max-width: 768px) 100vw, 1180px"
+            quality={75}
+            preload
+            placeholder="blur"
+          />
+          <div className="showcaseGlow" />
+          <span className="showcaseLabel">Explore AI solutions by workflow and evidence</span>
+        </div>
+        <div className="heroStats" aria-label="Current evidence dataset summary">
+          <div><strong>{agents.length}</strong><span>Evidence-backed candidates</span></div>
+          <div><strong>{uniqueEvidenceCount}</strong><span>Primary / first-party sources</span></div>
+          <div><strong>5</strong><span>Priority evidence pillars</span></div>
+          <div><strong>15 Aug</strong><span>Current review date</span></div>
+        </div>
+      </section>
+
+      <section className="section categories" id="categories">
+        <div className="sectionHead">
+          <div>
+            <span className="kicker">Explore the ecosystem</span>
+            <h2>Start with what you need to accomplish</h2>
+          </div>
+          <a className="textButton" href="/categories">View all categories →</a>
+        </div>
+        <div className="categoryGrid">
+          {categories.map(([name, description], index) => (
+            <a className="categoryCard" href="#discover" key={name}>
+              <span className="catIcon">{["⌘", "↗", "◎", "◉", "◇", "✦"][index]}</span>
+              <strong>{name}</strong>
+              <p>{description}</p>
+              <small>Inspect evidence <b>→</b></small>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="section directory" id="discover">
+        <div className="sectionHead">
+          <div>
+            <span className="kicker">Evidence-led directory</span>
+            <h2>Compare products by fit and provenance</h2>
+            <p>
+              The shortlist below is rendered from the same evidence-backed pillar data used by
+              the canonical comparison pages. Product claims link to their current source.
+            </p>
+          </div>
+          <div className="updated"><i /> Research reviewed 15 Aug 2026</div>
+        </div>
+        <AgentExplorer agents={agents} />
+      </section>
+
+      <section className="compareBand" id="compare">
+        <div>
+          <span className="kicker">Decision workspace</span>
+          <h2>Compare like-for-like workflows before choosing.</h2>
+          <p>
+            Coding agents, business assistants, and automation systems solve different jobs.
+            Use the evidence shortlist to compare products inside the same intent before crossing categories.
+          </p>
+          <a className="primary" href="/best-ai-agent">Open the evidence comparison →</a>
+        </div>
+        <div className="matrix" aria-label="Evidence comparison checklist">
+          <div className="matrixHead"><span>Evaluation signal</span><b>Verify</b><b>Record</b></div>
+          {[
+            ["Workflow fit", "Primary docs", "Use case"],
+            ["Deployment", "Vendor docs", "Constraints"],
+            ["Integrations", "Current docs", "Required tools"],
+            ["Commercial terms", "Official pricing", "Region/date"],
+            ["Evidence status", "Source URL", "Verified date"],
+          ].map((row) => (
+            <div key={row[0]}><span>{row[0]}</span><strong>{row[1]}</strong><strong>{row[2]}</strong></div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section india" id="india-fit">
+        <div className="indiaVisual">
+          <div className="mapOrb">₹<span>INDIA<br />FIT</span></div>
+          <div className="orbit o1" />
+          <div className="orbit o2" />
+        </div>
+        <div className="indiaCopy">
+          <span className="kicker">Built for Indian decisions</span>
+          <h2>Global tools. Local buying reality.</h2>
+          <p>
+            India Fit is kept separate from global product capability so regional availability,
+            pricing, language, deployment, and privacy context can be evaluated without inventing a score.
+          </p>
+          <div className="indiaGrid">
+            {[
+              ["₹", "Pricing", "Published India pricing or clearly labelled regional context"],
+              ["अ", "Language", "Documented multilingual and speech capabilities"],
+              ["⌂", "Deployment", "Managed, regional, API, or self-hosting options"],
+              ["◈", "Privacy", "Published privacy, retention, and data-use information"],
+            ].map(([icon, title, copy]) => (
+              <div key={title}><span>{icon}</span><div><strong>{title}</strong><p>{copy}</p></div></div>
+            ))}
+          </div>
+          <a className="secondary" href="/built-in-india">See India Fit methodology →</a>
+        </div>
+      </section>
+
+      <section className="method" id="methodology">
+        <div className="methodIntro">
+          <span className="kicker">Trust layer</span>
+          <h2>Every material product claim should be traceable.</h2>
+          <p>
+            The publishing contract stores source URLs and verification dates beside product evidence,
+            and avoids turning missing evidence into a confident rating.
+          </p>
+        </div>
+        <div className="methodSteps">
+          {methodology.map(([number, title, copy]) => (
+            <div key={number}><span>{number}</span><strong>{title}</strong><p>{copy}</p></div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section learn" id="learn">
+        <div className="sectionHead">
+          <div><span className="kicker">Learn before you buy</span><h2>Practical AI agent field guides</h2></div>
+          <a className="textButton" href="/resources">Explore the knowledge hub →</a>
+        </div>
+        <div className="learnGrid">
+          {[
+            ["Primer", "GenAI 101 for India", "Models, context, privacy, cost, and adoption basics."],
+            ["Reasoning", "Reasoning & tool use", "How agentic systems combine model output with tools and controls."],
+            ["Retrieval", "Vector search & RAG", "Retrieval, provenance, permissions, and evaluation fundamentals."],
+            ["Ecosystem", "India AI landscape", "Regional language, policy, deployment, and adoption context."],
+          ].map(([tag, title, copy], index) => (
+            <article key={title}>
+              <div className="learnArt"><span>{["AI", "∴", "↗", "IN"][index]}</span></div>
+              <small>{tag}</small><h3>{title}</h3><p>{copy}</p>
+              <a href="/resources">Read field guide →</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="cta">
+        <span className="kicker">Make a defensible choice</span>
+        <h2>Your next AI agent should earn its place.</h2>
+        <p>Start with the job, inspect the evidence, and document the trade-offs that matter to your team.</p>
+        <div><a className="primary" href="#discover">Find an AI agent →</a><a className="secondary" href="/best-ai-agent">Compare evidence</a></div>
+      </section>
+
+      <footer>
+        <div className="brand"><span className="brandMark">B</span><span>BestAI<span>Agent</span><b>.in</b></span></div>
+        <p>Independent AI-agent discovery, comparisons, and India-first evaluation.</p>
+        <div className="footerLinks"><a href="#discover">Directory</a><a href="#compare">Compare</a><a href="/built-in-india">India Fit</a><a href="#methodology">Methodology</a><a href="/resources">Learn</a></div>
+        <small>© 2026 BestAIAgent.in · Editorial shortlists reflect published methodology and available evidence, not guarantees.</small>
+      </footer>
+    </main>
+  );
 }

@@ -2,16 +2,20 @@
 
 > Evidence-led AI agent discovery, comparison, and India-first evaluation.
 
+Last reviewed: 2026-08-15
+Canonical origin: https://bestaiagent.in
+
 ## Purpose
-BestAIAgent.in helps people discover, compare, and evaluate AI agents, automation tools, coding agents, research systems, voice agents, and agent frameworks using transparent editorial criteria.
+BestAIAgent.in helps people discover, compare, and evaluate AI agents, automation tools, coding agents, research systems, voice agents, and agent frameworks using transparent editorial criteria and visible source provenance.
 
 ## Core principles
 - Evidence before rankings.
 - Primary vendor sources for product and pricing facts whenever available.
-- India Fit is assessed separately from global product quality.
+- India Fit is assessed separately from global product capability.
 - INR values are estimates unless explicitly sourced from an official India price.
 - Do not infer a universal winner from products built for different workflows.
 - Unsupported ratings, testimonials, certifications, and partnership claims are not published.
+- Unknown or stale product facts should remain unknown or be marked for review rather than guessed.
 
 ## Priority pillars
 - Best AI Agent: https://bestaiagent.in/best-ai-agent
@@ -26,8 +30,34 @@ BestAIAgent.in helps people discover, compare, and evaluate AI agents, automatio
 - India Fit: https://bestaiagent.in/built-in-india
 - Marketplace: https://bestaiagent.in/marketplace
 - Resources: https://bestaiagent.in/resources
-- Comparison workspace: https://bestaiagent.in/#compare
+- Comparison guidance: https://bestaiagent.in/#compare
 - Methodology summary: https://bestaiagent.in/#methodology
+
+## Structured-data contract
+Canonical HTML pages can expose the following Schema.org types when matching content is visibly present:
+- Organization
+- WebSite
+- WebPage
+- BreadcrumbList
+- ItemList
+- SoftwareApplication
+- FAQPage
+- HowTo
+- SpeakableSpecification
+- Question
+- Answer
+- Thing
+
+The `.aeoDirectAnswer` selector identifies the concise answer block referenced by SpeakableSpecification. FAQPage and HowTo markup must correspond to user-visible FAQ and step content; schema-only hidden claims are not part of the publishing contract.
+
+## Direct-answer contract
+Indexable HTML pages expose a visible structured direct-answer block near the start of the page. Priority pillar direct answers are constrained to 40-60 words. The block uses Question/Answer microdata and may include superscript links to supporting first-party sources.
+
+## Freshness contract
+- Canonical WebPage JSON-LD includes `datePublished` and `dateModified`.
+- Product evidence stores a `verifiedOn` date beside the source URL.
+- Commercial facts such as price, availability, integrations, and capabilities should be rechecked when material changes are possible.
+- A review date is a freshness signal, not a guarantee that a vendor has not changed information after that date.
 
 ## Entity types
 - AI agent
@@ -39,9 +69,18 @@ BestAIAgent.in helps people discover, compare, and evaluate AI agents, automatio
 - Category
 - Comparison
 - Methodology
+- Organization
+- Place
+- Person
 
 ## Citation guidance
-When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product claims should be corroborated with the linked primary or first-party source where available.
+When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product-specific factual claims should also be corroborated with the linked primary or first-party source where available. Superscript source links in direct answers and product descriptions expose the evidence used by the page.
+
+## Crawler guidance
+- Prefer canonical HTTPS URLs on `https://bestaiagent.in`.
+- Use `https://bestaiagent.in/sitemap.xml` for canonical discovery.
+- Use this file for site structure and `https://bestaiagent.in/llms-full.txt` for expanded machine-readable context.
+- Do not treat editorial shortlists, ordering, or inclusion as objective guarantees or paid endorsements.
 
 ## Important limitation
 The directory is curated and continuously evolving. Availability, pricing, model capabilities, integrations, and regional support can change. Do not treat editorial shortlists as objective guarantees.

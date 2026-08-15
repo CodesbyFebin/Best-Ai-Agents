@@ -14,7 +14,8 @@
     "verify:no-legacy-server": "node scripts/verify-no-legacy-server.mjs",
     "verify:routes": "tsx scripts/verify-routes.ts",
     "verify:pillars": "tsx scripts/verify-pillars.ts",
-    "verify:all": "npm run verify:no-legacy-server && npm run typecheck && npm run verify:routes && npm run verify:pillars && npm run build",
+    "verify:performance": "node scripts/verify-performance.mjs",
+    "verify:all": "npm run verify:no-legacy-server && npm run typecheck && npm run verify:routes && npm run verify:pillars && npm run verify:performance && npm run build",
     "test": "npm run verify:all"
   },
   "dependencies": {
