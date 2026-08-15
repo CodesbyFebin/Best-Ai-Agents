@@ -7,47 +7,67 @@ Purpose: independent AI agent discovery and evidence-led comparison.
 
 ## Primary user journeys
 1. Discover agents by task or category.
-2. Compare shortlisted tools across capabilities, pricing, deployment, privacy, integrations, evidence quality, and India Fit.
-3. Learn how the editorial methodology works.
-4. Read India-specific adoption guidance.
+2. Compare products inside a shared user workflow before crossing categories.
+3. Inspect first-party evidence and review dates for material product claims.
+4. Evaluate India-specific adoption context separately from global product capability.
+5. Learn how agentic workflows, coding agents, automation platforms, and related systems differ.
 
-## Homepage sections
-- Hero: search and discovery
-- Categories: Coding, Automation, Research, Voice, Frameworks, Sales & support
-- Directory: curated agent cards with editorial score, India Fit, price context, and evidence count
-- Comparison workspace
-- India Fit methodology
-- Editorial methodology
-- Learning field guides
-- Decision CTA
+## Priority pillar documents
+- https://bestaiagent.in/best-ai-agent
+- https://bestaiagent.in/best-ai-agent-for-business
+- https://bestaiagent.in/best-ai-agent-for-coding
+- https://bestaiagent.in/best-ai-agent-alternatives
+- https://bestaiagent.in/best-ai-agents-for-automation
 
-## Current featured examples
-- Claude Code — Anthropic — Coding
-- Cursor — Anysphere — Coding
-- Lindy — Lindy.ai — Automation
-- CrewAI — CrewAI — Frameworks
-- n8n — n8n GmbH — Automation
-- Vapi — Vapi — Voice
+Each pillar contains:
+- a direct answer near the top of the page
+- a workflow-specific evidence shortlist
+- first-party or primary-source links with verification dates
+- visible methodology and limitations
+- FAQ answers that match visible page content
+- BreadcrumbList, ItemList, FAQPage, and WebPage structured data
+- no AggregateRating or unsupported universal winner claim
+
+## Canonical discovery surfaces
+- Homepage: https://bestaiagent.in/
+- Categories: https://bestaiagent.in/categories
+- India Fit: https://bestaiagent.in/built-in-india
+- Marketplace: https://bestaiagent.in/marketplace
+- Resources: https://bestaiagent.in/resources
+
+## Current evidence-backed examples on priority pillars
+- Claude Code — Coding — Anthropic documentation
+- Cursor — Coding — Cursor product/pricing sources, including official India-specific Cursor Start evidence
+- GitHub Copilot — Coding — GitHub Copilot agents documentation
+- Lindy — Business — Lindy product/pricing documentation
+- n8n — Automation — n8n AI agents product documentation
+- AI by Zapier — Automation — Zapier migration and product documentation
 
 ## Evaluation signals
-- Editorial score
-- India Fit
-- Pricing model
-- Evidence count
+- Workflow fit
+- First-party evidence quality and freshness
+- Integration model
 - Deployment model
-- Privacy/compliance signals
-- Integrations and workflow fit
+- Human approval and deterministic controls where relevant
+- Pricing and regional availability where directly sourced
+- India-specific buying and deployment context
 
 ## Editorial safeguards
-- No pay-to-rank claim is used in the interface.
-- Scores are editorial assessments.
-- Product claims should be tied to evidence and reviewed periodically.
-- INR context must be distinguished from official local pricing.
-- Do not infer certification, endorsement, partnership, or rating claims without direct evidence.
+- Evidence before rankings.
+- Products designed for different jobs are not forced into one universal score.
+- Unsupported ratings, testimonials, certifications, partnerships, and endorsements are excluded.
+- Product facts should be tied to first-party or primary evidence and reviewed periodically.
+- INR context must be distinguished from official local pricing; official India pricing is labelled as such only when the vendor publishes it.
+- Availability, pricing, capabilities, integrations, and regional support can change after the verification date.
 
 ## Canonical navigation
-https://bestaiagent.in/#discover
-https://bestaiagent.in/#compare
-https://bestaiagent.in/#india-fit
-https://bestaiagent.in/#methodology
-https://bestaiagent.in/#learn
+https://bestaiagent.in/
+https://bestaiagent.in/best-ai-agent
+https://bestaiagent.in/best-ai-agent-for-business
+https://bestaiagent.in/best-ai-agent-for-coding
+https://bestaiagent.in/best-ai-agent-alternatives
+https://bestaiagent.in/best-ai-agents-for-automation
+https://bestaiagent.in/categories
+https://bestaiagent.in/built-in-india
+https://bestaiagent.in/marketplace
+https://bestaiagent.in/resources
