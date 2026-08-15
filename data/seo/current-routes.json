@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T07:40:06.179Z",
-  "source": "src/routing/routeRegistry.ts + app/sitemap.ts + catalog verification",
+  "generatedAt": "2026-08-15T08:19:00.751Z",
+  "source": "src/routing/routeRegistry.ts (single source of truth) + data/seo/historical-canonical-urls.json",
   "canonicalOrigin": "https://bestaiagent.in",
   "preferredProtocol": "https",
   "preferredHostname": "bestaiagent.in",
@@ -13,206 +13,158 @@
       "kind": "home",
       "indexable": true,
       "sitemap": true,
-      "source": "app/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/models",
       "kind": "directory",
       "indexable": true,
       "sitemap": true,
-      "source": "app/models/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/models/:slug",
       "kind": "model",
       "indexable": true,
       "sitemap": false,
-      "source": "app/models/[slug]/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/agents",
       "kind": "directory",
       "indexable": true,
       "sitemap": true,
-      "source": "app/agents/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/agents/:slug",
       "kind": "agent",
       "indexable": true,
       "sitemap": false,
-      "source": "app/agents/[slug]/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/providers",
       "kind": "directory",
       "indexable": true,
       "sitemap": true,
-      "source": "app/providers/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/providers/:slug",
       "kind": "provider",
       "indexable": true,
       "sitemap": false,
-      "source": "app/providers/[slug]/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/categories",
       "kind": "directory",
       "indexable": true,
       "sitemap": true,
-      "source": "app/categories/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
+    },
+    {
+      "path": "/categories/:slug",
+      "kind": "category",
+      "indexable": true,
+      "sitemap": false,
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/compare",
       "kind": "comparison",
       "indexable": true,
       "sitemap": true,
-      "source": "app/compare/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
+    },
+    {
+      "path": "/compare/:pair",
+      "kind": "comparison",
+      "indexable": true,
+      "sitemap": false,
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/best-ai-agent",
       "kind": "pillar",
       "indexable": true,
       "sitemap": true,
-      "source": "app/best-ai-agent/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/best-ai-agent-for-business",
       "kind": "pillar",
       "indexable": true,
       "sitemap": true,
-      "source": "app/best-ai-agent-for-business/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/best-ai-agent-for-coding",
       "kind": "pillar",
       "indexable": true,
       "sitemap": true,
-      "source": "app/best-ai-agent-for-coding/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/best-ai-agent-alternatives",
       "kind": "pillar",
       "indexable": true,
       "sitemap": true,
-      "source": "app/best-ai-agent-alternatives/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/best-ai-agents-for-automation",
       "kind": "pillar",
       "indexable": true,
       "sitemap": true,
-      "source": "app/best-ai-agents-for-automation/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/built-in-india",
       "kind": "document",
       "indexable": true,
       "sitemap": true,
-      "source": "app/built-in-india/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/marketplace",
       "kind": "directory",
       "indexable": true,
       "sitemap": true,
-      "source": "app/marketplace/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/resources",
       "kind": "document",
       "indexable": true,
       "sitemap": true,
-      "source": "app/resources/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/about",
       "kind": "document",
       "indexable": true,
       "sitemap": true,
-      "source": "app/about/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/methodology",
       "kind": "document",
       "indexable": true,
       "sitemap": true,
-      "source": "app/methodology/page.tsx"
+      "source": "src/routing/routeRegistry.ts"
     },
     {
       "path": "/admin",
       "kind": "admin",
       "indexable": false,
       "sitemap": false,
-      "source": "reserved"
-    },
-    {
-      "path": "/robots.txt",
-      "kind": "utility",
-      "indexable": false,
-      "sitemap": false,
-      "source": "public/robots.txt"
-    },
-    {
-      "path": "/sitemap.xml",
-      "kind": "utility",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/sitemap.ts (Next.js runtime)"
-    },
-    {
-      "path": "/llms.txt",
-      "kind": "utility",
-      "indexable": false,
-      "sitemap": false,
-      "source": "public/llms.txt"
-    },
-    {
-      "path": "/llms-full.txt",
-      "kind": "utility",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/llms-full.txt/route.ts (overrides public/llms-full.txt)"
-    },
-    {
-      "path": "/favicon.svg",
-      "kind": "asset",
-      "indexable": false,
-      "sitemap": false,
-      "source": "public/favicon.svg"
-    },
-    {
-      "path": "/agents.json",
-      "kind": "api",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/agents.json/route.ts"
-    },
-    {
-      "path": "/catalog.json",
-      "kind": "api",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/catalog.json/route.ts"
-    },
-    {
-      "path": "/models.json",
-      "kind": "api",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/models.json/route.ts"
-    },
-    {
-      "path": "/providers.json",
-      "kind": "api",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/providers.json/route.ts"
+      "source": "src/routing/routeRegistry.ts"
     }
   ],
-  "indexableCount": 19,
+  "indexableCount": 21,
   "sitemapCount": 16,
+  "historicalMerged": 20,
   "notes": "Catalog entities are currently unpublished (no entities pass isEntityIndexable). Dynamic routes will be populated once catalog ingestion runs."
 }

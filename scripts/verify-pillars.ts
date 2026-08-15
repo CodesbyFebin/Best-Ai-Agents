@@ -20,7 +20,7 @@ function wordCount(value: string) {
 }
 
 const root = process.cwd();
-const sitemapSource = fs.readFileSync(path.join(root, "app/sitemap.ts"), "utf8");
+const sitemapXml = fs.readFileSync(path.join(root, "data/seo/sitemap.xml"), "utf8");
 const llmsSource = fs.readFileSync(path.join(root, "public/llms.txt"), "utf8");
 const pillarSource = fs.readFileSync(
   path.join(root, "src/components/pillars/PillarPage.tsx"),
@@ -71,7 +71,7 @@ for (const slug of requiredSlugs) {
 
   const routeFile = path.join(root, "app", slug, "page.tsx");
   assert(fs.existsSync(routeFile), `Missing Next.js route file: app/${slug}/page.tsx`);
-  assert(sitemapSource.includes(`/${slug}`), `Sitemap source missing /${slug}`);
+  assert(sitemapXml.includes(`https://bestaiagent.in/${slug}`), `Sitemap missing canonical /${slug}`);
   assert(llmsSource.includes(`https://bestaiagent.in/${slug}`), `llms.txt missing canonical /${slug}`);
 }
 

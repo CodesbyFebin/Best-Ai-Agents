@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:40:06.178Z",
+  "generatedAt": "2026-08-15T08:19:00.750Z",
   "canonicalOrigin": "https://bestaiagent.in",
   "policy": {
     "protocol": "https",
@@ -19,7 +19,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -29,7 +29,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -45,7 +45,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.175Z",
+      "lastVerified": "2026-08-15T08:19:00.744Z",
       "notes": ""
     },
     {
@@ -56,7 +56,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/models/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -66,7 +66,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/models/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -82,7 +82,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -93,7 +93,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/agents/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -103,7 +103,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/agents/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -119,7 +119,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -130,7 +130,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/providers/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -140,7 +140,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/providers/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -156,7 +156,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -167,7 +167,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/categories/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -177,7 +177,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/categories/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -193,7 +193,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -204,7 +204,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/compare/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -214,7 +214,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/compare/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -230,7 +230,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -241,7 +241,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/best-ai-agent/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -251,7 +251,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/best-ai-agent/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -267,7 +267,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -278,7 +278,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/best-ai-agent-for-business/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -288,7 +288,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/best-ai-agent-for-business/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -304,7 +304,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -315,7 +315,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/best-ai-agent-for-coding/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -325,7 +325,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/best-ai-agent-for-coding/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -341,7 +341,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -352,7 +352,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/best-ai-agent-alternatives/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -362,7 +362,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/best-ai-agent-alternatives/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -378,7 +378,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -389,7 +389,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/best-ai-agents-for-automation/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -399,7 +399,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/best-ai-agents-for-automation/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -415,7 +415,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -426,7 +426,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/built-in-india/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -436,7 +436,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/built-in-india/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -452,7 +452,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -463,7 +463,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/marketplace/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -473,7 +473,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/marketplace/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -489,7 +489,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -500,7 +500,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/resources/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -510,7 +510,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/resources/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -526,7 +526,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -537,7 +537,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/about/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -547,7 +547,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/about/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -563,7 +563,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -574,7 +574,7 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/methodology/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         },
         {
           "type": "sitemap",
@@ -584,7 +584,7 @@
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/methodology/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         },
         {
           "type": "metadata",
@@ -600,7 +600,7 @@
       "indexable": true,
       "sitemap": true,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -611,13 +611,13 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/models/[slug]/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         }
       ],
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/models/[slug]/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         }
       ],
       "redirect": null,
@@ -625,7 +625,7 @@
       "indexable": true,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -636,13 +636,13 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/agents/[slug]/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         }
       ],
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/agents/[slug]/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         }
       ],
       "redirect": null,
@@ -650,7 +650,7 @@
       "indexable": true,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -661,13 +661,13 @@
       "sources": [
         {
           "type": "route",
-          "file": "app/providers/[slug]/page.tsx"
+          "file": "src/routing/routeRegistry.ts"
         }
       ],
       "currentEvidence": [
         {
           "type": "page",
-          "source": "app/providers/[slug]/page.tsx"
+          "source": "src/routing/routeRegistry.ts"
         }
       ],
       "redirect": null,
@@ -675,7 +675,57 @@
       "indexable": true,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/categories/:slug",
+      "path": "/categories/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/categories/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.745Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/compare/:pair",
+      "path": "/compare/:pair",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/compare/:pair",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
@@ -686,13 +736,13 @@
       "sources": [
         {
           "type": "route",
-          "file": "reserved"
+          "file": "src/routing/routeRegistry.ts"
         }
       ],
       "currentEvidence": [
         {
           "type": "page",
-          "source": "reserved"
+          "source": "src/routing/routeRegistry.ts"
         }
       ],
       "redirect": null,
@@ -700,236 +750,471 @@
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.745Z",
       "notes": ""
     },
     {
-      "url": "https://bestaiagent.in/robots.txt",
-      "path": "/robots.txt",
-      "classification": "NOT_INDEXABLE",
-      "canonical": null,
+      "url": "https://bestaiagent.in/best-ai-agents",
+      "path": "/best-ai-agents",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": "https://bestaiagent.in/best-ai-agent",
       "sources": [
         {
-          "type": "route",
-          "file": "public/robots.txt"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "public/robots.txt"
+          "type": "gsc"
         }
       ],
-      "redirect": null,
-      "status": 200,
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/best-ai-agent",
+      "status": 301,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.749Z",
       "notes": ""
     },
     {
-      "url": "https://bestaiagent.in/sitemap.xml",
-      "path": "/sitemap.xml",
-      "classification": "NOT_INDEXABLE",
-      "canonical": null,
+      "url": "https://bestaiagent.in/best-ai-agent-india",
+      "path": "/best-ai-agent-india",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": "https://bestaiagent.in/built-in-india",
       "sources": [
         {
-          "type": "route",
-          "file": "app/sitemap.ts (Next.js runtime)"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/sitemap.ts (Next.js runtime)"
+          "type": "gsc"
         }
       ],
-      "redirect": null,
-      "status": 200,
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/built-in-india",
+      "status": 301,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
+      "lastVerified": "2026-08-15T08:19:00.749Z",
       "notes": ""
     },
     {
-      "url": "https://bestaiagent.in/llms.txt",
-      "path": "/llms.txt",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/cursor-pricing",
+      "path": "/cursor-pricing",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "public/llms.txt"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "public/llms.txt"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.749Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/llms-full.txt",
-      "path": "/llms-full.txt",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/claude-code-pricing",
+      "path": "/claude-code-pricing",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "app/llms-full.txt/route.ts (overrides public/llms-full.txt)"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/llms-full.txt/route.ts (overrides public/llms-full.txt)"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.749Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/favicon.svg",
-      "path": "/favicon.svg",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/github-copilot-pricing",
+      "path": "/github-copilot-pricing",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "public/favicon.svg"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "public/favicon.svg"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.749Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/agents.json",
-      "path": "/agents.json",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/cursor-vs-codex",
+      "path": "/cursor-vs-codex",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "app/agents.json/route.ts"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/agents.json/route.ts"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.749Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/catalog.json",
-      "path": "/catalog.json",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/glossary-hub",
+      "path": "/glossary-hub",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "app/catalog.json/route.ts"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/catalog.json/route.ts"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.749Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/models.json",
-      "path": "/models.json",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/claude-code-alternatives",
+      "path": "/claude-code-alternatives",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "app/models.json/route.ts"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/models.json/route.ts"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     },
     {
-      "url": "https://bestaiagent.in/providers.json",
-      "path": "/providers.json",
-      "classification": "NOT_INDEXABLE",
+      "url": "https://bestaiagent.in/how-to-use-cursor-ai",
+      "path": "/how-to-use-cursor-ai",
+      "classification": "GONE",
       "canonical": null,
       "sources": [
         {
-          "type": "route",
-          "file": "app/providers.json/route.ts"
-        }
-      ],
-      "currentEvidence": [
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
         {
-          "type": "page",
-          "source": "app/providers.json/route.ts"
+          "type": "gsc"
         }
       ],
+      "currentEvidence": [],
       "redirect": null,
-      "status": 200,
+      "status": 410,
       "indexable": false,
       "sitemap": false,
       "robotsAllowed": true,
-      "lastVerified": "2026-08-15T07:40:06.176Z",
-      "notes": ""
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/flowise-alternatives",
+      "path": "/flowise-alternatives",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/mcp-directory",
+      "path": "/mcp-directory",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-mcp-servers",
+      "path": "/best-mcp-servers",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-free-ai-coding-agents",
+      "path": "/best-free-ai-coding-agents",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agents-for-finance",
+      "path": "/ai-agents-for-finance",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-voice-agent",
+      "path": "/best-ai-voice-agent",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agent-rankings",
+      "path": "/ai-agent-rankings",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/cursor-ai",
+      "path": "/tools/cursor-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/yellow-ai",
+      "path": "/tools/yellow-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/flowise",
+      "path": "/tools/flowise",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "path": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "historical-db",
+          "file": "data/seo/historical-canonical-urls.json"
+        },
+        {
+          "type": "gsc"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T08:19:00.750Z",
+      "notes": "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content."
     }
   ],
-  "total": 29,
-  "indexable": 19,
+  "total": 42,
+  "indexable": 21,
   "sitemapCount": 16
 }

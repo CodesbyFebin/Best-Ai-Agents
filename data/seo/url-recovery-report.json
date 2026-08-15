@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-15T07:40:06.961Z",
+  "generatedAt": "2026-08-15T08:19:01.577Z",
   "sources": {
-    "git": 5,
-    "sitemap": 3,
+    "git": 36,
+    "sitemap": 16,
     "searchConsole": 23,
     "vercel": 0,
     "searchDiscovery": 0,
-    "currentRoutes": 19
+    "currentRoutes": 21
   },
-  "totalUniqueUrls": 23,
-  "currentCanonical": 3,
+  "totalUniqueUrls": 36,
+  "currentCanonical": 16,
   "historicalCanonical": 0,
   "redirectCandidates": 2,
   "notFound": 0,
@@ -19,7 +19,7 @@
   "assets": 0,
   "unknown": 0,
   "byClassification": {
-    "CURRENT_CANONICAL": 3,
+    "CURRENT_CANONICAL": 16,
     "REDIRECT_CANDIDATE": 2,
     "GONE": 18
   }

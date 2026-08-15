@@ -175,42 +175,12 @@
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
     {
-      "from": "/best-mcp-servers",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
       "from": "/claude-code-pricing",
       "to": "",
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
     {
       "from": "/github-copilot-pricing",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
-      "from": "/best-free-ai-coding-agents",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
-      "from": "/ai-agents-for-finance",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
-      "from": "/tools/cursor-ai",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
-      "from": "/tools/yellow-ai",
-      "to": "",
-      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
-    },
-    {
-      "from": "/tools/flowise",
       "to": "",
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
@@ -245,12 +215,42 @@
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
     {
+      "from": "/best-mcp-servers",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-free-ai-coding-agents",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/ai-agents-for-finance",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
       "from": "/best-ai-voice-agent",
       "to": "",
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
     {
       "from": "/ai-agent-rankings",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/cursor-ai",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/yellow-ai",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/flowise",
       "to": "",
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     },
@@ -267,22 +267,35 @@
     "/best-ai-agents",
     "/best-ai-agent-india",
     "/cursor-pricing",
-    "/best-mcp-servers",
     "/claude-code-pricing",
     "/github-copilot-pricing",
-    "/best-free-ai-coding-agents",
-    "/ai-agents-for-finance",
-    "/tools/cursor-ai",
-    "/tools/yellow-ai",
-    "/tools/flowise",
     "/cursor-vs-codex",
     "/glossary-hub",
     "/claude-code-alternatives",
     "/how-to-use-cursor-ai",
     "/flowise-alternatives",
     "/mcp-directory",
+    "/best-mcp-servers",
+    "/best-free-ai-coding-agents",
+    "/ai-agents-for-finance",
     "/best-ai-voice-agent",
     "/ai-agent-rankings",
-    "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now"
+    "/tools/cursor-ai",
+    "/tools/yellow-ai",
+    "/tools/flowise",
+    "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+    "/",
+    "/models",
+    "/agents",
+    "/providers",
+    "/categories",
+    "/compare",
+    "/best-ai-agent-for-business",
+    "/best-ai-agent-alternatives",
+    "/built-in-india",
+    "/marketplace",
+    "/resources",
+    "/about",
+    "/methodology"
   ]
 }
