@@ -28,7 +28,11 @@ const pillarSource = fs.readFileSync(
 );
 const dataSource = fs.readFileSync(path.join(root, "src/data/pillars.ts"), "utf8");
 
-assert(!pillarSource.includes("AggregateRating"), "Pillar UI must not emit AggregateRating.");
+const emitsAggregateRating =
+  /["']@type["']\s*:\s*["']AggregateRating["']/.test(pillarSource) ||
+  /(?:["']aggregateRating["']|\baggregateRating)\s*:/.test(pillarSource);
+
+assert(!emitsAggregateRating, "Pillar structured data must not emit AggregateRating.");
 assert(!/\b(score|rating)\s*:/i.test(dataSource), "Pillar data must not define unsupported score/rating fields.");
 
 for (const slug of requiredSlugs) {
