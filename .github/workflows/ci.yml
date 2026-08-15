@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: 22
       - run: npm install --no-audit --no-fund
+      - run: npm run lint
       - run: npm run typecheck
       - run: npm run test
-      - run: npx tsx scripts/verify-routes.ts
       - run: npm run build
+      - run: npx tsx scripts/verify-routes.ts
