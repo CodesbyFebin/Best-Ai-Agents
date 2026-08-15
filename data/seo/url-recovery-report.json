@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-08-15T07:02:58.485Z",
+  "sources": {
+    "git": 5,
+    "sitemap": 3,
+    "searchConsole": 23,
+    "vercel": 0,
+    "searchDiscovery": 0,
+    "currentRoutes": 19
+  },
+  "totalUniqueUrls": 23,
+  "currentCanonical": 3,
+  "historicalCanonical": 0,
+  "redirectCandidates": 2,
+  "notFound": 0,
+  "gone": 18,
+  "duplicates": 0,
+  "parameters": 0,
+  "assets": 0,
+  "unknown": 0,
+  "byClassification": {
+    "CURRENT_CANONICAL": 3,
+    "REDIRECT_CANDIDATE": 2,
+    "GONE": 18
+  }
+}

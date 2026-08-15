@@ -8,6 +8,11 @@ Evidence-first discovery of public AI models, agents, frameworks, and providers.
 - https://bestaiagent.in/providers
 - https://bestaiagent.in/categories
 - https://bestaiagent.in/compare
+- https://bestaiagent.in/best-ai-agent
+- https://bestaiagent.in/best-ai-agent-for-business
+- https://bestaiagent.in/best-ai-agent-for-coding
+- https://bestaiagent.in/best-ai-agent-alternatives
+- https://bestaiagent.in/best-ai-agents-for-automation
 
 ## Machine-readable catalog
 - https://bestaiagent.in/catalog.json

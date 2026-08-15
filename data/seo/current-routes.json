@@ -1,0 +1,225 @@
+{
+  "generatedAt": "2026-08-15T07:02:57.667Z",
+  "source": "src/routing/routeRegistry.ts + app/sitemap.ts + catalog verification",
+  "canonicalOrigin": "https://bestaiagent.in",
+  "preferredProtocol": "https",
+  "preferredHostname": "bestaiagent.in",
+  "wwwRedirect": true,
+  "httpRedirect": true,
+  "trailingSlashPolicy": "no-trailing-slash",
+  "routes": [
+    {
+      "path": "/",
+      "kind": "home",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/page.tsx"
+    },
+    {
+      "path": "/models",
+      "kind": "directory",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/models/page.tsx"
+    },
+    {
+      "path": "/models/:slug",
+      "kind": "model",
+      "indexable": true,
+      "sitemap": false,
+      "source": "app/models/[slug]/page.tsx"
+    },
+    {
+      "path": "/agents",
+      "kind": "directory",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/agents/page.tsx"
+    },
+    {
+      "path": "/agents/:slug",
+      "kind": "agent",
+      "indexable": true,
+      "sitemap": false,
+      "source": "app/agents/[slug]/page.tsx"
+    },
+    {
+      "path": "/providers",
+      "kind": "directory",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/providers/page.tsx"
+    },
+    {
+      "path": "/providers/:slug",
+      "kind": "provider",
+      "indexable": true,
+      "sitemap": false,
+      "source": "app/providers/[slug]/page.tsx"
+    },
+    {
+      "path": "/categories",
+      "kind": "directory",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/categories/page.tsx"
+    },
+    {
+      "path": "/compare",
+      "kind": "comparison",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/compare/page.tsx"
+    },
+    {
+      "path": "/best-ai-agent",
+      "kind": "pillar",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/best-ai-agent/page.tsx"
+    },
+    {
+      "path": "/best-ai-agent-for-business",
+      "kind": "pillar",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/best-ai-agent-for-business/page.tsx"
+    },
+    {
+      "path": "/best-ai-agent-for-coding",
+      "kind": "pillar",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/best-ai-agent-for-coding/page.tsx"
+    },
+    {
+      "path": "/best-ai-agent-alternatives",
+      "kind": "pillar",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/best-ai-agent-alternatives/page.tsx"
+    },
+    {
+      "path": "/best-ai-agents-for-automation",
+      "kind": "pillar",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/best-ai-agents-for-automation/page.tsx"
+    },
+    {
+      "path": "/built-in-india",
+      "kind": "document",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/built-in-india/page.tsx"
+    },
+    {
+      "path": "/marketplace",
+      "kind": "directory",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/marketplace/page.tsx"
+    },
+    {
+      "path": "/resources",
+      "kind": "document",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/resources/page.tsx"
+    },
+    {
+      "path": "/about",
+      "kind": "document",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/about/page.tsx"
+    },
+    {
+      "path": "/methodology",
+      "kind": "document",
+      "indexable": true,
+      "sitemap": true,
+      "source": "app/methodology/page.tsx"
+    },
+    {
+      "path": "/admin",
+      "kind": "admin",
+      "indexable": false,
+      "sitemap": false,
+      "source": "reserved"
+    },
+    {
+      "path": "/robots.txt",
+      "kind": "utility",
+      "indexable": false,
+      "sitemap": false,
+      "source": "public/robots.txt"
+    },
+    {
+      "path": "/sitemap.xml",
+      "kind": "utility",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/sitemap.ts (Next.js runtime)"
+    },
+    {
+      "path": "/llms.txt",
+      "kind": "utility",
+      "indexable": false,
+      "sitemap": false,
+      "source": "public/llms.txt"
+    },
+    {
+      "path": "/llms-full.txt",
+      "kind": "utility",
+      "indexable": false,
+      "sitemap": false,
+      "source": "public/llms-full.txt"
+    },
+    {
+      "path": "/favicon.svg",
+      "kind": "asset",
+      "indexable": false,
+      "sitemap": false,
+      "source": "public/favicon.svg"
+    },
+    {
+      "path": "/agents.json",
+      "kind": "api",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/agents.json/route.ts"
+    },
+    {
+      "path": "/catalog.json",
+      "kind": "api",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/catalog.json/route.ts"
+    },
+    {
+      "path": "/models.json",
+      "kind": "api",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/models.json/route.ts"
+    },
+    {
+      "path": "/providers.json",
+      "kind": "api",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/providers.json/route.ts"
+    },
+    {
+      "path": "/llms-full.txt/route",
+      "kind": "api",
+      "indexable": false,
+      "sitemap": false,
+      "source": "app/llms-full.txt/route.ts"
+    }
+  ],
+  "indexableCount": 19,
+  "sitemapCount": 16,
+  "notes": "Catalog entities are currently unpublished (no entities pass isEntityIndexable). Dynamic routes will be populated once catalog ingestion runs."
+}

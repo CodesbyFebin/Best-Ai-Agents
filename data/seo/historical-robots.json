@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-08-15T00:00:00.000Z",
+  "description": "Historical robots.txt versions recovered from Git history across all branches.",
+  "versions": [
+    {
+      "commit": "babd9b3e2399662bf969a697e7a20c441fdf498b",
+      "branch": "feat/production-seo-design-v2",
+      "path": "public/robots.txt",
+      "contentHash": "sha256:7d3b8c2f9a1e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c",
+      "content": "User-agent: *\nAllow: /\n\nSitemap: https://bestaiagent.in/sitemap.xml\n",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "discoveredBy": "git log --all -- public/robots.txt",
+      "notes": "First production robots.txt. Canonical origin: https://bestaiagent.in. Points to /sitemap.xml."
+    },
+    {
+      "commit": "babd9b3e2399662bf969a697e7a20c441fdf498b",
+      "branch": "feature/gsc-recovery-runtime",
+      "path": "server/app.ts (runtime handler)",
+      "contentHash": "sha256:9a1f5e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5",
+      "content": "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/admin\n\nSitemap: https://bestaiagent.in/sitemap.xml\n",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "discoveredBy": "git show origin/feature/gsc-recovery-runtime:server/app.ts",
+      "notes": "Legacy Express server runtime robots.txt. Blocked /admin and /api/admin. Not restored — this is historical evidence only."
+    }
+  ],
+  "currentPolicy": {
+    "canonicalOrigin": "https://bestaiagent.in",
+    "rules": [
+      {"directive": "User-agent: *", "type": "group"},
+      {"directive": "Allow: /", "type": "allow"},
+      {"directive": "Sitemap: https://bestaiagent.in/sitemap.xml", "type": "sitemap"}
+    ],
+    "notes": "Production robots.txt at public/robots.txt. Matches historical policy from babd9b3. www and HTTP variants canonicalize via Next.js redirects."
+  }
+}

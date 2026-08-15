@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-08-15T00:00:00.000Z",
+  "description": "Historical sitemap.xml content recovered from Git history. The Next.js runtime generates /sitemap.xml dynamically via app/sitemap.ts.",
+  "versions": [
+    {
+      "commit": "18f64e9e",
+      "branch": "feat/production-seo-design-v2",
+      "file": "app/sitemap.ts",
+      "source": "git log --all -- app/sitemap.ts",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "urlCount": 5,
+      "urls": ["https://bestaiagent.in/", "https://bestaiagent.in/models", "https://bestaiagent.in/agents", "https://bestaiagent.in/providers", "https://bestaiagent.in/categories"],
+      "notes": "Initial sitemap with 5 route entries. No catalog entities (providers unverified)."
+    },
+    {
+      "commit": "63a9dcd",
+      "branch": "feat/production-seo-design-v2",
+      "file": "app/sitemap.ts",
+      "source": "git log --all -- app/sitemap.ts",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "urlCount": 5,
+      "urls": ["https://bestaiagent.in/", "https://bestaiagent.in/models", "https://bestaiagent.in/agents", "https://bestaiagent.in/providers", "https://bestaiagent.in/categories"],
+      "notes": "Fix: keep sitemap canonical and fragment-free. No URL changes."
+    },
+    {
+      "commit": "1b63925",
+      "branch": "feat/pillar-server-data",
+      "file": "app/sitemap.ts",
+      "source": "git log --all -- app/sitemap.ts",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "urlCount": 10,
+      "urls": [
+        "https://bestaiagent.in/",
+        "https://bestaiagent.in/models",
+        "https://bestaiagent.in/agents",
+        "https://bestaiagent.in/providers",
+        "https://bestaiagent.in/categories",
+        "https://bestaiagent.in/compare",
+        "https://bestaiagent.in/best-ai-agent",
+        "https://bestaiagent.in/best-ai-agent-for-business",
+        "https://bestaiagent.in/best-ai-agent-for-coding",
+        "https://bestaiagent.in/best-ai-agent-alternatives"
+      ],
+      "notes": "Added canonical priority pillars and compare route to sitemap."
+    },
+    {
+      "commit": "18f64e9e (later)",
+      "branch": "feat/pillar-server-data",
+      "file": "app/sitemap.ts",
+      "source": "git log --all -- app/sitemap.ts",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "urlCount": 16,
+      "urls": [
+        "https://bestaiagent.in/",
+        "https://bestaiagent.in/models",
+        "https://bestaiagent.in/agents",
+        "https://bestaiagent.in/providers",
+        "https://bestaiagent.in/categories",
+        "https://bestaiagent.in/compare",
+        "https://bestaiagent.in/best-ai-agent",
+        "https://bestaiagent.in/best-ai-agent-for-business",
+        "https://bestaiagent.in/best-ai-agent-for-coding",
+        "https://bestaiagent.in/best-ai-agent-alternatives",
+        "https://bestaiagent.in/best-ai-agents-for-automation",
+        "https://bestaiagent.in/built-in-india",
+        "https://bestaiagent.in/marketplace",
+        "https://bestaiagent.in/resources",
+        "https://bestaiagent.in/about",
+        "https://bestaiagent.in/methodology"
+      ],
+      "notes": "Added real five-page sitemap routes: built-in-india, marketplace, resources, about, methodology."
+    },
+    {
+      "commit": "92d7fee",
+      "branch": "feat/pillar-server-data",
+      "file": "app/sitemap.ts",
+      "source": "git log --all -- app/sitemap.ts",
+      "recoveredAt": "2026-08-15T00:00:00.000Z",
+      "urlCount": 16,
+      "urls": [
+        "https://bestaiagent.in/",
+        "https://bestaiagent.in/models",
+        "https://bestaiagent.in/agents",
+        "https://bestaiagent.in/providers",
+        "https://bestaiagent.in/categories",
+        "https://bestaiagent.in/compare",
+        "https://bestaiagent.in/best-ai-agent",
+        "https://bestaiagent.in/best-ai-agent-for-business",
+        "https://bestaiagent.in/best-ai-agent-for-coding",
+        "https://bestaiagent.in/best-ai-agent-alternatives",
+        "https://bestaiagent.in/best-ai-agents-for-automation",
+        "https://bestaiagent.in/built-in-india",
+        "https://bestaiagent.in/marketplace",
+        "https://bestaiagent.in/resources",
+        "https://bestaiagent.in/about",
+        "https://bestaiagent.in/methodology"
+      ],
+      "notes": "Added catalog entities via isEntityIndexable filter. Currently no entities published (catalog empty)."
+    }
+  ],
+  "currentRuntime": {
+    "type": "app/sitemap.ts",
+    "description": "Next.js MetadataRoute.Sitemap generated at build time. Returns 16 canonical URLs.",
+    "servesAt": "https://bestaiagent.in/sitemap.xml"
+  }
+}

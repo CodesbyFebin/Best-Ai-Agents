@@ -1,4 +1,22 @@
 import type { NextConfig } from "next";
+import redirectMapData from "./data/seo/redirect-map.json";
+
+interface RedirectEntry { from: string; to: string; reason?: string }
+
+const activeRedirects: RedirectEntry[] = (redirectMapData as { active: RedirectEntry[] }).active ?? [];
+
+function normalizeRedirectPath(path: string): string {
+  if (!path) return "/";
+  let value = path.trim();
+  try {
+    if (/^https?:\/\//i.test(value)) value = new URL(value).pathname;
+  } catch {}
+  value = value.split("?")[0]?.split("#")[0] ?? "";
+  if (!value.startsWith("/")) value = `/${value}`;
+  value = value.replace(/\/{2,}/g, "/");
+  if (value.length > 1) value = value.replace(/\/+$/, "");
+  return value || "/";
+}
 
 function trustedOrigins(raw = "") {
   return raw
@@ -68,6 +86,21 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.bestaiagent.in" }],
+        destination: "https://bestaiagent.in/:path*",
+        permanent: true,
+      },
+      ...activeRedirects.map((entry) => ({
+        source: normalizeRedirectPath(entry.from),
+        destination: normalizeRedirectPath(entry.to),
+        permanent: true,
+      })),
+    ];
   },
 };
 

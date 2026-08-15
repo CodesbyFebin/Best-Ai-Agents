@@ -1,0 +1,910 @@
+{
+  "generatedAt": "2026-08-15T07:02:57.373Z",
+  "sources": {
+    "git": "git log --all on CodesbyFebin/Best-Ai-Agents",
+    "gscProtectedUrls": "data/migration/protected-urls.json @ origin/feature/gsc-recovery-runtime",
+    "recoveryData": "data/recovery/protected-*.json @ origin/feature/gsc-recovery-runtime",
+    "redirectMap": "data/seo/redirect-map.json",
+    "currentRoutes": "src/routing/routeRegistry.ts + app/sitemap.ts"
+  },
+  "urls": [
+    {
+      "url": "https://bestaiagent.in/best-ai-agent",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-agent",
+      "path": "/best-ai-agent",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent",
+      "sources": [
+        {
+          "type": "git",
+          "file": "app/best-ai-agent/page.tsx",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agent.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "llms",
+          "file": "public/llms.txt",
+          "branch": "feat/pillar-server-data"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 3,
+        "ctrPercent": 33.33,
+        "position": 50.67
+      },
+      "historicalEvidence": [
+        {
+          "type": "gsc-protected",
+          "reason": "GSC protected endpoint"
+        },
+        {
+          "type": "recovery-content",
+          "recovered": true
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent"
+        },
+        {
+          "type": "pillar-manifest",
+          "slug": "best-ai-agent"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Current pillar page. Historical GSC traffic preserved. Protected source."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "path": "/best-ai-agents-for-automation",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "sources": [
+        {
+          "type": "git",
+          "file": "app/best-ai-agents-for-automation/page.tsx",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 3,
+        "impressions": 38,
+        "ctrPercent": 7.89,
+        "position": 71.13
+      },
+      "currentEvidence": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agents-for-automation/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agents-for-automation"
+        },
+        {
+          "type": "pillar-manifest",
+          "slug": "best-ai-agents-for-automation"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Current pillar page. Historical GSC traffic preserved. Protected source."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "path": "/best-ai-agent-for-coding",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "sources": [
+        {
+          "type": "git",
+          "file": "app/best-ai-agent-for-coding/page.tsx",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts",
+          "branch": "feat/pillar-server-data"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agent-for-coding.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 5,
+        "ctrPercent": 20,
+        "position": 41.4
+      },
+      "currentEvidence": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent-for-coding/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-for-coding"
+        },
+        {
+          "type": "pillar-manifest",
+          "slug": "best-ai-agent-for-coding"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Current pillar page. Historical GSC traffic preserved. Protected source."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agents",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-agents",
+      "path": "/best-ai-agents",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": "https://bestaiagent.in/best-ai-agent",
+      "sources": [
+        {
+          "type": "git",
+          "file": "app/best-ai-agents/page.tsx",
+          "branch": "feature/gsc-recovery-runtime",
+          "commit": "11097f3"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agents.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 8,
+        "ctrPercent": 12.5,
+        "position": 20.88
+      },
+      "historicalEvidence": [
+        {
+          "type": "gsc-protected",
+          "reason": "GSC protected endpoint"
+        },
+        {
+          "type": "recovery-content",
+          "recovered": true
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "redirect",
+          "target": "https://bestaiagent.in/best-ai-agent"
+        }
+      ],
+      "redirect": "/best-ai-agent",
+      "status": 301,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical plural page. Redirected to /best-ai-agent (current singular pillar)."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-india",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-agent-india",
+      "path": "/best-ai-agent-india",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": "https://bestaiagent.in/built-in-india",
+      "sources": [
+        {
+          "type": "git",
+          "file": "app/best-ai-agent-india/page.tsx",
+          "branch": "feature/gsc-recovery-runtime",
+          "commit": "6967c28"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agent-india.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 3,
+        "ctrPercent": 33.33,
+        "position": 3.33
+      },
+      "historicalEvidence": [
+        {
+          "type": "gsc-protected",
+          "reason": "GSC protected endpoint"
+        },
+        {
+          "type": "recovery-content",
+          "recovered": true
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "redirect",
+          "target": "https://bestaiagent.in/built-in-india"
+        }
+      ],
+      "redirect": "/built-in-india",
+      "status": 301,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical India-specific agent page. Redirects to /built-in-india (current India Fit page)."
+    },
+    {
+      "url": "https://bestaiagent.in/cursor-pricing",
+      "normalizedUrl": "https://bestaiagent.in/cursor-pricing",
+      "path": "/cursor-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agent.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 11,
+        "impressions": 1532,
+        "ctrPercent": 0.72,
+        "position": 7.19
+      },
+      "historicalEvidence": [
+        {
+          "type": "gsc-protected",
+          "reason": "GSC protected endpoint"
+        },
+        {
+          "type": "recovery-content",
+          "recovered": true
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical pricing page with recovery content. No current equivalent route. Marked GONE (410) per historical URL decision engine — recovery content was for the legacy Express runtime, not the clean Next.js pillar system."
+    },
+    {
+      "url": "https://bestaiagent.in/best-mcp-servers",
+      "normalizedUrl": "https://bestaiagent.in/best-mcp-servers",
+      "path": "/best-mcp-servers",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 3,
+        "impressions": 28,
+        "ctrPercent": 10.71,
+        "position": 32.04
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical MCP servers hub. No current equivalent route in the clean Next.js runtime."
+    },
+    {
+      "url": "https://bestaiagent.in/claude-code-pricing",
+      "normalizedUrl": "https://bestaiagent.in/claude-code-pricing",
+      "path": "/claude-code-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 2,
+        "impressions": 126,
+        "ctrPercent": 1.59,
+        "position": 10.2
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical pricing page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/github-copilot-pricing",
+      "normalizedUrl": "https://bestaiagent.in/github-copilot-pricing",
+      "path": "/github-copilot-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 364,
+        "ctrPercent": 0.27,
+        "position": 9.26
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical pricing page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/best-free-ai-coding-agents",
+      "normalizedUrl": "https://bestaiagent.in/best-free-ai-coding-agents",
+      "path": "/best-free-ai-coding-agents",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 2,
+        "impressions": 16,
+        "ctrPercent": 12.5,
+        "position": 5.69
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical free agents page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agents-for-finance",
+      "normalizedUrl": "https://bestaiagent.in/ai-agents-for-finance",
+      "path": "/ai-agents-for-finance",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-02.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 2,
+        "impressions": 41,
+        "ctrPercent": 4.88,
+        "position": 34.1
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical finance pillar. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/cursor-ai",
+      "normalizedUrl": "https://bestaiagent.in/tools/cursor-ai",
+      "path": "/tools/cursor-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "redirect-map",
+          "file": "data/redirects/redirect-map.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 2,
+        "impressions": 102,
+        "ctrPercent": 1.96,
+        "position": 17.45
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical /tools/cursor-ai. Redirect target /agents/cursor is not a live current route. Quarantined redirect, not served."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/yellow-ai",
+      "normalizedUrl": "https://bestaiagent.in/tools/yellow-ai",
+      "path": "/tools/yellow-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 102,
+        "ctrPercent": 0.98,
+        "position": 21.42
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical tool review. Redirect target /agents/yellow-ai is not live."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/flowise",
+      "normalizedUrl": "https://bestaiagent.in/tools/flowise",
+      "path": "/tools/flowise",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 170,
+        "ctrPercent": 0.59,
+        "position": 22.13
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical tool review. Redirect target /agents/flowise-ai is not live."
+    },
+    {
+      "url": "https://bestaiagent.in/cursor-vs-codex",
+      "normalizedUrl": "https://bestaiagent.in/cursor-vs-codex",
+      "path": "/cursor-vs-codex",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 29,
+        "ctrPercent": 3.45,
+        "position": 19.28
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical comparison page. Current /compare uses query parameters. No direct path equivalent."
+    },
+    {
+      "url": "https://bestaiagent.in/glossary-hub",
+      "normalizedUrl": "https://bestaiagent.in/glossary-hub",
+      "path": "/glossary-hub",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "redirect-map",
+          "file": "data/redirects/redirect-map.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 27,
+        "ctrPercent": 3.7,
+        "position": 7.11
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical glossary hub. Redirect target /sitemap is not a live current route."
+    },
+    {
+      "url": "https://bestaiagent.in/claude-code-alternatives",
+      "normalizedUrl": "https://bestaiagent.in/claude-code-alternatives",
+      "path": "/claude-code-alternatives",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 26,
+        "ctrPercent": 3.85,
+        "position": 10.54
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical alternatives page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/how-to-use-cursor-ai",
+      "normalizedUrl": "https://bestaiagent.in/how-to-use-cursor-ai",
+      "path": "/how-to-use-cursor-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 20,
+        "ctrPercent": 5,
+        "position": 7.5
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical tutorial page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/flowise-alternatives",
+      "normalizedUrl": "https://bestaiagent.in/flowise-alternatives",
+      "path": "/flowise-alternatives",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-04a.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 16,
+        "ctrPercent": 6.25,
+        "position": 33.06
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical alternatives page. No current equivalent route."
+    },
+    {
+      "url": "https://bestaiagent.in/mcp-directory",
+      "normalizedUrl": "https://bestaiagent.in/mcp-directory",
+      "path": "/mcp-directory",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-04a.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 15,
+        "ctrPercent": 6.67,
+        "position": 17.47
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical MCP directory hub. No current equivalent route in the clean Next.js runtime."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-voice-agent",
+      "normalizedUrl": "https://bestaiagent.in/best-ai-voice-agent",
+      "path": "/best-ai-voice-agent",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 46,
+        "ctrPercent": 2.17,
+        "position": 32.63
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical voice agent pillar. No current equivalent route in the clean Next.js runtime."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agent-rankings",
+      "normalizedUrl": "https://bestaiagent.in/ai-agent-rankings",
+      "path": "/ai-agent-rankings",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-02.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 11,
+        "ctrPercent": 9.09,
+        "position": 19.73
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical rankings page. The site deliberately does not publish rankings. GONE per policy."
+    },
+    {
+      "url": "https://bestaiagent.in/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "normalizedUrl": "https://bestaiagent.in/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "path": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-protected",
+          "file": "data/migration/protected-urls.json",
+          "branch": "feature/gsc-recovery-runtime"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-mcp-auth-blog.json",
+          "branch": "feature/gsc-recovery-runtime"
+        }
+      ],
+      "gscEvidence": {
+        "clicks": 1,
+        "impressions": 1,
+        "ctrPercent": 100,
+        "position": 5
+      },
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": false,
+      "lastVerified": "2026-08-15T07:02:57.373Z",
+      "notes": "Historical blog post. No current equivalent route."
+    }
+  ],
+  "totalUniqueUrls": 23,
+  "protectedUrlCount": 21,
+  "activeRedirectCount": 2
+}

@@ -1,0 +1,960 @@
+{
+  "generatedAt": "2026-08-15T07:02:57.666Z",
+  "canonicalOrigin": "https://bestaiagent.in",
+  "policy": {
+    "protocol": "https",
+    "hostname": "bestaiagent.in",
+    "noWww": true,
+    "trailingSlash": false,
+    "noTrackingParams": true,
+    "noFragment": true,
+    "noDuplicateSlashes": true
+  },
+  "urls": [
+    {
+      "url": "https://bestaiagent.in/",
+      "path": "/",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.659Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/models",
+      "path": "/models",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/models",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/models/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/models/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/models"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/agents",
+      "path": "/agents",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/agents",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/agents/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/agents/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/agents"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/providers",
+      "path": "/providers",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/providers",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/providers/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/providers/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/providers"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/categories",
+      "path": "/categories",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/categories",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/categories/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/categories/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/categories"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/compare",
+      "path": "/compare",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/compare",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/compare/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/compare/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/compare"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent",
+      "path": "/best-ai-agent",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/best-ai-agent/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-business",
+      "path": "/best-ai-agent-for-business",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-for-business",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent-for-business/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/best-ai-agent-for-business/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-for-business"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "path": "/best-ai-agent-for-coding",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent-for-coding/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/best-ai-agent-for-coding/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-for-coding"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-alternatives",
+      "path": "/best-ai-agent-alternatives",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-alternatives",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agent-alternatives/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/best-ai-agent-alternatives/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-alternatives"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "path": "/best-ai-agents-for-automation",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/best-ai-agents-for-automation/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/best-ai-agents-for-automation/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agents-for-automation"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/built-in-india",
+      "path": "/built-in-india",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/built-in-india",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/built-in-india/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/built-in-india/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/built-in-india"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/marketplace",
+      "path": "/marketplace",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/marketplace",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/marketplace/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/marketplace/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/marketplace"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/resources",
+      "path": "/resources",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/resources",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/resources/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/resources/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/resources"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/about",
+      "path": "/about",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/about",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/about/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/about/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/about"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/methodology",
+      "path": "/methodology",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/methodology",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/methodology/page.tsx"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/methodology/page.tsx"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/methodology"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/models/:slug",
+      "path": "/models/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/models/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/models/[slug]/page.tsx"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/models/[slug]/page.tsx"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/agents/:slug",
+      "path": "/agents/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/agents/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/agents/[slug]/page.tsx"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/agents/[slug]/page.tsx"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/providers/:slug",
+      "path": "/providers/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/providers/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/providers/[slug]/page.tsx"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/providers/[slug]/page.tsx"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/admin",
+      "path": "/admin",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "reserved"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "reserved"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/robots.txt",
+      "path": "/robots.txt",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "public/robots.txt"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "public/robots.txt"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/sitemap.xml",
+      "path": "/sitemap.xml",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/sitemap.ts (Next.js runtime)"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/sitemap.ts (Next.js runtime)"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/llms.txt",
+      "path": "/llms.txt",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "public/llms.txt"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "public/llms.txt"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/llms-full.txt",
+      "path": "/llms-full.txt",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "public/llms-full.txt"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "public/llms-full.txt"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/favicon.svg",
+      "path": "/favicon.svg",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "public/favicon.svg"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "public/favicon.svg"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/agents.json",
+      "path": "/agents.json",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/agents.json/route.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/agents.json/route.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/catalog.json",
+      "path": "/catalog.json",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/catalog.json/route.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/catalog.json/route.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/models.json",
+      "path": "/models.json",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/models.json/route.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/models.json/route.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/providers.json",
+      "path": "/providers.json",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/providers.json/route.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/providers.json/route.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/llms-full.txt/route",
+      "path": "/llms-full.txt/route",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "app/llms-full.txt/route.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "app/llms-full.txt/route.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T07:02:57.660Z",
+      "notes": ""
+    }
+  ],
+  "total": 30,
+  "indexable": 19,
+  "sitemapCount": 16
+}
