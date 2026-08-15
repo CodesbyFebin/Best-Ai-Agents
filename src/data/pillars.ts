@@ -111,6 +111,7 @@ const agents = {
 } satisfies Record<string, PillarAgent>;
 
 const commonLinks = [
+  { label: "Best AI Agent", href: "/best-ai-agent" },
   { label: "Best AI Agent for Business", href: "/best-ai-agent-for-business" },
   { label: "Best AI Agent for Coding", href: "/best-ai-agent-for-coding" },
   { label: "AI Agent Alternatives", href: "/best-ai-agent-alternatives" },
@@ -133,6 +134,18 @@ export const pillarManifests: Record<string, PillarManifest> = {
     lastReviewed: verifiedOn,
     evidence: Object.values(evidence),
     agents: [agents.claudeCode, agents.cursor, agents.githubCopilot, agents.lindy, agents.n8n, agents.zapier],
+    faqs: [
+      {
+        question: "How should I choose the best AI agent?",
+        answer:
+          "Start with the job to be done, then compare verified capabilities, integrations, deployment options, commercial terms, privacy controls, and evidence freshness. A coding agent and an automation platform should not be ranked as though they solve the same problem.",
+      },
+      {
+        question: "Does BestAIAgent.in declare one universal number-one agent?",
+        answer:
+          "No. This pillar uses workflow-specific shortlists and visible source evidence. A universal winner would overstate what the available evidence can support across different tasks and product categories.",
+      },
+    ],
     internalLinks: commonLinks,
   },
   "best-ai-agent-for-business": {
@@ -147,6 +160,18 @@ export const pillarManifests: Record<string, PillarManifest> = {
     lastReviewed: verifiedOn,
     evidence: [evidence.lindy, evidence.n8n, evidence.zapier],
     agents: [agents.lindy, agents.n8n, agents.zapier],
+    faqs: [
+      {
+        question: "What matters most when evaluating a business AI agent?",
+        answer:
+          "Prioritize workflow fit, integration coverage, approval controls, auditability, privacy terms, deployment constraints, and current pricing. The useful comparison is whether the product can perform the target business process safely and repeatably.",
+      },
+      {
+        question: "Is an AI agent the same as workflow automation?",
+        answer:
+          "Not necessarily. Modern products often combine agentic steps that can reason and choose actions with deterministic workflow steps that follow explicit rules. The balance between the two is an important evaluation criterion.",
+      },
+    ],
     internalLinks: commonLinks,
   },
   "best-ai-agent-for-coding": {
@@ -161,6 +186,18 @@ export const pillarManifests: Record<string, PillarManifest> = {
     lastReviewed: verifiedOn,
     evidence: [evidence.claudeCode, evidence.cursor, evidence.cursorIndia, evidence.githubCopilot],
     agents: [agents.claudeCode, agents.cursor, agents.githubCopilot],
+    faqs: [
+      {
+        question: "Which AI coding agent is best?",
+        answer:
+          "There is no evidence-backed universal winner. Claude Code is a strong fit for terminal-oriented workflows, Cursor for an AI-native editor workflow, and GitHub Copilot for teams centered on GitHub and its repository-connected agent features.",
+      },
+      {
+        question: "Is there verified India-specific pricing for coding agents?",
+        answer:
+          "Cursor publishes an India-specific Cursor Start plan. Other vendors may use global, usage-based, or region-dependent pricing, so their current official pricing should be checked before purchase.",
+      },
+    ],
     internalLinks: commonLinks,
   },
   "best-ai-agent-alternatives": {
@@ -175,6 +212,18 @@ export const pillarManifests: Record<string, PillarManifest> = {
     lastReviewed: verifiedOn,
     evidence: Object.values(evidence),
     agents: [agents.claudeCode, agents.cursor, agents.githubCopilot, agents.lindy, agents.n8n, agents.zapier],
+    faqs: [
+      {
+        question: "What is the best alternative to an AI agent product?",
+        answer:
+          "The best alternative is the product that solves the same workflow with better fit for your constraints. Compare coding tools with coding tools, business assistants with business assistants, and automation platforms with automation platforms before crossing categories.",
+      },
+      {
+        question: "Can products from different AI-agent categories be compared directly?",
+        answer:
+          "Only when the user goal is genuinely the same. Otherwise a single ranking can be misleading because an IDE agent, executive assistant, and workflow automation platform optimize for different jobs.",
+      },
+    ],
     internalLinks: commonLinks,
   },
   "best-ai-agents-for-automation": {
@@ -189,6 +238,18 @@ export const pillarManifests: Record<string, PillarManifest> = {
     lastReviewed: verifiedOn,
     evidence: [evidence.n8n, evidence.zapier, evidence.lindy],
     agents: [agents.n8n, agents.zapier, agents.lindy],
+    faqs: [
+      {
+        question: "What makes an AI automation agent production-ready?",
+        answer:
+          "Look for explicit workflow controls, human approval where needed, observable execution, reliable integrations, error handling, security controls, and a way to constrain AI actions instead of relying on unconstrained autonomy.",
+      },
+      {
+        question: "Can AI automation agents be self-hosted?",
+        answer:
+          "Some platforms support self-hosting while others are primarily managed services. n8n documents self-hosting options; deployment should be verified independently for every product before it is treated as a requirement match.",
+      },
+    ],
     internalLinks: commonLinks,
   },
 };
