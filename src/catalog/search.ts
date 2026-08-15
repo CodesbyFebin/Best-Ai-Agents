@@ -1,8 +1,9 @@
-import { publicEntities } from "./verification";
 import { catalog } from "./catalog";
-
-export function searchCatalog(query: string) {
-  const q = query.trim().toLocaleLowerCase();
-  if (!q) return publicEntities(catalog);
-  return publicEntities(catalog).filter(e => [e.name, e.providerName, e.slug, ...(e.aliases ?? []), ...(e.modelType ?? []), ...(e.categories ?? []), ...(e.capabilities ? Object.keys(e.capabilities).filter(k => e.capabilities[k]) : [])].join(" ").toLocaleLowerCase().includes(q));
+import { publicEntities } from "./verification";
+import type { AgentRecord, ModelRecord } from "./types";
+function searchable(entity: ModelRecord | AgentRecord) {
+  const model = "modelType" in entity ? entity : null;
+  const agent = "entityType" in entity ? entity : null;
+  return [entity.name, entity.providerName, entity.slug, ...(model?.aliases ?? []), ...(model?.modelType ?? []), ...(agent?.categories ?? []), ...(model ? Object.keys(model.capabilities).filter(k => model.capabilities[k]) : []), ...(agent?.capabilities ?? [])].join(" ").toLocaleLowerCase();
 }
+export function searchCatalog(query: string) { const q=query.trim().toLocaleLowerCase(); const entities=publicEntities(catalog); return q ? entities.filter(e=>searchable(e).includes(q)) : entities; }
