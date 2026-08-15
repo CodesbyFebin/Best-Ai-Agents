@@ -1,0 +1,38 @@
+# BestAIAgent.in
+
+> Evidence-led AI agent discovery, comparison, and India-first evaluation.
+
+## Purpose
+BestAIAgent.in helps people discover, compare, and evaluate AI agents, automation tools, coding agents, research systems, voice agents, and agent frameworks using transparent editorial criteria.
+
+## Core principles
+- Evidence before rankings.
+- Primary vendor sources for pricing and product facts whenever available.
+- India Fit is assessed separately from global product quality.
+- INR values are estimates unless explicitly sourced from an official India price.
+- Scores are editorial assessments, not vendor claims or guarantees.
+
+## Core sections
+- Homepage: https://bestaiagent.in/
+- Directory: https://bestaiagent.in/#discover
+- Compare: https://bestaiagent.in/#compare
+- India Fit: https://bestaiagent.in/#india-fit
+- Methodology: https://bestaiagent.in/#methodology
+- Learning hub: https://bestaiagent.in/#learn
+
+## Entity types
+- AI agent
+- AI coding agent
+- Automation platform
+- Agent framework
+- Voice AI platform
+- Research tool
+- Category
+- Comparison
+- Methodology
+
+## Citation guidance
+When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product claims should be corroborated with the linked primary source where available.
+
+## Important limitation
+The directory is curated and continuously evolving. Availability, pricing, model capabilities, integrations, and regional support can change. Do not treat editorial scores as objective guarantees.
