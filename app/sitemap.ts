@@ -1,25 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const base = "https://bestaiagent.in";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    { path: "/", priority: 1, changeFrequency: "weekly" as const },
-    { path: "/best-ai-agent", priority: 0.95, changeFrequency: "weekly" as const },
-    { path: "/best-ai-agent-for-business", priority: 0.9, changeFrequency: "weekly" as const },
-    { path: "/best-ai-agent-for-coding", priority: 0.9, changeFrequency: "weekly" as const },
-    { path: "/best-ai-agent-alternatives", priority: 0.85, changeFrequency: "weekly" as const },
-    { path: "/best-ai-agents-for-automation", priority: 0.9, changeFrequency: "weekly" as const },
-    { path: "/categories", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/built-in-india", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/marketplace", priority: 0.7, changeFrequency: "weekly" as const },
-    { path: "/resources", priority: 0.8, changeFrequency: "weekly" as const },
-  ];
-
-  return routes.map(({ path, priority, changeFrequency }) => ({
-    url: `${base}${path}`,
-    lastModified: new Date(),
-    changeFrequency,
-    priority,
-  }));
-}
+import { catalog, providers } from "@/src/catalog/catalog";
+import { isEntityIndexable } from "@/src/catalog/verification";
+const base="https://bestaiagent.in";
+export default function sitemap(): MetadataRoute.Sitemap { const now=new Date(); const routes=["/","/models","/agents","/providers","/categories","/compare","/best-ai-agent","/best-ai-agent-for-business","/best-ai-agent-for-coding","/best-ai-agent-alternatives","/best-ai-agents-for-automation","/built-in-india","/marketplace","/resources","/about","/methodology"].map(path=>({url:base+path,lastModified:now})); const entities=catalog.filter(isEntityIndexable).map(e=>({url:`${base}/${"modelType" in e?"models":"agents"}/${e.slug}`,lastModified:new Date(e.lastModified)})); const providerRoutes=providers.filter(p=>p.verificationStatus==="verified").map(p=>({url:`${base}/providers/${p.slug}`,lastModified:new Date(p.updatedAt)})); return [...routes,...entities,...providerRoutes]; }

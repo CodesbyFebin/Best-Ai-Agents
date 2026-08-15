@@ -1,0 +1,6 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { providers } from "@/src/catalog/catalog";
+export const dynamicParams = false;
+export function generateStaticParams(){ return providers.map(p=>({slug:p.slug})); }
+export default async function ProviderPage({params}:{params:Promise<{slug:string}>}) { const {slug}=await params; const p=providers.find(x=>x.slug===slug); if(!p) notFound(); return <main className="authorityPage"><header className="authorityNav"><Link className="brand" href="/">BestAI<span>Agent</span><b>.in</b></Link></header><section className="authorityHero"><span className="kicker">Provider source record</span><h1>{p.name}</h1><p>Verification status: {p.verificationStatus}</p><a href={p.officialUrl} rel="nofollow">Official website →</a></section><section className="authorityGrid"><article className="authorityCard"><h2>Authoritative sources</h2><p>{p.documentationUrl ? <a href={p.documentationUrl} rel="nofollow">Documentation →</a> : "Documentation not configured."}</p><p>Verified domains: {p.verifiedDomains.join(", ")}</p></article><article className="authorityCard"><h2>Evidence state</h2>{p.evidence.map(e=><p key={e.id}>{e.sourceTitle} · {e.verificationStatus}</p>)}</article></section></main>; }
