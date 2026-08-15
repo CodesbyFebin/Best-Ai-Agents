@@ -1,5 +1,3 @@
-import "server-only";
-
 import { pillarManifests } from "@/src/data/pillars";
 import type { PillarManifest } from "@/src/types/pillar";
 
