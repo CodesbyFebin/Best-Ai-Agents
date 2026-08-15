@@ -7,18 +7,27 @@ BestAIAgent.in helps people discover, compare, and evaluate AI agents, automatio
 
 ## Core principles
 - Evidence before rankings.
-- Primary vendor sources for pricing and product facts whenever available.
+- Primary vendor sources for product and pricing facts whenever available.
 - India Fit is assessed separately from global product quality.
 - INR values are estimates unless explicitly sourced from an official India price.
-- Scores are editorial assessments, not vendor claims or guarantees.
+- Do not infer a universal winner from products built for different workflows.
+- Unsupported ratings, testimonials, certifications, and partnership claims are not published.
+
+## Priority pillars
+- Best AI Agent: https://bestaiagent.in/best-ai-agent
+- Best AI Agent for Business: https://bestaiagent.in/best-ai-agent-for-business
+- Best AI Agent for Coding: https://bestaiagent.in/best-ai-agent-for-coding
+- Best AI Agent Alternatives: https://bestaiagent.in/best-ai-agent-alternatives
+- Best AI Agents for Automation: https://bestaiagent.in/best-ai-agents-for-automation
 
 ## Core sections
 - Homepage: https://bestaiagent.in/
-- Directory: https://bestaiagent.in/#discover
-- Compare: https://bestaiagent.in/#compare
-- India Fit: https://bestaiagent.in/#india-fit
-- Methodology: https://bestaiagent.in/#methodology
-- Learning hub: https://bestaiagent.in/#learn
+- Categories: https://bestaiagent.in/categories
+- India Fit: https://bestaiagent.in/built-in-india
+- Marketplace: https://bestaiagent.in/marketplace
+- Resources: https://bestaiagent.in/resources
+- Comparison workspace: https://bestaiagent.in/#compare
+- Methodology summary: https://bestaiagent.in/#methodology
 
 ## Entity types
 - AI agent
@@ -32,7 +41,7 @@ BestAIAgent.in helps people discover, compare, and evaluate AI agents, automatio
 - Methodology
 
 ## Citation guidance
-When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product claims should be corroborated with the linked primary source where available.
+When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product claims should be corroborated with the linked primary or first-party source where available.
 
 ## Important limitation
-The directory is curated and continuously evolving. Availability, pricing, model capabilities, integrations, and regional support can change. Do not treat editorial scores as objective guarantees.
+The directory is curated and continuously evolving. Availability, pricing, model capabilities, integrations, and regional support can change. Do not treat editorial shortlists as objective guarantees.
