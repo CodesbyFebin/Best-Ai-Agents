@@ -258,6 +258,86 @@
       "from": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
       "to": "",
       "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/voice-ai-case-studies",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/twilio-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-no-code-ai-agent-builder",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/how-to-build-multi-agent-system",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-ai-agent-for-law-firms",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/agentbench-guide",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/jira-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/brave-search",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/arxiv-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mongodb-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/jina-reader",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/news-api-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/firecrawl-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/slack-mcp-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mcp/tutorials/mcp-with-claude-desktop",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mcp/servers/google-drive-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
     }
   ],
   "sourceUrls": [
@@ -296,6 +376,22 @@
     "/marketplace",
     "/resources",
     "/about",
-    "/methodology"
+    "/methodology",
+    "/voice-ai-case-studies",
+    "/twilio-server",
+    "/best-no-code-ai-agent-builder",
+    "/how-to-build-multi-agent-system",
+    "/best-ai-agent-for-law-firms",
+    "/agentbench-guide",
+    "/jira-server",
+    "/brave-search",
+    "/arxiv-server",
+    "/mongodb-server",
+    "/jina-reader",
+    "/news-api-server",
+    "/firecrawl-server",
+    "/slack-mcp-server",
+    "/mcp/tutorials/mcp-with-claude-desktop",
+    "/mcp/servers/google-drive-server"
   ]
 }

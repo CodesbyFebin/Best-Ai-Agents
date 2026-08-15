@@ -77,34 +77,44 @@ async function main(): Promise<void> {
 
   const currentPaths = new Set(knownRoutes.map((r) => normalizePath(r.path)));
   const historicalExtra: unknown[] = [];
+  const mergedHistoricalPaths = new Set<string>();
 
   try {
-    const raw = await readFile(join(ROOT, "data/seo/historical-canonical-urls.json"), "utf8");
-    const historical = JSON.parse(raw) as { urls: HistoricalRecord[] };
+    const raw = await readFile(join(ROOT, "data/seo/historical-url-sources.json"), "utf8");
+    const historical = JSON.parse(raw) as {
+      urls: Array<{
+        url: string;
+        path: string;
+        classification: string;
+        canonical: string | null;
+        sources?: Array<{ type: string; commit?: string; file?: string; branch?: string; export?: string; note?: string }>;
+        redirect?: string | null;
+        status: number;
+        indexable: boolean;
+        sitemap: boolean;
+        notes?: string;
+      }>;
+    };
     for (const rec of historical.urls) {
-      const path = normalizePath(rec.historicalUrl);
+      const path = normalizePath(rec.path);
       if (currentPaths.has(path)) continue;
-      if (rec.currentClassification === "CURRENT_CANONICAL") continue;
-      const classification = rec.currentClassification ?? "UNKNOWN";
-      const replacement = rec.replacementUrl ? normalizePath(rec.replacementUrl) : null;
-      const status = classification === "REDIRECT_CANDIDATE" ? 301 : classification === "GONE" ? 410 : 404;
+      if (rec.classification === "CURRENT_CANONICAL") continue;
+      if (mergedHistoricalPaths.has(path)) continue;
+      mergedHistoricalPaths.add(path);
       historicalExtra.push({
         url: canonicalUrl(path),
         path,
-        classification,
-        canonical: classification === "REDIRECT_CANDIDATE" && replacement ? canonicalUrl(replacement) : null,
-        sources: [
-          { type: "historical-db", file: "data/seo/historical-canonical-urls.json" },
-          ...(rec.gscEvidence ? [{ type: "gsc" }] : []),
-        ],
+        classification: rec.classification,
+        canonical: rec.canonical ? canonicalUrl(rec.canonical) : null,
+        sources: rec.sources ?? [{ type: "historical-db", file: "data/seo/historical-url-sources.json" }],
         currentEvidence: [],
-        redirect: replacement ? canonicalUrl(replacement) : null,
-        status,
-        indexable: false,
-        sitemap: false,
+        redirect: rec.redirect ? canonicalUrl(rec.redirect) : null,
+        status: rec.status,
+        indexable: rec.indexable,
+        sitemap: rec.sitemap,
         robotsAllowed: true,
         lastVerified: new Date().toISOString(),
-        notes: classification === "GONE" ? "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content." : "",
+        notes: rec.notes ?? (rec.classification === "GONE" ? "Historical URL without current equivalent route. Returns 410 Gone; no fabricated replacement content." : ""),
       });
     }
   } catch {

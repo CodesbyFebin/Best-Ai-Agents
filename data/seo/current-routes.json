@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T08:19:00.751Z",
+  "generatedAt": "2026-08-15T10:24:52.989Z",
   "source": "src/routing/routeRegistry.ts (single source of truth) + data/seo/historical-canonical-urls.json",
   "canonicalOrigin": "https://bestaiagent.in",
   "preferredProtocol": "https",
@@ -165,6 +165,6 @@
   ],
   "indexableCount": 21,
   "sitemapCount": 16,
-  "historicalMerged": 20,
+  "historicalMerged": 36,
   "notes": "Catalog entities are currently unpublished (no entities pass isEntityIndexable). Dynamic routes will be populated once catalog ingestion runs."
 }

@@ -158,8 +158,22 @@ async function readJson(path: string): Promise<unknown | null> {
   }
 }
 
-async function loadUserImports(): Promise<{ path: string; source: UrlSource; gsc?: GscEvidence }[]> {
-  const entries: { path: string; source: UrlSource; gsc?: GscEvidence }[] = [];
+interface ImportedUrl {
+  path: string;
+  source: UrlSource;
+  lastCrawled?: string;
+}
+
+function parseCrawlDate(text: string): string | undefined {
+  const iso = text.match(/\b(\d{4}-\d{2}-\d{2})\b/);
+  if (iso) return iso[1];
+  const human = text.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/i);
+  if (human) return human[0];
+  return undefined;
+}
+
+async function loadUserImports(): Promise<ImportedUrl[]> {
+  const entries: ImportedUrl[] = [];
   const files: string[] = [];
   try {
     const { readdirSync } = await import("node:fs");
@@ -172,14 +186,23 @@ async function loadUserImports(): Promise<{ path: string; source: UrlSource; gsc
     return entries;
   }
   for (const file of files) {
-    const source: UrlSource = { type: "search-console-export", export: file };
     const raw = await readFile(join(IMPORT_DIR, file), "utf8");
-    const urls = new Set<string>();
-    const re = /https?:\/\/bestaiagent\.in\/[^\s",]+/gi;
-    let match: RegExpExecArray | null;
-    while ((match = re.exec(raw))) urls.add(match[0]);
-    for (const u of urls) {
-      entries.push({ path: normalizePath(u), source, gsc: undefined });
+    const urlRe = /https?:\/\/bestaiagent\.in\/[^\s",]+/gi;
+    for (const line of raw.split("\n")) {
+      const m = urlRe.exec(line);
+      if (!m) continue;
+      urlRe.lastIndex = 0;
+      const path = normalizePath(m[0]);
+      const lastCrawled = parseCrawlDate(line);
+      entries.push({
+        path,
+        source: {
+          type: "gsc-crawl",
+          export: file,
+          note: lastCrawled ? `Google last crawled ${lastCrawled}` : "User-provided Search Console export",
+        },
+        lastCrawled,
+      });
     }
   }
   return entries;
@@ -336,23 +359,27 @@ async function main(): Promise<void> {
     const existing = byPath.get(path);
     if (existing) {
       existing.sources.push(imp.source);
-      if (imp.gsc && !existing.gscEvidence) existing.gscEvidence = imp.gsc;
+      if (imp.lastCrawled && !existing.notes.includes("crawled")) {
+        existing.notes = `${existing.notes ? existing.notes + " " : ""}Google last crawled ${imp.lastCrawled}.`.trim();
+      }
     } else {
+      const crawlNote = imp.lastCrawled
+        ? `Google-crawled historical URL (last crawled ${imp.lastCrawled}); no current equivalent route. Returns 410 Gone; do not fabricate replacement content.`
+        : "Imported from user-provided Search Console export; no current equivalent route.";
       addEntry({
         url: canonicalUrl(path),
         normalizedUrl: canonicalUrl(path),
         path,
-        classification: "UNKNOWN",
+        classification: "GONE",
         canonical: null,
         sources: [imp.source],
-        gscEvidence: imp.gsc,
         redirect: null,
-        status: 404,
+        status: 410,
         indexable: false,
         sitemap: false,
         robotsAllowed: true,
         lastVerified,
-        notes: "Imported from user-provided Search Console export; requires classification against current routes.",
+        notes: crawlNote,
       });
     }
   }
