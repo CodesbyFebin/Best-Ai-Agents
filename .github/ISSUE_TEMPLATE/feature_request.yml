@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest a new capability, directory surface, or improvement.
+title: "[feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this solve for someone comparing/discovering AI agents?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case / audience
+      description: Who benefits (developers, businesses, India-context buyers, researchers)?
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / sources
+      description: If this adds factual claims, list verifiable first-party sources.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Documentation
+        - Catalog / evidence
+        - SEO / recovery
+        - UI / UX
+        - CI / tooling
+        - Other

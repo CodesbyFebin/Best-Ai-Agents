@@ -1,0 +1,35 @@
+name: Security report
+description: Found a vulnerability? Do NOT fill this publicly — report privately per SECURITY.md.
+title: "[security]: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Please report security issues privately
+
+        Do **not** describe the vulnerability in this public issue.
+
+        Instead, follow [SECURITY.md](../../SECURITY.md) and use GitHub's
+        private vulnerability reporting (Security → Advisories → Report a
+        vulnerability), or contact the maintainers directly.
+
+        This template exists only so the intake path is discoverable. You may leave
+        the fields below minimal or empty.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area (approximate, no details)
+      options:
+        - "Website / app"
+        - "Build / CI"
+        - "Data / catalog"
+        - "Dependency"
+        - "Other"
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I have read SECURITY.md and will report this privately
+          required: true

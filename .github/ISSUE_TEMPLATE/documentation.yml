@@ -1,0 +1,30 @@
+name: Documentation issue
+description: Report a docs error, broken link, or suggested correction.
+title: "[docs]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page / file
+      placeholder: "docs/architecture.md or https://bestaiagent.in/methodology"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: If you know the fix, describe it. Include a source if it adds a factual claim.
+  - type: checkboxes
+    id: evidence
+    attributes:
+      label: Evidence
+      options:
+        - label: The correction involves a factual claim with a verifiable source
