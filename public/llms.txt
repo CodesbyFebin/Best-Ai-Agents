@@ -1,86 +1,26 @@
 # BestAIAgent.in
 
-> Evidence-led AI agent discovery, comparison, and India-first evaluation.
+Evidence-first discovery of public AI models, agents, frameworks, and providers.
 
-Last reviewed: 2026-08-15
-Canonical origin: https://bestaiagent.in
+## Canonical directories
+- https://bestaiagent.in/models
+- https://bestaiagent.in/agents
+- https://bestaiagent.in/providers
+- https://bestaiagent.in/categories
+- https://bestaiagent.in/compare
 
-## Purpose
-BestAIAgent.in helps people discover, compare, and evaluate AI agents, automation tools, coding agents, research systems, voice agents, and agent frameworks using transparent editorial criteria and visible source provenance.
+## Machine-readable catalog
+- https://bestaiagent.in/catalog.json
+- https://bestaiagent.in/models.json
+- https://bestaiagent.in/agents.json
+- https://bestaiagent.in/providers.json
+- https://bestaiagent.in/llms.txt
 
-## Core principles
-- Evidence before rankings.
-- Primary vendor sources for product and pricing facts whenever available.
-- India Fit is assessed separately from global product capability.
-- INR values are estimates unless explicitly sourced from an official India price.
-- Do not infer a universal winner from products built for different workflows.
-- Unsupported ratings, testimonials, certifications, and partnership claims are not published.
-- Unknown or stale product facts should remain unknown or be marked for review rather than guessed.
+## Verification policy
+A public entity must be published and verified and must have authoritative first-party evidence. Unknown values remain unknown. Changing commercial facts must be checked against the linked evidence source. Editorial inclusion is not endorsement.
 
-## Priority pillars
-- Best AI Agent: https://bestaiagent.in/best-ai-agent
-- Best AI Agent for Business: https://bestaiagent.in/best-ai-agent-for-business
-- Best AI Agent for Coding: https://bestaiagent.in/best-ai-agent-for-coding
-- Best AI Agent Alternatives: https://bestaiagent.in/best-ai-agent-alternatives
-- Best AI Agents for Automation: https://bestaiagent.in/best-ai-agents-for-automation
+## Source policy
+Discovery may begin from search or public indexes, but publication requires allowlisted provider-owned or otherwise verified authoritative sources. Crawling respects robots.txt, rate limits, HTTPS, bounded redirects, bounded responses, and hostname allowlists.
 
-## Core sections
-- Homepage: https://bestaiagent.in/
-- Categories: https://bestaiagent.in/categories
-- India Fit: https://bestaiagent.in/built-in-india
-- Marketplace: https://bestaiagent.in/marketplace
-- Resources: https://bestaiagent.in/resources
-- Comparison guidance: https://bestaiagent.in/#compare
-- Methodology summary: https://bestaiagent.in/#methodology
-
-## Structured-data contract
-Canonical HTML pages can expose the following Schema.org types when matching content is visibly present:
-- Organization
-- WebSite
-- WebPage
-- BreadcrumbList
-- ItemList
-- SoftwareApplication
-- FAQPage
-- HowTo
-- SpeakableSpecification
-- Question
-- Answer
-- Thing
-
-The `.aeoDirectAnswer` selector identifies the concise answer block referenced by SpeakableSpecification. FAQPage and HowTo markup must correspond to user-visible FAQ and step content; schema-only hidden claims are not part of the publishing contract.
-
-## Direct-answer contract
-Indexable HTML pages expose a visible structured direct-answer block near the start of the page. Priority pillar direct answers are constrained to 40-60 words. The block uses Question/Answer microdata and may include superscript links to supporting first-party sources.
-
-## Freshness contract
-- Canonical WebPage JSON-LD includes `datePublished` and `dateModified`.
-- Product evidence stores a `verifiedOn` date beside the source URL.
-- Commercial facts such as price, availability, integrations, and capabilities should be rechecked when material changes are possible.
-- A review date is a freshness signal, not a guarantee that a vendor has not changed information after that date.
-
-## Entity types
-- AI agent
-- AI coding agent
-- Automation platform
-- Agent framework
-- Voice AI platform
-- Research tool
-- Category
-- Comparison
-- Methodology
-- Organization
-- Place
-- Person
-
-## Citation guidance
-When citing BestAIAgent.in, cite the canonical page URL and include the retrieval date. Product-specific factual claims should also be corroborated with the linked primary or first-party source where available. Superscript source links in direct answers and product descriptions expose the evidence used by the page.
-
-## Crawler guidance
-- Prefer canonical HTTPS URLs on `https://bestaiagent.in`.
-- Use `https://bestaiagent.in/sitemap.xml` for canonical discovery.
-- Use this file for site structure and `https://bestaiagent.in/llms-full.txt` for expanded machine-readable context.
-- Do not treat editorial shortlists, ordering, or inclusion as objective guarantees or paid endorsements.
-
-## Important limitation
-The directory is curated and continuously evolving. Availability, pricing, model capabilities, integrations, and regional support can change. Do not treat editorial shortlists as objective guarantees.
+## Dataset limitations
+The catalog is not an internet-wide census. "All verified" means all records successfully discovered and accepted from the configured source registry at the time of ingestion. Quarantined, stale, conflicting, and unverified records are not exposed as verified catalog entries.
