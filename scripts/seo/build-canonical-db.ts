@@ -54,13 +54,12 @@ const knownRoutes: RouteInfo[] = [
   { path: "/robots.txt", kind: "utility", indexable: false, sitemap: false, source: "public/robots.txt" },
   { path: "/sitemap.xml", kind: "utility", indexable: false, sitemap: false, source: "app/sitemap.ts (Next.js runtime)" },
   { path: "/llms.txt", kind: "utility", indexable: false, sitemap: false, source: "public/llms.txt" },
-  { path: "/llms-full.txt", kind: "utility", indexable: false, sitemap: false, source: "public/llms-full.txt" },
+  { path: "/llms-full.txt", kind: "utility", indexable: false, sitemap: false, source: "app/llms-full.txt/route.ts (overrides public/llms-full.txt)" },
   { path: "/favicon.svg", kind: "asset", indexable: false, sitemap: false, source: "public/favicon.svg" },
   { path: "/agents.json", kind: "api", indexable: false, sitemap: false, source: "app/agents.json/route.ts" },
   { path: "/catalog.json", kind: "api", indexable: false, sitemap: false, source: "app/catalog.json/route.ts" },
   { path: "/models.json", kind: "api", indexable: false, sitemap: false, source: "app/models.json/route.ts" },
   { path: "/providers.json", kind: "api", indexable: false, sitemap: false, source: "app/providers.json/route.ts" },
-  { path: "/llms-full.txt/route", kind: "api", indexable: false, sitemap: false, source: "app/llms-full.txt/route.ts" },
 ];
 
 async function main(): Promise<void> {
@@ -101,7 +100,7 @@ async function main(): Promise<void> {
         sources: [{ type: "route", file: r.source }],
         currentEvidence: [{ type: "page", source: r.source }],
         redirect: null,
-        status: r.indexable ? 200 : 404,
+        status: r.kind === "admin" ? 404 : 200,
         indexable: r.indexable,
         sitemap: r.sitemap,
         robotsAllowed: true,

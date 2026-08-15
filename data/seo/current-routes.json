@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:02:57.667Z",
+  "generatedAt": "2026-08-15T07:37:09.884Z",
   "source": "src/routing/routeRegistry.ts + app/sitemap.ts + catalog verification",
   "canonicalOrigin": "https://bestaiagent.in",
   "preferredProtocol": "https",
@@ -174,7 +174,7 @@
       "kind": "utility",
       "indexable": false,
       "sitemap": false,
-      "source": "public/llms-full.txt"
+      "source": "app/llms-full.txt/route.ts (overrides public/llms-full.txt)"
     },
     {
       "path": "/favicon.svg",
@@ -210,13 +210,6 @@
       "indexable": false,
       "sitemap": false,
       "source": "app/providers.json/route.ts"
-    },
-    {
-      "path": "/llms-full.txt/route",
-      "kind": "api",
-      "indexable": false,
-      "sitemap": false,
-      "source": "app/llms-full.txt/route.ts"
     }
   ],
   "indexableCount": 19,

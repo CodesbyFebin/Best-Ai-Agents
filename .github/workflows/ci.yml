@@ -19,5 +19,16 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run test
+      - run: npm run seo:recover-urls
+      - run: npm run seo:build-canonical-db
+      - run: npm run seo:build-redirect-map
+      - run: npm run seo:generate-sitemap
+      - run: npm run seo:generate-reports
+      - run: npm run seo:generate-sc-reconciliation
+      - run: npm run verify:canonical
+      - run: npm run verify:redirects
+      - run: npm run verify:sitemap
+      - run: npm run verify:robots
+      - run: npm run verify:seo
       - run: npx tsx scripts/verify-routes.ts
       - run: npm run build
