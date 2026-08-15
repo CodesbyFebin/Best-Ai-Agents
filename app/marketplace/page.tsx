@@ -17,7 +17,7 @@ const principles = ["No pay-to-rank claims", "Vendor facts remain attributable",
 export default function MarketplacePage() {
   return (
     <main className="authorityPage marketplaceAuthority">
-      <header className="authorityNav"><a className="brand" href="/">BestAI<span>Agent</span><b>.in</b></a><nav><a href="/">Discover</a><a href="/categories">Categories</a><a href="/built-in-india">India Fit</a><a href="/methodology">Methodology</a><a href="/resources">Learn</a></nav></header>
+      <header className="authorityNav"><a className="brand" href="/">BestAI<span>Agent</span><b>.in</b></a><nav><a href="/">Discover</a><a href="/categories">Categories</a><a href="/built-in-india">India Fit</a><a href="/#methodology">Methodology</a><a href="/resources">Learn</a></nav></header>
       <section className="authorityHero"><span className="kicker">Discover · submit · deploy</span><h1>A marketplace layer without turning discovery into advertising.</h1><p>Marketplace pages help users move from a verified product description to the appropriate vendor or deployment surface. Listing and submission are distinct from editorial endorsement.</p><div className="marketCore"><strong>AI</strong><span>DISCOVER</span><span>EVALUATE</span><span>DEPLOY</span></div></section>
       <section className="stepGrid">{steps.map(([n, title, copy]) => <article className="authorityCard" key={n}><span className="stepNo">{n}</span><h2>{title}</h2><p>{copy}</p></article>)}</section>
       <section className="authorityBand"><span className="kicker">Marketplace policy</span><h2>Trust is part of the product.</h2><div className="chipGrid">{principles.map(item => <span key={item}>✓ {item}</span>)}</div></section>
