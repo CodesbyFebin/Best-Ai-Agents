@@ -1,6 +1,6 @@
 export interface RouteRecord {
   path: string;
-  kind: "home" | "directory" | "agent" | "category" | "comparison" | "research" | "document" | "admin";
+  kind: "home" | "directory" | "agent" | "category" | "comparison" | "research" | "document" | "pillar" | "admin";
   indexable: boolean;
   sitemap: boolean;
 }
@@ -18,5 +18,15 @@ export const routeRegistry: RouteRecord[] = [
   { path: "/blog", kind: "document", indexable: true, sitemap: true },
   { path: "/press", kind: "document", indexable: true, sitemap: true },
   { path: "/contact", kind: "document", indexable: true, sitemap: true },
-  { path: "/admin", kind: "admin", indexable: false, sitemap: false }
+  { path: "/ai-agents", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/ai-agents-2026", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/ai-agents-for-developers", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/enterprise-ai-agents", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/ai-agent-frameworks", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/big-tech-ai-agent-stack", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/vertical-ai-agents", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/ai-agent-security-ethics", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/future-of-agentic-ai", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/ai-agent-roi-implementation-strategy", kind: "pillar", indexable: true, sitemap: true },
+  { path: "/admin", kind: "admin", indexable: false, sitemap: false },
 ];
