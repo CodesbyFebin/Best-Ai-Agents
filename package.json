@@ -1,6 +1,6 @@
 {
   "name": "bestaiagent-discovery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -11,7 +11,28 @@
     "start": "next start",
     "lint": "eslint app --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build"
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:types": "tsc --noEmit",
+    "seo:recover-urls": "tsx scripts/seo/recover-urls.ts",
+    "seo:build-canonical-db": "tsx scripts/seo/build-canonical-db.ts",
+    "seo:build-redirect-map": "tsx scripts/seo/build-redirect-map.ts",
+    "seo:generate-sitemap": "tsx scripts/seo/generate-sitemap.ts",
+    "seo:generate-reports": "tsx scripts/seo/generate-reports.ts",
+    "seo:generate-sc-reconciliation": "tsx scripts/seo/generate-sc-reconciliation.ts",
+    "verify:no-legacy-server": "node scripts/verify-no-legacy-server.mjs",
+    "verify:routes": "tsx scripts/verify-routes.ts",
+    "verify:pillars": "tsx scripts/verify-pillars.ts",
+    "verify:performance": "node scripts/verify-performance.mjs",
+    "verify:canonical": "tsx scripts/verify-canonicals.ts",
+    "verify:redirects": "tsx scripts/verify-redirects.ts",
+    "verify:sitemap": "tsx scripts/verify-sitemap.ts",
+    "verify:robots": "tsx scripts/verify-robots.ts",
+    "verify:seo": "tsx scripts/verify-seo.ts",
+    "catalog:crawl": "tsx scripts/catalog/crawl.ts",
+    "verify:catalog": "tsx scripts/catalog/validate.ts",
+    "verify:all": "npm run verify:no-legacy-server && npm run test && npm run verify:routes && npm run verify:pillars && npm run verify:performance && npm run verify:catalog && npm run verify:canonical && npm run verify:redirects && npm run verify:sitemap && npm run verify:robots && npm run build",
+    "verify:recovery": "npm run seo:recover-urls && npm run seo:build-canonical-db && npm run seo:build-redirect-map && npm run seo:generate-sitemap && npm run seo:generate-reports && npm run seo:generate-sc-reconciliation && npm run verify:canonical && npm run verify:redirects && npm run verify:sitemap && npm run verify:robots && npm run verify:seo"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
@@ -32,11 +53,13 @@
     "eslint-config-next": "16.2.6",
     "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
+    "tsx": "4.23.1",
     "typescript": "5.9.3",
     "vinext": "0.0.50",
     "vite": "8.0.13",
+    "vitest": "^4.1.10",
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "BestAIAgent.in \u2014 AI Agent Discovery Platform"
+  "displayName": "BestAIAgent.in — AI Agent Discovery Platform"
 }

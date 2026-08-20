@@ -1,0 +1,73 @@
+# BestAIAgent.in — Machine-readable site map
+
+## Site identity
+Canonical: https://bestaiagent.in/
+Language: en-IN
+Purpose: independent AI agent discovery and evidence-led comparison.
+
+## Primary user journeys
+1. Discover agents by task or category.
+2. Compare products inside a shared user workflow before crossing categories.
+3. Inspect first-party evidence and review dates for material product claims.
+4. Evaluate India-specific adoption context separately from global product capability.
+5. Learn how agentic workflows, coding agents, automation platforms, and related systems differ.
+
+## Priority pillar documents
+- https://bestaiagent.in/best-ai-agent
+- https://bestaiagent.in/best-ai-agent-for-business
+- https://bestaiagent.in/best-ai-agent-for-coding
+- https://bestaiagent.in/best-ai-agent-alternatives
+- https://bestaiagent.in/best-ai-agents-for-automation
+
+Each pillar contains:
+- a direct answer near the top of the page
+- a workflow-specific evidence shortlist
+- first-party or primary-source links with verification dates
+- visible methodology and limitations
+- FAQ answers that match visible page content
+- BreadcrumbList, ItemList, FAQPage, and WebPage structured data
+- no AggregateRating or unsupported universal winner claim
+
+## Canonical discovery surfaces
+- Homepage: https://bestaiagent.in/
+- Categories: https://bestaiagent.in/categories
+- India Fit: https://bestaiagent.in/built-in-india
+- Marketplace: https://bestaiagent.in/marketplace
+- Resources: https://bestaiagent.in/resources
+
+## Current evidence-backed examples on priority pillars
+- Claude Code — Coding — Anthropic documentation
+- Cursor — Coding — Cursor product/pricing sources, including official India-specific Cursor Start evidence
+- GitHub Copilot — Coding — GitHub Copilot agents documentation
+- Lindy — Business — Lindy product/pricing documentation
+- n8n — Automation — n8n AI agents product documentation
+- AI by Zapier — Automation — Zapier migration and product documentation
+
+## Evaluation signals
+- Workflow fit
+- First-party evidence quality and freshness
+- Integration model
+- Deployment model
+- Human approval and deterministic controls where relevant
+- Pricing and regional availability where directly sourced
+- India-specific buying and deployment context
+
+## Editorial safeguards
+- Evidence before rankings.
+- Products designed for different jobs are not forced into one universal score.
+- Unsupported ratings, testimonials, certifications, partnerships, and endorsements are excluded.
+- Product facts should be tied to first-party or primary evidence and reviewed periodically.
+- INR context must be distinguished from official local pricing; official India pricing is labelled as such only when the vendor publishes it.
+- Availability, pricing, capabilities, integrations, and regional support can change after the verification date.
+
+## Canonical navigation
+https://bestaiagent.in/
+https://bestaiagent.in/best-ai-agent
+https://bestaiagent.in/best-ai-agent-for-business
+https://bestaiagent.in/best-ai-agent-for-coding
+https://bestaiagent.in/best-ai-agent-alternatives
+https://bestaiagent.in/best-ai-agents-for-automation
+https://bestaiagent.in/categories
+https://bestaiagent.in/built-in-india
+https://bestaiagent.in/marketplace
+https://bestaiagent.in/resources

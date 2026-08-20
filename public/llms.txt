@@ -1,0 +1,37 @@
+# BestAIAgent.in
+
+Evidence-first discovery of public AI models, agents, frameworks, and providers.
+
+## Canonical directories
+- https://bestaiagent.in/models
+- https://bestaiagent.in/agents
+- https://bestaiagent.in/providers
+- https://bestaiagent.in/categories
+- https://bestaiagent.in/compare
+- https://bestaiagent.in/best-ai-agent
+- https://bestaiagent.in/best-ai-agent-for-business
+- https://bestaiagent.in/best-ai-agent-for-coding
+- https://bestaiagent.in/best-ai-agent-alternatives
+- https://bestaiagent.in/best-ai-agents-for-automation
+
+## Machine-readable catalog
+- https://bestaiagent.in/catalog.json
+- https://bestaiagent.in/models.json
+- https://bestaiagent.in/agents.json
+- https://bestaiagent.in/providers.json
+- https://bestaiagent.in/llms.txt
+
+## Verification policy
+A public entity must be published and verified and must have authoritative first-party evidence. Unknown values remain unknown. Changing commercial facts must be checked against the linked evidence source. Editorial inclusion is not endorsement.
+
+## Source policy
+Discovery may begin from search or public indexes, but publication requires allowlisted provider-owned or otherwise verified authoritative sources. Crawling respects robots.txt, rate limits, HTTPS, bounded redirects, bounded responses, and hostname allowlists.
+
+## Freshness contract
+Catalog entities expose `lastModified` and `updatedAt` timestamps in JSON catalog feeds. Pillar and guide pages expose `datePublished` and `dateModified` in PageJsonLd structured data implementing SpeakableSpecification. Sitemap entries carry `lastModified` for every canonical URL. Consumers should refresh feeds and sitemap entries when upstream evidence timestamps change.
+
+## Structured-data contract
+All indexable pages include PageJsonLd with `@type: Article`, `SpeakableSpecification`, `datePublished`, and `dateModified`. Answer pages use Question microdata (`itemScope`, `itemType: https://schema.org/Question`). Pillar pages include FAQPage and HowTo structured data with SpeakableSpecification.
+
+## Dataset limitations
+The catalog is not an internet-wide census. "All verified" means all records successfully discovered and accepted from the configured source registry at the time of ingestion. Quarantined, stale, conflicting, and unverified records are not exposed as verified catalog entries.

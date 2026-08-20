@@ -1,0 +1,2416 @@
+{
+  "generatedAt": "2026-08-15T10:24:52.986Z",
+  "canonicalOrigin": "https://bestaiagent.in",
+  "policy": {
+    "protocol": "https",
+    "hostname": "bestaiagent.in",
+    "noWww": true,
+    "trailingSlash": false,
+    "noTrackingParams": true,
+    "noFragment": true,
+    "noDuplicateSlashes": true
+  },
+  "urls": [
+    {
+      "url": "https://bestaiagent.in/",
+      "path": "/",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/models",
+      "path": "/models",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/models",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/models"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/agents",
+      "path": "/agents",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/agents",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/agents"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/providers",
+      "path": "/providers",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/providers",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/providers"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/categories",
+      "path": "/categories",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/categories",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/categories"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/compare",
+      "path": "/compare",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/compare",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/compare"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent",
+      "path": "/best-ai-agent",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-business",
+      "path": "/best-ai-agent-for-business",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-for-business",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-for-business"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "path": "/best-ai-agent-for-coding",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-for-coding",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-for-coding"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-alternatives",
+      "path": "/best-ai-agent-alternatives",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agent-alternatives",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agent-alternatives"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "path": "/best-ai-agents-for-automation",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/best-ai-agents-for-automation",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/best-ai-agents-for-automation"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/built-in-india",
+      "path": "/built-in-india",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/built-in-india",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/built-in-india"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/marketplace",
+      "path": "/marketplace",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/marketplace",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/marketplace"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/resources",
+      "path": "/resources",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/resources",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/resources"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/about",
+      "path": "/about",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/about",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/about"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/methodology",
+      "path": "/methodology",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/methodology",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        },
+        {
+          "type": "metadata",
+          "canonical": "https://bestaiagent.in/methodology"
+        },
+        {
+          "type": "sitemap",
+          "file": "app/sitemap.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": true,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.976Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/models/:slug",
+      "path": "/models/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/models/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/agents/:slug",
+      "path": "/agents/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/agents/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/providers/:slug",
+      "path": "/providers/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/providers/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/categories/:slug",
+      "path": "/categories/:slug",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/categories/:slug",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/compare/:pair",
+      "path": "/compare/:pair",
+      "classification": "CURRENT_CANONICAL",
+      "canonical": "https://bestaiagent.in/compare/:pair",
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 200,
+      "indexable": true,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/admin",
+      "path": "/admin",
+      "classification": "NOT_INDEXABLE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "route",
+          "file": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "currentEvidence": [
+        {
+          "type": "page",
+          "source": "src/routing/routeRegistry.ts"
+        }
+      ],
+      "redirect": null,
+      "status": 404,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.977Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agents",
+      "path": "/best-ai-agents",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/best-ai-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/best-ai-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "fb56289",
+          "file": "/best-ai-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): expose catalog feeds and LLM-readable verification contract"
+        },
+        {
+          "type": "git",
+          "commit": "cf83dcd",
+          "file": "/best-ai-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "geo: align machine-readable map with canonical routes"
+        },
+        {
+          "type": "git",
+          "commit": "23e94ff",
+          "file": "/best-ai-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "geo: publish canonical pillar routes in llms.txt"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agents.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/best-ai-agent",
+      "status": 301,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": ""
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-india",
+      "path": "/best-ai-agent-india",
+      "classification": "REDIRECT_CANDIDATE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/best-ai-agent-india",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/best-ai-agent-india",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "e168a82",
+          "file": "/best-ai-agent-india",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover India buyer guide"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/best-ai-agent-india",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/best-ai-agent-india",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-best-ai-agent-india.json",
+          "note": "Recovered source content"
+        },
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-08-03"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/built-in-india",
+      "status": 301,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google last crawled 2026-08-03."
+    },
+    {
+      "url": "https://bestaiagent.in/cursor-pricing",
+      "path": "/cursor-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/cursor-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/cursor-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "7e6ad0b",
+          "file": "/cursor-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 1"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/cursor-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "1abf7f7",
+          "file": "/cursor-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "test(p10a): add recovery runtime verification gates"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/claude-code-pricing",
+      "path": "/claude-code-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/claude-code-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/claude-code-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "7e6ad0b",
+          "file": "/claude-code-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 1"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/claude-code-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/claude-code-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        },
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-08-05"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content. Google last crawled 2026-08-05."
+    },
+    {
+      "url": "https://bestaiagent.in/github-copilot-pricing",
+      "path": "/github-copilot-pricing",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/github-copilot-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/github-copilot-pricing",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "3e8e167",
+          "file": "/github-copilot-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 2"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/github-copilot-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "1abf7f7",
+          "file": "/github-copilot-pricing",
+          "branch": "remotes/origin/develop",
+          "note": "test(p10a): add recovery runtime verification gates"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/cursor-vs-codex",
+      "path": "/cursor-vs-codex",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/cursor-vs-codex",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/cursor-vs-codex",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "a7c97c0",
+          "file": "/cursor-vs-codex",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 3"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/cursor-vs-codex",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "1abf7f7",
+          "file": "/cursor-vs-codex",
+          "branch": "remotes/origin/develop",
+          "note": "test(p10a): add recovery runtime verification gates"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/glossary-hub",
+      "path": "/glossary-hub",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/glossary-hub",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/glossary-hub",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "a7c97c0",
+          "file": "/glossary-hub",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 3"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/glossary-hub",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "c128b42",
+          "file": "/glossary-hub",
+          "branch": "remotes/origin/develop",
+          "note": "feat(p10a): add GSC recovery runtime core"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/claude-code-alternatives",
+      "path": "/claude-code-alternatives",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/claude-code-alternatives",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/claude-code-alternatives",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "a7c97c0",
+          "file": "/claude-code-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 3"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/claude-code-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/claude-code-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/how-to-use-cursor-ai",
+      "path": "/how-to-use-cursor-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/how-to-use-cursor-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/how-to-use-cursor-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "a7c97c0",
+          "file": "/how-to-use-cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 3"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/how-to-use-cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/how-to-use-cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/flowise-alternatives",
+      "path": "/flowise-alternatives",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/flowise-alternatives",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/flowise-alternatives",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "0dedbd0",
+          "file": "/flowise-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 4a"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/flowise-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/flowise-alternatives",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-04a.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/mcp-directory",
+      "path": "/mcp-directory",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/mcp-directory",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/mcp-directory",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "0f35926",
+          "file": "/mcp-directory",
+          "branch": "remotes/origin/develop",
+          "note": "fix(p10a.1): add canonical runtime page ownership"
+        },
+        {
+          "type": "git",
+          "commit": "0dedbd0",
+          "file": "/mcp-directory",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 4a"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/mcp-directory",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-04a.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-mcp-servers",
+      "path": "/best-mcp-servers",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/best-mcp-servers",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/best-mcp-servers",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "7e6ad0b",
+          "file": "/best-mcp-servers",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 1"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/best-mcp-servers",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/best-mcp-servers",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-free-ai-coding-agents",
+      "path": "/best-free-ai-coding-agents",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/best-free-ai-coding-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/best-free-ai-coding-agents",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "3e8e167",
+          "file": "/best-free-ai-coding-agents",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 2"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/best-free-ai-coding-agents",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/best-free-ai-coding-agents",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agents-for-finance",
+      "path": "/ai-agents-for-finance",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/ai-agents-for-finance",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/ai-agents-for-finance",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "3e8e167",
+          "file": "/ai-agents-for-finance",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 2"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/ai-agents-for-finance",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/ai-agents-for-finance",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-02.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-voice-agent",
+      "path": "/best-ai-voice-agent",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/best-ai-voice-agent",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/best-ai-voice-agent",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "a7c97c0",
+          "file": "/best-ai-voice-agent",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 3"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/best-ai-voice-agent",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/best-ai-voice-agent",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-03.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/ai-agent-rankings",
+      "path": "/ai-agent-rankings",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/ai-agent-rankings",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/ai-agent-rankings",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "6a7b333",
+          "file": "/ai-agent-rankings",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover rankings methodology"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/ai-agent-rankings",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/ai-agent-rankings",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-02.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/cursor-ai",
+      "path": "/tools/cursor-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/tools/cursor-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/tools/cursor-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "7e6ad0b",
+          "file": "/tools/cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 1"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/tools/cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "1abf7f7",
+          "file": "/tools/cursor-ai",
+          "branch": "remotes/origin/develop",
+          "note": "test(p10a): add recovery runtime verification gates"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/agents/cursor",
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/yellow-ai",
+      "path": "/tools/yellow-ai",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/tools/yellow-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/tools/yellow-ai",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "3e8e167",
+          "file": "/tools/yellow-ai",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 2"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/tools/yellow-ai",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "c128b42",
+          "file": "/tools/yellow-ai",
+          "branch": "remotes/origin/develop",
+          "note": "feat(p10a): add GSC recovery runtime core"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/agents/yellow-ai",
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/tools/flowise",
+      "path": "/tools/flowise",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/tools/flowise",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/tools/flowise",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "3e8e167",
+          "file": "/tools/flowise",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover protected pages batch 2"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/tools/flowise",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "1abf7f7",
+          "file": "/tools/flowise",
+          "branch": "remotes/origin/develop",
+          "note": "test(p10a): add recovery runtime verification gates"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-batch-01.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": "https://bestaiagent.in/agents/flowise-ai",
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "path": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "git",
+          "commit": "dba0e9d",
+          "file": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "refactor(seo): centralize route management and enhance URL recovery"
+        },
+        {
+          "type": "git",
+          "commit": "7a81fbb",
+          "file": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+          "branch": "session/agent_b314ca20-c8b8-4335-8310-eb3518ba9c65",
+          "note": "feat(seo): implement automated SEO management and redirect system"
+        },
+        {
+          "type": "git",
+          "commit": "10df9e9",
+          "file": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+          "branch": "remotes/origin/develop",
+          "note": "content(p10a.1): recover MCP authorization article"
+        },
+        {
+          "type": "git",
+          "commit": "793ad22",
+          "file": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+          "branch": "remotes/origin/develop",
+          "note": "data(p10a): add GSC protected source map"
+        },
+        {
+          "type": "git",
+          "commit": "81ec6fe",
+          "file": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+          "branch": "remotes/origin/develop",
+          "note": "feat: add selective migration tooling"
+        },
+        {
+          "type": "gsc-protected",
+          "file": "data/seo/protected-urls.json",
+          "note": "GSC protected historical URL"
+        },
+        {
+          "type": "gsc",
+          "export": "GSC Performance/Pages export",
+          "note": "Search Console indexed evidence"
+        },
+        {
+          "type": "recovery",
+          "file": "data/recovery/protected-mcp-auth-blog.json",
+          "note": "Recovered source content"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Historical URL without a current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/voice-ai-case-studies",
+      "path": "/voice-ai-case-studies",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-08-05"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-08-05); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/twilio-server",
+      "path": "/twilio-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-08-02"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-08-02); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-no-code-ai-agent-builder",
+      "path": "/best-no-code-ai-agent-builder",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-08-01"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-08-01); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/how-to-build-multi-agent-system",
+      "path": "/how-to-build-multi-agent-system",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-31"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-31); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/best-ai-agent-for-law-firms",
+      "path": "/best-ai-agent-for-law-firms",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-31"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-31); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/agentbench-guide",
+      "path": "/agentbench-guide",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-31"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-31); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/jira-server",
+      "path": "/jira-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-31"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-31); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/brave-search",
+      "path": "/brave-search",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/arxiv-server",
+      "path": "/arxiv-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/mongodb-server",
+      "path": "/mongodb-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/jina-reader",
+      "path": "/jina-reader",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/news-api-server",
+      "path": "/news-api-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/firecrawl-server",
+      "path": "/firecrawl-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/slack-mcp-server",
+      "path": "/slack-mcp-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-27"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-27); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/mcp/tutorials/mcp-with-claude-desktop",
+      "path": "/mcp/tutorials/mcp-with-claude-desktop",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-23"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-23); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    },
+    {
+      "url": "https://bestaiagent.in/mcp/servers/google-drive-server",
+      "path": "/mcp/servers/google-drive-server",
+      "classification": "GONE",
+      "canonical": null,
+      "sources": [
+        {
+          "type": "gsc-crawl",
+          "export": "gsc-crawled-2026-08-15.csv",
+          "note": "Google last crawled 2026-07-23"
+        }
+      ],
+      "currentEvidence": [],
+      "redirect": null,
+      "status": 410,
+      "indexable": false,
+      "sitemap": false,
+      "robotsAllowed": true,
+      "lastVerified": "2026-08-15T10:24:52.985Z",
+      "notes": "Google-crawled historical URL (last crawled 2026-07-23); no current equivalent route. Returns 410 Gone; do not fabricate replacement content."
+    }
+  ],
+  "total": 58,
+  "indexable": 21,
+  "sitemapCount": 16
+}

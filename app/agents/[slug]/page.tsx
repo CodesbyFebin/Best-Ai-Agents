@@ -1,0 +1,8 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { catalog } from "@/src/catalog/catalog";
+import { isEntityIndexable } from "@/src/catalog/verification";
+import type { AgentRecord } from "@/src/catalog/types";
+export const dynamicParams = false;
+export function generateStaticParams(){ return catalog.filter(e => isEntityIndexable(e) && "entityType" in e).map(e => ({slug:e.slug})); }
+export default async function AgentPage({params}:{params:Promise<{slug:string}>}) { const {slug}=await params; const a=catalog.find((e): e is AgentRecord => e.slug===slug && "entityType" in e); if(!a || !isEntityIndexable(a)) notFound(); return <main className="authorityPage"><header className="authorityNav"><Link className="brand" href="/">BestAI<span>Agent</span><b>.in</b></Link></header><section className="authorityHero"><span className="kicker">Verified agent</span><h1>{a.name}</h1><p>{a.description ?? "Description not verified."}</p><p>Provider: {a.providerName} · Last verified: {a.lastChecked.slice(0,10)}</p></section><section className="authorityGrid"><article className="authorityCard"><h2>Capabilities</h2><p>{a.capabilities.join(" · ") || "Not verified"}</p><p>Interfaces: {Object.entries(a.interfaces).filter(([,v])=>v===true).map(([k])=>k).join(", ") || "Not verified"}</p><p>MCP support: {a.mcpSupport === null || a.mcpSupport === undefined ? "Not verified" : a.mcpSupport ? "Yes" : "No"}</p></article><article className="authorityCard"><h2>Evidence</h2>{a.evidence.map(e=><p key={e.id}><a href={e.sourceUrl} rel="nofollow">{e.sourceTitle ?? e.sourceUrl}</a> · {e.verificationStatus}</p>)}</article></section></main>; }

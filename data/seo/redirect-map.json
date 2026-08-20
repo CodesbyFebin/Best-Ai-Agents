@@ -1,0 +1,397 @@
+{
+  "source": "CodesbyFebin/Best-Ai-Agents:feat/pillar-server-data:data/seo/historical-url-sources.json + data/migration/protected-urls.json @ origin/feature/gsc-recovery-runtime",
+  "policy": "Only redirects whose destinations are direct live current routes are active. GSC-protected source URLs remain direct. Legacy rules with unrecovered destinations are retained in quarantine so the runtime never redirects users or crawlers to a 404.",
+  "active": [
+    {
+      "from": "/best-ai-agents",
+      "to": "/best-ai-agent",
+      "reason": "Maps to a live canonical page in the evidence-backed redirect map"
+    },
+    {
+      "from": "/best-ai-agent-india",
+      "to": "/built-in-india",
+      "reason": "Maps to a live canonical page in the evidence-backed redirect map"
+    }
+  ],
+  "quarantined": [
+    {
+      "from": "/tools/cursor",
+      "to": "/agents/cursor",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/claude-code",
+      "to": "/agents/claude-code",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/chatgpt",
+      "to": "/agents/chatgpt",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/claude",
+      "to": "/agents/claude",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/vapi",
+      "to": "/agents/vapi",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/vapi-ai",
+      "to": "/agents/vapi",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/crewai",
+      "to": "/agents/crewai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/flowise-ai",
+      "to": "/agents/flowise-ai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/reclaim-ai",
+      "to": "/agents/reclaim-ai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/n8n",
+      "to": "/agents/n8n",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/relevance-ai",
+      "to": "/agents/relevance-ai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/langgraph",
+      "to": "/agents/langgraph",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/autogen",
+      "to": "/agents/autogen",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/windsurf",
+      "to": "/agents/windsurf",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/tools/retell-ai",
+      "to": "/agents/retell-ai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/a/best-ai-agent/reviews/chatgpt",
+      "to": "/agents/chatgpt",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/a/best-ai-agent/reviews/claude",
+      "to": "/agents/claude",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/a/best-ai-agent/reviews/cursor",
+      "to": "/agents/cursor",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/a/best-ai-agent/reviews/vapi",
+      "to": "/agents/vapi",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/a/best-ai-agent/reviews/crewai",
+      "to": "/agents/crewai",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/best-ai-agent-for-crm",
+      "to": "/categories/crm",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/ai-agents-for-crm",
+      "to": "/categories/crm",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/best-ai-agent-for-sales",
+      "to": "/categories/sales",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/ai-agents-for-sales",
+      "to": "/categories/sales",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/best-ai-agent-for-marketing",
+      "to": "/categories/marketing",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/ai-agents-for-marketing",
+      "to": "/categories/marketing",
+      "reason": "Destination is not yet a direct live P10A.1 page; inactive to prevent redirect-to-404."
+    },
+    {
+      "from": "/notion-server",
+      "to": "/mcp/servers/notion",
+      "reason": "Baseline report flagged destination semantics; keep inactive until target evidence is re-verified."
+    },
+    {
+      "from": "/excel-server",
+      "to": "/mcp/servers/excel",
+      "reason": "Baseline report flagged destination semantics; keep inactive until target evidence is re-verified."
+    },
+    {
+      "from": "/shopify-server",
+      "to": "/mcp/servers/shopify",
+      "reason": "Baseline report flagged destination semantics; keep inactive until target evidence is re-verified."
+    },
+    {
+      "from": "/sitemap.xml",
+      "to": "/sitemap-index.xml",
+      "reason": "The clean runtime serves /sitemap.xml directly as the sitemap index; redirect remains inactive."
+    },
+    {
+      "from": "/sitemap-indexed.xml",
+      "to": "/sitemap-index.xml",
+      "reason": "Old target was reported missing; add a disposition only after a real replacement endpoint exists."
+    },
+    {
+      "from": "/cursor-pricing",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/claude-code-pricing",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/github-copilot-pricing",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/cursor-vs-codex",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/glossary-hub",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/claude-code-alternatives",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/how-to-use-cursor-ai",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/flowise-alternatives",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mcp-directory",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-mcp-servers",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-free-ai-coding-agents",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/ai-agents-for-finance",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-ai-voice-agent",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/ai-agent-rankings",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/cursor-ai",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/yellow-ai",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/tools/flowise",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/voice-ai-case-studies",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/twilio-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-no-code-ai-agent-builder",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/how-to-build-multi-agent-system",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/best-ai-agent-for-law-firms",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/agentbench-guide",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/jira-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/brave-search",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/arxiv-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mongodb-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/jina-reader",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/news-api-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/firecrawl-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/slack-mcp-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mcp/tutorials/mcp-with-claude-desktop",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    },
+    {
+      "from": "/mcp/servers/google-drive-server",
+      "to": "",
+      "reason": "Historical URL with no current equivalent route. Returns 410 Gone."
+    }
+  ],
+  "sourceUrls": [
+    "/best-ai-agent",
+    "/best-ai-agents-for-automation",
+    "/best-ai-agent-for-coding",
+    "/best-ai-agents",
+    "/best-ai-agent-india",
+    "/cursor-pricing",
+    "/claude-code-pricing",
+    "/github-copilot-pricing",
+    "/cursor-vs-codex",
+    "/glossary-hub",
+    "/claude-code-alternatives",
+    "/how-to-use-cursor-ai",
+    "/flowise-alternatives",
+    "/mcp-directory",
+    "/best-mcp-servers",
+    "/best-free-ai-coding-agents",
+    "/ai-agents-for-finance",
+    "/best-ai-voice-agent",
+    "/ai-agent-rankings",
+    "/tools/cursor-ai",
+    "/tools/yellow-ai",
+    "/tools/flowise",
+    "/blog/mcp-agent-interoperability/mcp-authentication-oauth/the-emerging-stack-for-short-lived-agent-credentials-what-builders-need-now",
+    "/",
+    "/models",
+    "/agents",
+    "/providers",
+    "/categories",
+    "/compare",
+    "/best-ai-agent-for-business",
+    "/best-ai-agent-alternatives",
+    "/built-in-india",
+    "/marketplace",
+    "/resources",
+    "/about",
+    "/methodology",
+    "/voice-ai-case-studies",
+    "/twilio-server",
+    "/best-no-code-ai-agent-builder",
+    "/how-to-build-multi-agent-system",
+    "/best-ai-agent-for-law-firms",
+    "/agentbench-guide",
+    "/jira-server",
+    "/brave-search",
+    "/arxiv-server",
+    "/mongodb-server",
+    "/jina-reader",
+    "/news-api-server",
+    "/firecrawl-server",
+    "/slack-mcp-server",
+    "/mcp/tutorials/mcp-with-claude-desktop",
+    "/mcp/servers/google-drive-server"
+  ]
+}

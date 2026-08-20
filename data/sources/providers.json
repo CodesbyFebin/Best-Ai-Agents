@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "policy": {"allowlistedOnly": true, "robotsAware": true, "maxRedirects": 5, "timeoutMs": 15000, "maxBytes": 2000000, "requestsPerSecond": 1},
+  "providers": [
+    {"id":"openai","name":"OpenAI","officialUrl":"https://openai.com/","sources":["https://platform.openai.com/docs/models"]},
+    {"id":"anthropic","name":"Anthropic","officialUrl":"https://www.anthropic.com/","sources":["https://docs.anthropic.com/"]},
+    {"id":"google","name":"Google","officialUrl":"https://ai.google.dev/","sources":["https://ai.google.dev/gemini-api/docs/models","https://ai.google.dev/api/models"]},
+    {"id":"mistral","name":"Mistral AI","officialUrl":"https://mistral.ai/","sources":["https://docs.mistral.ai/models","https://docs.mistral.ai/api/endpoint/models"]},
+    {"id":"meta","name":"Meta AI","officialUrl":"https://ai.meta.com/llama/","sources":["https://huggingface.co/meta-llama"]},
+    {"id":"xai","name":"xAI","officialUrl":"https://x.ai/","sources":["https://docs.x.ai/"]},
+    {"id":"deepseek","name":"DeepSeek","officialUrl":"https://www.deepseek.com/","sources":["https://api-docs.deepseek.com/"]},
+    {"id":"qwen","name":"Qwen","officialUrl":"https://qwenlm.github.io/","sources":["https://huggingface.co/Qwen"]}
+  ]
+}

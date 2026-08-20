@@ -1,0 +1,49 @@
+name: Exact-head release verification
+
+on:
+  push:
+    branches:
+      - feat/pillar-server-data
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-exact-head:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out exact commit
+        uses: actions/checkout@v4
+
+      - name: Assert source identity
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          echo "Verified exact head: $GITHUB_SHA"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install exact lockfile
+        run: npm ci --no-audit --no-fund
+
+      - name: Verify no legacy Express server
+        run: npm run verify:no-legacy-server
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Verify routes
+        run: npm run verify:routes
+
+      - name: Verify pillars
+        run: npm run verify:pillars
+
+      - name: Production build
+        run: npm run build
