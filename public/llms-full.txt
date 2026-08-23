@@ -1,0 +1,225 @@
+# BestAIAgent.in — Complete LLM Index
+# Evidence-led AI agent directory for India and the world
+# Generated: 2026-08-23
+# Total URLs: 150+
+
+# === CORE LLMs ===
+# Top general-purpose language models
+
+# GPT-4 Series
+https://bestaiagent.in/models/gpt-4/
+https://bestaiagent.in/models/gpt-4o/
+https://bestaiagent.in/models/gpt-3-5-turbo/
+
+# Claude Series (Anthropic)
+https://bestaiagent.in/models/claude-3-5-sonnet/
+https://bestaiagent.in/models/claude-3-haiku/
+
+# Gemini Series (Google)
+https://bestaiagent.in/models/gemini-1-5-pro/
+https://bestaiagent.in/models/gemini-1-5-flash/
+
+# Llama Series (Meta)
+https://bestaiagent.in/models/llama-3-70b/
+https://bestaiagent.in/models/llama-3-8b/
+
+# Mistral Series (MISTRAL)
+https://bestaiagent.in/models/mistral-large/
+https://bestaiagent.in/models/mixtral-8x22b/
+https://bestaiagent.in/models/codestral-22b/
+
+# Qwen Series (Alibaba)
+https://bestaiagent.in/models/qwen-7b/
+https://bestaiagent.in/models/qwen-72b/
+
+# DeepSeek (DeepSeek)
+https://bestaiagent.in/models/deepseek-coder/
+
+# Google Gemma
+https://bestaiagent.in/models/gemma-7b/
+https://bestaiagent.in/models/gemma-2b/
+
+# Microsoft Phi
+https://bestaiagent.in/models/phi-3-mini/
+
+# Cohere Command
+https://bestaiagent.in/models/command-r-plus/
+https://bestaiagent.in/models/command-r/
+
+# TII Falcon
+https://bestaiagent.in/models/falcon-180b/
+
+# === CODING AGENTS ===
+# AI agents that write, review, and refactor code
+
+https://bestaiagent.in/agents/cursor/
+https://bestaiagent.in/agents/claude-code/
+https://bestaiagent.in/agents/github-copilot/
+https://bestaiagent.in/agents/replit-agent/
+https://bestaiagent.in/agents/codeium/
+https://bestaiagent.in/agents/windsurf/
+https://bestaiagent.in/agents/codewhisperer/
+https://bestaiagent.in/agents/continue/
+https://bestaiagent.in/agents/aider/
+https://bestaiagent.in/agents/cline/
+https://bestaiagent.in/agents/tabnine/
+
+# === BUSINESS AUTOMATION ===
+# AI agents for workflow automation and productivity
+
+https://bestaiagent.in/agents/n8n/
+https://bestaiagent.in/agents/zapier/
+https://bestaiagent.in/agents/make/
+https://bestaiagent.in/agents/lindy/
+https://bestaiagent.in/agents/notion-ai/
+https://bestaiagent.in/agents/slack-ai/
+https://bestaiagent.in/agents/monday-com/
+https://bestaiagent.in/agents/clickup-ai/
+https://bestaiagent.in/agents/asana-ai/
+https://bestaiagent.in/agents/tome/
+https://bestaiagent.in/agents/gamma/
+
+# === VOICE AI ===
+# Text-to-speech, speech-to-text, and conversational voice agents
+
+https://bestaiagent.in/agents/elevenlabs/
+https://bestaiagent.in/agents/deepgram/
+https://bestaiagent.in/agents/assemblyai/
+https://bestaiagent.in/agents/vapi/
+https://bestaiagent.in/agents/retell-ai/
+https://bestaiagent.in/agents/play-ht/
+https://bestaiagent.in/agents/murf-ai/
+
+# === FRAMEWORKS ===
+# Agent builder frameworks for orchestration and development
+
+https://bestaiagent.in/frameworks/langchain/
+https://bestaiagent.in/frameworks/langgraph/
+https://bestaiagent.in/frameworks/crewai/
+https://bestaiagent.in/frameworks/semantic-kernel/
+https://bestaiagent.in/frameworks/haystack/
+https://bestaiagent.in/frameworks/llamaindex/
+https://bestaiagent.in/frameworks/autogen/
+https://bestaiagent.in/frameworks/phidata/
+https://bestaiagent.in/frameworks/flowise/
+https://bestaiagent.in/frameworks/voiceflow/
+https://bestaiagent.in/frameworks/langsmith/
+https://bestaiagent.in/frameworks/haystack-agents/
+https://bestaiagent.in/frameworks/langchain-expression/
+https://bestaiagent.in/frameworks/openai-agents/
+https://bestaiagent.in/frameworks/swarm/
+
+# === INFRASTRUCTURE ===
+# Vector databases, storage, and deployment platforms
+
+https://bestaiagent.in/agents/pinecone/
+https://bestaiagent.in/agents/weaviate/
+https://bestaiagent.in/agents/qdrant/
+https://bestaiagent.in/agents/chroma/
+https://bestaiagent.in/agents/supabase/
+
+# === AGENT BUILDERS (from agent profiles) ===
+# Agents that build other AI agents
+
+https://bestaiagent.in/agents/langchain/
+https://bestaiagent.in/agents/crewai/
+https://bestaiagent.in/agents/langgraph/
+https://bestaiagent.in/agents/semantic-kernel/
+https://bestaiagent.in/agents/haystack/
+https://bestaiagent.in/agents/llamaindex/
+https://bestaiagent.in/agents/autogen/
+https://bestaiagent.in/agents/phidata/
+
+# === MCP (Model Context Protocol) ===
+# MCP servers and client tooling
+
+https://bestaiagent.in/categories/mcp/
+
+# === CATEGORIES ===
+# Organized by use case and capability
+
+https://bestaiagent.in/categories/coding-agents/
+https://bestaiagent.in/categories/business-automation/
+https://bestaiagent.in/categories/voice-ai/
+https://bestaiagent.in/categories/core-llms/
+https://bestaiagent.in/categories/agent-builders/
+https://bestaiagent.in/categories/infrastructure/
+https://bestaiagent.in/categories/mcp/
+https://bestaiagent.in/categories/pricing/
+https://bestaiagent.in/categories/security/
+https://bestaiagent.in/categories/india/
+https://bestaiagent.in/categories/learning/
+https://bestaiagent.in/categories/industry/
+
+# === COMPARISONS ===
+# Side-by-side agent and model comparisons
+
+https://bestaiagent.in/compare/chatgpt-vs-claude/
+https://bestaiagent.in/compare/cursor-vs-copilot/
+https://bestaiagent.in/compare/llama-vs-mistral/
+https://bestaiagent.in/compare/langchain-vs-crewai/
+
+# === RESEARCH ===
+# In-depth reports and market analysis
+
+https://bestaiagent.in/research/india-ai-landscape-2026/
+https://bestaiagent.in/research/mcp-ecosystem-report-2026/
+https://bestaiagent.in/research/ai-agents-india-buyers-guide/
+
+# === INDIA-SPECIFIC CONTENT ===
+# DPDP compliance, Indic language models, local deployment
+
+https://bestaiagent.in/categories/india/indic-llm-models/
+https://bestaiagent.in/categories/india/indiaai-initiative/
+https://bestaiagent.in/categories/india/dpdp-compliance/
+https://bestaiagent.in/categories/india/indian-enterprise-adoption/
+https://bestaiagent.in/categories/india/bhashini-platform/
+
+# === PRICING ANALYSIS ===
+# Transparent pricing guides with INR context
+
+https://bestaiagent.in/agents/cursor-pricing/
+https://bestaiagent.in/agents/claude-code-pricing/
+https://bestaiagent.in/agents/github-copilot-pricing/
+https://bestaiagent.in/agents/chatgpt-pricing/
+https://bestaiagent.in/agents/gemini-pricing/
+
+# === SECURITY & PRIVACY ===
+# Guides and compliance resources
+
+https://bestaiagent.in/categories/security/ai-security-privacy/
+https://bestaiagent.in/categories/security/data-privacy-india/
+https://bestaiagent.in/categories/security/prompt-injection-security/
+https://bestaiagent.in/categories/security/model-poisoning-defense/
+
+# === LEARNING RESOURCES ===
+# Educational guides and tutorials
+
+https://bestaiagent.in/categories/learning/ai-agent-primer/
+https://bestaiagent.in/categories/learning/langchain-tutorial/
+https://bestaiagent.in/categories/learning/rag-guide/
+https://bestaiagent.in/categories/learning/prompt-engineering/
+
+# === INDUSTRY ANALYSIS ===
+# Sector-specific AI adoption reports
+
+https://bestaiagent.in/categories/industry/ai-in-healthcare/
+https://bestaiagent.in/categories/industry/ai-in-finance/
+https://bestaiagent.in/categories/industry/ai-in-retail/
+https://bestaiagent.in/categories/industry/ai-in-education/
+
+# === STATIC PAGES ===
+https://bestaiagent.in/
+https://bestaiagent.in/about/
+https://bestaiagent.in/methodology/
+https://bestaiagent.in/contact/
+https://bestaiagent.in/privacy/
+https://bestaiagent.in/terms/
+
+# === API ===
+https://bestaiagent.in/api/catalog
+
+# === BLOG ===
+https://bestaiagent.in/blog
+
+# Last Updated: 2026-08-23
