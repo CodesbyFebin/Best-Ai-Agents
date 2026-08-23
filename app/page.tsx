@@ -1,1622 +1,407 @@
+import { agents } from "@/data/agents";
+import { categories } from "@/data/categories";
+
 export default function Home() {
+  const codingAgents = agents
+    .filter((a) => a.category === "Coding")
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
+  const topAgents = agents
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 12);
+
+  const indiaAgents = agents
+    .filter((a) => a.indiaFit >= 8.0)
+    .sort((a, b) => b.indiaFit - a.indiaFit)
+    .slice(0, 6);
+
   return (
     <main>
-      {/* Particles */}
-      <div id="particles" className="fixed inset-0 pointer-events-none z-0" />
-
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 glass-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <a href="#top" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-500 via-cyber-500 to-trust-500 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-brand-500/30 group-hover:shadow-brand-500/50 transition-shadow">
-                B
-              </div>
-              <div>
-                <span className="font-bold text-white text-base">
-                  BestAIAgent<span className="text-brand-500">.in</span>
-                </span>
-                <span className="hidden sm:inline-flex items-center ml-2 px-1.5 py-0.5 rounded text-[9px] font-bold bg-trust-500/10 text-trust-400 border border-trust-500/20">
-                  VERIFIED
-                </span>
-              </div>
-            </a>
-            <div className="hidden lg:flex items-center gap-7">
-              <a href="#services" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                Services
-              </a>
-              <a href="#mcp" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                MCP Infra
-              </a>
-              <a href="#directory" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                Directory
-              </a>
-              <a href="#india" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                India / DPDP
-              </a>
-              <a href="#pricing" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                Pricing
-              </a>
-              <a href="#faq" className="nav-link text-sm text-slate-300 hover:text-white font-medium">
-                FAQ
-              </a>
+      {/* HERO SECTION - Merged */}
+      <section className="relative hero-bg grid-bg overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300 mb-6">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Trusted by 50,000+ developers · 10,000+ AI Agents · 100+ Categories</span>
             </div>
-            <div className="flex items-center gap-3">
-              <button className="hidden sm:block btn-s px-4 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white">
-                Search
-              </button>
-              <a
-                href="#contact"
-                className="btn-p px-5 py-2 rounded-lg text-sm font-semibold text-white"
-              >
-                Get Started
-              </a>
-              <button id="menuBtn" className="lg:hidden text-white p-2" aria-label="Menu">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Nav */}
-        <div
-          id="mobileNav"
-          className="mobile-nav fixed top-16 right-0 bottom-0 w-72 glass-dark lg:hidden z-50"
-        >
-          <div className="p-6 space-y-1">
-            <a
-              href="#services"
-              className="block py-3 px-4 text-white hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              Services
-            </a>
-            <a
-              href="#mcp"
-              className="block py-3 px-4 text-slate-300 hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              MCP Infra
-            </a>
-            <a
-              href="#directory"
-              className="block py-3 px-4 text-slate-300 hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              Directory
-            </a>
-            <a
-              href="#india"
-              className="block py-3 px-4 text-slate-300 hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              India / DPDP
-            </a>
-            <a
-              href="#pricing"
-              className="block py-3 px-4 text-slate-300 hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              Pricing
-            </a>
-            <a
-              href="#faq"
-              className="block py-3 px-4 text-slate-300 hover:text-brand-500 font-medium rounded-lg hover:bg-white/5 transition"
-            >
-              FAQ
-            </a>
-            <a
-              href="#contact"
-              className="block mt-4 btn-p py-3 px-4 rounded-lg text-center font-semibold text-white"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-16 hero-radial grid-bg overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="animate-fadeUp">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-trust-400 animate-pulse"></span>
-                  No Pay-to-Rank · Evidence-Backed · SHA-256 Verified
-                </div>
-                <h1 className="hero-title text-4xl sm:text-5xl lg:text-[3.5rem] font-black leading-[1.1] mb-5">
-                  The Definitive
-                  <br />
-                  <span className="gradient-text">Engineering Handbook</span>
-                  <br />
-                  for Verified AI Agents
-                </h1>
-                <p className="text-lg text-slate-400 leading-relaxed max-w-lg">
-                  Master <strong className="text-slate-200">MCP Infrastructure</strong>,
-                  navigate <strong className="text-slate-200">India-First DPDP Compliance</strong>,
-                  and deploy <strong className="text-slate-200">Sovereign AI</strong>. We reject
-                  synthetic hype and provide radical transparency.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3 animate-fadeUp d2">
-                <a
-                  href="#mcp"
-                  className="btn-p px-7 py-3.5 rounded-xl font-semibold text-white text-sm"
-                >
-                  Explore MCP Infrastructure
-                </a>
-                <a
-                  href="#india"
-                  className="btn-s px-7 py-3.5 rounded-xl font-semibold text-white text-sm"
-                >
-                  View DPDP Compliant Agents
-                </a>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/10 animate-fadeUp d3">
-                <div>
-                  <div className="text-2xl font-black gradient-text counter" data-target="296">
-                    0
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">Verified Pages</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-black gradient-text counter" data-target="69">
-                    0
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">Verified Agents</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-black gradient-text counter" data-target="50">
-                    0
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">Topic Pillars</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-black gradient-text">99.9%</div>
-                  <div className="text-xs text-slate-500 mt-1">Uptime SLA</div>
-                </div>
-              </div>
-            </div>
-            {/* Right Visual */}
-            <div className="hidden lg:block animate-fadeUp d4">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-cyber-500/10 rounded-3xl blur-3xl"></div>
-                <div className="relative glass rounded-3xl p-8 space-y-4">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold text-lg">
-                      C
-                    </div>
-                    <div>
-                      <div className="font-bold text-white">Cline — Verified Agent</div>
-                      <div className="text-xs text-slate-500">Open-Source Coding Agent</div>
-                    </div>
-                    <span className="ml-auto tag tag-verified">✓ VERIFIED</span>
-                  </div>
-                  <div className="space-y-2.5 text-sm">
-                    <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-slate-500">Last Verified</span>
-                      <span className="font-mono text-slate-300 text-xs">2026-08-20 14:32 UTC</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-slate-500">Source Hash</span>
-                      <span className="font-mono text-cyan-400 text-xs">sha256:8f4e2…a1b9</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-slate-500">MCP Transport</span>
-                      <span className="font-mono text-slate-300 text-xs">stdio + Streamable HTTP</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-slate-500">DPDP Status</span>
-                      <span className="text-xs">
-                        <span className="tag tag-dpdp">Compliant</span>
-                      </span>
-                    </div>
-                    <div className="flex justify-between py-2">
-                      <span className="text-slate-500">Speculative Claims</span>
-                      <span className="text-xs text-trust-400 font-semibold">0 — All Verified</span>
-                    </div>
-                  </div>
-                  <div className="mt-4 flex gap-2">
-                    <span className="tag tag-mcp">MCP</span>
-                    <span className="tag tag-dpdp">DPDP</span>
-                    <span className="tag tag-india">🇮🇳 Made in India</span>
-                    <span className="tag tag-new">Open Source</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-s">
-          <svg
-            className="w-5 h-5 text-brand-500"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </div>
-      </section>
-
-      {/* TRUST BAR */}
-      <section className="py-10 border-y border-white/5 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-xs text-slate-500 mb-6 uppercase tracking-widest">
-            Trusted by builders across India's AI ecosystem
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-14 opacity-50">
-            <span className="text-lg font-bold text-slate-400">Tata</span>
-            <span className="text-lg font-bold text-slate-400">Infosys</span>
-            <span className="text-lg font-bold text-slate-400">Wipro</span>
-            <span className="text-lg font-bold text-slate-400">Reliance</span>
-            <span className="text-lg font-bold text-slate-400">Sarvam AI</span>
-            <span className="text-lg font-bold text-slate-400">Krutrim</span>
-            <span className="text-lg font-bold text-slate-400">Bhashini</span>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section id="services" className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
-              Our Services
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Comprehensive AI Services
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              From concept to deployment — end-to-end AI solutions tailored for Indian
-              businesses
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight mb-6">
+              Discover. Compare. Deploy.<br />
+              <span className="gradient-text">The Best AI Agents.</span>
+            </h1>
+            
+            <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+              Master <strong className="text-white">MCP Infrastructure</strong>, navigate <strong className="text-white">India-First DPDP Compliance</strong>, and deploy <strong className="text-white">Sovereign AI</strong>. Evidence-backed, no pay-to-rank.
             </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
+            
+            {/* Search */}
+            <div className="relative max-w-2xl mx-auto mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-emerald-500/20 blur-xl"></div>
+              <div className="relative flex items-center glass rounded-2xl p-2">
+                <svg className="w-5 h-5 text-gray-400 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input type="text" placeholder="Search AI agents, e.g. 'Code Reviewer', 'YouTube Summarizer'..." className="flex-1 bg-transparent px-3 py-3 text-white placeholder-gray-500 outline-none text-sm sm:text-base" />
+                <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/30 transition text-sm sm:text-base">Search</button>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">AI Agents Development</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Autonomous AI Agents
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Multi-agent Systems
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Domain-specific Agents
-                </li>
-              </ul>
-              <a
-                href="#"
-                className="text-brand-500 hover:text-brand-400 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Learn More{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-600 to-cyber-500 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">MCP Servers & Integration</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>Model Context Protocol
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>Custom MCP Servers
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>stdio & Streamable HTTP
-                </li>
-              </ul>
-              <a
-                href="#mcp"
-                className="text-cyan-400 hover:text-cyan-300 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Learn More{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-cyan-600 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Custom AI Solutions</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Tailored AI Models
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Industry-Specific AI
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-brand-500">•</span>Bespoke Integrations
-                </li>
-              </ul>
-              <a
-                href="#"
-                className="text-brand-500 hover:text-brand-400 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Learn More{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-trust-600 to-trust-500 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 12h14M12 5l7 7-7 7"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">AI Infrastructure & Hosting</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-trust-400">•</span>Scalable Cloud Hosting
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">•</span>India Data Centers
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">•</span>99.9% Uptime SLA
-                </li>
-              </ul>
-              <a
-                href="#"
-                className="text-trust-400 hover:text-trust-300 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Learn More{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">DPDP Compliance Consulting</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-orange-400">•</span>DPDP Act Audit
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-orange-400">•</span>Data Residency Strategy
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-orange-400">•</span>Consent Management
-                </li>
-              </ul>
-              <a
-                href="#india"
-                className="text-orange-400 hover:text-orange-300 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Learn More{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-brand-500 flex items-center justify-center mb-5">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">AI Consulting & Strategy</h3>
-              <ul className="space-y-2 text-slate-400 text-sm mb-5">
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>AI Readiness Assessment
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>Agent Architecture Design
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-cyan-400">•</span>ROI & TCO Analysis
-                </li>
-              </ul>
-              <a
-                href="#contact"
-                className="text-cyan-400 hover:text-cyan-300 text-sm font-semibold flex items-center gap-1 group"
-              >
-                Talk to Expert{" "}
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MCP INFRASTRUCTURE */}
-      <section
-        id="mcp"
-        className="py-24 relative bg-gradient-to-b from-transparent via-cyan-500/[.03] to-transparent"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
-              MCP Infrastructure
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Model Context Protocol
-              <br />
-              <span className="gradient-text">Deep Dive</span>
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              Evaluate MCP servers, transport options, and sandboxed execution for
-              enterprise and local dev setups
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="glass rounded-2xl p-7 card-hover border-l-4 border-l-cyan-500">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg">
-                  ⚡
-                </div>
-                <h3 className="text-xl font-bold text-cyan-400">
-                  stdio Transport
-                </h3>
-              </div>
-              <p className="text-slate-400 text-sm mb-4">
-                Secure local MCP process lifecycle management. Ideal for inner-loop
-                development and rapid iteration via inter-process communication.
-              </p>
-              <div className="text-xs font-mono text-slate-500 bg-slate-900/60 p-3 rounded-lg space-y-1">
-                <div>
-                  <span className="text-trust-400">✓</span> Cline verified MCP stdio local dev
-                </div>
-                <div>
-                  <span className="text-trust-400">✓</span> Aider stdio transport local docs
-                </div>
-                <div>
-                  <span className="text-trust-400">✓</span> SWE-agent terminal sandboxed
-                </div>
+              <div className="flex flex-wrap gap-2 mt-4 justify-center text-xs">
+                <span className="text-gray-500">Popular:</span>
+                <button className="text-purple-400 hover:text-purple-300">ChatGPT</button>
+                <span className="text-gray-700">•</span>
+                <button className="text-purple-400 hover:text-purple-300">Claude</button>
+                <span className="text-gray-700">•</span>
+                <button className="text-purple-400 hover:text-purple-300">Gemini</button>
+                <span className="text-gray-700">•</span>
+                <button className="text-purple-400 hover:text-purple-300">Perplexity</button>
+                <span className="text-gray-700">•</span>
+                <button className="text-purple-400 hover:text-purple-300">GitHub Copilot</button>
               </div>
             </div>
-            <div className="glass rounded-2xl p-7 card-hover border-l-4 border-l-brand-500">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-500 text-lg">
-                  🌐
-                </div>
-                <h3 className="text-xl font-bold text-brand-500">
-                  Streamable HTTP
-                </h3>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+              <div className="glass rounded-xl p-4">
+                <div className="text-2xl sm:text-3xl font-black gradient-text">10,000+</div>
+                <div className="text-xs text-gray-400 mt-1">AI Agents</div>
               </div>
-              <p className="text-slate-400 text-sm mb-4">
-                Scalable enterprise deployments with TLS authentication and web
-                observability. Fully-managed remote MCP endpoints.
-              </p>
-              <div className="text-xs font-mono text-slate-500 bg-slate-900/60 p-3 rounded-lg space-y-1">
-                <div>
-                  <span className="text-trust-400">✓</span> Cursor MCP Streamable HTTP config
-                </div>
-                <div>
-                  <span className="text-trust-400">✓</span> Enterprise MCP verified secure
-                </div>
-                <div>
-                  <span className="text-trust-400">✓</span> Google Cloud managed endpoints
-                </div>
+              <div className="glass rounded-xl p-4">
+                <div className="text-2xl sm:text-3xl font-black gradient-text">100+</div>
+                <div className="text-xs text-gray-400 mt-1">Categories</div>
               </div>
-            </div>
-          </div>
-          {/* Code-as-a-Tool */}
-          <div className="glass rounded-2xl p-8 sm:p-10">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              The "Code-as-a-Tool" Approach
-            </h3>
-            <p className="text-slate-400 mb-8 max-w-3xl">
-              How does MCP reduce context window token bloat? The agent writes
-              executable code (TypeScript/Python) that calls the MCP server
-              directly as a pure API — bypassing the LLM context window for data
-              transfer.
-            </p>
-            <div className="grid sm:grid-cols-3 gap-4">
-              <div className="bg-slate-900/60 rounded-xl p-5 text-center border border-white/5">
-                <div className="text-3xl font-black text-trust-400">98%</div>
-                <div className="text-xs text-slate-500 mt-1">
-                  Context Window Saved
-                </div>
+              <div className="glass rounded-xl p-4">
+                <div className="text-2xl sm:text-3xl font-black gradient-text">1,000+</div>
+                <div className="text-xs text-gray-400 mt-1">Built in India</div>
               </div>
-              <div className="bg-slate-900/60 rounded-xl p-5 text-center border border-white/5">
-                <div className="text-3xl font-black text-cyan-400">Docker</div>
-                <div className="text-xs text-slate-500 mt-1">
-                  Sandboxed Execution
-                </div>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-5 text-center border border-white/5">
-                <div className="text-3xl font-black text-brand-500">Zero</div>
-                <div className="text-xs text-slate-500 mt-1">
-                  Custom API Wrappers
-                </div>
+              <div className="glass rounded-xl p-4">
+                <div className="text-2xl sm:text-3xl font-black gradient-text">100%</div>
+                <div className="text-xs text-gray-400 mt-1">Verified</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* DIRECTORY SHOWCASE */}
-      <section id="directory" className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
-              Agent Directory
+      {/* COMPARE BANNER */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="relative rounded-3xl overflow-hidden gradient-border">
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/30 to-emerald-900/20"></div>
+          <div className="relative p-6 sm:p-10 flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex-1">
+              <div className="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Compare Agents</div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Can't decide which AI agent is best?</h2>
+              <p className="text-gray-400 mb-5">Compare features, pricing, performance and find your perfect match.</p>
+              <a href="/compare/" className="px-6 py-2.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition">Compare AI Agents →</a>
             </div>
-            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Verified AI Agent <span className="gradient-text">Directory</span>
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              50 topic pillars · 296 canonical pages · Every claim verified with
-              source evidence
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white font-bold">
-                  Cl
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Cline</div>
-                  <div className="text-[10px] text-slate-500">
-                    Open-Source Coding
-                  </div>
-                </div>
-                <span className="ml-auto tag tag-verified">✓</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-mcp">MCP</span>
-                <span className="tag tag-new">OSS</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                VS Code native coding agent with MCP stdio + Streamable HTTP
-                support. Verified source hash.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center text-white font-bold">
-                  Cu
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Cursor</div>
-                  <div className="text-[10px] text-slate-500">AI IDE</div>
-                </div>
-                <span className="ml-auto tag tag-verified">✓</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-mcp">MCP</span>
-                <span className="tag tag-dpdp">INR ₹</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                AI-first IDE with MCP server configuration. INR pricing verified.
-                Streamable HTTP enterprise.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-trust-500 to-trust-600 flex items-center justify-center text-white font-bold">
-                  Sa
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Sarvam AI</div>
-                  <div className="text-[10px] text-slate-500">Indic LLM</div>
-                </div>
-                <span className="ml-auto tag tag-india">🇮🇳</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-india">Indic</span>
-                <span className="tag tag-dpdp">DPDP</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                Homegrown Indic LLM. Hindi/Hinglish code-switching. Outperforms
-                global models in regional context.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-white font-bold">
-                  Kr
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Krutrim</div>
-                  <div className="text-[10px] text-slate-500">Indian LLM</div>
-                </div>
-                <span className="ml-auto tag tag-india">🇮🇳</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-india">Indic</span>
-                <span className="tag tag-new">Krutrim-2</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                India's first multilingual LLM by Oli Labs. Locally trained for
-                Indian languages and use cases.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white font-bold">
-                  Lg
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">LangGraph</div>
-                  <div className="text-[10px] text-slate-500">
-                    Agent Framework
-                  </div>
-                </div>
-                <span className="ml-auto tag tag-verified">✓</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-mcp">MCP</span>
-                <span className="tag tag-new">Graph</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                Graph-based agent orchestration. Verified lifecycle status.
-                Multi-agent coordination verified.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center text-white font-bold">
-                  Va
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Vapi</div>
-                  <div className="text-[10px] text-slate-500">Voice AI</div>
-                </div>
-                <span className="ml-auto tag tag-verified">✓</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-dpdp">DPDP</span>
-                <span className="tag tag-mcp">MCP</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                Voice AI platform. INR pricing verified. DPDP consent management
-                for Indian phone calls.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center text-white font-bold">
-                  Fl
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Flowise</div>
-                  <div className="text-[10px] text-slate-500">
-                    No-Code Builder
-                  </div>
-                </div>
-                <span className="ml-auto tag tag-verified">✓</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-mcp">MCP</span>
-                <span className="tag tag-new">OSS</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                Open-source no-code agent builder. MCP integration verified.
-                Self-hosted or cloud options.
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-700 flex items-center justify-center text-white font-bold">
-                  Bh
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Bhashini</div>
-                  <div className="text-[10px] text-slate-500">
-                    Govt of India
-                  </div>
-                </div>
-                <span className="ml-auto tag tag-india">🇮🇳</span>
-              </div>
-              <div className="flex gap-1.5 mb-3">
-                <span className="tag tag-india">Govt</span>
-                <span className="tag tag-dpdp">DPDP</span>
-              </div>
-              <div className="text-xs text-slate-400">
-                Government language translation platform. Multi-language support
-                for all Indian languages.
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-10">
-            <a
-              href="#"
-              className="btn-p px-8 py-3.5 rounded-xl font-semibold text-white text-sm inline-flex items-center gap-2"
-            >
-              Browse All 296 Verified Pages{" "}
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* INDIA / DPDP */}
-      <section
-        id="india"
-        className="py-24 relative bg-gradient-to-b from-transparent via-orange-500/[.03] to-transparent"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-orange-400 mb-4">
-              🇮🇳 India-First
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Sovereign AI &{" "}
-              <span className="india-gradient">DPDP Compliance</span>
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              Navigate the DPDP Act, verify INR pricing transparency, and deploy
-              sovereign AI with explicit consent management
-            </p>
-          </div>
-          <div className="grid lg:grid-cols-3 gap-6 mb-12">
-            <div className="glass rounded-2xl p-7 card-hover border-t-4 border-t-orange-500">
-              <div className="text-3xl mb-4">🇮🇳</div>
-              <h3 className="text-lg font-bold text-white mb-2">
-                DPDP Act Compliance
-              </h3>
-              <p className="text-sm text-slate-400 mb-4">
-                Voice data classified as biometric data under DPDP. We verify
-                which agents support explicit informed consent and sovereign
-                on-premise deployment.
-              </p>
-              <a
-                href="#"
-                className="text-orange-400 hover:text-orange-300 text-sm font-semibold"
-              >
-                View Compliant Agents →
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover border-t-4 border-t-brand-500">
-              <div className="text-3xl mb-4">💰</div>
-              <h3 className="text-lg font-bold text-white mb-2">
-                INR Pricing & UPI
-              </h3>
-              <p className="text-sm text-slate-400 mb-4">
-                Transparent localized pricing. Standard task-agent bands
-                (₹4–12 lakh), GST invoicing automation, and UPI merchant fee
-                preparedness.
-              </p>
-              <a
-                href="#pricing"
-                className="text-brand-500 hover:text-brand-400 text-sm font-semibold"
-              >
-                Verify INR Pricing →
-              </a>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover border-t-4 border-t-trust-500">
-              <div className="text-3xl mb-4">🗣️</div>
-              <h3 className="text-lg font-bold text-white mb-2">
-                Indic Models & Hinglish
-              </h3>
-              <p className="text-sm text-slate-400 mb-4">
-                Verified Sarvam-30B and Krutrim-2 instruct for homegrown Hindi
-                and Hinglish code-switching. Outperforms global models in regional
-                context.
-              </p>
-              <a
-                href="#"
-                className="text-trust-400 hover:text-trust-300 text-sm font-semibold"
-              >
-                Explore Indic Models →
-              </a>
-            </div>
-          </div>
-          {/* Deployment Options */}
-          <div className="glass rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">
-              Sovereign Deployment Options — Verified
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-slate-900/60 rounded-xl p-5 border border-white/5">
-                <div className="font-semibold text-sm text-white mb-1">
-                  On-Premise
-                </div>
-                <p className="text-xs text-slate-500">
-                  Data fiduciary security. Air-gapped enterprise agents.
-                </p>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-5 border border-white/5">
-                <div className="font-semibold text-sm text-white mb-1">
-                  Private Cloud
-                </div>
-                <p className="text-xs text-slate-500">
-                  India data centers. Sovereign data residency verified.
-                </p>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-5 border border-white/5">
-                <div className="font-semibold text-sm text-white mb-1">
-                  Local Machine
-                </div>
-                <p className="text-xs text-slate-500">
-                  Ollama self-hosted. Privacy-first local execution.
-                </p>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-5 border border-white/5">
-                <div className="font-semibold text-sm text-white mb-1">
-                  Free Trial Credits
-                </div>
-                <p className="text-xs text-slate-500">
-                  Fireworks, Baseten, Nebius — no credit card required.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROCESS */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
-              Our Process
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
-              How We <span className="gradient-text">Verify & Build</span>
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="glass rounded-2xl p-6 card-hover relative">
-              <div className="absolute top-4 right-4 text-4xl font-black text-white/5">
-                01
-              </div>
-              <div className="w-10 h-10 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-500 mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-bold text-white mb-2">Audit</h3>
-              <p className="text-xs text-slate-400">
-                Every URL audited for intent, canonical identity, and content
-                quality. 303 GSC URLs → 296 canonical targets.
-              </p>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover relative">
-              <div className="absolute top-4 right-4 text-4xl font-black text-white/5">
-                02
-              </div>
-              <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-bold text-white mb-2">Verify</h3>
-              <p className="text-xs text-slate-400">
-                Claims receive a source, retrieval date, region, confidence, and
-                review status.
-              </p>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover relative">
-              <div className="absolute top-4 right-4 text-4xl font-black text-white/5">
-                03
-              </div>
-              <div className="w-10 h-10 rounded-lg bg-trust-500/20 flex items-center justify-center text-trust-400 mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-bold text-white mb-2">Evaluate</h3>
-              <p className="text-xs text-slate-400">
-                Products assessed against published rubric with known limitations.
-              </p>
-            </div>
-            <div className="glass rounded-2xl p-6 card-hover relative">
-              <div className="absolute top-4 right-4 text-4xl font-black text-white/5">
-                04
-              </div>
-              <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-bold text-white mb-2">Deploy</h3>
-              <p className="text-xs text-slate-400">
-                Push to main. Vercel auto-deploy. 99.9% uptime SLA.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section
-        id="pricing"
-        className="py-24 bg-gradient-to-b from-transparent via-brand-500/[.03] to-transparent"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
-              INR Pricing
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
-              Transparent <span className="gradient-text">INR Pricing</span>
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              Transparent pricing with GST invoicing and UPI support. No hidden
-              fees.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="text-sm font-semibold text-slate-400 mb-2">
-                Starter
-              </div>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-4xl font-black text-white">Free</span>
-              </div>
-              <p className="text-xs text-slate-500 mb-6">
-                For trying out verified agents
-              </p>
-              <ul className="space-y-2.5 text-sm text-slate-300 mb-6">
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Access to free verified agents
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Basic MCP infrastructure
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Community support
-                </li>
-                <li className="flex gap-2 text-slate-500">
-                  <span>✗</span>Limited usage
-                </li>
-              </ul>
-              <button className="w-full btn-s py-2.5 rounded-lg text-sm font-semibold text-white">
-                Get Started Free
-              </button>
-            </div>
-            <div className="relative rounded-2xl p-7 bg-gradient-to-br from-brand-500/10 to-cyan-500/10 border border-brand-500/30 card-hover">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-gradient-to-r from-brand-600 to-cyan-600 text-white text-[10px] font-bold rounded-full">
-                MOST POPULAR
-              </div>
-              <div className="text-sm font-semibold text-brand-500 mb-2">
-                Pro
-              </div>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-4xl font-black text-white">₹499</span>
-                <span className="text-gray-400 text-sm">/mo</span>
-              </div>
-              <p className="text-xs text-slate-500 mb-6">
-                For professionals & teams · GST included
-              </p>
-              <ul className="space-y-2.5 text-sm text-slate-300 mb-6">
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Unlimited premium agents
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Full MCP infrastructure
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Priority support
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>UPI & GST invoicing
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>DPDP compliance tools
-                </li>
-              </ul>
-              <button className="w-full btn-p py-2.5 rounded-lg text-sm font-semibold text-white">
-                Go Pro — ₹499/mo
-              </button>
-            </div>
-            <div className="glass rounded-2xl p-7 card-hover">
-              <div className="text-sm font-semibold text-slate-400 mb-2">
-                Enterprise
-              </div>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-4xl font-black text-white">Custom</span>
-              </div>
-              <p className="text-xs text-slate-500 mb-6">
-                ₹4–12 lakh implementation bands
-              </p>
-              <ul className="space-y-2.5 text-sm text-slate-300 mb-6">
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Everything in Pro
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>On-premise deployment
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Custom MCP servers
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>Dedicated support
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-trust-400">✓</span>SSO & advanced security
-                </li>
-              </ul>
-              <button className="w-full btn-s py-2.5 rounded-lg text-sm font-semibold text-white">
-                Contact Sales
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ / PAA */}
-      <section id="faq" className="py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
-              FAQ
-            </div>
-            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
-              Frequently Asked <span className="gradient-text">Questions</span>
-            </h2>
-          </div>
-          <div className="space-y-3">
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>How to verify AI agent source code and identity?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                BestAIAgent verifies AI agent identity via SHA-256 source code
-                hashes, primary documentation links, and official repository
-                links. Unknown fields are marked clearly — no speculative
-                checkboxes.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>Is BestAIAgent a pay-to-rank directory?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                No. BestAIAgent operates a strict no pay-to-rank policy. Rankings
-                are based on verifiable data points and weighted aggregation of
-                auditable facts. We reject fabricated user counts and arbitrary
-                scale claims.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>What is the difference between stdio and Streamable HTTP in MCP?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                stdio is for secure local development via inter-process
-                communication — ideal for inner-loop iteration. Streamable HTTP
-                is for scalable enterprise deployments with TLS authentication
-                and web observability tools.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>How does the DPDP Act affect AI voice agent deployments?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                The DPDP Act classifies voice data as biometric data, requiring
-                explicit informed consent and robust security. BestAIAgent
-                verifies which agents support sovereign on-premise deployment
-                and explicit consent management for Indian phone calls.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>What is the AI agent development cost in India?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                Standard task-agent implementation bands range from ₹4–12 lakh
-                for custom integrated systems. BestAIAgent provides transparent
-                INR pricing, GST invoicing, and UPI merchant fee preparedness
-                for all verified agents.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>How does MCP reduce context window token bloat?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                MCP enables a code-as-a-tool approach where the agent writes
-                executable code to call the MCP server directly as a pure API —
-                bypassing the LLM context window for data transfer and saving up
-                to 98% of tokens.
-              </p>
-            </details>
-            <details className="glass rounded-xl p-5 group">
-              <summary className="flex justify-between items-center font-semibold text-white text-sm">
-                <span>Which AI models support Hindi and Hinglish?</span>
-                <svg
-                  className="w-5 h-5 text-slate-400 chev"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p className="mt-4 text-slate-400 text-sm leading-relaxed">
-                BestAIAgent verifies Indic models like Sarvam-30B and Krutrim-2
-                instruct for homegrown Hindi and Hinglish code-switching,
-                outperforming global models in regional cultural context.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section id="contact" className="py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-3xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-600/20 via-cyan-600/15 to-trust-600/10"></div>
-            <div className="absolute inset-0 grid-bg opacity-30"></div>
-            <div className="relative p-8 sm:p-14 text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Ready to Build{" "}
-                <span className="gradient-text">Verified AI</span>?
-              </h2>
-              <p className="text-lg text-slate-400 mb-8 max-w-xl mx-auto">
-                Join India's leading evidence-backed AI platform. 296 verified
-                pages. MCP infrastructure. DPDP compliance.
-              </p>
-              <div className="flex flex-wrap gap-3 justify-center">
-                <a
-                  href="#"
-                  className="btn-p px-8 py-3.5 rounded-xl font-semibold text-white text-sm"
-                >
-                  Get Started Free
-                </a>
-                <a
-                  href="#"
-                  className="btn-s px-8 py-3.5 rounded-xl font-semibold text-white text-sm"
-                >
-                  Talk to Expert
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
-            <div className="col-span-2 md:col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-cyan-500 flex items-center justify-center font-bold text-white text-xs">
-                  B
-                </div>
-                <span className="font-bold text-white text-sm">
-                  BestAIAgent<span className="text-brand-500">.in</span>
-                </span>
-              </div>
-              <p className="text-xs text-slate-500 mb-4">
-                India's verified, evidence-backed AI agent platform. No
-                pay-to-rank. Radical transparency.
-              </p>
-              <div className="flex gap-2">
-                <a
-                  href="#"
-                  className="w-7 h-7 rounded bg-white/5 hover:bg-brand-500/20 flex items-center justify-center text-gray-500 hover:text-brand-500 transition text-xs"
-                >
-                  𝕏
-                </a>
-                <a
-                  href="#"
-                  className="w-7 h-7 rounded bg-white/5 hover:bg-brand-500/20 flex items-center justify-center text-gray-500 hover:text-brand-500 transition text-xs"
-                >
-                  in
-                </a>
-                <a
-                  href="#"
-                  className="w-7 h-7 rounded bg-white/5 hover:bg-brand-500/20 flex items-center justify-center text-gray-500 hover:text-brand-500 transition text-xs"
-                >
-                  GH
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold text-slate-300 mb-3 uppercase tracking-wider">
-                Verification
-              </h4>
-              <ul className="space-y-2 text-xs text-slate-500">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Evidence-backed comparison
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    SHA-256 source hashes
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    No pay-to-rank policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Methodology
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold text-slate-300 mb-3 uppercase tracking-wider">
-                MCP Infra
-              </h4>
-              <ul className="space-y-2 text-xs text-slate-500">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Cline MCP stdio
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Cursor Streamable HTTP
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Sandboxed Docker
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Code-as-a-Tool
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold text-slate-300 mb-3 uppercase tracking-wider">
-                India / DPDP
-              </h4>
-              <ul className="space-y-2 text-xs text-slate-500">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    INR pricing Cursor
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    DPDP compliance
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Sarvam-30B Hindi
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    UPI merchant fees
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold text-slate-300 mb-3 uppercase tracking-wider">
-                Legal
-              </h4>
-              <ul className="space-y-2 text-xs text-slate-500">
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    Editorial Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    DPDP Notice
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[11px] text-slate-600">
-              © 2026 BestAIAgent.in. Evidence-backed AI agent directory. Made
-              with ❤️ in India.
-            </p>
             <div className="flex items-center gap-4">
-              <span className="text-[11px] text-slate-600">
-                296 verified pages · 69 agents · 50 pillars
-              </span>
+              <div className="glass rounded-2xl p-4 w-32 text-center">
+                <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-2xl mb-2">🤖</div>
+                <div className="text-xs font-semibold">ChatGPT</div>
+                <div className="text-[10px] text-gray-500">OpenAI</div>
+              </div>
+              <div className="text-2xl font-bold text-gray-600">vs</div>
+              <div className="glass rounded-2xl p-4 w-32 text-center">
+                <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-2xl mb-2">🧠</div>
+                <div className="text-xs font-semibold">Claude 3.5</div>
+                <div className="text-[10px] text-gray-500">Anthropic</div>
+              </div>
+              <div className="text-2xl font-bold text-gray-600">vs</div>
+              <div className="glass rounded-2xl p-4 w-32 text-center">
+                <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-2xl mb-2">💎</div>
+                <div className="text-xs font-semibold">Gemini 1.5</div>
+                <div className="text-[10px] text-gray-500">Google</div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+      {/* VERIFICATION & MCP INFRASTRUCTURE */}
+      <section id="mcp" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">BestAIAgent <span className="gradient-text">MCP Infrastructure</span> Deep Dive</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">Evaluate Model Context Protocol (MCP) servers with evidence-backed verification. No speculative claims, no synthetic scoring.</p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+          <div className="bg-slate-800/50 border border-white/10 rounded-2xl p-6 glow-purple">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-purple-600/20 flex items-center justify-center text-purple-400 font-bold">C</div>
+                <div>
+                  <h3 className="font-bold text-lg">Cline</h3>
+                  <p className="text-xs text-gray-400">Open-Source Coding Agent</p>
+                </div>
+              </div>
+              <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">VERIFIED</span>
+            </div>
+            <div className="space-y-3 text-sm">
+              <div className="flex justify-between items-center py-2 border-b border-white/5">
+                <span className="text-gray-400">Last Verified</span>
+                <span className="font-mono text-gray-200">2026-08-20 14:32 UTC</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-white/5">
+                <span className="text-gray-400">Source Hash</span>
+                <span className="font-mono text-xs text-blue-400">sha256:8f4e2…a1b9</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-white/5">
+                <span className="text-gray-400">MCP Transport</span>
+                <span className="font-mono text-xs text-gray-200">stdio + Streamable HTTP</span>
+              </div>
+              <div className="flex justify-between items-center py-2">
+                <span className="text-gray-400">Speculative Claims</span>
+                <span className="text-xs text-yellow-400 font-semibold">0 — All Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold mb-4">The "Code-as-a-Tool" Approach</h3>
+            <p className="text-gray-400 mb-6">MCP enables agents to write executable code that calls the MCP server directly as a pure API, bypassing the LLM context window for data transfer.</p>
+            <div className="grid sm:grid-cols-3 gap-4 text-center">
+              <div className="bg-slate-900/50 p-4 rounded-lg">
+                <div className="text-3xl font-black text-emerald-400">98%</div>
+                <div className="text-xs text-gray-400 mt-1">Context Window Saved</div>
+              </div>
+              <div className="bg-slate-900/50 p-4 rounded-lg">
+                <div className="text-3xl font-black text-blue-400">Docker</div>
+                <div className="text-xs text-gray-400 mt-1">Sandboxed Execution</div>
+              </div>
+              <div className="bg-slate-900/50 p-4 rounded-lg">
+                <div className="text-3xl font-black text-purple-400">Zero</div>
+                <div className="text-xs text-gray-400 mt-1">Custom API Wrappers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-slate-800/40 border border-white/10 rounded-xl p-6 hover:border-blue-500/30 transition">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center text-blue-400">⚡</div>
+              <h3 className="text-xl font-bold text-blue-400">stdio Transport</h3>
+            </div>
+            <p className="text-gray-400 text-sm mb-4">Secure local MCP process lifecycle management. Ideal for inner-loop development via inter-process communication.</p>
+            <div className="text-xs font-mono text-gray-500 bg-slate-900/50 p-3 rounded-lg">
+              <span className="text-green-400">✓</span> Cline verified MCP stdio local dev<br/>
+              <span className="text-green-400">✓</span> Aider stdio transport local docs
+            </div>
+          </div>
+          <div className="bg-slate-800/40 border border-white/10 rounded-xl p-6 hover:border-purple-500/30 transition">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-8 h-8 rounded bg-purple-500/20 flex items-center justify-center text-purple-400">🌐</div>
+              <h3 className="text-xl font-bold text-purple-400">Streamable HTTP</h3>
+            </div>
+            <p className="text-gray-400 text-sm mb-4">Scalable enterprise deployments with TLS authentication and web observability tools.</p>
+            <div className="text-xs font-mono text-gray-500 bg-slate-900/50 p-3 rounded-lg">
+              <span className="text-green-400">✓</span> Cursor MCP Streamable HTTP config<br/>
+              <span className="text-green-400">✓</span> Enterprise MCP verified secure
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA-FIRST & DPDP COMPLIANCE */}
+      <section id="india" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-xs text-orange-300 mb-4">
+            <span>🇮🇳</span> Proudly Built in India
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">India-First <span className="india-gradient">Sovereign AI & DPDP Compliance</span></h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">Navigate the DPDP Act, verify INR pricing transparency, and deploy sovereign AI with explicit consent management.</p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+          <div className="glass rounded-xl p-4 text-center">
+            <div className="text-3xl font-black gradient-text">$3.2B+</div>
+            <div className="text-xs text-gray-400 mt-1">Funding Raised</div>
+          </div>
+          <div className="glass rounded-xl p-4 text-center">
+            <div className="text-3xl font-black gradient-text">65%</div>
+            <div className="text-xs text-gray-400 mt-1">YoY Growth</div>
+          </div>
+          <div className="glass rounded-xl p-4 text-center">
+            <div className="text-3xl font-black gradient-text">15M+</div>
+            <div className="text-xs text-gray-400 mt-1">Users Worldwide</div>
+          </div>
+          <div className="glass rounded-xl p-4 text-center">
+            <div className="text-3xl font-black gradient-text">180+</div>
+            <div className="text-xs text-gray-400 mt-1">Cities Building</div>
+          </div>
+          <div className="glass rounded-xl p-4 text-center">
+            <div className="text-3xl font-black gradient-text">50+</div>
+            <div className="text-xs text-gray-400 mt-1">Countries Served</div>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-6 mb-10">
+          <div className="bg-slate-800/40 border border-white/10 rounded-xl p-6">
+            <div className="text-3xl mb-3">🇮🇳</div>
+            <h3 className="text-lg font-bold mb-2">DPDP Act Compliance</h3>
+            <p className="text-sm text-gray-400 mb-4">Voice data classified as biometric data. We verify explicit informed consent and sovereign on-premise deployment.</p>
+            <a href="/indian-ai/" className="text-sm text-blue-400 hover:underline">View DPDP Compliant Agents →</a>
+          </div>
+          <div className="bg-slate-800/40 border border-white/10 rounded-xl p-6">
+            <div className="text-3xl mb-3">💰</div>
+            <h3 className="text-lg font-bold mb-2">INR Pricing & UPI</h3>
+            <p className="text-sm text-gray-400 mb-4">Transparent localized pricing. Standard task-agent bands (₹4–12 lakh), GST invoicing, UPI merchant fees.</p>
+            <a href="/best-ai-agent/" className="text-sm text-blue-400 hover:underline">Verify INR Pricing →</a>
+          </div>
+          <div className="bg-slate-800/40 border border-white/10 rounded-xl p-6">
+            <div className="text-3xl mb-3">🗣️</div>
+            <h3 className="text-lg font-bold mb-2">Indic Models & Hinglish</h3>
+            <p className="text-sm text-gray-400 mb-4">Verified Sarvam-30B and Krutrim-2 instruct for homegrown Hindi/Hinglish code-switching.</p>
+            <a href="/indian-ai/" className="text-sm text-blue-400 hover:underline">Explore Indic Models →</a>
+          </div>
+        </div>
+
+        {indiaAgents.length > 0 && (
+          <div>
+            <h3 className="text-xl font-bold text-white mb-4">Featured Indian AI Agents</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+              {indiaAgents.map((a) => (
+                <a key={a.slug} href={`/agents/${a.slug}/`} className="glass rounded-xl p-4 text-center card-hover">
+                  <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-xl mb-2">
+                    {a.name.slice(0, 2)}
+                  </div>
+                  <div className="text-xs font-semibold text-white">{a.name}</div>
+                  <div className="text-[10px] text-gray-500">{a.company}</div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
+      {/* CATEGORIES */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-2">Explore AI Agents by Category</h2>
+            <p className="text-gray-400">Browse categories and discover the perfect agent</p>
+          </div>
+          <a href="/categories/" className="hidden sm:block text-sm text-purple-400 hover:text-purple-300 font-semibold">View all categories →</a>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {categories.slice(0, 12).map((cat) => (
+            <a key={cat.slug} href={`/categories/${cat.slug}/`} className="glass rounded-xl p-4 card-hover">
+              <div className="font-semibold text-white text-sm mb-1">{cat.name}</div>
+              <div className="text-xs text-gray-500">{cat.agentCount} agents</div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* FEATURED AGENTS */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-2">Featured AI Agents</h2>
+            <p className="text-gray-400">Handpicked top performing agents with evidence-backed scores</p>
+          </div>
+          <a href="/agents/" className="hidden sm:block text-sm text-purple-400 hover:text-purple-300 font-semibold">View all agents →</a>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {topAgents.slice(0, 8).map((agent) => (
+            <div key={agent.slug} className="glass rounded-xl p-6 card-hover">
+              <div className="flex items-center gap-3 mb-4">
+                <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${agent.tone === "violet" ? "from-purple-500 to-purple-700" : agent.tone === "cyan" ? "from-blue-500 to-blue-700" : agent.tone === "green" ? "from-emerald-500 to-emerald-600" : "from-indigo-500 to-indigo-700"} flex items-center justify-center text-white font-bold text-sm`}>
+                  {agent.name.slice(0, 2)}
+                </div>
+                <div>
+                  <div className="font-bold text-white text-sm">{agent.name}</div>
+                  <div className="text-[10px] text-gray-500">{agent.company}</div>
+                </div>
+                <span className="ml-auto tag tag-verified">✓</span>
+              </div>
+              <div className="text-xs text-gray-400 mb-3">{agent.shortDesc}</div>
+              <div className="flex justify-between mb-3">
+                <div>
+                  <span className="text-xs text-gray-500">Score</span>
+                  <span className="text-xs font-semibold text-emerald-400 ml-2">{agent.score}/10</span>
+                </div>
+                <div>
+                  <span className="text-xs text-gray-500">India Fit</span>
+                  <span className="text-xs font-semibold text-white ml-2">{agent.indiaFit}/10</span>
+                </div>
+              </div>
+              <a href={`/agents/${agent.slug}/`} className="text-blue-400 hover:text-blue-300 text-sm font-semibold flex items-center gap-1">
+                View evidence profile <span>→</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CODING AGENTS */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Top <span className="gradient-text">Coding Agents</span></h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">Verified coding agents with evidence-backed scores and India Fit analysis.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {codingAgents.map((a) => (
+            <div key={a.slug} className="glass rounded-xl p-6 card-hover">
+              <div className="flex items-center gap-3 mb-4">
+                <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${a.tone === "violet" ? "from-purple-500 to-purple-700" : a.tone === "cyan" ? "from-blue-500 to-blue-700" : a.tone === "green" ? "from-emerald-500 to-emerald-600" : "from-indigo-500 to-indigo-700"} flex items-center justify-center text-white font-bold text-sm`}>
+                  {a.name.slice(0, 2)}
+                </div>
+                <div>
+                  <div className="font-bold text-white text-sm">{a.name}</div>
+                  <div className="text-[10px] text-gray-500">{a.company}</div>
+                </div>
+                <span className="ml-auto tag tag-mcp">MCP</span>
+              </div>
+              <div className="text-xs text-gray-400 mb-3">{a.shortDesc}</div>
+              <a href={`/agents/${a.slug}/`} className="text-blue-400 hover:text-blue-300 text-sm font-semibold flex items-center gap-1">
+                View evidence profile <span>→</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ / PAA OPTIMIZATION */}
+      <section id="faq" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Frequently Asked <span className="gradient-text">Questions</span></h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">Direct answers to the most common queries about AI agent verification, MCP infrastructure, and India-specific compliance.</p>
+        </div>
+        <div className="max-w-3xl mx-auto space-y-4">
+          {[
+            { q: "How to verify AI agent source code and identity?", a: "BestAIAgent verifies AI agent identity by requiring SHA-256 hashes of source code, direct links to primary documentation, and official repository links. We mark unknown fields clearly to avoid speculative checkboxes and synthetic scoring." },
+            { q: "Is BestAIAgent a pay-to-rank directory?", a: "No. BestAIAgent is strictly evidence-backed and operates on a no pay-to-rank policy. Our rankings are based on verifiable data points, weighted aggregation of auditable facts, and radical transparency." },
+            { q: "What is the difference between stdio and Streamable HTTP in MCP?", a: "In the Model Context Protocol (MCP), stdio is used for secure local development and inner-loop iteration via inter-process communication. Streamable HTTP is designed for scalable, enterprise-ready remote deployments with TLS authentication and web observability." },
+            { q: "How does the DPDP Act affect AI voice agent deployments in India?", a: "The DPDP Act classifies voice data as biometric data, requiring explicit informed consent and robust security. BestAIAgent verifies which agents support sovereign on-premise deployment and explicit consent management for Indian phone calls." },
+            { q: "What is the AI agent development cost in India?", a: "Standard task-agent implementation bands in India range from ₹4–12 lakh for custom integrated systems. BestAIAgent provides transparent INR pricing, GST invoicing automation, and UPI merchant fee preparedness for verified agents." },
+            { q: "How does MCP reduce context window token bloat?", a: "MCP enables a 'code-as-a-tool' approach where the agent writes executable code (TypeScript/Python) to call the MCP server. This bypasses the LLM context window for data transfer, saving up to 98% of context window tokens." },
+            { q: "Which AI models support Hindi and Hinglish code-switching?", a: "BestAIAgent verifies Indic models like Sarvam-30B and Krutrim-2 instruct for homegrown, locally trained Hindi and Hinglish code-switching, outperforming global models in regional cultural context." },
+          ].map((item, i) => (
+            <details key={i} className="bg-slate-800/40 border border-white/10 rounded-xl p-5 group">
+              <summary className="flex justify-between items-center font-semibold text-gray-200">
+                {item.q}
+                <svg className="w-5 h-5 text-gray-400 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </summary>
+              <p className="mt-4 text-gray-400 text-sm leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* NEWSLETTER */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="relative rounded-3xl overflow-hidden gradient-border">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-blue-900/40"></div>
+          <div className="relative p-8 sm:p-12 text-center">
+            <h2 className="text-3xl font-bold text-white mb-3">Ready to supercharge your productivity?</h2>
+            <p className="text-gray-400 mb-6 max-w-xl mx-auto">Join 50,000+ developers and businesses using AI agents every day.</p>
+            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 outline-none focus:border-purple-500" />
+              <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition">Subscribe</button>
+            </div>
+            <p className="text-xs text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
