@@ -17,6 +17,7 @@ export default async function sitemap(): Promise<
     { url: `${BASE_URL}/contact`, priority: 0.5, changeFrequency: "monthly" as const },
     { url: `${BASE_URL}/privacy`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${BASE_URL}/terms`, priority: 0.3, changeFrequency: "yearly" as const },
+    { url: `${BASE_URL}/blog`, priority: 0.6, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/api/catalog`, priority: 0.4, changeFrequency: "daily" as const },
   ];
 

@@ -39,86 +39,96 @@ export default async function ComparePage({ params }: Props) {
   }
 
   return (
-    <main className="section">
-      <div className="container">
-        <header className="mb-8 pb-6 border-b border-[#252b4b]">
-          <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">{comp.title}</h1>
-          <p className="text-xl text-[#9ca5c3] mb-4">{comp.summary}</p>
-          <div className="flex gap-4 text-sm text-[#555872]">
-            <span>
-              Last updated:{" "}
-              {new Date(comp.lastUpdated).toLocaleDateString("en-IN", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-            <span>·</span>
-            <span>{comp.evidenceCount} evidence items</span>
+    <main>
+      <div className="section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="sectionHead mb-8">
+            <div>
+              <span className="kicker">Compare AI Agents</span>
+              <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">{comp.title}</h1>
+              <p className="text-xl text-[#c5c7d8] mb-4">{comp.summary}</p>
+              <div className="flex gap-4 text-sm text-[#555872]">
+                <span>
+                  Last updated:{" "}
+                  {new Date(comp.lastUpdated).toLocaleDateString("en-IN", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+                <span>·</span>
+                <span>{comp.evidenceCount} evidence items</span>
+              </div>
+            </div>
           </div>
-        </header>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#f7f7ff] mb-6">
-            Side-by-Side Comparison
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-left">
-              <thead>
-                <tr className="border-b border-[#252b4b]">
-                  <th className="p-4 text-[#f7f7ff]">Criterion</th>
-                  <th className="p-4 text-[#f7f7ff]">{comp.agents[0]}</th>
-                  <th className="p-4 text-[#f7f7ff]">{comp.agents[1]}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {comp.criteria.map((criterion) => (
-                  <tr key={criterion.name} className="border-b border-[#252b4b]/30">
-                    <td className="p-4 text-[#c5c7d8] font-medium">
-                      {criterion.name}
-                    </td>
-                    <td className="p-4 text-[#c5c7d8]">
-                      {criterion.values[comp.agents[0]]}
-                    </td>
-                    <td className="p-4 text-[#c5c7d8]">
-                      {criterion.values[comp.agents[1]]}
-                    </td>
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-6">
+              Side-by-Side Comparison
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-[#252b4b]">
+                    <th className="p-4 text-sm font-semibold text-[#9ca5c3]">
+                      Feature
+                    </th>
+                    <th className="p-4 text-center">
+                      <div className="font-semibold text-[#f7f7ff]">
+                        {comp.agents[0]}
+                      </div>
+                    </th>
+                    <th className="p-4 text-center">
+                      <div className="font-semibold text-[#f7f7ff]">
+                        {comp.agents[1]}
+                      </div>
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody>
+                  {comp.criteria.map((criterion) => (
+                    <tr
+                      key={criterion.name}
+                      className="border-b border-[#252b4b]/30 hover:bg-[#1a1a2e]/50 transition"
+                    >
+                      <td className="p-4 text-sm font-medium text-[#9ca5c3]">
+                        {criterion.name}
+                      </td>
+                      <td className="p-4 text-center text-sm text-[#c5c7d8]">
+                        {criterion.values[comp.agents[0]]}
+                      </td>
+                      <td className="p-4 text-center text-sm text-[#c5c7d8]">
+                        {criterion.values[comp.agents[1]]}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <div
-          className="rounded-xl p-6 border mb-8"
-          style={{
-            backgroundColor: "rgba(13, 16, 37, 0.8)",
-            borderColor: "rgba(255, 255, 255, 0.1)",
-          }}
-        >
-          <h3 className="text-xl font-semibold text-[#f7f7ff] mb-2">Bottom Line</h3>
-          <p className="text-[#c5c7d8] leading-relaxed">{comp.verdict}</p>
-        </div>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-bold text-[#f7f7ff] mb-6">Related Comparisons</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {comparisons
-              .filter((c) => c.slug !== comp.slug)
-              .map((c) => (
-                <a
-                  key={c.slug}
-                  href={`/compare/${c.slug}/`}
-                  className="block p-4 rounded-xl border border-[#252b4b] hover:border-[#8b5cf6]/50 transition-all duration-200"
-                  style={{ backgroundColor: "rgba(13, 16, 37, 0.5)" }}
-                >
-                  <h3 className="font-semibold text-[#f7f7ff]">{c.title}</h3>
-                  <p className="text-sm text-[#9ca5c3] mt-1">{c.summary}</p>
-                </a>
+          <div className="compareBand">
+            <div>
+              <span className="kicker">Bottom Line</span>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-3">{comp.verdict}</h2>
+              <p className="text-[#9ca5c3]">{comp.summary}</p>
+            </div>
+            <div className="matrix">
+              <div className="matrixHead">
+                <b>Criterion</b>
+                <strong>{comp.agents[0]}</strong>
+                <strong>{comp.agents[1]}</strong>
+              </div>
+              {comp.criteria.map((c, i) => (
+                <div key={i}>
+                  <span>{c.name}</span>
+                  <strong>{c.values[comp.agents[0]] || "—"}</strong>
+                  <strong>{c.values[comp.agents[1]] || "—"}</strong>
+                </div>
               ))}
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
   );
