@@ -18,6 +18,9 @@ export default async function sitemap(): Promise<
     { url: `${BASE_URL}/privacy`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${BASE_URL}/terms`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${BASE_URL}/blog`, priority: 0.6, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/verify`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/mcp`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/india`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/api/catalog`, priority: 0.4, changeFrequency: "daily" as const },
   ];
 
