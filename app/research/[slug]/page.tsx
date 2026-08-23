@@ -45,51 +45,67 @@ export default async function ResearchPage({ params }: Props) {
   }
 
   return (
-    <article className="prose lg:prose-xl max-w-4xl">
-      <header>
-        <h1 className="text-4xl font-bold mb-4">{report.title}</h1>
-        <p className="text-xl text-muted-foreground mb-4">{report.abstract}</p>
-        <div className="flex gap-4 text-sm text-muted-foreground">
-          <span>Pillar: {report.pillar}</span>
-          <span>Date: {report.date}</span>
-          <span>Evidence: {report.evidenceCount} items</span>
-        </div>
-      </header>
+    <main className="section">
+      <div className="container">
+        <header className="mb-8 pb-6 border-b border-[#252b4b]">
+          <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">{report.title}</h1>
+          <p className="text-xl text-[#9ca5c3] mb-4">{report.abstract}</p>
+          <div className="flex gap-4 text-sm text-[#555872]">
+            <span>Pillar: {report.pillar}</span>
+            <span>·</span>
+            <span>Date: {report.date}</span>
+            <span>·</span>
+            <span>Evidence: {report.evidenceCount} items</span>
+          </div>
+        </header>
 
-      <section className="mt-8">
-        <h2>Authors</h2>
-        <ul>
-          {report.authors.map((author, i) => (
-            <li key={i}>{author}</li>
-          ))}
-        </ul>
+        <section className="space-y-8">
+          <div>
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Authors</h2>
+            <ul className="list-none p-0">
+              {report.authors.map((author, i) => (
+                <li key={i} className="text-[#c5c7d8] mb-1">
+                  {author}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <h3>Methodology</h3>
-        <p>{report.methodology}</p>
+          <div>
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Methodology</h2>
+            <p className="text-[#c5c7d8] leading-relaxed">{report.methodology}</p>
+          </div>
 
-        <h3>Key Findings</h3>
-        <ol>
-          {report.findings.map((finding, i) => (
-            <li key={i}>{finding}</li>
-          ))}
-        </ol>
+          <div>
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Key Findings</h2>
+            <ol className="space-y-3">
+              {report.findings.map((finding, i) => (
+                <li key={i} className="text-[#c5c7d8] leading-relaxed">
+                  {finding}
+                </li>
+              ))}
+            </ol>
+          </div>
 
-        <h3>Citations</h3>
-        <ul>
-          {report.citations.map((citation, i) => (
-            <li key={i}>
-              <a
-                href={citation}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {citation}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </article>
+          <div>
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Citations</h2>
+            <ul className="list-none p-0 space-y-2">
+              {report.citations.map((citation, i) => (
+                <li key={i}>
+                  <a
+                    href={citation}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#8b5cf6] hover:underline text-sm"
+                  >
+                    {citation}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
