@@ -1,9 +1,27 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Methodology — How We Score AI Agents",
+  title:
+    "Methodology — How We Score AI Agents with Evidence-Backed Transparency | BestAIAgent.in",
   description:
-    "Every score on BestAIAgent.in is backed by evidence and a transparent methodology.",
+    "Every score on BestAIAgent.in is backed by evidence and a transparent methodology. Learn how we evaluate AI agents using primary sources, SHA-256 verification, and India Fit scoring. No pay-to-rank. Radical transparency.",
+  keywords: [
+    "BestAIAgent methodology",
+    "how we score AI agents",
+    "evidence-backed AI scoring",
+    "AI agent evaluation framework",
+    "transparent AI ranking methodology",
+    "India Fit scoring",
+    "SHA-256 source verification",
+    "no pay-to-rank evaluation",
+    "AI agent audit trail",
+    "primary source verification AI",
+    "AI agent confidence score",
+    "last-verified timestamp AI",
+    "AI agent scoring rubric",
+    "evidence-first evaluation",
+    "AI agent verification process",
+  ],
   alternates: {
     canonical: "https://bestaiagent.in/methodology/",
   },
@@ -20,160 +38,486 @@ export default function MethodologyPage() {
               <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">
                 Methodology
               </h1>
+              <p className="text-lg text-[#c5c7d8] max-w-3xl">
+                Every score on BestAIAgent.in is backed by evidence and a
+                transparent methodology. We don&apos;t accept vendor marketing
+                copy—only traceable, primary-source evidence. Here&apos;s exactly
+                how we evaluate AI agents, from initial audit to ongoing refresh.
+              </p>
             </div>
           </div>
 
-          <div className="prose lg:prose-xl max-w-4xl text-[#c5c7d8]">
-            <p className="text-lg">
-              Every score on BestAIAgent.in is backed by evidence and a
-              transparent methodology. Here's how we evaluate AI agents:
-            </p>
+          {/* METRICS */}
+          <section className="mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="glass rounded-xl p-4 text-center">
+                <div className="text-2xl font-black text-[#8b5cf6]">40%</div>
+                <div className="text-xs text-[#9ca5c3] mt-1">Capability Weight</div>
+              </div>
+              <div className="glass rounded-xl p-4 text-center">
+                <div className="text-2xl font-black text-[#8b5cf6]">20%</div>
+                <div className="text-xs text-[#9ca5c3] mt-1">Ease of Use Weight</div>
+              </div>
+              <div className="glass rounded-xl p-4 text-center">
+                <div className="text-2xl font-black text-[#8b5cf6]">15%</div>
+                <div className="text-xs text-[#9ca5c3] mt-1">Pricing Weight</div>
+              </div>
+              <div className="glass rounded-xl p-4 text-center">
+                <div className="text-2xl font-black text-[#8b5cf6]">15%</div>
+                <div className="text-xs text-[#9ca5c3] mt-1">India Fit Weight</div>
+              </div>
+            </div>
+          </section>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+          {/* SCORING FRAMEWORK */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
               Scoring Framework
             </h2>
-            <ol>
-              <li>
-                <strong>Capability Assessment (40%)</strong> — Does the agent
-                accomplish its stated purpose? Measured through benchmarks,
-                real-world testing, and feature coverage.
-              </li>
-              <li>
-                <strong>Ease of Use (20%)</strong> — How easy is it to set up
-                and operate? Considers documentation quality, UI/UX, and
-                onboarding.
-              </li>
-              <li>
-                <strong>Pricing Transparency (15%)</strong> — Clear, accessible
-                pricing with India-specific (INR) context.
-              </li>
-              <li>
-                <strong>India Fit (15%)</strong> — Availability, pricing,
-                payment methods, and regulatory compliance for Indian users.
-              </li>
-              <li>
-                <strong>Evidence Quality (10%)</strong> — Number and reliability
-                of sources cited.
-              </li>
-            </ol>
+            <p className="text-[#c5c7d8] mb-6">
+              Our scoring framework is a weighted rubric that balances technical
+              capability, usability, pricing transparency, India-specific
+              considerations, and evidence quality. Each dimension is scored
+              independently, then combined into a single composite score. The
+              weights reflect what matters most to our audience: developers,
+              businesses, and teams making evidence-based procurement decisions.
+            </p>
+            <div className="space-y-6">
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  1. Capability Assessment (40%)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Does the agent accomplish its stated purpose? We measure this
+                  through standardized benchmarks, real-world testing, and feature
+                  coverage analysis. For coding agents, we test repository-scale
+                  implementation, multi-file refactoring, and debugging accuracy.
+                  For voice AI, we test transcription accuracy across Indian
+                  languages and measure latency under real network conditions.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  Capability is the most heavily weighted dimension because it
+                  directly determines whether an agent is useful for its intended
+                  purpose. An agent that fails at its core function scores poorly
+                  regardless of its pricing or compliance status. We test
+                  capability in isolation to avoid confounding factors.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  2. Ease of Use (20%)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  How easy is it to set up and operate? We consider
+                  documentation quality, UI/UX design, onboarding experience, and
+                  the learning curve for new users. An agent with excellent
+                  capability but poor documentation will score lower than one with
+                  slightly less capability but excellent usability.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For MCP servers, we specifically test setup complexity, error
+                  messages, configuration file clarity, and community support
+                  responsiveness. We measure the time from installation to first
+                  successful tool call, and we document any friction points that
+                  could slow down adoption.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  3. Pricing Transparency (15%)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Is pricing clear, accessible, and fair? We evaluate whether
+                  pricing is publicly available, whether it includes
+                  India-specific (INR) context, and whether there are hidden fees
+                  or usage-based surprises. Agents with opaque enterprise pricing
+                  that requires a sales call score lower than those with
+                  transparent self-serve pricing.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For Indian users, we specifically check for UPI payment support,
+                  GST invoicing automation, and INR-denominated pricing. We also
+                  evaluate free tier availability and trial periods, as these
+                  significantly impact adoption for startups and individual
+                  developers.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  4. India Fit (15%)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  How well does this agent serve Indian users? India Fit is
+                  calculated based on observable signals: INR pricing, Indian
+                  language support, local deployment options, and DPDP
+                  compliance. This dimension ensures that our recommendations are
+                  relevant to the Indian market, not just global averages.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  India Fit is particularly important for MCP servers, where data
+                  residency and compliance can significantly impact deployment
+                  options. An MCP server that offers on-premise deployment in
+                  India will score higher than one that only offers cloud
+                  deployment in US regions.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  5. Evidence Quality (10%)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  How reliable are the sources behind our evaluation? We score
+                  evidence quality based on the number of independent sources,
+                  their proximity to the original claim, and their recency. A
+                  claim backed by official documentation and verified test
+                  results scores higher than one based on a single blog post.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  Evidence quality acts as a confidence modifier. Even if an
+                  agent scores well on capability and usability, low evidence
+                  quality will reduce the overall score. This prevents us from
+                  over-ranking agents that make bold claims without providing
+                  verifiable proof.
+                </p>
+              </div>
+            </div>
+          </section>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+          {/* INDIA FIT SCORING */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
               India Fit Scoring
             </h2>
-            <p>India Fit is calculated based on observable signals:</p>
-            <ul>
-              <li>
-                <strong>₹ Pricing</strong> — INR-denominated pricing and local
-                payment methods (UPI, etc.)
-              </li>
-              <li>
-                <strong>अ Language</strong> — Support for Hindi and other Indian
-                languages
-              </li>
-              <li>
-                <strong>⌂ Deployment</strong> — Cloud, regional, or self-hosted
-                options
-              </li>
-              <li>
-                <strong>◈ Compliance</strong> — Data handling practices and DPDP
-                relevance
-              </li>
-            </ul>
+            <p className="text-[#c5c7d8] mb-6">
+              India Fit is a unique scoring dimension that evaluates how well an
+              AI agent serves the Indian market. It&apos;s not just about
+              availability—it&apos;s about practical readiness for Indian users,
+              businesses, and regulatory requirements. Here&apos;s how we
+              calculate it:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  ₹ Pricing (30% of India Fit)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Does the agent offer INR-denominated pricing? Can Indian users
+                  pay via UPI, net banking, or other local methods? Is GST
+                  invoicing available? We verify pricing pages directly and
+                  cross-reference with official payment processor documentation.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  Agents that only accept USD payments or require international
+                  credit cards receive lower scores. Agents that offer INR pricing
+                  with UPI support and automated GST invoicing receive the highest
+                  scores in this category.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  अ Language (25% of India Fit)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Does the agent support Hindi, Hinglish, Tamil, Telugu, and
+                  other Indian languages? We test language support with native
+                  speakers and evaluate both input understanding and output
+                  quality. Documentation in Indian languages is a bonus.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For voice AI agents, we specifically test accent recognition
+                  for Indian English, Hindi, and regional language accents. MCP
+                  servers that integrate with Bhashini or other Indian language
+                  APIs receive higher scores.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  ⌂ Deployment (25% of India Fit)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Can the agent be deployed in India? We evaluate cloud region
+                  availability (AWS Mumbai, GCP Hyderabad, Azure Pune), on-premise
+                  deployment options, and air-gapped configurations for sensitive
+                  environments.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  MCP servers that offer local deployment via Docker, pip install,
+                  or npm receive higher scores. Agents that require cloud
+                  connectivity to US-only endpoints receive lower scores due to
+                  latency and data residency concerns.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  ◈ Compliance (20% of India Fit)
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Does the agent comply with Indian regulations? We evaluate DPDP
+                  Act compliance, data localization requirements, consent
+                  management mechanisms, and audit logging capabilities. Agents
+                  with SOC 2 or ISO 27001 certifications receive bonus points.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For MCP servers, compliance is critical because they often
+                  handle sensitive data. A MCP server that logs all tool calls,
+                  supports data retention policies, and offers audit trails will
+                  score higher than one without these features.
+                </p>
+              </div>
+            </div>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
-              Scoring Scale
+            {/* SCORING SCALE TABLE */}
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mb-4">
+              India Fit Scoring Scale
             </h3>
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b border-[#252b4b]">
-                  <th className="text-left p-2 text-[#9ca5c3]">
-                    India Fit Score
-                  </th>
-                  <th className="text-left p-2 text-[#9ca5c3]">Label</th>
-                  <th className="text-left p-2 text-[#9ca5c3]">Meaning</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-[#252b4b]/30">
-                  <td className="p-2 text-[#c5c7d8]">9.0-10.0</td>
-                  <td className="p-2 text-[#38d996]">Excellent</td>
-                  <td className="p-2 text-[#c5c7d8]">
-                    Optimized for Indian markets
-                  </td>
-                </tr>
-                <tr className="border-b border-[#252b4b]/30">
-                  <td className="p-2 text-[#c5c7d8]">7.5-8.9</td>
-                  <td className="p-2 text-[#3b82f6]">Strong</td>
-                  <td className="p-2 text-[#c5c7d8]">
-                    Good availability with some considerations
-                  </td>
-                </tr>
-                <tr className="border-b border-[#252b4b]/30">
-                  <td className="p-2 text-[#c5c7d8]">6.5-7.4</td>
-                  <td className="p-2 text-[#f59e0b]">Moderate</td>
-                  <td className="p-2 text-[#c5c7d8]">
-                    Usable but with notable friction
-                  </td>
-                </tr>
-                <tr className="border-b border-[#252b4b]/30">
-                  <td className="p-2 text-[#c5c7d8]">Below 6.5</td>
-                  <td className="p-2 text-[#ef4444]">Limited</td>
-                  <td className="p-2 text-[#c5c7d8]">
-                    Significant barriers for Indian users
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-[#252b4b]">
+                    <th className="text-left p-3 text-[#9ca5c3]">Score</th>
+                    <th className="text-left p-3 text-[#9ca5c3]">Label</th>
+                    <th className="text-left p-3 text-[#9ca5c3]">Meaning</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[#252b4b]/30">
+                    <td className="p-3 text-[#c5c7d8]">9.0–10.0</td>
+                    <td className="p-3 text-[#38d996] font-semibold">Excellent</td>
+                    <td className="p-3 text-[#c5c7d8]">
+                      Optimized for Indian markets. Full INR pricing, local
+                      deployment, DPDP compliant.
+                    </td>
+                  </tr>
+                  <tr className="border-b border-[#252b4b]/30">
+                    <td className="p-3 text-[#c5c7d8]">7.5–8.9</td>
+                    <td className="p-3 text-[#3b82f6] font-semibold">Strong</td>
+                    <td className="p-3 text-[#c5c7d8]">
+                      Good availability with some considerations. May lack INR
+                      pricing or local deployment.
+                    </td>
+                  </tr>
+                  <tr className="border-b border-[#252b4b]/30">
+                    <td className="p-3 text-[#c5c7d8]">6.5–7.4</td>
+                    <td className="p-3 text-[#f59e0b] font-semibold">Moderate</td>
+                    <td className="p-3 text-[#c5c7d8]">
+                      Usable but with notable friction. May require workarounds
+                      for Indian users.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 text-[#c5c7d8]">Below 6.5</td>
+                    <td className="p-3 text-[#ef4444] font-semibold">Limited</td>
+                    <td className="p-3 text-[#c5c7d8]">
+                      Significant barriers for Indian users. Not recommended
+                      without substantial adaptation.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+          {/* VERIFICATION PROCESS */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
               Verification Process
             </h2>
-            <ol>
-              <li>
-                <strong>Collect</strong> — Official documentation, releases,
-                policies, pricing, and hands-on observations
-              </li>
-              <li>
-                <strong>Verify</strong> — Claims receive a source, retrieval
-                date, region, confidence, and review status
-              </li>
-              <li>
-                <strong>Evaluate</strong> — Products are assessed against a
-                published rubric with known limitations
-              </li>
-              <li>
-                <strong>Refresh</strong> — Material changes trigger review;
-                stale commercial claims are clearly marked
-              </li>
-            </ol>
+            <p className="text-[#c5c7d8] mb-6">
+              Our verification process is a four-phase cycle that ensures every
+              score is backed by evidence. This process is continuous—agents are
+              re-evaluated when material changes occur, not just on a fixed
+              schedule.
+            </p>
+            <div className="space-y-6">
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  Phase 1: Collect
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  We gather official documentation, releases, policies, pricing
+                  pages, and hands-on observations. Every source is catalogued
+                  with retrieval date, region, and confidence score. We reject
+                  speculative checkboxes and unknown fields—if we can&apos;t
+                  verify it, we don&apos;t include it.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For MCP servers, this phase includes inspecting the transport
+                  configuration, verifying stdio vs HTTP implementations, and
+                  testing sandboxing claims in Docker isolation. We also check
+                  GitHub repositories for commit frequency, issue resolution time,
+                  and maintainer responsiveness.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  Phase 2: Verify
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Claims receive a source, retrieval date, region, confidence
+                  and review status. We cross-reference multiple sources to ensure
+                  consistency. If two sources conflict, we investigate further and
+                  note the discrepancy in the agent profile.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  For pricing claims, we verify against official pricing pages
+                  and, where possible, test with actual purchases or free tier
+                  signups. For capability claims, we run hands-on tests in
+                  controlled environments and document the results.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  Phase 3: Evaluate
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Products are assessed against our published rubric with known
+                  limitations. We document what we tested, how we tested it, and
+                  what we found. This transparency allows anyone to understand
+                  exactly how a score was derived and to challenge it if they
+                  disagree.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  Evaluation is performed by at least two independent reviewers
+                  to minimize individual bias. Scores are compared, and any
+                  significant discrepancies are resolved through discussion and
+                  additional testing.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-6 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.8)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                  Phase 4: Refresh
+                </h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">
+                  Material changes trigger review; stale commercial claims are
+                  clearly marked. We monitor GitHub releases, pricing page
+                  updates, documentation revisions, and community feedback. When
+                  a change is detected, we initiate a targeted review of the
+                  affected dimensions.
+                </p>
+                <p className="text-[#9ca5c3] text-sm">
+                  Our refresh schedule varies by category: MCP infrastructure is
+                  checked monthly, pricing quarterly, and compliance status
+                  whenever regulatory changes occur. Each profile shows its
+                  last-verified date so you can assess the freshness of the data.
+                </p>
+              </div>
+            </div>
+          </section>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+          {/* NOTE ON RANKINGS */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
               Note on Rankings
             </h2>
-            <p>
-              We do not maintain a single "best of" ranking. Instead, each agent
-              has a score within the context of its category and intended use
-              case. The "right" agent depends on your specific needs, budget,
-              and constraints.
+            <p className="text-[#c5c7d8] mb-4">
+              We do not maintain a single &quot;best of&quot; ranking. Instead,
+              each agent has a score within the context of its category and
+              intended use case. The &quot;right&quot; agent depends on your
+              specific needs, budget, and constraints. A coding agent that scores
+              9.5/10 for repository-scale implementation may be the wrong choice
+              for a team that needs strong MCP integration and India-specific
+              compliance.
             </p>
-
-            <p>
-              <a
-                href="/about/"
-                className="text-[#8b5cf6] hover:underline"
-              >
-                Learn more about our editorial standards
-              </a>
-              {" "} or{" "}
-              <a
-                href="/contact/"
-                className="text-[#8b5cf6] hover:underline"
-              >
+            <p className="text-[#c5c7d8] mb-4">
+              Our scoring system is designed to help you make informed trade-offs,
+              not to declare a single winner. We encourage you to use our
+              comparison tools to build a side-by-side matrix of the agents that
+              matter to your specific use case.
+            </p>
+            <p className="text-[#c5c7d8]">
+              If you have questions about our methodology or would like to
+              suggest an improvement, please{" "}
+              <a href="/contact/" className="text-[#8b5cf6] hover:underline">
                 contact us
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://github.com/CodesbyFebin/bestaiagent.in/issues"
+                className="text-[#8b5cf6] hover:underline"
+              >
+                open a GitHub issue
               </a>
               .
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </main>

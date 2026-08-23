@@ -1,9 +1,22 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — BestAIAgent.in",
+  title:
+    "About — Independent AI Agent Discovery & Evidence-Led Evaluation | BestAIAgent.in",
   description:
-    "Independent AI agent discovery, comparisons, and evidence-led evaluation for India and the world.",
+    "BestAIAgent.in is an independent platform for discovering, comparing, and evaluating AI agents with transparent scoring and source-backed claims. Learn about our mission, standards, and commitment to evidence-first evaluation.",
+  keywords: [
+    "BestAIAgent about",
+    "independent AI agent platform",
+    "evidence-led AI evaluation",
+    "AI agent discovery mission",
+    "transparent AI scoring",
+    "AI agent editorial standards",
+    "no pay-to-rank directory",
+    "AI agent evaluation team",
+    "BestAIAgent.in mission",
+    "AI agent transparency",
+  ],
   alternates: {
     canonical: "https://bestaiagent.in/about/",
   },
@@ -20,16 +33,16 @@ export default function AboutPage() {
               <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">
                 About BestAIAgent.in
               </h1>
+              <p className="text-lg text-[#c5c7d8] max-w-3xl">
+                BestAIAgent.in is an independent platform for discovering,
+                comparing, and evaluating AI agents with transparent scoring and
+                source-backed claims. We exist to cut through the noise in the
+                AI agent market.
+              </p>
             </div>
           </div>
 
           <div className="prose lg:prose-xl max-w-4xl text-[#c5c7d8]">
-            <p className="text-lg">
-              BestAIAgent.in is an independent platform for discovering,
-              comparing, and evaluating AI agents with transparent scoring and
-              source-backed claims.
-            </p>
-
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Our Mission
             </h2>
@@ -37,7 +50,26 @@ export default function AboutPage() {
               We exist to cut through the noise in the AI agent market. Instead
               of marketing copy and inflated demos, we provide evidence-led
               assessments that help developers, businesses, and teams in India
-              (and globally) find the right AI tool for their needs.
+              (and globally) find the right AI tool for their needs. Our mission
+              is to be the most trusted, transparent, and evidence-backed
+              directory for AI agents worldwide.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              The Problem We Solve
+            </h2>
+            <p>
+              The AI agent market is flooded with hype. Vendor websites make
+              bold claims about capability and performance, but rarely provide
+              verifiable evidence. Pay-to-rank directories accept money for
+              placements, making their rankings meaningless. Users waste hours
+              navigating conflicting claims and marketing spin.
+            </p>
+            <p>
+              BestAIAgent.in addresses this by requiring evidence for every
+              claim, rejecting paid placements, and maintaining a transparent
+              scoring methodology. We don&apos;t just tell you which agents are
+              good—we show you exactly how we arrived at that conclusion.
             </p>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
@@ -46,31 +78,38 @@ export default function AboutPage() {
             <ul>
               <li>
                 <strong>Coding Agents</strong>: Claude Code, Cursor, GitHub
-                Copilot, Aider, Cline, and more
+                Copilot, Aider, Cline, and more. We evaluate repository-scale
+                capability, MCP integration, and India-specific deployment.
               </li>
               <li>
                 <strong>Business Automation</strong>: n8n, Zapier, Make, Lindy,
-                and enterprise platforms
+                and enterprise platforms. We assess workflow automation,
+                integration quality, and pricing transparency.
               </li>
               <li>
                 <strong>Voice AI</strong>: ElevenLabs, Deepgram, Vapi, and voice
-                agent platforms
+                agent platforms. We test transcription accuracy across Indian
+                languages and measure latency under real conditions.
               </li>
               <li>
                 <strong>Core LLMs</strong>: GPT-4, Claude, Gemini, Llama 3,
-                Mistral, and open-weight models
+                Mistral, and open-weight models. We benchmark performance,
+                evaluate cost efficiency, and assess India Fit.
               </li>
               <li>
                 <strong>Agent Builders</strong>: LangChain, CrewAI, LangGraph,
-                AutoGen, and frameworks
+                AutoGen, and frameworks. We evaluate multi-agent orchestration,
+                tool integration, and development experience.
               </li>
               <li>
                 <strong>AI Infrastructure</strong>: Pinecone, Weaviate, Supabase,
-                and vector databases
+                and vector databases. We assess scalability, pricing, and
+                regional availability.
               </li>
               <li>
                 <strong>Model Context Protocol</strong>: MCP servers, clients,
-                and integrations
+                and integrations. We verify transport configurations, test
+                sandboxing, and evaluate DPDP compliance.
               </li>
             </ul>
 

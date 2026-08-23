@@ -3,7 +3,15 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy — BestAIAgent.in",
   description:
-    "Privacy policy for BestAIAgent.in - how we collect, use, and protect your data.",
+    "Privacy policy for BestAIAgent.in. We do not collect personal data, use cookies, or track users. Our static website respects your privacy with no analytics scripts or tracking pixels.",
+  keywords: [
+    "BestAIAgent privacy policy",
+    "AI agent directory privacy",
+    "no cookies policy",
+    "no tracking website",
+    "static website privacy",
+    "data protection AI directory",
+  ],
   alternates: {
     canonical: "https://bestaiagent.in/privacy/",
   },
@@ -20,14 +28,13 @@ export default function PrivacyPage() {
               <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">
                 Privacy Policy
               </h1>
+              <p className="text-lg text-[#c5c7d8] max-w-3xl">
+                <strong>Last updated:</strong> August 23, 2026
+              </p>
             </div>
           </div>
 
           <div className="prose lg:prose-xl max-w-4xl text-[#c5c7d8]">
-            <p>
-              <strong>Last updated:</strong> August 23, 2026
-            </p>
-
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Information We Collect
             </h2>
@@ -35,7 +42,17 @@ export default function PrivacyPage() {
               We do not collect personal data from our visitors. BestAIAgent.in
               is a static website that does not use cookies, tracking pixels, or
               analytics scripts. We do not log IP addresses, user agents, or any
-              personally identifiable information.
+              personally identifiable information. Our website is hosted on
+              Vercel, which may collect basic access logs for operational
+              purposes, but we do not have access to or control over those logs.
+            </p>
+            <p>
+              When you visit BestAIAgent.in, you will not be asked to create an
+              account, provide an email address, or submit any personal
+              information. We do not use newsletter signup forms, contact forms,
+              or any other mechanism that would collect your data. Our GitHub
+              repository is public, and any issues or discussions you participate
+              in there are governed by GitHub&apos;s privacy policy.
             </p>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">

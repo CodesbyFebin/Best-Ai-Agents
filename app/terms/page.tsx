@@ -19,21 +19,20 @@ export default function TermsPage() {
               <h1 className="text-4xl font-bold text-[#f7f7ff] mb-4">
                 Terms of Service
               </h1>
+              <p className="text-lg text-[#c5c7d8] max-w-3xl">
+                <strong>Last updated:</strong> August 23, 2026
+              </p>
             </div>
           </div>
 
           <div className="prose lg:prose-xl max-w-4xl text-[#c5c7d8]">
-            <p>
-              <strong>Last updated:</strong> August 23, 2026
-            </p>
-
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               1. Use of This Site
             </h2>
             <p>
               BestAIAgent.in provides independent, evidence-based reviews of AI
-              agents and tools. All content is provided "as is" without warranties
-              of any kind.
+              agents and tools. All content is provided &quot;as is&quot; without
+              warranties of any kind.
             </p>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
