@@ -152,6 +152,22 @@ https://bestaiagent.in/contact/
 https://bestaiagent.in/privacy/
 https://bestaiagent.in/terms/
 
+# Pillar Pages
+https://bestaiagent.in/verify/
+https://bestaiagent.in/mcp/
+https://bestaiagent.in/india/
+https://bestaiagent.in/indian-ai/
+
+# Indian AI Pillar (Topic Clusters)
+https://bestaiagent.in/indian-ai/#landscape
+https://bestaiagent.in/indian-ai/#companies
+https://bestaiagent.in/indian-ai/#agents
+https://bestaiagent.in/indian-ai/#research
+https://bestaiagent.in/indian-ai/#government
+https://bestaiagent.in/indian-ai/#developers
+https://bestaiagent.in/indian-ai/#case-studies
+https://bestaiagent.in/indian-ai/#faq
+
 # API
 https://bestaiagent.in/api/catalog
 

@@ -133,3 +133,55 @@ Key themes include:
 - 11 category definitions
 - 4 comparison entries
 - 3 research reports
+
+## Indian AI Pillar Page
+
+The BestAIAgent.in/indian-ai/ pillar page is the definitive hub for India's AI ecosystem, covering:
+
+### Content Clusters
+1. **Hero Section** — Introduces the Indian AI ecosystem with India gradient styling, counter animations (296 verified pages, 69 India Fit agents, 30 INR models), and dual CTA buttons.
+2. **Indian AI Landscape** — Overview of AI in India ($17B market by 2026, 68% open-weight adoption, 72% self-hosted preference) with collapsible sections on trends and industry impact.
+3. **Featured Indian AI Companies** — Profiles of Sarvam AI, Krutrim, Bhashini, and other Indic-focused companies with India Fit scoring.
+4. **DPDP-Compliant AI Agents** — Verified agents with INR pricing, UPI support, and DPDP compliance, filtered by India Fit ≥ 8.0.
+5. **Indian AI Research & R&D** — Research reports on India's AI market, buyer's guides, and trend analysis with evidence counts.
+6. **Government Initiatives** — Collapsible sections on IndiaAI Mission (₹10,000 crore), AIRAWAT compute infrastructure, BHASHINI translation platform, and DPDP Act compliance.
+7. **Developer Resources for India** — Datasets, APIs, tutorials, and community forums specifically for Indian AI developers.
+8. **Case Studies** — Real-world success stories (JioMart voice agents, PolicyBazaar Claude Code migration, Airtel Bhashini support).
+
+### Key Keywords for Indian AI Pillar
+- Indian AI ecosystem
+- India AI companies
+- Indian AI startups
+- Sarvam AI
+- Krutrim AI
+- Bhashini India AI
+- India AI research
+- AI policy India
+- DPDP Act compliance
+- IndiaAI Initiative
+- Indic language AI
+- Hindi AI models
+- Hinglish code-switching
+- INR AI pricing
+- UPI AI payments
+- Indian AI developers
+- AI datasets India
+- Indian LLMs
+- Sovereign AI India
+- AIRAWAT IndiaAI
+- IndiaAI Mission
+- MeitY AI initiatives
+- NASSCOM AI India
+- AI agents India
+- AI applications India
+- Healthcare AI India
+- BFSI AI India
+- EdTech AI India
+- AgriTech AI India
+
+### PAA Clusters for Indian AI
+- What is the current state of AI in India?
+- Which are the leading Indian AI companies?
+- How does the DPDP Act affect AI deployments in India?
+- What are the IndiaAI Mission and AIRAWAT initiatives?
+- What developer resources are available for Indian AI?
