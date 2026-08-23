@@ -21,8 +21,8 @@ export const categories: Category[] = [
     lastUpdated: "2026-08-22"
   },
   {
-    slug: "business-automation",
-    name: "Business Automation",
+    slug: "automation",
+    name: "Automation",
     pillar: "Business Automation",
     description: "AI agents that automate workflows across CRM, marketing, support, and operations.",
     longDescription: "Business automation agents help teams automate repetitive tasks across sales, marketing, customer support, and internal operations. No-code platforms dominate, but self-hostable options are growing as enterprises prioritize control and compliance.",
@@ -209,5 +209,24 @@ export const categories: Category[] = [
     pricingRange: "Free content",
     evidenceSummary: "Evaluated 4 learning resources with 5-9 evidence items each. Content reviewed for accuracy and relevance to Indian developers.",
     lastUpdated: "2026-08-18"
+  },
+  {
+    slug: "research",
+    name: "Research & Data Analysis",
+    pillar: "Research",
+    description: "AI agents for research, data analysis, and knowledge discovery.",
+    longDescription: "Research agents help users discover, analyze, and synthesize information from multiple sources. This category includes agents for academic research, market analysis, competitive intelligence, and data-driven decision making. We evaluate evidence quality, source attribution, and output reliability.",
+    agentCount: 6,
+    keyCapabilities: [
+      "Academic research synthesis",
+      "Market and competitive analysis",
+      "Data extraction and structuring",
+      "Source attribution and verification",
+      "Multi-source knowledge discovery"
+    ],
+    indiaContext: "Research agents for Indian market analysis, academic research in Indian institutions, and competitive intelligence for Indian businesses.",
+    pricingRange: "$0 - $300/month",
+    evidenceSummary: "Evaluated 6 research agents with 8-18 evidence items each. Focus on source attribution, evidence quality, and output reliability.",
+    lastUpdated: "2026-08-22"
   }
 ];

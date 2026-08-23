@@ -22,6 +22,8 @@ export default async function sitemap(): Promise<
     { url: `${BASE_URL}/mcp`, priority: 1.0, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/india`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/indian-ai`, priority: 1.0, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/best-ai-agent`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${BASE_URL}/best-free-ai-agents`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/api/catalog`, priority: 0.4, changeFrequency: "daily" as const },
   ];
 

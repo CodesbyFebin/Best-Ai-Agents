@@ -2,64 +2,30 @@
 # Evidence-led AI agent directory for India and the world
 # Last Updated: 2026-08-23
 
-# Core AI Agents
-https://bestaiagent.in/agents/claude-code/
-https://bestaiagent.in/agents/gpt-4/
-https://bestaiagent.in/agents/claude/
-https://bestaiagent.in/agents/gemini-1-5-pro/
-https://bestaiagent.in/agents/llama-3-70b/
-https://bestaiagent.in/agents/mistral-large/
+# === CANONICAL AUTHORITY SURFACES ===
+# 50 search clusters → ~12-15 canonical surfaces
 
-# Coding Agents
-https://bestaiagent.in/agents/cursor/
-https://bestaiagent.in/agents/github-copilot/
-https://bestaiagent.in/agents/aider/
-https://bestaiagent.in/agents/cline/
-https://bestaiagent.in/agents/tabnine/
-https://bestaiagent.in/agents/amazon-codewhisperer/
-https://bestaiagent.in/agents/continue/
-https://bestaiagent.in/agents/replit-agent/
-https://bestaiagent.in/agents/codeium/
-https://bestaiagent.in/agents/windsurf/
+# Core Intent Pages (Canonical)
+https://bestaiagent.in/best-ai-agent/
+https://bestaiagent.in/best-free-ai-agents/
+https://bestaiagent.in/mcp/
+https://bestaiagent.in/indian-ai/
+https://bestaiagent.in/verify/
+https://bestaiagent.in/methodology/
 
-# Business Automation
-https://bestaiagent.in/agents/lindy/
-https://bestaiagent.in/agents/n8n/
-https://bestaiagent.in/agents/zapier/
-https://bestaiagent.in/agents/make/
-https://bestaiagent.in/agents/notion-ai/
-https://bestaiagent.in/agents/slack-ai/
-https://bestaiagent.in/agents/monday-com/
-https://bestaiagent.in/agents/clickup-ai/
-https://bestaiagent.in/agents/asana-ai/
-https://bestaiagent.in/agents/tome/
-https://bestaiagent.in/agents/gamma/
-https://bestaiagent.in/agents/retell-ai/
-
-# Voice AI
-https://bestaiagent.in/agents/elevenlabs/
-https://bestaiagent.in/agents/deepgram/
-https://bestaiagent.in/agents/assemblyai/
-https://bestaiagent.in/agents/vapi/
-https://bestaiagent.in/agents/playht/
-https://bestaiagent.in/agents/murf-ai/
-
-# Frameworks
-https://bestaiagent.in/agents/langchain/
-https://bestaiagent.in/agents/langgraph/
-https://bestaiagent.in/agents/crewai/
-https://bestaiagent.in/agents/semantic-kernel/
-https://bestaiagent.in/agents/haystack/
-https://bestaiagent.in/agents/llamaindex/
-https://bestaiagent.in/agents/autogen/
-https://bestaiagent.in/agents/phidata/
-
-# Infrastructure
-https://bestaiagent.in/agents/pinecone/
-https://bestaiagent.in/agents/weaviate/
-https://bestaiagent.in/agents/qdrant/
-https://bestaiagent.in/agents/chroma/
-https://bestaiagent.in/agents/supabase/
+# Category Hubs (Canonical)
+https://bestaiagent.in/categories/coding-agents/
+https://bestaiagent.in/categories/automation/
+https://bestaiagent.in/categories/voice-ai/
+https://bestaiagent.in/categories/core-llms/
+https://bestaiagent.in/categories/agent-builders/
+https://bestaiagent.in/categories/infrastructure/
+https://bestaiagent.in/categories/mcp/
+https://bestaiagent.in/categories/pricing/
+https://bestaiagent.in/categories/security/
+https://bestaiagent.in/categories/india/
+https://bestaiagent.in/categories/learning/
+https://bestaiagent.in/categories/research/
 
 # Models
 https://bestaiagent.in/models/gpt-4/
@@ -103,7 +69,7 @@ https://bestaiagent.in/frameworks/swarm/
 
 # Categories
 https://bestaiagent.in/categories/coding-agents/
-https://bestaiagent.in/categories/business-automation/
+https://bestaiagent.in/categories/automation/
 https://bestaiagent.in/categories/voice-ai/
 https://bestaiagent.in/categories/core-llms/
 https://bestaiagent.in/categories/agent-builders/
@@ -113,6 +79,7 @@ https://bestaiagent.in/categories/pricing/
 https://bestaiagent.in/categories/security/
 https://bestaiagent.in/categories/india/
 https://bestaiagent.in/categories/learning/
+https://bestaiagent.in/categories/research/
 
 # Comparisons
 https://bestaiagent.in/compare/chatgpt-vs-claude/
@@ -157,6 +124,8 @@ https://bestaiagent.in/verify/
 https://bestaiagent.in/mcp/
 https://bestaiagent.in/india/
 https://bestaiagent.in/indian-ai/
+https://bestaiagent.in/best-ai-agent/
+https://bestaiagent.in/best-free-ai-agents/
 
 # MCP Pillar (50 Topic Clusters)
 https://bestaiagent.in/mcp/#best-mcp-server-overall
