@@ -45,7 +45,7 @@ export default function TermsPage() {
               periodically for changes.
             </p>
 
-            <h2 className="text-2xl font-bold text-[#2] font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               2. Use of This Site
             </h2>
             <p>
@@ -236,7 +236,7 @@ export default function TermsPage() {
             <p>
               The Site and all content on it, including but not limited to text,
               graphics, logos, images, audio clips, data compilations, and
-              software (collectively, "Content"), are owned by CodesbyFebbin or
+              software (collectively, "Content"), are owned by CodesbyFebin or
               its licensors and protected by copyright, trademark, and other
               intellectual property laws.
             </p>
@@ -254,7 +254,7 @@ export default function TermsPage() {
               be scraped or republished without attribution.
             </p>
             <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
-             3   Third-Party Content
+               III  Third-Party Content
             </h3>
             <p>
               When we reference third-party trademarks, product names, or company

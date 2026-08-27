@@ -80,7 +80,7 @@ export default function PrivacyPage() {
               modules. These files contain no information about you.
             </p>
 
-            <h2 className="text-2xl font-bold text-[#2] font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Website Hosting and Data Processing
             </h2>
             <p>
@@ -363,6 +363,89 @@ export default function PrivacyPage() {
               researchers to verify our implementation. We do not use any third-
               party scripts, widgets, or embedded content that could introduce
               security vulnerabilities.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              Why We Choose No-Data Architecture
+            </h2>
+            <p>
+              Our decision to build BestAIAgent.in as a zero-data-collection
+              static website was deliberate and principled. In an era where
+              most websites collect vast amounts of user data for analytics,
+              advertising, and behavioral profiling, we chose the opposite
+              approach. This decision is rooted in our belief that users should
+              be able to access AI evaluation information without sacrificing
+              their privacy.
+            </p>
+            <p>
+              There are three primary reasons we avoid data collection: first,
+              it eliminates the risk of data breaches and unauthorized access;
+              second, it removes any conflict of interest that could arise from
+              monetizing user data; and third, it aligns with our mission of
+              providing unbiased, vendor-independent evaluations. If we were
+              collecting data from users, vendors might question whether our
+              evaluations are influenced by our data practices or revenue model.
+              By collecting no data, we remove this question entirely.
+            </p>
+            <p>
+              We also recognize that privacy is a fundamental right, not a
+              privilege. Every visitor to our site—whether they are a developer
+              in Mumbai, a procurement officer in Bangalore, or a researcher at
+              a university in Delhi—deserves to browse our content without
+              surveillance. Our no-data architecture means that your browsing
+              behavior, search queries, and interaction patterns remain entirely
+              private. No third party can build a profile of you based on your
+              visits to BestAIAgent.in.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              What If This Changes
+            </h3>
+            <p>
+              If we were to introduce any data collection features in the future
+              (such as a newsletter signup or user accounts), we would update
+              this policy to describe exactly what data we collect, why we
+              collect it, and how long we retain it. We would also implement
+              appropriate safeguards and provide users with clear opt-out
+              mechanisms. However, we have no current plans to introduce any
+              data collection features, and any future changes would be subject
+              to our strict editorial independence standards and our commitment
+              to user privacy.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              Third-Party Services Disclosure
+            </h2>
+            <p>
+              While BestAIAgent.in itself does not use any third-party services
+              that collect personal data, we want to be transparent about the
+              services that make our website possible:
+            </p>
+            <ul>
+              <li>
+                <strong>Vercel (hosting)</strong>: Our static site is hosted on
+                Vercel's global edge network. Vercel processes HTTP requests to
+                deliver content but does not share this data with us. Vercel's
+                privacy policy governs their handling of any operational logs.
+              </li>
+              <li>
+                <strong>GitHub (version control)</strong>: Our source code and
+                content are stored in a public GitHub repository. GitHub may
+                collect information about visitors who interact with our
+                repository (such as opening issues or submitting pull requests),
+                but this is governed by GitHub's privacy policy, not ours.
+              </li>
+              <li>
+                <strong>Cloudflare (DNS)</strong>: We use Cloudflare's DNS
+                service (1.1.1.1) for domain resolution. Cloudflare does not
+                collect personal data through DNS resolution. No other Cloudflare
+                services (such as their CDN or WAF) are currently enabled.
+              </li>
+            </ul>
+            <p>
+              None of these services collect personal data from visitors to
+              bestaiagent.in. They are infrastructure services that enable our
+              website to function, and they operate independently of our
+              editorial processes.
             </p>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">Contact</h2>

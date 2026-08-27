@@ -462,6 +462,56 @@ export default function AboutPage() {
             </ul>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              The Evidence Verification Process
+            </h2>
+            <p>
+              Every claim on BestAIAgent.in goes through a rigorous multi-step
+              verification process before it is published. First, our research
+              team collects evidence from primary sources: official vendor
+              documentation, public GitHub repositories, pricing pages, benchmark
+              reports, and peer-reviewed research. Each source is assigned a
+              credibility weight based on its proximity to the original claim,
+              its recency, and its independence from commercial interests.
+            </p>
+            <p>
+              Second, we cross-reference each claim against at least two
+              independent sources. If only one source is available, we flag the
+              claim with a lower confidence indicator. If sources conflict, we
+              report the conflict and our resolution rationale. Third, for key
+              performance claims, we conduct hands-on testing whenever feasible.
+              Our testing infrastructure includes dedicated environments for
+              evaluating coding agents, MCP server configurations, and voice AI
+              transcription accuracy in Indian languages.
+            </p>
+            <p>
+              Fourth, we verify pricing information manually by checking vendor
+              pricing pages within 48 hours of publication. For INR conversion,
+              we use the prevailing exchange rate and add a standard note about
+              currency fluctuations. Fifth, we validate India-specific claims by
+              checking for local payment methods, on-premise deployment
+              documentation, and DPDP Act compliance statements. All
+              verification steps are documented and timestamped, and the evidence
+              trail is available to any user who inspects a profile's Evidence
+              section.
+            </p>
+            <p>
+              We also maintain a public verification log that records all
+              evidence-gathering activities, including screenshots of pricing
+              pages, test results, and source document hashes. This log is
+              updated monthly and is available on our GitHub repository. If you
+              notice an error in our verification process or have evidence that
+              contradicts our findings, please submit a correction via GitHub
+              issues.
+            </p>
+            <p>
+              Finally, every six months we conduct a comprehensive audit of our
+              methodology and verification procedures. This audit is performed by
+              an independent reviewer and the results are published publicly. If
+              the audit identifies systemic issues, we update our methodology
+              accordingly and re-evaluate all affected profiles within 90 days.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Contact
             </h2>
             <p>

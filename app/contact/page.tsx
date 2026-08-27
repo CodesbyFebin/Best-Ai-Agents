@@ -453,6 +453,71 @@ export default function ContactPage() {
             </p>
 
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              What to Expect in Our Responses
+            </h2>
+            <p>
+              We believe in thorough, well-researched responses rather than quick
+              template replies. When you contact us, you will receive a response
+              from a real person on our editorial team. We take time to
+              understand your specific question or concern, gather relevant
+              evidence, and provide a detailed answer. This approach means
+              responses may sometimes take longer than automated systems, but
+              they are always substantive and genuinely helpful.
+            </p>
+            <p>
+              For error reports, our response will include a clear description
+              of the issue, the evidence we have gathered, and the steps we plan
+              to take. For new agent submissions, we will explain whether your
+              suggestion meets our inclusion criteria and, if not, why. For
+              partnership inquiries, we will provide a candid assessment of
+              whether there is a mutual fit and, if so, what the next steps
+              would look like. We do not provide generic or boilerplate
+              responses.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Communication Channels
+            </h3>
+            <p>
+              We use a ticket-based system to manage all inbound communications.
+              Every GitHub issue, email, and support request is assigned a
+              unique ticket number and tracked through our private project
+              management system. This ensures that nothing falls through the
+              cracks and that all team members have visibility into ongoing
+              conversations. You will receive ticket numbers in our initial
+              acknowledgment messages and can reference them in any follow-up
+              communication.
+            </p>
+            <p>
+              We also maintain a public knowledge base on our GitHub wiki that
+              contains answers to frequently asked questions, testing procedures,
+              and documentation about our verification processes. Before
+              contacting us, we encourage you to check the knowledge base to see
+              if your question has already been addressed. This helps us focus
+              our time on new issues and questions that require original research
+              and analysis.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Time Zone Considerations
+            </h3>
+            <p>
+              Our team operates primarily in the India Standard Time (IST,
+              UTC+5:30) zone. When we respond to inquiries from other time zones,
+              we make every effort to accommodate reasonable scheduling requests
+              for video calls or real-time discussions. Our business hours are
+              Monday through Friday, 9:00 AM to 7:00 PM IST. We do not provide
+              weekend support except for critical security vulnerabilities, which
+              are addressed on a best-effort basis.
+            </p>
+            <p>
+              If you contact us outside of business hours, your message will be
+              queued and addressed on the next business day. During peak periods,
+              such as immediately following a major AI conference or product
+              launch, response times may be slightly longer. We communicate any
+              expected delays through our GitHub repository and social media
+              channels.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Our Physical Address
             </h2>
             <p>

@@ -566,6 +566,93 @@ export default function BlogPage() {
             evidence-first evaluation.
           </p>
         </section>
+
+        <section className="mt-12 pt-8 border-t border-[#252b4b]">
+          <h2 className="text-2xl font-bold text-[#f7f7ff] mb-6">
+            Writing for BestAIAgent.in
+          </h2>
+          <p className="text-[#c5c7d8] mb-4">
+            Our blog is written by the BestAIAgent.in editorial team, guest
+            contributors from the AI research community, and invited industry
+            experts. Every post undergoes a rigorous editorial review process
+            before publication to ensure evidence-backed claims, proper
+            sourcing, and adherence to our editorial standards.
+          </p>
+          <p className="text-[#c5c7d8] mb-4">
+            The editorial review process for blog posts includes four stages:
+            first, a source verification check where every claim is traced back
+            to its primary evidence; second, a methodology review to ensure
+            that testing procedures are sound and reproducible; third, a peer
+            review by at least one independent expert in the relevant domain;
+            and fourth, a final copy edit and fact-check pass by our senior
+            editors. Posts that fail any stage are sent back for revision or
+            rejected.
+          </p>
+          <p className="text-[#c5c7d8] mb-4">
+            We also maintain a clear conflict-of-interest policy for guest
+            contributors. Contributors must disclose any financial relationships
+            with vendors mentioned in their posts, including employment, equity
+            holdings, or consulting arrangements. If a contributor has a
+            material relationship with a vendor they are writing about, the post
+            must either be co-authored by an independent reviewer or the
+            relationship must be prominently disclosed at the top of the post.
+            We do not accept posts that are clearly promotional in nature.
+          </p>
+          <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6 mb-3">
+            Our Writing Standards
+          </h3>
+          <p className="text-[#c5c7d8] mb-4">
+            All blog posts on BestAIAgent.in follow a consistent set of writing
+            standards designed to maximize clarity, accuracy, and usefulness
+            for our readers:
+          </p>
+          <ul className="space-y-2 text-[#c5c7d8]">
+            <li>
+              <strong>Evidence-first</strong>: Every technical claim is backed by
+              a primary source or hands-on testing. No marketing copy passes
+              without verification.
+            </li>
+            <li>
+              <strong>Source transparency</strong>: Links to documentation,
+              repositories, pricing pages, and test results are provided
+              wherever possible.
+            </li>
+            <li>
+              <strong>India context</strong>: When an analysis is relevant to the
+              Indian market, we include INR pricing, DPDP compliance notes,
+              and local deployment considerations.
+            </li>
+            <li>
+              <strong>Reproducibility</strong>: Testing procedures, commands
+              used, and environment configurations are documented so readers can
+              reproduce our results.
+            </li>
+            <li>
+              <strong>Currency awareness</strong>: Pricing information is noted
+              with the exchange rate and date of conversion, with a disclaimer
+              about currency fluctuations.
+            </li>
+          </ul>
+          <p className="text-[#c5c7d8] mb-4">
+            Posts that do not meet these standards are revised or rejected.
+            We also encourage readers to flag posts that appear to violate our
+            standards by opening a GitHub issue. This community feedback loop
+            helps us maintain the quality and credibility of our content over
+            time.
+          </p>
+          <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6 mb-3">
+            Content Licensing
+          </h3>
+          <p className="text-[#c5c7d8] mb-4">
+            All blog content on BestAIAgent.in is licensed under the Creative
+            Commons Attribution-ShareAlike 4.0 International License, unless
+            otherwise noted. This means you can freely share, adapt, and
+            redistribute our content, provided you give appropriate credit and
+            distribute derivative works under the same license. We believe that
+            high-quality research and analysis should be freely available to
+            the global developer and research community.
+          </p>
+        </section>
       </div>
     </main>
   );
