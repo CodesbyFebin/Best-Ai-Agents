@@ -45,7 +45,7 @@ export default function TermsPage() {
               periodically for changes.
             </p>
 
-            <h2 className="text-2xl font-bold text[#2] font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#2] font-bold text-[#f7f7ff] mt-8">
               2. Use of This Site
             </h2>
             <p>
@@ -57,7 +57,7 @@ export default function TermsPage() {
               conduct your own research and consult with qualified professionals
               before making any decisions based on information found here.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Permitted Use
             </h3>
             <p>
@@ -91,7 +91,7 @@ export default function TermsPage() {
                 servers
               </li>
             </ul>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Account Access
             </h3>
             <p>
@@ -103,7 +103,7 @@ export default function TermsPage() {
               to these Terms.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               3. No Professional Advice
             </h2>
             <p>
@@ -114,7 +114,7 @@ export default function TermsPage() {
               any damages or losses resulting from your reliance on content
               published on BestAIagent.in.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               No Warranty on Results
             </h3>
             <p>
@@ -124,7 +124,7 @@ export default function TermsPage() {
               We recommend testing any product thoroughly in your own environment
               before making procurement decisions or deploying in production.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Third-Party Product Decisions
             </h3>
             <p>
@@ -141,7 +141,7 @@ export default function TermsPage() {
               <li>Ensure compliance with applicable regulations such as the DPDP Act</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               4. Third-Party Links
             </h2>
             <p>
@@ -152,7 +152,7 @@ export default function TermsPage() {
               for any third-party website, service, or content, even if such
               third-party site or service is accessible through our Site.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Links to External Sites
             </h3>
             <p>
@@ -162,7 +162,7 @@ export default function TermsPage() {
               review the terms of service and privacy policy of any third-party
               website before engaging with their services.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Vendor Websites and Pricing
             </h3>
             <p>
@@ -174,7 +174,7 @@ export default function TermsPage() {
               any purchase or deployment decisions.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               5. Accuracy of Information
             </h2>
             <p>
@@ -185,7 +185,7 @@ export default function TermsPage() {
               omissions in the content, nor for the accuracy of any information
               that may be displayed on the Site.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Data Freshness and Verification
             </h3>
             <p>
@@ -208,7 +208,7 @@ export default function TermsPage() {
               claims independently. You can report stale information via our
               GitHub issues page.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Corrections and Updates
             </h3>
             <p>
@@ -230,7 +230,7 @@ export default function TermsPage() {
               owners. Our use of these marks does not imply any endorsement or
               affiliation.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Content Ownership
             </h3>
             <p>
@@ -240,7 +240,7 @@ export default function TermsPage() {
               its licensors and protected by copyright, trademark, and other
               intellectual property laws.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Open Source Licensing
             </h3>
             <p>
@@ -253,7 +253,7 @@ export default function TermsPage() {
               as text, images, and structured data) is copyrighted and may not
               be scraped or republished without attribution.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
              3   Third-Party Content
             </h3>
             <p>
@@ -264,7 +264,7 @@ export default function TermsPage() {
               on this Site.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               7. Limitations of Liability
             </h2>
             <p>
@@ -276,7 +276,7 @@ export default function TermsPage() {
               profits, business interruption, loss of data, or other intangible
               losses.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Scope of Liability
             </h3>
             <p>
@@ -289,7 +289,7 @@ export default function TermsPage() {
               (including negligence), or any other legal theory, and even if we
               have been advised of the possibility of such damages.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Disclaimer of Endorsement
             </h3>
             <p>
@@ -301,7 +301,7 @@ export default function TermsPage() {
               third-party service.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               8. Indemnification
             </h2>
             <p>
@@ -315,7 +315,7 @@ export default function TermsPage() {
               Terms or your use of the Site.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               9. Governing Law and Jurisdiction
             </h2>
             <p>
@@ -325,7 +325,7 @@ export default function TermsPage() {
               these Terms or the Site shall be subject to the exclusive
               jurisdiction of the courts located in [Jurisdiction], India.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Dispute Resolution
             </h3>
             <p>
@@ -337,7 +337,7 @@ export default function TermsPage() {
               Act, 1996, with the seat of arbitration in Mumbai, India.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               10. Changes to This Policy
             </h2>
             <p>
@@ -350,7 +350,7 @@ export default function TermsPage() {
               notification procedures.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               11. Termination
             </h2>
             <p>

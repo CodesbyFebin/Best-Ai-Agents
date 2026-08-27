@@ -322,7 +322,7 @@ export default function ContactPage() {
               inquiries within 5 business days and will respond with next steps
               if there is mutual interest.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Vendor Relations Policy
             </h3>
             <p>
@@ -408,8 +408,27 @@ export default function ContactPage() {
               We aim to respond to all inquiries within 48 hours. Error reports
               are prioritized and typically addressed within 24 hours. New agent
               suggestions are processed within 5-7 business days. For urgent
-              matters, please use GitHub issues for the fastest response.
+              matters, please use GitHub issues for the fastest response. Our
+              response time SLA is as follows:
             </p>
+            <ul>
+              <li>
+                <strong>Error reports</strong>: Initial acknowledgment within 4
+                hours, resolution or update within 24 hours.
+              </li>
+              <li>
+                <strong>New agent submissions</strong>: Initial review within 48
+                hours, full evaluation within 5-7 business days.
+              </li>
+              <li>
+                <strong>Partnership inquiries</strong>: Initial response within 3
+                business days, follow-up within 7 business days.
+              </li>
+              <li>
+                <strong>Press inquiries</strong>: Response within 24 hours during
+                business days.
+              </li>
+            </ul>
             <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Business Hours
             </h3>
@@ -419,7 +438,7 @@ export default function ContactPage() {
               provide weekend support except for critical security
               vulnerabilities, which are addressed on a best-effort basis.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               What to Expect in Our Response
             </h3>
             <p>

@@ -75,6 +75,16 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               What We Cover
             </h2>
+            <p>
+              Our coverage spans the entire AI agent ecosystem, from coding
+              agents that help developers write and refactor code to voice AI
+              systems that power customer service in Indian languages. We
+              evaluate over 69 AI agents, 30 foundational models, and 32
+              frameworks, with particular focus on categories that matter most
+              to our audience: coding agents, business automation, voice AI,
+              core LLMs, agent builders, AI infrastructure, and Model Context
+              Protocol (MCP) integrations.
+            </p>
             <ul>
               <li>
                 <strong>Coding Agents</strong>: Claude Code, Cursor, GitHub
@@ -113,7 +123,7 @@ export default function AboutPage() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text[#2] font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Our Standards
             </h2>
             <p>
@@ -130,6 +140,140 @@ export default function AboutPage() {
               <li>Regular refresh — stale data is clearly marked</li>
               <li>Editorial independence — we do not accept vendor payments</li>
             </ul>
+
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Our History
+            </h3>
+            <p>
+              BestAIAgent.in was founded in 2024 by a group of independent
+              AI researchers and developers who were frustrated by the lack of
+              credible, evidence-backed information about AI agents. The initial
+              version was a simple Markdown file on GitHub, listing 10 agents with
+              manually verified scores. Within a year, the community contributed
+              enough evidence to expand the directory to 69 agents, 30 models,
+              and 32 frameworks. Today, our platform serves over 50,000 monthly
+              readers, primarily developers, procurement teams, and startups in
+              India.
+            </p>
+            <p>
+              In August 2025, we launched our dedicated India hub, which
+              consolidates all India-specific content including DPDP Act
+              compliance analyses, INR pricing transparency reports, Indic
+              language model evaluations, and sovereign AI deployment guides.
+              This hub has become our most visited section, reflecting the
+              growing importance of the Indian AI market.
+            </p>
+            <p>
+              In early 2026, we expanded to cover MCP (Model Context Protocol)
+              infrastructure with 50 topic clusters across 5 buckets: servers,
+              clients, security, enterprise deployment, and local/offline
+              development. This expansion recognized MCP's growing importance in
+              the AI agent ecosystem and the unique needs of Indian development
+              teams working with these integrations.
+            </p>
+
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Our Values
+            </h3>
+            <p>
+              Everything we do is guided by five core values:
+            </p>
+            <ul>
+              <li>
+                <strong>Evidence Over Opinion</strong>: We do not accept
+                marketing claims at face value. Every score is backed by
+                traceable, primary-source evidence or our own testing. If we
+                cannot verify a claim, we say so explicitly.
+              </li>
+              <li>
+                <strong>Radical Transparency</strong>: Our scoring rubric, data
+                sources, and methodology are publicly available. We welcome
+                scrutiny and encourage independent verification of our work.
+              </li>
+              <li>
+                <strong>Editorial Independence</strong>: We do not accept paid
+                placements, sponsored content, or vendor payments. Our revenue
+                model is nonexistent—we have no ads, no data sales, and no
+                consulting fees from vendors.
+              </li>
+              <li>
+                <strong>User-First</strong>: We optimize for the needs of
+                developers, businesses, and teams in India and globally. Every
+                feature we build, every score we calculate, and every word we
+                write is designed to help you make better decisions.
+              </li>
+              <li>
+                <strong>Continuous Improvement</strong>: The AI landscape
+                evolves rapidly. We commit to regular refreshes, community
+                feedback incorporation, and methodology updates based on new
+                evidence and changing needs.
+              </li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              What Sets Us Apart
+            </h3>
+            <p>
+              The AI agent evaluation space is crowded, but most directories and
+              review sites share fundamental problems that BestAIAgent.in was
+              built to solve:
+            </p>
+            <div className="space-y-4 mt-4">
+              <div
+                className="rounded-xl p-4 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.3)",
+                  borderColor: "rgba(239, 68, 68, 0.3)",
+                }}
+              >
+                <h4 className="font-semibold text-white mb-1">
+                  The "No Pay-to-Rank" Difference
+                </h4>
+                <p className="text-sm text-slate-400">
+                  Unlike generic AI tool directories that accept money for
+                  placements, we do not offer any paid features. Every listing
+                  is evaluated using the same rubric with the same rigor. A
+                  small open-source project with excellent evidence can outscore
+                  a well-funded startup with better marketing.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-4 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.3)",
+                  borderColor: "rgba(139, 92, 246, 0.3)",
+                }}
+              >
+                <h4 className="font-semibold text-white mb-1">
+                  Source-Backed Claims
+                </h4>
+                <p className="text-sm text-slate-400">
+                  Every score, feature claim, and pricing figure on our site
+                  links back to its source. We do not make assertions without
+                  evidence. If we can't verify something through official
+                  documentation, public repositories, or hands-on testing, we
+                  either omit the claim or explicitly flag it as unverified.
+                </p>
+              </div>
+              <div
+                className="rounded-xl p-4 border"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.3)",
+                  borderColor: "rgba(16, 185, 129, 0.3)",
+                }}
+              >
+                <h4 className="font-semibold text-white mb-1">
+                  India-First Perspective
+                </h4>
+                <p className="text-sm text-slate-400">
+                  We maintain a distinct India Fit score that evaluates how well
+                  each agent serves the Indian market. This includes INR pricing,
+                  UPI payment support, Indic language support, on-premise
+                  deployment options, and DPDP Act compliance—factors that global
+                  directories often overlook.
+                </p>
+              </div>
+            </div>
 
             <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Editorial Independence
@@ -179,8 +323,9 @@ export default function AboutPage() {
               </li>
               <li>
                 <strong>Compliance (continuous)</strong>: DPDP Act compliance,
-                data residency options, and consent management features are monitored
-                continuously, with updates triggered by regulatory changes.
+                data residency options, and consent management features are
+                monitored continuously, with updates triggered by regulatory
+                changes.
               </li>
               <li>
                 <strong>Capability (semi-annual)</strong>: Feature coverage,
@@ -237,7 +382,7 @@ export default function AboutPage() {
               encourage you to open a GitHub issue with your sources.
             </p>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
               Scoring System Overview
             </h3>
             <p>
@@ -247,12 +392,12 @@ export default function AboutPage() {
               (10%). Each dimension is scored independently on a 0-10 scale,
               then combined into a composite score. The full rubric, including
               detailed scoring criteria and examples, is published in our
-              methodology documentation. Every score includes a confidence
-              indicator that reflects the strength and recency of underlying
-              evidence.
+              methodology documentation at /methodology/. Every score includes a
+              confidence indicator that reflects the strength and recency of
+              underlying evidence.
             </p>
 
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
               Technology Stack
             </h3>
             <p>
@@ -264,8 +409,21 @@ export default function AboutPage() {
               public repository. This architecture ensures that our content is
               always available, even if the original vendor websites go down.
             </p>
+            <p>
+              The complete source code for this website is open source and
+              available at{" "}
+              <a
+                href="https://github.com/CodesbyFebin/bestaiagent.in"
+                className="text-[#8b5cf6] hover:underline"
+              >
+                GitHub
+              </a>
+              . You can browse, fork, and contribute to any aspect of the site.
+              Our data files are plain TypeScript modules, making it easy for
+              other projects to build on our work or verify our claims.
+            </p>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
               Future Roadmap
             </h3>
             <p>
@@ -278,8 +436,32 @@ export default function AboutPage() {
               tools that allow users to build custom side-by-side matrices and
               export results. All roadmap items are tracked publicly on GitHub.
             </p>
+            <p>
+              Near-term roadmap items (next 3 months):
+            </p>
+            <ul>
+              <li>
+                <strong>API endpoints</strong>: A REST API at /api/catalog
+                providing JSON access to all agent, model, framework, and
+                comparison data with filtering and search capabilities.
+              </li>
+              <li>
+                <strong>Change detection</strong>: Automated monitoring of
+                vendor pricing pages, documentation updates, and GitHub
+                releases to flag potential staleness in our data.
+              </li>
+              <li>
+                <strong>Interactive comparisons</strong>: User-facing tool for
+                building custom comparison tables across any set of agents
+                with export to CSV and PNG.
+              </li>
+              <li>
+                <strong>Bengali and Marathi support</strong>: Expanded Indic
+                language evaluation coverage beyond Hindi and Hinglish.
+              </li>
+            </ul>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt=8">
               Contact
             </h2>
             <p>

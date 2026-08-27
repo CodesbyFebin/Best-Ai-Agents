@@ -80,7 +80,7 @@ export default function PrivacyPage() {
               modules. These files contain no information about you.
             </p>
 
-            <h2 className="text-2xl font-bold text[#2] font-bold text-[#f7f7ff] mt-8">
+            <h2 className="text-2xl font-bold text-[#2] font-bold text-[#f7f7ff] mt-8">
               Website Hosting and Data Processing
             </h2>
             <p>
@@ -120,7 +120,7 @@ export default function PrivacyPage() {
               any third-party sites. We encourage you to be aware of this and to
               read the privacy policy of any external site you visit.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Link Categories
             </h3>
             <p>
@@ -200,7 +200,7 @@ export default function PrivacyPage() {
                 correction requests within 48 hours.
               </li>
             </ul>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Source Attribution and Evidence
             </h3>
             <p>
@@ -223,7 +223,7 @@ export default function PrivacyPage() {
               about changes, we recommend checking this page periodically or
               watching our GitHub repository for commits.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Policy Change Notification
             </h3>
             <p>
@@ -249,7 +249,7 @@ export default function PrivacyPage() {
               clarifying language) are not considered material changes and will
               not trigger special notification procedures.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Historical Policy Versions
             </h3>
             <p>
@@ -272,7 +272,7 @@ export default function PrivacyPage() {
               ensuring that no personal data enters our systems in the first
               place.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               DPDP Act Specific Considerations
             </h3>
             <p>
@@ -288,7 +288,7 @@ export default function PrivacyPage() {
               have their own DPDP compliance obligations if they process
               personal data from users in India.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Data Localization
             </h3>
             <p>
@@ -313,7 +313,7 @@ export default function PrivacyPage() {
               PIPEDA in Canada), our lack of data collection means that those
               laws have limited applicability to our operations.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               GDPR Applicability
             </h3>
             <p>
@@ -340,7 +340,7 @@ export default function PrivacyPage() {
               completeness and compliance with applicable laws.
             </p>
 
-            <h2 className="text-2xl font-bold text[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Security Measures
             </h2>
             <p>
@@ -352,7 +352,7 @@ export default function PrivacyPage() {
               privacy risks such as data breaches, credential leaks, and session
               hijacking.
             </p>
-            <h3 className="text-xl font-semibold text[#f7f7ff] mt-6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Technical Security Controls
             </h3>
             <p>
