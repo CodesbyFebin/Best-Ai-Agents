@@ -1009,6 +1009,122 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PLATFORM OVERVIEW */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
+              Platform Overview
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              What Makes <span className="gradient-text">BestAIAgent.in</span> Different
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              The AI agent market is saturated with promotional content and
+              pay-to-rank directories. We take the opposite approach: every claim
+              is verified, sourced, and reproducible.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Evidence-First Directory
+              </h3>
+              <p className="text-slate-400 mb-4">
+                Our directory covers 69 verified AI agents, 30 core language
+                models, 32 agent frameworks, 12 categories, and 4 comparison
+                studies. Every entry is evaluated using the same transparent
+                rubric, with the same rigor applied regardless of vendor size or
+                marketing budget. We do not accept payments for placement, and
+                there is no way to buy a higher score.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Each agent profile includes a composite editorial score (out of
+                10), an India Fit score (out of 10), an evidence count, a
+                last-verified date, and a confidence indicator. You can inspect
+                the underlying evidence, verify source links, and challenge any
+                assessment through our public GitHub repository. This radical
+                transparency is what separates us from traditional review sites.
+              </p>
+              <p className="text-slate-400 mb-4">
+                We also maintain a public verification log that records every
+                evidence-gathering activity, including screenshots of pricing
+                pages, benchmark test results, and source document hashes. This
+                log is updated monthly and available to any reader who wants to
+                validate our findings independently.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                No Synthetic Hype
+              </h3>
+              <p className="text-slate-400 mb-4">
+                We reject synthetic hype and fabricated user counts. Every data
+                point on our site is traceable to a primary source or our own
+                hands-on testing. If we cannot verify a claim, we mark it as
+                unverified rather than presenting it as fact. This disciplined
+                approach means our scores reflect genuine capability, not
+                marketing narratives.
+              </p>
+              <p className="text-slate-400">
+                For Indian users and enterprises, this matters enormously.
+                Procurement decisions worth lakhs of rupees should not rest on
+                vendor marketing copy. Our evidence-backed scores give you a
+                defensible basis for choosing the right AI agent, model, or
+                framework for your specific use case and compliance requirements.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                India-First by Design
+              </h3>
+              <p className="text-slate-400 mb-4">
+                India is not an afterthought for us — it is central to our
+                mission. We maintain a distinct India Fit score for every
+                listing, evaluating INR pricing, UPI payment support, Indic
+                language capabilities, on-premise deployment options, and DPDP
+                Act compliance. No other global AI directory provides this level
+                of India-specific analysis.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Our India hub consolidates all India-specific content: DPDP Act
+                compliance analyses, INR pricing transparency reports, Indic
+                language model evaluations, and sovereign AI deployment guides.
+                We track which agents offer local deployment in Indian cloud
+                regions (AWS Mumbai, GCP Hyderabad, Azure Pune), which support
+                Hindi and Hinglish, and which have verified data residency
+                controls suitable for the DPDP Act.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                MCP Infrastructure Coverage
+              </h3>
+              <p className="text-slate-400 mb-4">
+                We were among the first platforms to comprehensively cover Model
+                Context Protocol (MCP) infrastructure. Our MCP directory spans 50
+                topic clusters across 5 search-intent buckets: commercial intent,
+                transactional/localized, informational/commercial,
+                navigational/use-case, and troubleshooting. Each cluster is
+                interlinked and evidence-backed.
+              </p>
+              <p className="text-slate-400">
+                For every MCP server we verify, we check transport configuration
+                (stdio vs Streamable HTTP), sandboxing support, authentication
+                requirements, and security posture. Our testing covers macOS,
+                Windows, Linux, and Docker environments, with results published
+                alongside SHA-256 source hashes so you can reproduce our findings.
+              </p>
+              <div className="mt-6 rounded-xl p-5 border border-brand-500/30 bg-brand-500/5">
+                <p className="text-sm text-slate-300">
+                  <strong className="text-white">Bottom line:</strong> If you are
+                  making an AI procurement decision in India, BestAIAgent.in gives
+                  you the evidence, scores, and India-specific context to make it
+                  confidently — without vendor influence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1235,6 +1351,100 @@ export default function Home() {
               <button className="w-full btn-s py-2.5 rounded-lg text-sm font-semibold text-white">
                 Contact Sales
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO WE SERVE */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-brand-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
+              Who We Serve
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Built for India's <span className="gradient-text">AI Builders</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              From indie developers to enterprise procurement teams, our platform
+              serves everyone making AI decisions in the Indian market.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">👨‍💻</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Developers & Indie Hackers
+              </h3>
+              <p className="text-sm text-slate-400">
+                Compare coding agents like Claude Code, Cursor, and Cline with
+                hands-on benchmark data. Find MCP servers that work with your
+                local dev setup. Verify INR pricing before you commit. Our
+                evidence-backed scores help you pick tools that fit your workflow
+                and budget.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🏢</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Startups & SMBs
+              </h3>
+              <p className="text-sm text-slate-400">
+                Evaluate business automation agents with transparent pricing and
+                DPDP compliance checks. Understand which agents support UPI
+                payments, GST invoicing, and Indian language customer support.
+                Make procurement decisions worth lakhs with confidence.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🏛️</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Enterprises & Government
+              </h3>
+              <p className="text-sm text-slate-400">
+                Verify sovereign AI deployment options, on-premise capabilities,
+                and data residency controls. Our DPDP compliance analysis covers
+                consent management, audit logging, and localization requirements
+                for regulated Indian sectors including BFSI and healthcare.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🎓</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Researchers & Academics
+              </h3>
+              <p className="text-sm text-slate-400">
+                Access our research reports on India's AI landscape, MCP
+                ecosystem adoption, and agent buyer behavior. All methodology,
+                test scripts, and raw data are openly published for reproducibility
+                and citation in your own work.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">📊</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Procurement Teams
+              </h3>
+              <p className="text-sm text-slate-400">
+                Build defensible vendor shortlists using our scoring rubric. Export
+                comparison matrices, verify evidence trails, and present
+                auditable justifications to stakeholders. No more relying on
+                sales decks for capability claims.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🌐</div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Global Teams with India Ops
+              </h3>
+              <p className="text-sm text-slate-400">
+                Multinational teams operating Indian subsidiaries use our India Fit
+                scores to navigate local compliance, pricing, and language
+                requirements that global directories overlook. One source of truth
+                for India-specific AI decisions.
+              </p>
             </div>
           </div>
         </div>

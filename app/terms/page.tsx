@@ -375,11 +375,155 @@ export default function TermsPage() {
               13. Entire Agreement
             </h2>
             <p>
-              These Terms constitute the entire agreement between us with
-              respect to the subject matter hereof and supersede all prior
-              understandings, representations, or agreements, whether written or
-              oral. Any additional terms referenced in this document form part
-              of the agreement between us.
+              These Terms constitute the entire agreement between us with respect
+              to the subject matter hereof and supersede all prior understandings,
+              representations, or agreements, whether written or oral. Any
+              additional terms referenced in this document form part of the
+              agreement between us.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              14. Changes to These Terms
+            </h2>
+            <p>
+              We may update these Terms from time to time. When we do, we will
+              revise the "Last updated" date at the top of this page and, where
+              appropriate, notify you through a prominent banner on our site. We
+              define "material changes" as modifications that affect your rights or
+              obligations under these Terms, introduce new categories of
+              permissible or prohibited uses, or change the applicable governing
+              law. Minor corrections—typographical errors, formatting changes, or
+              clarifications that do not alter your rights—are not considered
+              material changes.
+            </p>
+            <p>
+              Your continued use of the Site after any changes to these Terms
+              constitutes your acceptance of the new Terms. If you do not agree to
+              the revised Terms, you must stop using the Site. We encourage you to
+              review these Terms periodically. The most current version is always
+              available at this page and in our public GitHub repository.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              How We Communicate Changes
+            </h3>
+            <p>
+              When we make material changes to these Terms, we will:
+            </p>
+            <ul>
+              <li>
+                Update the "Last updated" date at the top of this page
+              </li>
+              <li>
+                Commit the change to our public GitHub repository with a
+                descriptive commit message explaining the nature of the change
+              </li>
+              <li>
+                Post a notice in the "Recent Changes" section of our GitHub README
+              </li>
+              <li>
+                If the change is significant, publish a brief announcement on our
+                GitHub discussions page
+              </li>
+            </ul>
+            <p>
+              We do not send email notifications for Terms changes because we do
+              not collect email addresses. We recommend checking this page and our
+              GitHub repository periodically for the latest version.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              15. International Access
+            </h2>
+            <p>
+              The Site is controlled and operated from India. If you access the
+              Site from other jurisdictions, you are responsible for ensuring
+              compliance with all local laws. We make no representations that the
+              Site or its content is appropriate or available for use in any
+              particular jurisdiction. If you are a resident of the European Union,
+              the United Kingdom, California, or any other jurisdiction with data
+              protection or consumer protection laws, please note that these Terms
+              are governed by Indian law and any disputes will be resolved in
+              Indian courts or through arbitration in Mumbai, India.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Export Compliance
+            </h3>
+            <p>
+              You are responsible for complying with all applicable export control
+              laws and regulations when using or accessing the Site. The Site
+              contains information about AI agents and technologies that may be
+              subject to export controls in certain jurisdictions. You agree not to
+              export or re-export any content or information that would violate
+              applicable export control laws. We do not provide export classification
+              information for any agent or technology listed on our Site; you must
+              consult the applicable regulations and vendor documentation for
+              guidance.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              16. Feedback and User Submissions
+            </h2>
+            <p>
+              Any feedback, suggestions, improvements, or submissions you provide
+              to us will be treated as non-confidential and non-proprietary. We
+              are free to use, disclose, distribute, and modify such feedback
+              without limitation and without compensation to you. This includes
+              any agent suggestions you submit through our GitHub issue tracker,
+              any corrections to our existing profiles, and any general
+              suggestions for improving our evaluation methodology.
+            </p>
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
+              Submission Guidelines
+            </h3>
+            <p>
+              When submitting feedback or suggestions through our GitHub
+              repository, please follow these guidelines:
+            </p>
+            <ul>
+              <li>
+                Provide specific, actionable information rather than general
+                criticism
+              </li>
+              <li>
+                Include supporting evidence, sources, or test results whenever
+                possible
+              </li>
+              <li>
+                Disclose any conflicts of interest, including employment,
+                equity holdings, or consulting relationships with vendors
+                mentioned in your submission
+              </li>
+              <li>
+                Keep submissions professional and constructive
+              </li>
+            </ul>
+            <p>
+              We are not obligated to accept or act on any feedback and make no
+              commitments regarding the implementation of suggestions. We may
+              choose to respond publicly, implement changes, or take no action
+              based on any submission.
+            </p>
+
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
+              17. Disclaimer of Automated Processing
+            </h2>
+            <p>
+              The Site does not use artificial intelligence to generate or
+              determine any content. All text, scores, evaluations, and
+              commentary are produced by human editors through manual review,
+              evidence gathering, and hands-on testing. We do not use large
+              language models, generative AI, or automated scoring systems to
+              create or modify any content on this Site. This ensures that every
+              claim is made by a human who has reviewed the underlying evidence
+              and understands the context of the evaluation.
+            </p>
+            <p>
+              We believe this human-in-the-loop approach is essential for
+              maintaining the accuracy, reliability, and trustworthiness of our
+              evaluations. Automated systems can produce plausible-sounding but
+              incorrect information, and we reject any approach that trades
+              accuracy for speed or convenience. Every word on BestAIAgent.in is
+              written, reviewed, and approved by a human editor.
             </p>
 
             <p>

@@ -502,6 +502,169 @@ export default function IndiaPage() {
         </div>
       </section>
 
+      {/* WHY INDIA NEEDS EVIDENCE-BACKED EVALUATION */
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-orange-400 mb-4">
+              Why It Matters for India
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Why India Needs <span className="india-gradient">Evidence-Backed AI</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              The Indian AI market faces unique challenges that generic global
+              directories ignore. Evidence-backed evaluation is not a luxury here —
+              it is a necessity for trustworthy adoption.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                The Cost of Bad Information
+              </h3>
+              <p className="text-slate-400 mb-4">
+                AI procurement decisions in India frequently involve lakhs of rupees
+                in implementation, training, and licensing costs. When buyers rely on
+                vendor marketing copy or pay-to-rank directories, they risk choosing
+                agents that do not support Hindi, cannot deploy on-premise, or
+                quietly violate DPDP requirements. The cost of that mistake is not
+                just money — it is regulatory exposure and lost trust.
+              </p>
+              <p className="text-slate-400 mb-4">
+                We have seen enterprises adopt global agents at premium INR prices
+                only to discover mid-contract that Indic language support was a
+                roadmap item, not a shipped feature. Our India Fit score surfaces
+                these gaps before procurement, not after deployment, by verifying
+                claims against documentation and hands-on testing rather than
+                sales decks.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                Linguistic Complexity
+              </h3>
+              <p className="text-slate-400 mb-4">
+                India's linguistic diversity means a model that works in English may
+                fail completely in Tamil, Bengali, or Marathi. Generic benchmarks
+                conducted in English tell you nothing about real-world performance for
+                Indian users. Our voice AI and Indic language evaluations test in the
+                languages your users actually speak, measuring accuracy and latency
+                under Indian network conditions.
+              </p>
+              <p className="text-slate-400">
+                This is why we maintain dedicated Indic model comparisons — Sarvam
+                vs Krutrim vs Bhashini — with Hindi, Tamil, Telugu, and Hinglish
+                results. The evidence shows homegrown models frequently outperform
+                global counterparts in regional context, a finding that should
+                directly inform procurement but is absent from every global directory.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Regulatory Reality
+              </h3>
+              <p className="text-slate-400 mb-4">
+                The DPDP Act imposes concrete obligations: voice data is biometric
+                data requiring explicit consent; personal data of Indians should be
+                processed with declared purpose and consent; breach notification and
+                audit trails are expected. For AI agents handling customer calls or
+                personal data, compliance is not optional. Yet most directories list
+                agents without a single word about DPDP posture.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Our DPDP compliance analysis verifies which agents support sovereign
+                on-premise deployment, which provide consent management flows, and
+                which log audit trails suitable for regulated sectors. We mark
+                unverified claims rather than assume compliance. For Indian buyers in
+                BFSI, healthcare, and government, this analysis is the difference
+                between a defensible deployment and a regulatory incident.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                Pricing in INR
+              </h3>
+              <p className="text-slate-400 mb-4">
+                Dollar-denominated pricing hides the real cost for Indian buyers:
+                forex charges, GST at 18%, and unclear UPI support. We audit pricing
+                pages for INR availability, UPI payment support, and GST invoicing,
+                publishing what we find so finance teams can budget accurately. Our
+                transparent INR pricing bands (₹499/mo Pro, ₹4–12 lakh enterprise
+                implementations) reflect typical Indian market rates.
+              </p>
+              <p className="text-slate-400">
+                Transparency extends to our own pricing. We publish INR rates with
+                GST included, support UPI and Indian card payments, and provide GST
+                invoices automatically. No hidden forex fees, no surprise conversions
+                at checkout.
+              </p>
+              <div className="mt-6 rounded-xl p-5 border border-orange-500/30 bg-orange-500/5">
+                <p className="text-sm text-slate-300">
+                  <strong className="text-white">The bottom line:</strong> India's AI
+                  buyers deserve evaluation that accounts for language, law, and
+                  local pricing. That is the entire reason BestAIAgent.in exists.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA AI DEPLOYMENT PLAYBOOK */
+      <section className="py-24 bg-gradient-to-b from-transparent via-brand-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-semibold text-brand-500 mb-4">
+              Deployment Playbook
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              India AI <span className="gradient-text">Deployment Playbook</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              A practical, evidence-based approach to deploying AI agents in India
+              that satisfies DPDP, language, and cost requirements.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 mb-4 font-bold">1</div>
+              <h3 className="text-lg font-bold text-white mb-3">Assess</h3>
+              <p className="text-sm text-slate-400">
+                Map your use case to India Fit dimensions: which languages, what data
+                sensitivity, what deployment model. Use our category filters to shortlist
+                agents with verified Indic and DPDP support.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="w-10 h-10 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-500 mb-4 font-bold">2</div>
+              <h3 className="text-lg font-bold text-white mb-3">Verify</h3>
+              <p className="text-sm text-slate-400">
+                Inspect each shortlisted agent's evidence: source hashes, last-verified
+                date, confidence score. Read our DPDP and pricing audits. Challenge any
+                claim via GitHub if evidence is thin.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4 font-bold">3</div>
+              <h3 className="text-lg font-bold text-white mb-3">Deploy</h3>
+              <p className="text-sm text-slate-400">
+                Prefer on-premise or Indian-region cloud for personal data. Configure
+                MCP servers with stdio for local dev, Streamable HTTP with TLS for
+                production. Enable DPDP consent flows before go-live.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="w-10 h-10 rounded-lg bg-trust-500/20 flex items-center justify-center text-trust-400 mb-4 font-bold">4</div>
+              <h3 className="text-lg font-bold text-white mb-3">Monitor</h3>
+              <p className="text-sm text-slate-400">
+                Track agent performance, consent logs, and pricing changes. Re-verify
+                quarterly. Report stale data via GitHub so the directory stays
+                accurate for the next buyer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ / PAA */}
       <section id="faq" className="py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
