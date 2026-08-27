@@ -382,7 +382,7 @@ export default function AboutPage() {
               encourage you to open a GitHub issue with your sources.
             </p>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Scoring System Overview
             </h3>
             <p>
@@ -397,7 +397,7 @@ export default function AboutPage() {
               underlying evidence.
             </p>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Technology Stack
             </h3>
             <p>
@@ -423,7 +423,7 @@ export default function AboutPage() {
               other projects to build on our work or verify our claims.
             </p>
 
-            <h3 className="text-xl font-semibold text-[#f7f7ff] mt=6">
+            <h3 className="text-xl font-semibold text-[#f7f7ff] mt-6">
               Future Roadmap
             </h3>
             <p>
@@ -461,7 +461,7 @@ export default function AboutPage() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-[#f7f7ff] mt=8">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mt-8">
               Contact
             </h2>
             <p>
