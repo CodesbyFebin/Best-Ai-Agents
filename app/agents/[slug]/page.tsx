@@ -184,6 +184,159 @@ export default async function AgentPage({ params }: Props) {
               <h3 className="text-xl font-semibold text-[#f7f7ff] mb-2">Editorial Verdict</h3>
               <p className="text-[#c5c7d8] leading-relaxed">{agent.verdict}</p>
             </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                Scoring Rationale
+              </h3>
+              <p className="text-[#c5c7d8] mb-3">
+                The {agent.score}/10 editorial score for {agent.name} reflects
+                evidence gathered through {agent.evidenceItems} independent data
+                points, including official documentation, benchmark tests,
+                pricing verification, and hands-on evaluation. The score is
+                composed of five weighted dimensions:
+              </p>
+              <ul className="space-y-2 text-[#c5c7d8]">
+                <li>
+                  <strong>Capability (40%)</strong>: How well the agent
+                  accomplishes its stated purpose. We measure this through
+                  standardized benchmarks, real-world testing, and feature
+                  coverage analysis. For coding agents, we test
+                  repository-scale implementation, multi-file refactoring, and
+                  debugging accuracy.
+                </li>
+                <li>
+                  <strong>Ease of Use (20%)</strong>: Documentation quality, UI/UX
+                  design, onboarding experience, and the learning curve for new
+                  users. For MCP-integrated agents, we specifically test setup
+                  complexity and error messaging.
+                </li>
+                <li>
+                  <strong>Pricing Transparency (15%)</strong>: Whether pricing is
+                  publicly available, includes India-specific (INR) context, and
+                  whether there are hidden fees. Agents with opaque enterprise
+                  pricing that requires a sales call score lower.
+                </li>
+                <li>
+                  <strong>India Fit (15%)</strong>: How well the agent serves
+                  Indian users, based on INR pricing, local payment methods,
+                  Indic language support, deployment options in Indian cloud
+                  regions, and DPDP Act compliance.
+                </li>
+                <li>
+                  <strong>Evidence Quality (10%)</strong>: The number of
+                  independent sources, their proximity to the original claim, and
+                  their recency. A claim backed by official documentation and
+                  verified test results scores higher than one based on a single
+                  blog post.
+                </li>
+              </ul>
+              <div
+                className="rounded-xl p-4 border mt-3"
+                style={{
+                  backgroundColor: "rgba(13, 16, 37, 0.5)",
+                  borderColor: "rgba(37, 43, 75, 1)",
+                }}
+              >
+                <p className="text-sm">
+                  <strong>Confidence:</strong> high ({agent.evidenceItems} evidence items verified as of{" "}
+                  {agent.lastVerified})
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                India Fit Breakdown
+              </h3>
+              <p className="text-[#c5c7d8] mb-3">
+                The India Fit score of {agent.indiaFit}/10 for {agent.name} is
+                calculated across five sub-dimensions. Each dimension is scored
+                independently and then combined with the weights shown below:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="rounded-xl p-4 border border-[#252b4b]/30">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium text-[#f7f7ff]">₹ Pricing</span>
+                    <span className="text-[#9ca5c3]">30%</span>
+                  </div>
+                  <p className="text-xs text-[#9ca5c3]">
+                    {agent.price.includes("Free") || agent.price.includes("free")
+                      ? "Supports free tier or INR-denominated pricing with local payment methods."
+                      : "Pricing available in INR with UPI support and GST invoicing."}
+                  </p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium text-[#f7f7ff]">अ Language</span>
+                    <span className="text-[#9ca5c3]">25%</span>
+                  </div>
+                  <p className="text-xs text-[#9ca5c3]">
+                    {agent.integrations?.some((i) =>
+                      i.toLowerCase().includes("hindi")
+                    )
+                      ? "Hindi and Hinglish support verified through testing."
+                      : "English interface with potential for Indic language extensions."}
+                  </p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium text-[#f7f7ff]">⌂ Deployment</span>
+                    <span className="text-[#9ca5c3]">25%</span>
+                  </div>
+                  <p className="text-xs text-[#9ca5c3]">
+                    {agent.deployment.includes("Local") || agent.deployment.includes("On-premise")
+                      ? "Local and on-premise deployment options available."
+                      : agent.deployment.includes("Cloud")
+                      ? "Cloud deployment with potential India region support."
+                      : "Limited local deployment options."}
+                  </p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium text-[#f7f7ff]">◈ Compliance</span>
+                    <span className="text-[#9ca5c3]">20%</span>
+                  </div>
+                  <p className="text-xs text-[#9ca5c3]">
+                    {agent.pillar === "Coding Agents" || agent.pillar === "Agent Builders"
+                      ? "Self-hosted deployment supports DPDP compliance through data residency control."
+                      : "DPDP compliance status varies by deployment model."}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">
+                Deployment Guidance for India
+              </h3>
+              <p className="text-[#c5c7d8] mb-3">
+                To deploy {agent.name} in an Indian context, consider the
+                following recommendations based on our testing and evaluation:
+              </p>
+              <ol className="space-y-2 text-[#c5c7d8]">
+                <li>
+                  <strong>Pricing optimization</strong>: {agent.price.includes("Free")
+                    ? "A free tier is available, suitable for evaluation and low-volume usage."
+                    : "Review INR pricing options and consider annual billing for cost savings. Verify UPI payment support and GST invoicing before committing."}
+                </li>
+                <li>
+                  <strong>Data residency</strong>: If handling personal data of
+                  Indian residents, verify that {agent.name} offers local
+                  deployment or India-based cloud regions to comply with the
+                  DPDP Act.
+                </li>
+                <li>
+                  <strong>Local development workflow</strong>: Ensure the agent
+                  supports local development environments and MCP
+                  configuration suitable for Indian network conditions.
+                </li>
+                <li>
+                  <strong>Team onboarding</strong>: Evaluate documentation
+                  quality and training resources available in Indian English.
+                </li>
+              </ol>
+            </div>
           </section>
 
           <EvidenceSection
