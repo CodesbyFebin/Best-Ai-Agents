@@ -605,6 +605,65 @@ export default function VerifyPage() {
             </div>
           </section>
 
+          {/* HOW TO VERIFY ON YOUR OWN */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">How to Verify AI Agents on Your Own</h2>
+            <p className="text-[#c5c7d8] mb-6">
+              While BestAIAgent.in provides evidence-backed assessments, we encourage users to conduct their own verification—especially for high-stakes procurement decisions. Here is a practical framework you can apply to any AI agent evaluation.
+            </p>
+            <div className="space-y-6">
+              <div className="rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}>
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Step 1: Verify Identity</h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">Confirm that the official website domain matches the product. Check GitHub repositories for authentic commit history, not just recently created mirrors. Verify that the team or company behind the product is real and reachable. Look for typosquatting—domains like "cursr.com" instead of "cursor.com" are red flags.</p>
+                <p className="text-[#9ca5c3] text-sm">For Indian-specific claims, verify that the company has a registered presence in India or officially supports Indian users. Check for a valid GST number if INR pricing is offered.</p>
+              </div>
+              <div className="rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}>
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Step 2: Test Core Claims</h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">Do not accept vendor benchmarks at face value. Set up a free tier or trial and run your own tests. For coding agents, test with your own repositories—not the vendor demo projects. For MCP servers, verify both stdio and Streamable HTTP transports. For voice AI, test with Indian language inputs and measure transcription accuracy yourself.</p>
+                <p className="text-[#9ca5c3] text-sm">Document your test environment, methodology, and results. This creates your own audit trail that you can compare against vendor claims and our assessments.</p>
+              </div>
+              <div className="rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}>
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Step 3: Check Compliance</h3>
+                <p className="text-[#9ca5c3] text-sm mb-3">Verify data residency claims by checking where API endpoints are hosted. Use tools like nslookup or traceroute to confirm that traffic routes to the claimed regions. For DPDP compliance, verify that consent management flows exist and that data retention policies are documented. Check for SOC 2 or ISO 27001 certifications on the vendor website.</p>
+                <p className="text-[#9ca5c3] text-sm">If you are a regulated enterprise, engage your legal team to review the vendor data processing agreement. Ensure that cross-border data transfer mechanisms are in place if data leaves India.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* MCP SERVER VERIFICATION CHECKLIST */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">MCP Server Verification Checklist</h2>
+            <p className="text-[#c5c7d8] mb-6">
+              MCP servers require specific verification beyond standard AI agent evaluation. Use this checklist when assessing any MCP server:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}>
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Transport Layer</h3>
+                <ul className="space-y-2 text-[#9ca5c3] text-sm">
+                  <li>• Verify stdio transport works on your OS</li>
+                  <li>• Test Streamable HTTP with TLS</li>
+                  <li>• Check for non-JSON line corruption</li>
+                  <li>• Verify session initialization handshake</li>
+                  <li>• Test reconnection after network interruption</li>
+                </ul>
+              </div>
+              <div className="rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}>
+                <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Security</h3>
+                <ul className="space-y-2 text-[#9ca5c3] text-sm">
+                  <li>• Verify sandboxing in Docker isolation</li>
+                  <li>• Check for authentication on HTTP endpoints</li>
+                  <li>• Test file system access restrictions</li>
+                  <li>• Verify audit logging is enabled</li>
+                  <li>• Check for known vulnerabilities in dependencies</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-6 rounded-xl p-6 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.5)", borderColor: "rgba(139, 92, 246, 0.2)" }}>
+              <h3 className="text-lg font-semibold text-[#f7f7ff] mb-2">Verification Tools</h3>
+              <p className="text-sm text-[#9ca5c3]">Use Docker for sandbox testing, curl for API endpoint verification, nslookup for data residency checks, and GitHub CLI for repository audit. Our GitHub repository includes reusable test scripts for common verification tasks. All tools are open-source and free to use.</p>
+            </div>
+          </section>
+
           {/* FAQ */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">

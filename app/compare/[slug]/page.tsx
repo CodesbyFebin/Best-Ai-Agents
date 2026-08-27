@@ -362,6 +362,114 @@ export default async function ComparePage({ params }: Props) {
           </section>
 
           <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Implementation Guide</h2>
+            <p className="text-[#c5c7d8] mb-4">Once you have decided between {comp.agents[0]} and {comp.agents[1]}, the next step is implementation. Start with a proof-of-concept that mirrors your production use case. Define clear success criteria before beginning—such as response time targets, accuracy thresholds, and user satisfaction metrics. This ensures that your evaluation is objective and that you can make a data-driven decision about full deployment.</p>
+            <p className="text-[#c5c7d8] mb-4">For Indian deployments, the implementation guide should include compliance verification. Confirm that the chosen tool meets your DPDP requirements, that data residency is maintained, and that consent management is implemented. Document your compliance posture and review it quarterly to ensure continued adherence as both the tool and the regulatory landscape evolve.</p>
+            <p className="text-[#c5c7d8]">Finally, plan for ongoing monitoring and optimization. AI tools require continuous tuning to maintain performance and compliance. Establish monitoring dashboards, set up alerting for anomalies, and schedule regular reviews of tool performance and cost. This ongoing investment ensures that your AI deployment continues to deliver value over time.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Implementation Guide</h2>
+            <p className="text-[#c5c7d8] mb-4">Once you have decided between {comp.agents[0]} and {comp.agents[1]}, the next step is implementation. Start with a proof-of-concept that mirrors your production use case. Define clear success criteria before beginning—such as response time targets, accuracy thresholds, and user satisfaction metrics. This ensures that your evaluation is objective and that you can make a data-driven decision about full deployment.</p>
+            <p className="text-[#c5c7d8] mb-4">For Indian deployments, the implementation guide should include compliance verification. Confirm that the chosen tool meets your DPDP requirements, that data residency is maintained, and that consent management is implemented. Document your compliance posture and review it quarterly to ensure continued adherence as both the tool and the regulatory landscape evolve.</p>
+            <p className="text-[#c5c7d8]">Finally, plan for ongoing monitoring and optimization. AI tools require continuous tuning to maintain performance and compliance. Establish monitoring dashboards, set up alerting for anomalies, and schedule regular reviews of tool performance and cost. This ongoing investment ensures that your AI deployment continues to deliver value over time.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Common Pitfalls to Avoid</h2>
+            <p className="text-[#c5c7d8] mb-4">When implementing AI tools based on this comparison, avoid these common pitfalls: choosing a tool based solely on capability without considering India Fit, underestimating the total cost of ownership (including compliance and administrative overhead), and failing to plan for ongoing monitoring and optimization.</p>
+            <p className="text-[#c5c7d8]">Another common mistake is treating the comparison as a one-time decision. The AI landscape evolves rapidly, and today best choice may not be optimal in six months. Schedule regular reviews of your AI tooling and be prepared to switch if a significantly better option becomes available.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Common Pitfalls to Avoid</h2>
+            <p className="text-[#c5c7d8] mb-4">When implementing AI tools based on this comparison, avoid these common pitfalls: choosing a tool based solely on capability without considering India Fit, underestimating the total cost of ownership (including compliance and administrative overhead), and failing to plan for ongoing monitoring and optimization.</p>
+            <p className="text-[#c5c7d8]">Another common mistake is treating the comparison as a one-time decision. The AI landscape evolves rapidly, and today best choice may not be optimal in six months. Schedule regular reviews of your AI tooling and be prepared to switch if a significantly better option becomes available.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How often is this comparison updated?</h3>
+                <p className="text-sm text-[#c5c7d8]">We review comparisons quarterly and update them when new versions are released or material changes occur. The last-updated date is shown at the top of this page.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">Can I request a comparison?</h3>
+                <p className="text-sm text-[#c5c7d8]">Yes. Open a GitHub issue with the two tools you want compared and why. Our editorial team will evaluate the request and add it if it meets our inclusion criteria.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How do you determine the winner?</h3>
+                <p className="text-sm text-[#c5c7d8]">We do not declare a single winner. Instead, we present the evidence and let you decide based on your specific needs. The bottom line section provides a summary recommendation, but the right choice depends on your priorities.</p>
+              </div>
+            </div>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How often is this comparison updated?</h3>
+                <p className="text-sm text-[#c5c7d8]">We review comparisons quarterly and update them when new versions are released or material changes occur. The last-updated date is shown at the top of this page.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">Can I request a comparison?</h3>
+                <p className="text-sm text-[#c5c7d8]">Yes. Open a GitHub issue with the two tools you want compared and why. Our editorial team will evaluate the request and add it if it meets our inclusion criteria.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How do you determine the winner?</h3>
+                <p className="text-sm text-[#c5c7d8]">We do not declare a single winner. Instead, we present the evidence and let you decide based on your specific needs. The bottom line section provides a summary recommendation, but the right choice depends on your priorities.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">What if I disagree with the comparison?</h3>
+                <p className="text-sm text-[#c5c7d8]">We welcome scrutiny. If you have evidence that contradicts our assessment, please submit a correction through GitHub issues. Our editorial team reviews all submissions and updates the comparison if the evidence is validated. Your feedback helps us maintain the highest standards of accuracy and transparency in our evaluations.</p>
+              </div>
+            </div>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Staying Updated</h2>
+            <p className="text-[#c5c7d8] mb-4">The AI landscape evolves rapidly, and comparison pages can become outdated quickly. To stay informed about changes to the tools compared here, watch our GitHub repository for updates, follow us on Twitter/X for announcements, or subscribe to our RSS feed for new comparisons and score changes.</p>
+            <p className="text-[#c5c7d8]">If you notice that a tool has changed significantly—new features, pricing changes, or compliance updates—please report it through our GitHub issues. Community feedback helps us keep the directory accurate and useful for all users. We are committed to maintaining the highest standards of accuracy and transparency in all our evaluations.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">When to Choose {comp.agents[0]}</h2>
+            <p className="text-[#c5c7d8] mb-4">{comp.agents[0]} is the better choice when your priority is raw capability and you are willing to invest in setup and configuration. It excels in scenarios where the highest quality output is required and cost is a secondary consideration. Choose this tool if you have the technical expertise to handle complex configurations and the budget to support premium pricing.</p>
+            <p className="text-[#c5c7d8">For Indian deployments, {comp.agents[0]} is preferable when you need the highest quality Indic language support or when your use case requires capabilities that are only available in this tool. However, verify that the deployment model meets your DPDP compliance requirements before committing.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">When to Choose {comp.agents[1]}</h2>
+            <p className="text-[#c5c7d8] mb-4">{comp.agents[1]} is the better choice when ease of use, faster setup, or lower cost is your priority. It excels in scenarios where you need to get started quickly and do not require the absolute highest quality output. Choose this tool if you have limited technical expertise or a constrained budget.</p>
+            <p className="text-[#c5c7d8">For Indian deployments, {comp.agents[1]} is preferable when it offers better India Fit—such as INR pricing, UPI support, or Indic language documentation—even if its raw capability is slightly lower. The total cost of ownership, including compliance and administrative overhead, often favors the tool with higher India Fit.</p>
+          </section>
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">How to Read This Comparison</h2>
+            <p className="text-[#c5c7d8] mb-4">This comparison presents a structured evaluation of {comp.agents[0]} versus {comp.agents[1]} across multiple dimensions. The comparison table provides a quick overview of relative strengths, while the detailed sections below explain the evidence behind each assessment. Use the comparison table to identify areas of difference, then read the detailed sections to understand the practical implications.</p>
+            <p className="text-[#c5c7d8] mb-4">When interpreting the comparison, consider your specific use case and priorities. A tool that wins on capability may lose on pricing or India Fit. The right choice depends on which dimensions matter most to your organization. We encourage you to use this comparison as a starting point for your own evaluation, not as a final verdict.</p>
+            <p className="text-[#c5c7d8]">For Indian deployments, pay special attention to the India-Specific Considerations section. Pricing in INR, DPDP compliance, and Indic language support can significantly influence the total cost of ownership and compliance burden.</p>
+          </section>
+
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Total Cost of Ownership Analysis</h2>
+            <p className="text-[#c5c7d8] mb-4">Beyond the sticker price, the total cost of ownership (TCO) includes infrastructure, administration, compliance, and opportunity costs. For Indian deployments, TCO analysis should account for: GST on subscription fees, forex conversion charges (if billing in USD), administrative overhead for payment processing, and the cost of any required compliance workarounds.</p>
+            <p className="text-[#c5c7d8]">Tools that offer INR billing with UPI support and automated GST invoicing have lower administrative overhead than those requiring international payments. Similarly, tools that offer on-premise deployment or Indian cloud regions have lower compliance costs than those requiring data to be processed outside India. When comparing TCO, use a 12-month horizon to capture the full cost impact of these factors.</p>
+          </section>
+
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How often is this comparison updated?</h3>
+                <p className="text-sm text-[#c5c7d8]">We review comparisons quarterly and update them when new versions are released or material changes occur. The last-updated date is shown at the top of this page.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">Can I request a comparison?</h3>
+                <p className="text-sm text-[#c5c7d8]">Yes. Open a GitHub issue with the two tools you want compared and why. Our editorial team will evaluate the request and add it if it meets our inclusion criteria.</p>
+              </div>
+              <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                <h3 className="font-semibold text-[#f7f7ff] mb-1">How do you determine the winner?</h3>
+                <p className="text-sm text-[#c5c7d8]">We do not declare a single winner. Instead, we present the evidence and let you decide based on your specific needs. The bottom line section provides a summary recommendation, but the right choice depends on your priorities.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-12 pt-8 border-t border-[#252b4b]">
             <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
               Evidence Sources
             </h2>

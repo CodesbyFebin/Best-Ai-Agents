@@ -218,6 +218,68 @@ export default async function ModelPage({ params }: Props) {
                 verified as of {model.lastVerified})
               </p>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Model Selection Framework</h3>
+              <p className="text-[#c5c7d8] mb-3">When choosing between {model.name} and competing models, consider four key factors: capability fit, cost efficiency, deployment flexibility, and India-specific requirements. Capability fit is the most important—a model that excels at code generation may be the wrong choice for a natural language task. Evaluate the model against your specific use case rather than relying on aggregate benchmarks.</p>
+              <p className="text-[#c5c7d8] mb-3">Cost efficiency goes beyond the per-token price. Consider the context window size (larger windows reduce the need for chunking), the quality of output (higher quality reduces the need for re-generation), and the availability of batch pricing or committed use discounts. For Indian teams, INR billing and UPI payment support reduce forex overhead and administrative burden.</p>
+              <p className="text-[#c5c7d8]">Deployment flexibility determines how easily you can integrate the model into your infrastructure. Models that offer both API access and self-hosted options provide the most flexibility. For regulated industries, self-hosted deployment may be required for DPDP compliance. Evaluate the model deployment options against your data residency requirements before making a decision.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">India-Specific Model Considerations</h3>
+              <p className="text-[#c5c7d8] mb-3">For Indian deployments, model selection involves additional considerations beyond raw capability. Indic language support is critical for applications that serve Indian users. Models trained primarily on English data may exhibit lower quality for Hindi, Tamil, Telugu, and other Indian languages. Test the model with your target languages before committing to a deployment.</p>
+              <p className="text-[#c5c7d8] mb-3">Data residency is another key consideration. If the model API processes data outside India, you may need explicit user consent under the DPDP Act. Models that offer Indian cloud regions or on-premise deployment simplify compliance. Our India Fit score captures these dimensions to help you quickly assess a model readiness for Indian deployment.</p>
+              <p className="text-[#c5c7d8]">Finally, consider the model context window and token pricing in the context of Indian languages. Some Indian languages require more tokens to express the same content as English, which can significantly impact cost. Test with representative Indian language inputs to get accurate cost estimates for your use case.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Deployment Patterns</h3>
+              <p className="text-[#c5c7d8] mb-3">{model.name} can be deployed in several patterns depending on your requirements. The most common pattern is API-based deployment, where your application sends requests to the model API and receives responses in real-time. This pattern is simple to implement but requires network connectivity and may raise data residency concerns for sensitive workloads.</p>
+              <p className="text-[#c5c7d8] mb-3">For organizations that require data sovereignty, self-hosted deployment using Ollama, vLLM, or similar frameworks keeps all data on your infrastructure. This pattern requires more infrastructure investment but eliminates data residency concerns and can reduce latency for users in Indian regions. Self-hosted deployment also enables fine-tuning on domain-specific data, which can significantly improve performance for specialized use cases.</p>
+              <p className="text-[#c5c7d8]">A hybrid deployment pattern combines both approaches: sensitive workloads run on self-hosted instances while less sensitive workloads use the API. This pattern provides flexibility but requires careful routing logic to ensure that sensitive data never leaves your infrastructure. Evaluate your compliance requirements and infrastructure capabilities to choose the right deployment pattern for your organization.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Performance Benchmarks and Expectations</h3>
+              <p className="text-[#c5c7d8] mb-3">Understanding {model.name} performance characteristics helps you set realistic expectations and plan infrastructure accordingly. Key metrics include: time to first token (TTFT), tokens per second (throughput), maximum context window, and concurrent request capacity. These metrics vary significantly based on deployment mode—API deployments typically have higher throughput but more variable latency, while self-hosted deployments offer more consistent performance but require infrastructure investment.</p>
+              <p className="text-[#c5c7d8] mb-3">For Indian deployments, network latency is an additional factor. If the model API is hosted outside India, expect additional latency for each request. Self-hosted deployments in Indian cloud regions (AWS Mumbai, GCP Hyderabad, Azure Pune) eliminate this latency but require GPU infrastructure. Benchmark with production-like workloads to get accurate performance estimates for your specific use case.</p>
+              <p className="text-[#c5c7d8]">When comparing benchmarks across models, ensure that the test conditions are comparable. Differences in hardware, software stack, and network conditions can significantly impact results. Our evaluations standardize test conditions to enable fair comparisons, but you should validate benchmarks in your own environment before making procurement decisions.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Integration Patterns</h3>
+              <p className="text-[#c5c7d8] mb-3">{model.name} integrates with applications through several patterns. The simplest pattern is direct API integration, where your application sends requests to the model API using HTTP or gRPC. This pattern is suitable for most applications and is supported by official SDKs in Python, JavaScript, Java, and other languages.</p>
+              <p className="text-[#c5c7d8] mb-3">For applications that require agent-like behavior, {model.name} can be integrated with agent frameworks such as LangChain, CrewAI, LangGraph, or AutoGen. These frameworks provide orchestration, tool integration, and multi-agent coordination capabilities that extend the model basic functionality. When using an agent framework, evaluate how well it leverages the model strengths and compensates for its limitations.</p>
+              <p className="text-[#c5c7d8">MCP integration enables the model to connect to external tools and data sources. An MCP server can provide database access, API integration, file system operations, and specialized tools that extend the model capabilities. This pattern is particularly powerful for building custom workflows that combine the model intelligence with your existing systems.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Responsible AI and Ethical Considerations</h3>
+              <p className="text-[#c5c7d8] mb-3">When deploying {model.name} in production, consider the ethical implications of AI-generated content. Implement content filtering to prevent harmful outputs, and establish human oversight for high-stakes decisions. Document your AI usage policies and communicate them clearly to users who interact with model outputs.</p>
+              <p className="text-[#c5c7d8]">For Indian deployments, be attentive to language and cultural bias. Models trained primarily on English data may exhibit bias against Indian languages, accents, or cultural contexts. Test with diverse Indian language inputs and involve native speakers in the evaluation process. Report any biases you discover to the model vendor so they can be addressed in future updates.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Troubleshooting Common Issues</h3>
+              <p className="text-[#c5c7d8] mb-3">When using {model.name}, you may encounter issues related to API rate limits, context window overflow, or output quality. Rate limits can be addressed by implementing exponential backoff and request queuing. Context window overflow can be addressed by chunking long inputs or using a model with a larger context window. Output quality issues can be addressed by adjusting temperature parameters, providing better prompts, or using system instructions to guide the model behavior.</p>
+              <p className="text-[#c5c7d8]">For self-hosted deployments, common issues include GPU memory exhaustion, slow inference, and model loading failures. These can be addressed by using quantization (reducing model precision to 4-bit or 8-bit), implementing batch processing, and ensuring sufficient GPU memory for the model size. Monitor resource usage and scale infrastructure as needed to maintain acceptable performance.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Staying Updated</h3>
+              <p className="text-[#c5c7d8] mb-3">AI models evolve rapidly, with new versions, capabilities, and pricing changes occurring frequently. To stay informed about updates to {model.name}, watch the official GitHub repository, follow the vendor on social media, or subscribe to their release notes. Our directory is updated regularly to reflect the latest model versions and capabilities.</p>
+              <p className="text-[#c5c7d8]">If you notice that a model has changed significantly—new capabilities, pricing changes, or deprecation notices—please report it through our GitHub issues. Community feedback helps us keep the directory accurate and useful for all users.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Frequently Asked Questions</h3>
+              <p className="text-[#c5c7d8] mb-3"><strong>How often is this model profile updated?</strong> We review model profiles quarterly and update them when new versions are released or material changes occur. The last-verified date is shown in the evidence section below.</p>
+              <p className="text-[#c5c7d8] mb-3"><strong>Can I suggest a model for evaluation?</strong> Yes. Open a GitHub issue with the model name, official website, and a brief description of why it should be included. Our editorial team will evaluate the suggestion.</p>
+              <p className="text-[#c5c7d8]"><strong>How do I compare this model with alternatives?</strong> Use our comparison pages for side-by-side evaluations. For cross-category comparisons, focus on the editorial score as a baseline but pay special attention to India Fit for Indian deployments.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Performance Optimization Tips</h3>
+              <p className="text-[#c5c7d8] mb-3">To get the best performance from {model.name}, follow these optimization tips: use the appropriate model size for your task (larger models are not always better), implement caching for repeated queries, batch requests when possible to reduce overhead, and use streaming for real-time applications to reduce perceived latency.</p>
+              <p className="text-[#c5c7d8] mb-3">For self-hosted deployments, optimize GPU utilization by using batching, quantization (reducing precision to 4-bit or 8-bit), and efficient memory management. Monitor resource usage and scale infrastructure based on actual demand rather than peak estimates.</p>
+              <p className="text-[#c5c7d8]">For API deployments, implement retry logic with exponential backoff, use connection pooling to reduce connection overhead, and cache responses when appropriate. These optimizations can significantly reduce costs and improve user experience.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Security Best Practices</h3>
+              <p className="text-[#c5c7d8] mb-3">When using {model.name} in production, follow these security best practices: never expose API keys in client-side code, implement rate limiting to prevent abuse, validate and sanitize all inputs to prevent prompt injection attacks, and monitor for unusual usage patterns that may indicate a security breach.</p>
+              <p className="text-[#c5c7d8]">For Indian deployments, ensure that the model provider complies with DPDP requirements for data processing and storage. Verify that data residency is maintained and that consent management is implemented for any personal data processed by the model.</p>
+            </div>
           </section>
 
           <EvidenceSection

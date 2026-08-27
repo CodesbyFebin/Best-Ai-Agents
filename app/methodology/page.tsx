@@ -482,6 +482,101 @@ export default function MethodologyPage() {
             </div>
           </section>
 
+          {/* HOW TO CHALLENGE A SCORE */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">How to Challenge a Score</h2>
+            <p className="text-[#c5c7d8] mb-6">
+              We believe that scores should be challengeable. If you are a vendor who believes your agent has been scored incorrectly, or a user who has evidence that contradicts our assessment, you can submit a challenge through our public GitHub repository.
+            </p>
+            <div
+              className="rounded-xl p-6 border mb-6"
+              style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}
+            >
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Challenge Process</h3>
+              <p className="text-[#9ca5c3] text-sm mb-3">
+                To challenge a score, open a GitHub issue using the "Score Challenge" template. Include the agent name, the specific score dimension you are challenging, the evidence supporting your claim, and any relevant documentation links. Our editorial team reviews all challenges within 5 business days.
+              </p>
+              <p className="text-[#9ca5c3] text-sm">
+                If the challenge is validated, we update the score and publish a changelog entry explaining the change. If the challenge is not validated, we provide a detailed explanation of why the original score stands. All challenge resolutions are public, creating an audit trail of score changes over time.
+              </p>
+            </div>
+            <div
+              className="rounded-xl p-6 border"
+              style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}
+            >
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">What Makes a Valid Challenge</h3>
+              <p className="text-[#9ca5c3] text-sm mb-3">
+                A valid challenge must include primary-source evidence: official documentation, test results, or direct observation. Opinions, marketing materials, and anonymous claims are not considered sufficient evidence. The burden of proof is on the challenger to demonstrate that the current score does not reflect reality.
+              </p>
+              <p className="text-[#9ca5c3] text-sm">
+                We particularly welcome challenges related to India Fit scores, where local knowledge may reveal nuances that our team missed. If you know that an agent supports Hindi but our evaluation missed it, please let us know with evidence.
+              </p>
+            </div>
+          </section>
+
+          {/* AUDIT TRAIL */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Audit Trail</h2>
+            <p className="text-[#c5c7d8] mb-6">
+              Every score change is recorded in a public audit trail. This trail includes the previous score, the new score, the reason for the change, the evidence that triggered it, and the date of the change. The audit trail is available on our GitHub repository and is updated in real-time.
+            </p>
+            <div
+              className="rounded-xl p-6 border mb-6"
+              style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}
+            >
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Six-Month Independent Audit</h3>
+              <p className="text-[#9ca5c3] text-sm mb-3">
+                Every six months, an independent reviewer conducts a comprehensive audit of our methodology and a sample of scores. The auditor is selected from the community and has no financial relationship with any vendor listed on our site. The audit examines whether our scoring rubric is being applied consistently, whether evidence is being evaluated fairly, and whether our weights remain appropriate.
+              </p>
+              <p className="text-[#9ca5c3] text-sm">
+                Audit results are published publicly, including any recommendations for methodology changes. If the audit identifies systemic issues, we update our rubric and re-evaluate all affected profiles within 90 days. This ensures that our methodology evolves with the market and remains trustworthy over time.
+              </p>
+            </div>
+            <div
+              className="rounded-xl p-6 border"
+              style={{ backgroundColor: "rgba(13, 16, 37, 0.8)", borderColor: "rgba(139, 92, 246, 0.3)" }}
+            >
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Verification Log Format</h3>
+              <p className="text-[#9ca5c3] text-sm mb-3">
+                Our public verification log records every evidence-gathering activity. Each entry includes the source URL, retrieval date, geographic region, confidence score, and review status. For code-based evaluations, we include SHA-256 commit hashes so results can be reproduced against specific versions. For pricing evaluations, we include screenshots of pricing pages with timestamps.
+              </p>
+              <p className="text-[#9ca5c3] text-sm">
+                The log is updated monthly and is available as a CSV download from our GitHub releases page. Researchers, analysts, and enterprises use this log to build their own evaluation tools or to verify our findings independently.
+              </p>
+            </div>
+          </section>
+
+          {/* CONFIDENCE SCORES */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Confidence Scores</h2>
+            <p className="text-[#c5c7d8] mb-6">
+              Every profile includes a confidence indicator that reflects the strength and recency of the underlying evidence. This indicator helps you assess how much weight to give a particular score.
+            </p>
+            <div className="space-y-4">
+              <div className="rounded-xl p-4 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.5)", borderColor: "rgba(56, 217, 150, 0.3)" }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-[#38d996] font-bold">High Confidence</span>
+                  <span className="text-xs text-[#9ca5c3]">8+ evidence items, verified within 30 days</span>
+                </div>
+                <p className="text-sm text-[#9ca5c3]">Score is based on multiple independent sources, recent hands-on testing, and official documentation. Suitable for procurement decisions.</p>
+              </div>
+              <div className="rounded-xl p-4 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.5)", borderColor: "rgba(59, 130, 246, 0.3)" }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-[#3b82f6] font-bold">Medium Confidence</span>
+                  <span className="text-xs text-[#9ca5c3]">4–7 evidence items, verified within 90 days</span>
+                </div>
+                <p className="text-sm text-[#9ca5c3]">Score is based on documentation review and limited testing. May not reflect the latest product changes. Verify critical claims independently.</p>
+              </div>
+              <div className="rounded-xl p-4 border" style={{ backgroundColor: "rgba(13, 16, 37, 0.5)", borderColor: "rgba(245, 158, 11, 0.3)" }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-[#f59e0b] font-bold">Low Confidence</span>
+                  <span className="text-xs text-[#9ca5c3]">1–3 evidence items, verified over 90 days ago</span>
+                </div>
+                <p className="text-sm text-[#9ca5c3]">Score is based on limited or stale evidence. Flagged for re-evaluation. Not recommended for procurement decisions without independent verification.</p>
+              </div>
+            </div>
+          </section>
+
           {/* NOTE ON RANKINGS */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">
@@ -515,7 +610,10 @@ export default function MethodologyPage() {
               >
                 open a GitHub issue
               </a>
-              .
+               .
+            </p>
+            <p className="text-[#c5c7d8]">
+              Our methodology is a living document that evolves with the AI landscape. We welcome feedback from researchers, practitioners, and users who can help us improve our evaluation framework. If you have suggestions for how we can make our methodology more rigorous, more transparent, or more useful, please reach out through our GitHub repository or contact us directly at methodology@bestaiagent.in.
             </p>
           </section>
         </div>

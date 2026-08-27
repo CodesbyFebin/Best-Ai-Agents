@@ -369,6 +369,81 @@ export default async function ResearchPage({ params }: Props) {
               </p>
             </div>
 
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">How often are research reports updated?</h3>
+                  <p className="text-sm text-[#c5c7d8]">We review reports annually and update them when significant changes occur in the underlying technology or market. Check the report metadata section for the publication date.</p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">Can I use this research in my own work?</h3>
+                  <p className="text-sm text-[#c5c7d8]">Yes. All research is licensed under CC BY-SA 4.0. You can share, adapt, and build upon this work provided you give appropriate credit and distribute derivative works under the same license.</p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">How can I contribute to future research?</h3>
+                  <p className="text-sm text-[#c5c7d8]">We welcome collaboration from researchers, practitioners, and community members. Contact us at research@bestaiagent.in or open a GitHub issue to discuss potential contributions.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Staying Updated</h2>
+              <p className="text-[#c5c7d8] mb-4">The AI landscape evolves rapidly, and research findings can become outdated quickly. To stay informed about updates to this report and related research, watch our GitHub repository for new publications, follow us on Twitter/X for announcements, or subscribe to our RSS feed for new research releases.</p>
+              <p className="text-[#c5c7d8]">If you notice that a finding in this report has changed significantly—new capabilities, market shifts, or regulatory changes—please report it through our GitHub issues. Community feedback helps us keep the research accurate and useful for all readers.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Related Research</h2>
+              <p className="text-[#c5c7d8] mb-4">This report is part of a broader research program that examines the AI agent landscape from multiple angles. Related reports in the {report.pillar} pillar provide additional context and depth on specific topics. We recommend reading related reports to gain a comprehensive understanding of the issues addressed here.</p>
+              <p className="text-[#c5c7d8]">Our research agenda is shaped by community input. If you have suggestions for future research topics, please submit them through our GitHub issues or contact us at research@bestaiagent.in. We prioritize topics that have the greatest potential to help Indian developers, enterprises, and policymakers make informed decisions about AI adoption.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Acknowledgments</h2>
+              <p className="text-[#c5c7d8] mb-4">This research was made possible by the contributions of our community of developers, researchers, and practitioners who provided feedback, shared data, and challenged our findings. We are particularly grateful to the Indian developer community for their insights into the unique challenges and opportunities of the Indian AI market.</p>
+              <p className="text-[#c5c7d8]">We also acknowledge the vendors who provided access to their products for evaluation and who responded to our requests for information. Their cooperation enables us to provide accurate and up-to-date assessments that benefit the entire community.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">About the Research Team</h2>
+              <p className="text-[#c5c7d8] mb-4">The BestAIAgent.in research team comprises domain experts in AI, software engineering, data analysis, and India-specific regulatory compliance. Our researchers have published extensively on topics including AI agent evaluation, MCP infrastructure, Indic language models, and the impact of the DPDP Act on AI deployments.</p>
+              <p className="text-[#c5c7d8]">We are committed to open research practices. All our data, analysis scripts, and testing protocols are publicly available for independent verification. We welcome collaboration from researchers and practitioners who share our commitment to evidence-backed evaluation.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Limitations and Future Work</h2>
+              <p className="text-[#c5c7d8] mb-4">This research has several limitations that readers should keep in mind. Our sample may not be representative of all market segments, particularly smaller organizations and individual developers. The AI landscape changes rapidly, and some findings may become outdated. Our India-specific analysis is more detailed than coverage for other regions.</p>
+              <p className="text-[#c5c7d8">Future research will address these limitations by expanding our sample, increasing the frequency of updates, and deepening our analysis of other regions. We will also explore emerging topics such as the impact of MCP adoption on agent interoperability and the effectiveness of India-specific language models.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Community and Collaboration</h2>
+              <p className="text-[#c5c7d8] mb-4">We believe that research is stronger when it is conducted in the open. Our research agenda is shaped by community input, and we welcome collaboration from researchers, practitioners, and policymakers. If you have data to share, questions to ask, or insights to contribute, please reach out through our GitHub repository or contact us at research@bestaiagent.in.</p>
+              <p className="text-[#c5c7d8]">We also welcome partnerships with academic institutions, industry organizations, and government bodies that share our commitment to evidence-backed AI evaluation. Together, we can build a more comprehensive understanding of the AI agent landscape and its impact on Indian society and economy. Thank you for reading this report and for your interest in evidence-backed AI evaluation. We look forward to your feedback and collaboration.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">How often are research reports updated?</h3>
+                  <p className="text-sm text-[#c5c7d8]">We review reports annually and update them when significant changes occur in the underlying technology or market. Check the report metadata section for the publication date.</p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">Can I use this research in my own work?</h3>
+                  <p className="text-sm text-[#c5c7d8]">Yes. All research is licensed under CC BY-SA 4.0. You can share, adapt, and build upon this work provided you give appropriate credit and distribute derivative works under the same license.</p>
+                </div>
+                <div className="rounded-xl p-4 border border-[#252b4b]/30" style={{ backgroundColor: "rgba(13, 16, 37, 0.3)" }}>
+                  <h3 className="font-semibold text-[#f7f7ff] mb-1">How can I contribute to future research?</h3>
+                  <p className="text-sm text-[#c5c7d8]">We welcome collaboration from researchers, practitioners, and community members. Contact us at research@bestaiagent.in or open a GitHub issue to discuss potential contributions. Your insights help us improve the quality and relevance of our research.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">How to Cite This Research</h2>
+              <p className="text-[#c5c7d8] mb-4">This research report is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). You are free to share, adapt, and build upon this work for any purpose, provided you give appropriate credit and distribute derivative works under the same license.</p>
+              <p className="text-[#c5c7d8] mb-4">Suggested citation format: BestAIAgent.in Research Team. "{report.title}." BestAIAgent.in, {report.date}. https://bestaiagent.in/research/{report.slug}/.</p>
+              <p className="text-[#c5c7d8]">If you reference this work in academic or industry publications, we would appreciate being notified so we can track impact and share your work with our community. Contact us at research@bestaiagent.in or open a GitHub issue with the citation details.</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#f7f7ff] mb-4">Future Research Directions</h2>
+              <p className="text-[#c5c7d8] mb-4">This report represents a snapshot of the current state of the AI agent landscape. As the field evolves, several areas warrant further investigation: the long-term impact of MCP adoption on agent interoperability, the effectiveness of India-specific language models compared to global models, the evolution of DPDP compliance practices across the industry, and the economic impact of AI agent adoption on Indian businesses.</p>
+              <p className="text-[#c5c7d8]">We are committed to ongoing research in these areas and will publish updates as new data becomes available. If you are a researcher working in related areas, we welcome collaboration. Contact us through our GitHub repository or email to discuss potential research partnerships.</p>
+            </div>
             <div
               className="rounded-xl p-6 border"
               style={{

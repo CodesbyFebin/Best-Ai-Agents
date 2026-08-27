@@ -243,6 +243,65 @@ export default async function FrameworkPage({ params }: Props) {
                 </li>
               </ul>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Framework Selection Guide</h3>
+              <p className="text-[#c5c7d8] mb-3">Choosing between {fw.name} and competing frameworks depends on your specific use case, team expertise, and deployment requirements. LangChain is the most mature and widely adopted, with the largest ecosystem of integrations and community resources. CrewAI excels at multi-agent orchestration with a simple, intuitive API. LangGraph provides fine-grained control over agent workflows through graph-based orchestration. AutoGen focuses on conversational agents that can collaborate to solve complex tasks.</p>
+              <p className="text-[#c5c7d8] mb-3">For Indian deployments, consider the framework support for local deployment and data residency. Frameworks that can run entirely on-premise without cloud dependencies simplify DPDP compliance. Evaluate the framework documentation quality in Indian English and the availability of community support for India-specific use cases.</p>
+              <p className="text-[#c5c7d8]">When evaluating frameworks, start with a proof-of-concept that mirrors your production use case. Test with your actual data, your actual users, and your actual compliance requirements. This practical evaluation reveals issues that documentation reviews cannot—such as edge cases in Indian language handling or unexpected behavior with Indian data formats.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Production Deployment Considerations</h3>
+              <p className="text-[#c5c7d8] mb-3">Deploying {fw.name} in production requires careful planning around infrastructure, monitoring, and compliance. Infrastructure requirements vary based on the framework and the agents it orchestrates. Some frameworks require GPU resources for model inference, while others rely on external APIs. Plan your infrastructure based on expected load, latency requirements, and data residency constraints.</p>
+              <p className="text-[#c5c7d8] mb-3">Monitoring is essential for production deployments. Track agent performance (response time, success rate, error rate), resource utilization (CPU, memory, GPU), and business metrics (user satisfaction, task completion rate). Implement alerting for anomalies and establish runbooks for common failure scenarios.</p>
+              <p className="text-[#c5c7d8]">For Indian enterprises, production deployment must also address DPDP compliance. Implement data retention policies, consent management mechanisms, and audit logging. Conduct regular compliance reviews and update your deployment as regulations evolve. Our India Fit score provides a starting point for compliance assessment, but your legal team should review the specific requirements for your industry.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Best Practices for Framework Usage</h3>
+              <p className="text-[#c5c7d8] mb-3">When building with {fw.name}, follow these best practices: start with a clear definition of the problem you are solving, design your agent architecture before writing code, implement comprehensive error handling, and test with diverse inputs including Indian languages and edge cases. Document your architecture decisions and maintain a changelog of agent behavior changes.</p>
+              <p className="text-[#c5c7d8]">Security should be integrated from the beginning, not added as an afterthought. Implement input validation, output filtering, and access controls. Use sandboxing for MCP servers and isolate sensitive workloads. Regularly audit your agent for bias, accuracy, and compliance. Engage with the framework community to stay informed about security updates and best practices.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Comparing Frameworks: A Decision Matrix</h3>
+              <p className="text-[#c5c7d8] mb-3">When choosing between agent frameworks, evaluate them across five dimensions: learning curve, ecosystem maturity, MCP integration quality, deployment flexibility, and community support. No single framework is best for every use case—the right choice depends on your specific requirements and constraints.</p>
+              <p className="text-[#c5c7d8] mb-3">For rapid prototyping, choose a framework with a shallow learning curve and extensive documentation. For production systems, prioritize frameworks with strong testing support, monitoring integrations, and deployment tooling. For Indian deployments, prioritize frameworks that support local deployment and have documentation in Indian English.</p>
+              <p className="text-[#c5c7d8]">Our comparison pages provide side-by-side evaluations of frameworks across these dimensions. Use them to build a shortlist of candidates, then conduct your own proof-of-concept tests before making a final decision. This structured approach reduces the risk of choosing a framework that does not meet your long-term needs.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Troubleshooting and Common Issues</h3>
+              <p className="text-[#c5c7d8] mb-3">When working with {fw.name}, you may encounter issues related to installation, configuration, or runtime behavior. Common installation issues include dependency conflicts (resolved by using virtual environments), version mismatches (resolved by pinning dependency versions), and platform-specific errors (resolved by checking the framework documentation for platform requirements).</p>
+              <p className="text-[#c5c7d8]">Runtime issues include agent loops (resolved by implementing maximum iteration limits), memory leaks (resolved by monitoring resource usage and restarting agents periodically), and MCP transport failures (resolved by checking server logs and verifying network connectivity). When reporting issues to the framework maintainers, include your environment details, configuration files, and steps to reproduce the problem.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Staying Updated</h3>
+              <p className="text-[#c5c7d8] mb-3">Agent frameworks evolve rapidly, with new features, bug fixes, and security patches released frequently. To stay informed about updates to {fw.name}, watch the official GitHub repository, join the community Discord or Slack channel, and subscribe to release announcements. Our directory is updated regularly to reflect the latest framework versions and capabilities.</p>
+              <p className="text-[#c5c7d8]">If you notice that a framework has changed significantly—new features, breaking changes, or deprecation notices—please report it through our GitHub issues. Community feedback helps us keep the directory accurate and useful for all users.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Frequently Asked Questions</h3>
+              <p className="text-[#c5c7d8] mb-3"><strong>Is {fw.name} suitable for beginners?</strong> {fw.name} has a learning curve that depends on your prior experience with AI and programming. If you are new to AI agents, start with the official tutorials and work through the examples before attempting production deployments.</p>
+              <p className="text-[#c5c7d8] mb-3"><strong>Can I use {fw.name} for commercial projects?</strong> Yes. Most AI agent frameworks are open-source and permit commercial use. Check the specific license terms for {fw.name} to confirm that your use case is permitted.</p>
+              <p className="text-[#c5c7d8]"><strong>How do I get help with {fw.name}?</strong> Join the official community channels (Discord, Slack, GitHub Discussions) for community support. For enterprise support, contact the vendor directly or engage a consulting partner with expertise in this framework.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Security Best Practices</h3>
+              <p className="text-[#c5c7d8] mb-3">When deploying {fw.name} in production, follow these security best practices: run MCP servers in isolated containers or sandboxes, implement authentication for all API endpoints, enable audit logging for all agent interactions, and regularly update dependencies to patch known vulnerabilities.</p>
+              <p className="text-[#c5c7d8]">For Indian deployments, ensure that the framework deployment complies with DPDP requirements. Implement data retention policies, consent management mechanisms, and breach notification procedures. Conduct regular security audits and penetration testing to identify and address vulnerabilities before they can be exploited.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Scaling and Performance</h3>
+              <p className="text-[#c5c7d8] mb-3">As your usage of {fw.name} grows, you may need to scale your deployment horizontally (adding more instances) or vertically (adding more resources to each instance). Monitor key metrics such as response time, error rate, and resource utilization to determine when scaling is needed.</p>
+              <p className="text-[#c5c7d8]">For high-availability deployments, implement load balancing across multiple instances, configure automatic failover, and maintain backups of critical data. Test your scaling strategy under load to ensure that it performs as expected when demand increases.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Case Studies and Success Stories</h3>
+              <p className="text-[#c5c7d8] mb-3">Organizations across India are using {fw.name} to build innovative AI solutions. From startups automating customer support to enterprises building internal coding assistants, the framework versatility enables a wide range of applications. These case studies demonstrate the framework potential and provide inspiration for your own projects.</p>
+              <p className="text-[#c5c7d8]">If you have a success story using {fw.name}, we would love to hear about it. Share your story through our GitHub discussions or contact us directly. Your experience can help other organizations learn from your journey and avoid common pitfalls.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Comparing Frameworks</h3>
+              <p className="text-[#c5c7d8] mb-3">When comparing {fw.name} with competing frameworks, evaluate them across five dimensions: learning curve, ecosystem maturity, MCP integration quality, deployment flexibility, and community support. Our comparison pages provide side-by-side evaluations that help you make an informed decision based on your specific requirements.</p>
+              <p className="text-[#c5c7d8]">No single framework is best for every use case. The right choice depends on your team expertise, your deployment requirements, and your long-term AI strategy. Use our evidence-backed scores as a starting point, then conduct your own proof-of-concept tests to validate the choice in your specific context. We are here to help you make informed decisions about AI adoption.</p>
+            </div>
           </section>
 
           <EvidenceSection
