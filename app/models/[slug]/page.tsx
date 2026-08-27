@@ -280,6 +280,16 @@ export default async function ModelPage({ params }: Props) {
               <p className="text-[#c5c7d8] mb-3">When using {model.name} in production, follow these security best practices: never expose API keys in client-side code, implement rate limiting to prevent abuse, validate and sanitize all inputs to prevent prompt injection attacks, and monitor for unusual usage patterns that may indicate a security breach.</p>
               <p className="text-[#c5c7d8]">For Indian deployments, ensure that the model provider complies with DPDP requirements for data processing and storage. Verify that data residency is maintained and that consent management is implemented for any personal data processed by the model.</p>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Model Governance and Compliance</h3>
+              <p className="text-[#c5c7d8] mb-3">When deploying {model.name} in regulated industries, consider the governance implications. Document your AI usage policies, implement human oversight for high-stakes decisions, and establish clear accountability for AI-generated outputs. For Indian deployments, ensure compliance with the DPDP Act requirements for data processing, consent management, and breach notification.</p>
+              <p className="text-[#c5c7d8]">Regularly review your AI governance framework to ensure it remains aligned with evolving regulations and best practices. Engage with legal and compliance teams to assess the impact of new regulations on your AI deployments. Our methodology page provides detailed guidance on how we evaluate model compliance and governance.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Community and Resources</h3>
+              <p className="text-[#c5c7d8] mb-3">Join the growing community of developers building with {model.name}. Participate in forums, contribute to open-source projects, and share your experiences with other practitioners. The community is a valuable resource for troubleshooting, best practices, and staying informed about the latest developments.</p>
+              <p className="text-[#c5c7d8]">For Indian developers, connect with local AI communities and meetups to learn from peers who are building similar applications. Share your India-specific use cases and contribute to the growing body of knowledge about AI deployment in the Indian context.</p>
+            </div>
           </section>
 
           <EvidenceSection

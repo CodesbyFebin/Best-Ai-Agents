@@ -302,6 +302,11 @@ export default async function FrameworkPage({ params }: Props) {
               <p className="text-[#c5c7d8] mb-3">When comparing {fw.name} with competing frameworks, evaluate them across five dimensions: learning curve, ecosystem maturity, MCP integration quality, deployment flexibility, and community support. Our comparison pages provide side-by-side evaluations that help you make an informed decision based on your specific requirements.</p>
               <p className="text-[#c5c7d8]">No single framework is best for every use case. The right choice depends on your team expertise, your deployment requirements, and your long-term AI strategy. Use our evidence-backed scores as a starting point, then conduct your own proof-of-concept tests to validate the choice in your specific context. We are here to help you make informed decisions about AI adoption.</p>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-[#f7f7ff] mb-3">Framework Governance and Compliance</h3>
+              <p className="text-[#c5c7d8] mb-3">When deploying {fw.name} in regulated industries, consider the governance implications. Document your AI usage policies, implement human oversight for high-stakes decisions, and establish clear accountability for agent-generated outputs. For Indian deployments, ensure compliance with the DPDP Act requirements for data processing, consent management, and breach notification.</p>
+              <p className="text-[#c5c7d8]">Regularly review your AI governance framework to ensure it remains aligned with evolving regulations and best practices. Engage with legal and compliance teams to assess the impact of new regulations on your AI deployments. Our methodology page provides detailed guidance on how we evaluate framework compliance and governance.</p>
+            </div>
           </section>
 
           <EvidenceSection
