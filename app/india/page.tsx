@@ -502,6 +502,194 @@ export default function IndiaPage() {
         </div>
       </section>
 
+      {/* WHY INDIA NEEDS EVIDENCE-BACKED EVALUATION */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Why India Needs <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">Evidence-Backed AI</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              The Indian AI market faces unique challenges that generic global directories ignore. Evidence-backed evaluation is not a luxury here—it is a necessity for trustworthy adoption.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">The Cost of Bad Information</h3>
+              <p className="text-slate-400 mb-4">
+                AI procurement decisions in India frequently involve lakhs of rupees in implementation, training, and licensing costs. When buyers rely on vendor marketing copy or pay-to-rank directories, they risk choosing agents that do not support Hindi, cannot deploy on-premise, or quietly violate DPDP requirements. The cost of that mistake is not just money—it is regulatory exposure and lost trust.
+              </p>
+              <p className="text-slate-400 mb-4">
+                We have seen enterprises adopt global agents at premium INR prices only to discover mid-contract that Indic language support was a roadmap item, not a shipped feature. Our India Fit score surfaces these gaps before procurement, not after deployment, by verifying claims against documentation and hands-on testing rather than sales decks.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">Linguistic Complexity</h3>
+              <p className="text-slate-400 mb-4">
+                India has 22 official languages and hundreds of dialects. A model that works in English may fail completely in Tamil, Bengali, or Marathi. Generic benchmarks conducted in English tell you nothing about real-world performance for Indian users. Our voice AI and Indic language evaluations test in the languages your users actually speak, measuring accuracy and latency under Indian network conditions.
+              </p>
+              <p className="text-slate-400">
+                This is why we maintain dedicated Indic model comparisons—Sarvam vs Krutrim vs Bhashini—with Hindi, Tamil, Telugu, and Hinglish results. The evidence shows homegrown models frequently outperform global counterparts in regional context, a finding that should directly inform procurement but is absent from every global directory.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Regulatory Reality</h3>
+              <p className="text-slate-400 mb-4">
+                The DPDP Act imposes concrete obligations: voice data is biometric data requiring explicit consent; personal data of Indians should be processed with declared purpose and consent; breach notification and audit trails are expected. For AI agents handling customer calls or personal data, compliance is not optional. Yet most directories list agents without a single word about DPDP posture.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Our DPDP compliance analysis verifies which agents support sovereign on-premise deployment, which provide consent management flows, and which log audit trails suitable for regulated sectors. We mark unverified claims rather than assume compliance. For Indian buyers in BFSI, healthcare, and government, this analysis is the difference between a defensible deployment and a regulatory incident.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">Pricing in INR</h3>
+              <p className="text-slate-400 mb-4">
+                Dollar-denominated pricing hides the real cost for Indian buyers: forex charges, GST at 18%, and unclear UPI support. We audit pricing pages for INR availability, UPI payment support, and GST invoicing, publishing what we find so finance teams can budget accurately. Our transparent INR pricing bands (₹499/mo Pro, ₹4–12 lakh enterprise implementations) reflect typical Indian market rates.
+              </p>
+              <p className="text-slate-400">
+                Transparency extends to our own pricing. We publish INR rates with GST included, support UPI and Indian card payments, and provide GST invoices automatically. No hidden forex fees, no surprise conversions at checkout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA AI DEPLOYMENT PLAYBOOK */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-brand-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              India AI <span className="bg-gradient-to-r from-brand-400 to-cyan-400 bg-clip-text text-transparent">Deployment Playbook</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              A practical, evidence-based approach to deploying AI agents in India that satisfies DPDP, language, and cost requirements.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="rounded-2xl p-7 card-hover bg-slate-900/50 border border-white/10">
+              <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 mb-4 font-bold">1</div>
+              <h3 className="text-lg font-bold text-white mb-3">Assess</h3>
+              <p className="text-sm text-slate-400">Map your use case to India Fit dimensions: which languages, what data sensitivity, what deployment model. Use our category filters to shortlist agents with verified Indic and DPDP support.</p>
+            </div>
+            <div className="rounded-2xl p-7 card-hover bg-slate-900/50 border border-white/10">
+              <div className="w-10 h-10 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-500 mb-4 font-bold">2</div>
+              <h3 className="text-lg font-bold text-white mb-3">Verify</h3>
+              <p className="text-sm text-slate-400">Inspect each shortlisted agent evidence: source hashes, last-verified date, confidence score. Read our DPDP and pricing audits. Challenge any claim via GitHub if evidence is thin.</p>
+            </div>
+            <div className="rounded-2xl p-7 card-hover bg-slate-900/50 border border-white/10">
+              <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4 font-bold">3</div>
+              <h3 className="text-lg font-bold text-white mb-3">Deploy</h3>
+              <p className="text-sm text-slate-400">Prefer on-premise or Indian-region cloud for personal data. Configure MCP servers with stdio for local dev, Streamable HTTP with TLS for production. Enable DPDP consent flows before go-live.</p>
+            </div>
+            <div className="rounded-2xl p-7 card-hover bg-slate-900/50 border border-white/10">
+              <div className="w-10 h-10 rounded-lg bg-trust-500/20 flex items-center justify-center text-trust-400 mb-4 font-bold">4</div>
+              <h3 className="text-lg font-bold text-white mb-3">Monitor</h3>
+              <p className="text-sm text-slate-400">Track agent performance, consent logs, and pricing changes. Re-verify quarterly. Report stale data via GitHub so the directory stays accurate for the next buyer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA AI ECOSYSTEM */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              The <span className="bg-gradient-to-r from-orange-400 to-rose-400 bg-clip-text text-transparent">India AI Ecosystem</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              India artificial intelligence market is one of the fastest-growing in the world, shaped by unique linguistic diversity, data sovereignty priorities, and government-led initiatives.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Market Size and Growth</h3>
+              <p className="text-slate-400 mb-4">
+                India AI market is projected to reach $17 billion by 2026, growing at a compound annual growth rate of over 25%. This growth is driven by enterprise adoption of AI agents for customer support, back-office automation, and software development, as well as government investment through the IndiaAI Mission. Unlike Western markets where cloud-first deployment dominates, Indian enterprises show a strong preference for self-hosted and on-premise solutions to maintain data sovereignty under the DPDP Act.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Open-weight models have seen 68% adoption among Indian developers, reflecting a strategic preference for models that can be deployed locally without sending data to foreign servers. This preference is reinforced by regulatory requirements and a vibrant domestic model ecosystem led by Sarvam AI, Krutrim, and government initiatives like Bhashini.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">Government Initiatives</h3>
+              <p className="text-slate-400 mb-4">
+                The IndiaAI Mission allocates ₹10,000 crore (approximately $1.25 billion) to accelerate domestic AI development across compute, data, and talent. AIRAWAT provides shared compute infrastructure for startups and researchers who cannot afford private GPU clusters. BHASHINI, the National Language Translation Mission, focuses on Indic language translation and voice technology through an open API platform that any developer can integrate.
+              </p>
+              <p className="text-slate-400">
+                The Digital Personal Data Protection Act (DPDP Act), 2023, establishes a comprehensive framework for personal data processing. For AI agents, the Act most significant provision is the classification of voice data as biometric data, which triggers heightened consent and security obligations. Our DPDP compliance analysis helps enterprises navigate these requirements when deploying voice and conversational AI.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Enterprise Adoption Patterns</h3>
+              <p className="text-slate-400 mb-4">
+                Indian enterprises adopt AI agents in distinct patterns. Banking, financial services, and insurance (BFSI) prioritize compliance and on-premise deployment. E-commerce and D2C brands lead in customer support automation with multilingual voice agents. IT services companies use coding agents at scale for internal developer productivity. Healthcare and education are emerging segments where Indic language support is the deciding factor.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Across all segments, the common thread is a demand for transparency and evidence. Indian buyers want to verify vendor claims, understand pricing in INR, and confirm DPDP compliance before committing. That is precisely the gap BestAIAgent.in was built to fill. Our directory serves over 50,000 monthly readers, primarily developers, technical leads, and procurement professionals in the Indian tech sector.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">The Language Imperative</h3>
+              <p className="text-slate-400 mb-4">
+                India has 22 official languages and hundreds of dialects. No global AI product can serve this market with English-only interfaces. Language technology is therefore the top priority for Indian AI development. Indic language models like Sarvam-30B and Krutrim-2 have demonstrated that homegrown models can outperform global counterparts in Hindi, Tamil, Telugu, Bengali, and Hinglish code-switching tasks.
+              </p>
+              <p className="text-slate-400">
+                Voice AI is particularly critical in India, where literacy rates vary and many users prefer voice interaction in their native language. Our voice AI evaluations test transcription accuracy across Indian languages and measure latency under real network conditions, giving enterprises the evidence they need to deploy voice agents confidently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SOVEREIGN DEPLOYMENT OPTIONS */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-orange-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Sovereign Deployment Options</h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">Choose the deployment model that matches your data sovereignty requirements and compliance obligations.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="rounded-xl p-5 bg-slate-900/60 border border-white/10">
+              <div className="font-semibold text-sm text-white mb-1">On-Premise</div>
+              <p className="text-xs text-slate-400">Data fiduciary security with air-gapped enterprise agents. Full control over data residency and no third-party access.</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/60 border border-white/10">
+              <div className="font-semibold text-sm text-white mb-1">Private Cloud</div>
+              <p className="text-xs text-slate-400">India data centers with sovereign data residency verified. AWS Mumbai, GCP Hyderabad, Azure Pune.</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/60 border border-white/10">
+              <div className="font-semibold text-sm text-white mb-1">Local Machine</div>
+              <p className="text-xs text-slate-400">Ollama self-hosted with privacy-first local execution. No data leaves your machine.</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/60 border border-white/10">
+              <div className="font-semibold text-sm text-white mb-1">Hybrid</div>
+              <p className="text-xs text-slate-400">Sensitive workloads on-premise, burst capacity in Indian cloud regions. Best of both worlds.</p>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <p className="text-sm text-slate-400">Not sure which deployment model fits? Our agent profiles include verified deployment options for every listing, so you can filter by on-premise, cloud, or hybrid support.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* KEY INDIAN AI COMPANIES */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Key Indian AI Companies</h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">The domestic AI ecosystem is led by companies building for India unique challenges.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl p-6 bg-slate-900/50 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Sarvam AI</h3>
+              <p className="text-sm text-slate-400">Building open-weight Indic language models optimized for Hindi, Tamil, Telugu, and Hinglish code-switching. Their models outperform global baselines in regional cultural context and support on-premise deployment for DPDP compliance.</p>
+            </div>
+            <div className="rounded-xl p-6 bg-slate-900/50 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Oli Labs / Krutrim</h3>
+              <p className="text-sm text-slate-400">India first multilingual LLM, locally trained for Indian languages and use cases. Krutrim-2 offers competitive performance on Indic language tasks with transparent INR pricing and Indian cloud deployment.</p>
+            </div>
+            <div className="rounded-xl p-6 bg-slate-900/50 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Bhashini</h3>
+              <p className="text-sm text-slate-400">Government of India language translation platform providing APIs for all 22 official languages. Powers multilingual citizen services and is a key enabler for Indic language AI across the public sector.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ / PAA */}
       <section id="faq" className="py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

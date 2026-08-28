@@ -1046,6 +1046,203 @@ export default function IndianAI() {
         </div>
       </section>
 
+      {/* INDIA AI ADOPTION BY SECTOR */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-orange-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-orange-400 mb-4">
+              Sector Adoption
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              How India <span className="india-gradient">Adopts AI Agents</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Adoption patterns vary dramatically by sector. Understanding these
+              patterns helps vendors tailor offerings and helps buyers set realistic
+              expectations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🏦</div>
+              <h3 className="text-xl font-bold text-white mb-3">BFSI</h3>
+              <p className="text-sm text-slate-400">
+                Banks and insurers prioritize compliance, audit trails, and
+                on-premise deployment. AI agents are used for fraud detection,
+                document processing, and customer service. DPDP compliance is
+                non-negotiable, and data residency in Indian regions is required.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🛒</div>
+              <h3 className="text-xl font-bold text-white mb-3">E-commerce & D2C</h3>
+              <p className="text-sm text-slate-400">
+                Online retailers lead in customer support automation using
+                multilingual voice agents. Indic language support directly impacts
+                conversion and retention. Agents handle order tracking, returns,
+                and product discovery in Hindi, Hinglish, and regional languages.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">💻</div>
+              <h3 className="text-xl font-bold text-white mb-3">IT Services</h3>
+              <p className="text-sm text-slate-400">
+                India's IT majors use coding agents at massive scale for internal
+                developer productivity. Claude Code, Cursor, and Cline are deployed
+                across thousands of engineers, with cost optimization driving
+                adoption of Indian models like Krutrim-2 for routine tasks.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🏥</div>
+              <h3 className="text-xl font-bold text-white mb-3">Healthcare</h3>
+              <p className="text-sm text-slate-400">
+                Hospitals and health-tech startups use AI for medical transcription,
+                triage assistance, and patient communication in regional languages.
+                Voice agents must meet DPDP consent requirements, and accuracy in
+                low-resource languages is the key evaluation criterion.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🎓</div>
+              <h3 className="text-xl font-bold text-white mb-3">Education</h3>
+              <p className="text-sm text-slate-400">
+                Ed-tech platforms deploy tutoring and assessment agents that explain
+                concepts in the student's mother tongue. Indic language models enable
+                personalized learning at scale across India's linguistically diverse
+                student population.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-7 card-hover">
+              <div className="text-3xl mb-4">🏛️</div>
+              <h3 className="text-xl font-bold text-white mb-3">Government</h3>
+              <p className="text-sm text-slate-400">
+                Government departments use BHASHINI-powered agents for citizen
+                services in local languages. Sovereign deployment and DPDP
+                compliance are mandatory. Use cases include grievance redressal,
+                scheme awareness, and document assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDIA AI MARKET DEEP DIVE */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-orange-400 mb-4">
+              India AI Market Deep Dive
+            </div>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Understanding <span className="india-gradient">India's AI Landscape</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              India's artificial intelligence market is one of the fastest-growing
+              in the world, shaped by unique linguistic diversity, data sovereignty
+              priorities, and government-led initiatives.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Market Size and Growth
+              </h3>
+              <p className="text-slate-400 mb-4">
+                India's AI market is projected to reach $17 billion by 2026, growing
+                at a compound annual growth rate of over 25%. This growth is driven
+                by enterprise adoption of AI agents for customer support,
+                back-office automation, and software development, as well as
+                government investment through the IndiaAI Mission. Unlike Western
+                markets where cloud-first deployment dominates, Indian enterprises
+                show a strong preference for self-hosted and on-premise solutions to
+                maintain data sovereignty under the DPDP Act.
+              </p>
+              <p className="text-slate-400 mb-4">
+                Open-weight models have seen 68% adoption among Indian developers,
+                reflecting a strategic preference for models that can be deployed
+                locally without sending data to foreign servers. This preference is
+                reinforced by regulatory requirements and a vibrant domestic model
+                ecosystem led by Sarvam AI, Krutrim, and government initiatives like
+                Bhashini.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                The Language Imperative
+              </h3>
+              <p className="text-slate-400 mb-4">
+                India has 22 official languages and hundreds of dialects. No global
+                AI product can serve this market with English-only interfaces.
+                Language technology is therefore the top priority for Indian AI
+                development. Indic language models like Sarvam-30B and Krutrim-2
+                have demonstrated that homegrown models can outperform global
+                counterparts in Hindi, Tamil, Telugu, Bengali, and Hinglish
+                code-switching tasks.
+              </p>
+              <p className="text-slate-400">
+                Voice AI is particularly critical in India, where literacy rates
+                vary and many users prefer voice interaction in their native
+                language. Our voice AI evaluations test transcription accuracy
+                across Indian languages and measure latency under real network
+                conditions, giving enterprises the evidence they need to deploy
+                voice agents confidently.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Government Initiatives
+              </h3>
+              <p className="text-slate-400 mb-4">
+                The IndiaAI Mission allocates ₹10,000 crore (approximately $1.25
+                billion) to accelerate domestic AI development across compute, data,
+                and talent. AIRAWAT provides shared compute infrastructure for
+                startups and researchers who cannot afford private GPU clusters.
+                BHASHINI, the National Language Translation Mission, focuses on
+                Indic language translation and voice technology through an open API
+                platform that any developer can integrate.
+              </p>
+              <p className="text-slate-400 mb-4">
+                The Digital Personal Data Protection Act (DPDP Act), 2023,
+                establishes a comprehensive framework for personal data processing.
+                For AI agents, the Act's most significant provision is the
+                classification of voice data as biometric data, which triggers
+                heightened consent and security obligations. Our DPDP compliance
+                analysis helps enterprises navigate these requirements when
+                deploying voice and conversational AI.
+              </p>
+              <h3 className="text-2xl font-bold text-white mb-4 mt-8">
+                Enterprise Adoption Patterns
+              </h3>
+              <p className="text-slate-400 mb-4">
+                Indian enterprises adopt AI agents in distinct patterns. Banking,
+                financial services, and insurance (BFSI) prioritize compliance and
+                on-premise deployment. E-commerce and D2C brands lead in customer
+                support automation with multilingual voice agents. IT services
+                companies use coding agents at scale for internal developer
+                productivity. Healthcare and education are emerging segments where
+                Indic language support is the deciding factor.
+              </p>
+              <p className="text-slate-400">
+                Across all segments, the common thread is a demand for transparency
+                and evidence. Indian buyers want to verify vendor claims,
+                understand pricing in INR, and confirm DPDP compliance before
+                committing. That is precisely the gap BestAIAgent.in was built to
+                fill.
+              </p>
+              <div className="mt-6 rounded-xl p-5 border border-orange-500/30 bg-orange-500/5">
+                <p className="text-sm text-slate-300">
+                  <strong className="text-white">Key takeaway:</strong> India's AI
+                  market rewards vendors who invest in local languages, transparent
+                  INR pricing, and DPDP-compliant deployment. Our India Fit score
+                  captures exactly these dimensions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section id="faq" className="py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

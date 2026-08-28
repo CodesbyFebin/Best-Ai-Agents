@@ -589,6 +589,119 @@ export default function MCPPage() {
         </div>
       </section>
 
+      {/* MCP BEST PRACTICES */}
+      <section className="py-24 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
+              MCP Best Practices
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Follow these best practices to get the most out of your MCP deployments.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Security Guidelines</h3>
+              <p className="text-slate-400 mb-4">Always run MCP servers in isolated containers or sandboxes. Never execute servers directly on the host machine. Use Docker with read-only filesystems and restricted network access to prevent unauthorized data access. Enable audit logging for all MCP server interactions, including tool calls, parameters, and response sizes.</p>
+              <p className="text-slate-400 mb-4">For HTTP transport, always require authentication. Use API keys, OAuth tokens, or mutual TLS. Never expose MCP servers on public networks without authentication. For Indian deployments, ensure MCP servers process data only on Indian cloud regions or on-premise infrastructure to comply with DPDP Act data localization requirements.</p>
+              <p className="text-slate-400">If processing personal data of Indian residents, implement explicit consent flows before MCP servers access data. Voice and biometric data require specific consent under DPDP Act. Document your data processing activities and maintain audit trails for regulatory compliance.</p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Performance Optimization</h3>
+              <p className="text-slate-400 mb-4">Optimize MCP server performance by implementing connection pooling, caching frequently accessed data, and using batch operations where possible. For stdio transport, minimize the data sent over the pipe by using compact JSON formats and avoiding unnecessary metadata. For HTTP transport, use compression and keep-alive connections to reduce overhead.</p>
+              <p className="text-slate-400 mb-4">Monitor MCP server performance metrics including response time, error rate, and resource utilization. Set up alerting for anomalies and establish runbooks for common failure scenarios. For high-availability deployments, implement load balancing across multiple MCP server instances and configure automatic failover.</p>
+              <p className="text-slate-400">For Indian deployments, consider the network latency implications of your deployment architecture. If MCP servers are hosted outside India, expect additional latency for each tool call. Self-hosted deployments in Indian cloud regions eliminate this latency but require infrastructure investment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MCP FAQ */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-brand-500/[.03] to-transparent">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-4">
+            <div className="rounded-xl p-5 bg-slate-900/50 border border-white/10">
+              <h3 className="font-semibold text-white text-sm mb-2">What is the difference between stdio and Streamable HTTP transport?</h3>
+              <p className="text-sm text-slate-400">Stdio transport communicates over standard input and output streams, making it ideal for local development. Streamable HTTP transport uses HTTP with Server-Sent Events for streaming responses, designed for remote and enterprise deployments.</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/50 border border-white/10">
+              <h3 className="font-semibold text-white text-sm mb-2">How do I debug MCP connection issues?</h3>
+              <p className="text-sm text-slate-400">Check the MCP server logs for error messages. Common issues include: the server binary not in PATH, connection timeout (increase timeout values), non-JSON lines corrupting transport (redirect logging to stderr), and session initialization hangs (implement lazy initialization).</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/50 border border-white/10">
+              <h3 className="font-semibold text-white text-sm mb-2">Are MCP servers secure for enterprise use?</h3>
+              <p className="text-sm text-slate-400">Yes, when deployed correctly. Use Docker sandboxing, enable authentication for HTTP endpoints, implement audit logging, and follow the principle of least privilege. For Indian enterprises, ensure DPDP compliance through data residency controls and consent management.</p>
+            </div>
+            <div className="rounded-xl p-5 bg-slate-900/50 border border-white/10">
+              <h3 className="font-semibold text-white text-sm mb-2">How do I build a custom MCP server?</h3>
+              <p className="text-sm text-slate-400">Use the official MCP SDK for Python or TypeScript. Define your tools with clear descriptions, implement the tool handlers, and configure the transport (stdio or HTTP). Test thoroughly in a sandboxed environment before deploying to production.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MCP ECOSYSTEM */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
+              The MCP Ecosystem
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Model Context Protocol is rapidly becoming the standard for AI agent tool integration.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Ecosystem Growth</h3>
+              <p className="text-slate-400 mb-4">The MCP ecosystem has grown exponentially since its introduction, with hundreds of MCP servers now available for databases, APIs, file systems, and specialized tools. Major AI frameworks including LangChain, CrewAI, and AutoGen have integrated MCP support, making it the de facto standard for agent-tool communication.</p>
+              <p className="text-slate-400 mb-4">For Indian developers, the ecosystem includes servers for Indian-specific services: Aadhaar verification APIs, UPI payment processing, Bhashini language translation, and government data portals. These India-specific MCP servers enable agents to serve Indian users while maintaining compliance with local regulations.</p>
+              <p className="text-slate-400">We track the growth of the MCP ecosystem and update our directory regularly. If you have built an MCP server that you would like to share with the community, please submit it through our GitHub repository for evaluation and inclusion.</p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Future Directions</h3>
+              <p className="text-slate-400 mb-4">The future of MCP includes several exciting developments: improved security models for multi-tenant deployments, standardized authentication mechanisms, and support for real-time streaming of tool results. These enhancements will make MCP even more suitable for enterprise deployments.</p>
+              <p className="text-slate-400 mb-4">For the Indian market, we expect to see increased adoption of MCP for government services, healthcare applications, and financial services. The combination of MCP standardized interface with India-specific compliance requirements creates opportunities for innovative AI applications that serve the Indian market.</p>
+              <p className="text-slate-400">We are committed to tracking these developments and updating our directory to reflect the latest advances. Bookmark this page and check back regularly for new MCP servers, updated evaluations, and expanded India-specific content.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MCP GETTING STARTED */}
+      <section className="py-24 bg-gradient-to-b from-transparent via-orange-500/[.03] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="section-title text-3xl sm:text-4xl font-bold text-white mb-4">
+              Getting Started with MCP
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl p-6 bg-slate-900/50 border border-white/10">
+              <div className="text-3xl font-black text-brand-500 mb-3">1</div>
+              <h3 className="text-xl font-bold text-white mb-2">Choose Your Client</h3>
+              <p className="text-sm text-slate-400">Select an MCP-compatible AI agent such as Cline, Cursor, Claude Code, or a custom-built agent using LangChain or CrewAI. Ensure the agent supports MCP for tool integration.</p>
+            </div>
+            <div className="rounded-2xl p-6 bg-slate-900/50 border border-white/10">
+              <div className="text-3xl font-black text-brand-500 mb-3">2</div>
+              <h3 className="text-xl font-bold text-white mb-2">Browse Verified Servers</h3>
+              <p className="text-sm text-slate-400">Explore our directory of verified MCP servers. Each server has been evaluated for capability, security, and India Fit. Use the search and filter options to find servers that match your use case.</p>
+            </div>
+            <div className="rounded-2xl p-6 bg-slate-900/50 border border-white/10">
+              <div className="text-3xl font-black text-brand-500 mb-3">3</div>
+              <h3 className="text-xl font-bold text-white mb-2">Deploy Securely</h3>
+              <p className="text-sm text-slate-400">Follow our deployment guide to configure the MCP server with appropriate security settings. Use Docker sandboxing for isolation and enable audit logging for compliance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
